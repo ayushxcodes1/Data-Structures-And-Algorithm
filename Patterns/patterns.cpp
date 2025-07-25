@@ -164,6 +164,29 @@ void print9(int n)
     }
 }
 
+void print10(int n)
+{
+    //Upper Half
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    //Lower Half
+    for (int i = n - 1; i >= 1; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     // print1(4);
@@ -174,6 +197,7 @@ int main()
     // print6(5);
     // print7(5);
     // print8(5);
-    print9(5);
+    // print9(5);
+    print10(5);
     return 0;
 }
