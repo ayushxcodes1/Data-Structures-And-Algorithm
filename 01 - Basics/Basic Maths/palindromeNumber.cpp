@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool palindromeNumber(int n) {
+void palindromeNumber(int n) {
  int revNum = 0;
  int dup = n;
 
