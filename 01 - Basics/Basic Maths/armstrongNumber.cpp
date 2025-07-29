@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Time Complexity - O(log₁₀ * N)
 void isArmstrong(int n) {
    int sum = 0;
    int dup = n;

@@ -2,7 +2,14 @@
 
 using namespace std;
 
+//Time Complexity - O(log₁₀ * N)
 void palindromeNumber(int n) {
+
+ if(n < 0) {
+  cout << "False";
+  return;
+ } 
+ 
  int revNum = 0;
  int dup = n;
 
@@ -16,6 +23,6 @@ void palindromeNumber(int n) {
 }
 
 int main() {
-    palindromeNumber(121);
-    return 0;
+  palindromeNumber(121);
+  return 0;
 }

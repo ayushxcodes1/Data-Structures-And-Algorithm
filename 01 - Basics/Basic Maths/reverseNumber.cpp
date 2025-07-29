@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Time Complexity - O(log₁₀ * N)
 int reverse(int n) {
    int revNum = 0;
    while(n > 0) {
