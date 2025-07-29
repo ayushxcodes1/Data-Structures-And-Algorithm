@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int countDigit(int n)
-{
+int countDigit(int n) {
     int cnt = 0;
     while (n > 0)
     {
@@ -13,8 +12,7 @@ int countDigit(int n)
     return cnt;
 }
 
-int main()
-{
+int main() {
     int res = countDigit(4);
     cout << res; //1
     return 0;
