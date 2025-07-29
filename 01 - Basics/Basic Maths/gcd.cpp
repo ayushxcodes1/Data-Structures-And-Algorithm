@@ -21,7 +21,7 @@ int findGcd(int n1, int n2) {
 
 // Time Complexity - O(min(N1, N2)) - min to 1
 int findGcd2(int n1, int n2) {
-    n1 = abs(n1); // convert negatives to positive
+    n1 = abs(n1);
     n2 = abs(n2);
 
     if (n1 == 0 && n2 == 0) return -1;
@@ -38,7 +38,7 @@ int findGcd2(int n1, int n2) {
 
 // Time Complexity - O(logφ(min(n1, n2))) - Euclidean Algorithm
 int findGcd3(int n1, int n2) {
-    n1 = abs(n1); // convert negatives to positive
+    n1 = abs(n1);
     n2 = abs(n2);
 
     if (n1 == 0 && n2 == 0) return -1;
