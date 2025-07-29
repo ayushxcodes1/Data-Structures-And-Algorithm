@@ -6,6 +6,7 @@ using namespace std;
 int findGcd(int n1, int n2) {
     n1 = abs(n1); // convert negatives to positive
     n2 = abs(n2);
+    
     if (n1 == 0 && n2 == 0) return -1; //GCD undefined
     if (n1 == 0 || n2 == 0) return n1 == 0 ? n2 : n1; // Returns the non-zero number
 
