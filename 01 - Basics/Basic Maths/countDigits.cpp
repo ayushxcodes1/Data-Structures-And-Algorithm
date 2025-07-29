@@ -14,6 +14,6 @@ int countDigit(int n) {
 
 int main() {
     int res = countDigit(4);
-    cout << res; //1
+    cout << res; 
     return 0;
 }
