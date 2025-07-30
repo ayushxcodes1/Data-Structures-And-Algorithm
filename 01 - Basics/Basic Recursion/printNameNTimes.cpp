@@ -9,6 +9,7 @@ void printName(int i, int n) {
 }
 
 int main() {
-  printName(1, 5);
+  int n = 5;
+  printName(1, n);
   return 0;
 }
