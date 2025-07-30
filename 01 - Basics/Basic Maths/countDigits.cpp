@@ -5,8 +5,7 @@ using namespace std;
 //Time Complexity - O(log₁₀ * N)
 int countDigit(int n) {
     int cnt = 0;
-    while (n > 0)
-    {
+    while (n > 0) {
         cnt++;
         n = n / 10;
     }

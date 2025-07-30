@@ -33,7 +33,7 @@ int findGcd2(int n1, int n2) {
             return i;
         }
     }
-    return 1; //never executes
+    return 1; //never executes 
 }
 
 // Time Complexity - O(logφ(min(n1, n2))) - Euclidean Algorithm
