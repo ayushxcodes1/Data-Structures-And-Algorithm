@@ -2,10 +2,10 @@
 
 using namespace std;
 
-void printName(int cnt, string name) {
-    if(cnt > 5) return;
+void printName(int i, string name) {
+    if(i > 5) return;
     cout << name << endl;
-    printName(cnt + 1, name);
+    printName(i + 1, name);
 }
 
 int main() {
