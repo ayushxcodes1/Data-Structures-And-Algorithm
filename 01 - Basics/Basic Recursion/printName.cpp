@@ -2,14 +2,13 @@
 
 using namespace std;
 
-void printName(int i, string name) {
-    if(i > 5) return;
-    cout << name << endl;
-    printName(i + 1, name);
+void printName(int i, int n) {
+    if(i > n) return;
+    cout << "Ayush" << endl;
+    printName(i + 1, n);
 }
 
 int main() {
-  string name = "Ayush";
-  printName(1, name);
+  printName(1, 5);
   return 0;
 }
