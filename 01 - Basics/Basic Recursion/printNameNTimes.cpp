@@ -2,14 +2,14 @@
 
 using namespace std;
 
-void printName(int i, int n) {
-  if(i > n) return;
+void printName(int n) {
+  if(n < 1) return;
   cout << "Ayush" << endl;
-  printName(i + 1, n);
+  printName(n - 1);
 }
 
 int main() {
   int n = 5;
-  printName(1, n);
+  printName(n);
   return 0;
 }
