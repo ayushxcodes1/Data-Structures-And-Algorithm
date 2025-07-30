@@ -2,10 +2,10 @@
 
 using namespace std;
 
-void print(int cnt, int n) {
-    if(cnt > n) return;
+void print(int i, int n) {
+    if(i > n) return;
     cout << n << " ";
-    print(cnt, n - 1);
+    print(i, n - 1);
 }
 
 int main() {
