@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// TC: O(N), SC: O(N)
 void printName(int n) {
   if(n < 1) return;
   cout << "Ayush" << endl;
