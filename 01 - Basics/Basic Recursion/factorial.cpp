@@ -3,6 +3,13 @@
 using namespace std;
 
 //Parametrized
+int Factorial(int i, int res) {
+   if(i < 1) {
+    cout << "factorial is " << res << endl;
+   }
+
+   Factorial(i - 1, res * i);
+}
 
 //Functional 
 int  Factorial2(int n) {
