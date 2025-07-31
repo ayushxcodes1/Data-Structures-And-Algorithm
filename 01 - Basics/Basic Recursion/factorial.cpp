@@ -12,7 +12,7 @@ void Factorial(int i, int res) {
    Factorial(i - 1, res * i); 
 }
 
-//Functional 
+//Functional
 int Factorial2(int n) {
    if(n == 1) return 1;
    return n * Factorial2(n - 1);
