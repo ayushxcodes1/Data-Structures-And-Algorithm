@@ -5,8 +5,8 @@ using namespace std;
 //Parametrized Recursion
 void SumOfN(int i, int sum) {
     if(i < 1) {
-       cout << "sum is " << sum << endl;
-       return;
+      cout << "sum is " << sum << endl;
+      return;
     }
 
     SumOfN(i - 1, sum + i);
