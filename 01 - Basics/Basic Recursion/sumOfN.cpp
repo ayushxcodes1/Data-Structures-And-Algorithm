@@ -19,7 +19,6 @@ int SumOfN2(int n) {
 }
 
 int main() {
-
   SumOfN(3, 0); //Parametrized
 
   int sum = SumOfN2(3);
