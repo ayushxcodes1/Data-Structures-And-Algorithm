@@ -4,16 +4,16 @@ using namespace std;
 
 //Approach 1
 void reverseArray(int arr[], int l, int r) {
-    if(l >= r) return;
-    swap(arr[l], arr[r]);
-    reverseArray(arr, l + 1, r - 1);
+  if(l >= r) return;
+  swap(arr[l], arr[r]);
+  reverseArray(arr, l + 1, r - 1);
 }
 
 //Approach 2
 void reverseArray2(int i, int arr[], int n) {
-    if(i >= n / 2) return;
-    swap(arr[i], arr[n - i - 1]);
-    reverseArray2(i + 1, arr, n);
+  if(i >= n / 2) return;
+  swap(arr[i], arr[n - i - 1]);
+  reverseArray2(i + 1, arr, n);
 }
 
 int main() {
