@@ -13,7 +13,7 @@ int main() {
 
   int x;
   while(cin >> x) {
-    cout << hash[x] << " ";
+    cout << hash[x] << " "; 
   }
 
   return 0;
