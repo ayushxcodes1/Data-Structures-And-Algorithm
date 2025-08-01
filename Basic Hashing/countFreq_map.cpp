@@ -12,6 +12,11 @@ int main() {
     mpp[arr[i]]++;
   }
 
+  //iterate on the map
+  // for(auto it : mpp) {
+  //   cout << it.first << "->" << it.second << endl;
+  // }
+
   int q;
   while(cin >> q) {
     cout << q << " -> " << mpp[q] << endl;
