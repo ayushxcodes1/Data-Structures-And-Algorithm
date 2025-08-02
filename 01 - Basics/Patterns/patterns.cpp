@@ -306,8 +306,8 @@ void print20(int n) {
             cout << "*";
         }
         cout << endl;
-        if(i < n) spaces += 2;
-        else spaces -= 2;
+        if(i < n) spaces -= 2;
+        else spaces += 2;
     }
 }
 
