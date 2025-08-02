@@ -237,7 +237,12 @@ void print17(int n) {
 }
 
 void print18(int n) {
-    
+    for(int i = 0; i < n; i++) {
+        for(char ch = 'E' - i; ch <= 'E'; ch++) {
+            cout << ch << " ";
+        } 
+        cout << endl;
+    }
 }
 
 int main() {
