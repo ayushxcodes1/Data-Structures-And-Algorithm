@@ -266,17 +266,17 @@ void print19(int n) {
 
     for(int i = 0; i < n; i++) {
         //stars
-        for(int j = 1; j <= n - i; j++) {
+        for(int j = 1; j <= n; j++) {
             cout << "*";
         }
 
         //space
-        for(int j = 0; j < 2 * i; j++) {
+        for(int j = 0; j < 2 * (n - i - 1); j++) {
             cout << " ";
         }
 
         //stars
-        for(int j = 1; j <= n - i; j++) {
+        for(int j = 1; j <= n; j++) {
             cout << "*";
         }
         cout << endl;
