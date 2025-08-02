@@ -246,6 +246,7 @@ void print18(int n) {
 }
 
 void print19(int n) {
+    //Upper Half
     for(int i = 0; i < n; i++) {
         //stars
         for(int j = 1; j <= n - i; j++) {
@@ -264,6 +265,7 @@ void print19(int n) {
         cout << endl;
     }
 
+    //Lower Half
     for(int i = 0; i < n; i++) {
         //stars
         for(int j = 0; j <= i; j++) {
@@ -302,6 +304,6 @@ int main() {
     // print16(4);
     // print17(4);
     // print18(5);
-    print19(4);
+    // print19(4);
     return 0;
 }

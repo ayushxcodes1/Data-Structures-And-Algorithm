@@ -1,7 +1,7 @@
+0; j < 2 * (n - i - 1); j++) {
+            cout << " ";
+        }
 
-    // print15(4);
-    // print16(4);
-    // print17(4);
-    print18(5);
-    return 0;
-}
+        //stars
+        for(int j = 0; j <= i; j++) {
+            cout << "*";
