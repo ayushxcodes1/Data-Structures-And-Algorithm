@@ -285,34 +285,19 @@ void print19(int n) {
     }
 }
 
-void print20(int n) {
-    for(int i = 0; i < n; i++) {
-        //stars
-        for(int j = 0; j <= i; j++) {
-            cout << "*";
-        }
+void print20(int n) {   
+    int spaces = 2 * n - 2; 
+    for(int i = 1; i <= 2 * n - 1; i++) {
+        int stars = i;
+        if(i > n) stars = 2 * n - i;
 
-        //space
-        for(int j = 0; j < 2 * (n - i - 1); j++) {
-            cout << " ";
-        }
-
-        //stars
-        for(int j = 0; j <= i; j++) {
-            cout << "*";
-        }
-        cout << endl;
-    }
-
-    int iniS = 2;
-    for(int i = 0; i < n - 1; i++) {
         //stars
         for(int j = 1; j <= n - i - 1; j++) {
             cout << "*";
         }
 
         //space
-        for(int j = 1; j <= iniS; j++) {
+        for(int j = 1; j <= spaces; j++) {
             cout << " ";
         }
 
@@ -320,9 +305,13 @@ void print20(int n) {
        for(int j = 1; j <= n - i - 1; j++) {
             cout << "*";
         }
-        iniS += 2;
         cout << endl;
+        if(i < n) spaces += 2;
+        else spaces -= 2;
     }
+}
+
+void print21(int n) {
 
 }
 
@@ -347,5 +336,6 @@ int main() {
     // print18(5);
     // print19(4);
     print20(4);
+    // print21(4);
     return 0;
 }
