@@ -292,7 +292,7 @@ void print20(int n) {
         if(i > n) stars = 2 * n - i;
 
         //stars
-        for(int j = 1; j <= n - i - 1; j++) {
+        for(int j = 1; j <= stars; j++) {
             cout << "*";
         }
 
@@ -302,7 +302,7 @@ void print20(int n) {
         }
 
         //stars
-       for(int j = 1; j <= n - i - 1; j++) {
+        for(int j = 1; j <= stars; j++) {
             cout << "*";
         }
         cout << endl;
