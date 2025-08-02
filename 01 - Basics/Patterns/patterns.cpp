@@ -304,6 +304,26 @@ void print20(int n) {
         cout << endl;
     }
 
+    int iniS = 2;
+    for(int i = 0; i < n - 1; i++) {
+        //stars
+        for(int j = 1; j <= n - i - 1; j++) {
+            cout << "*";
+        }
+
+        //space
+        for(int j = 1; j <= iniS; j++) {
+            cout << " ";
+        }
+
+        //stars
+       for(int j = 1; j <= n - i - 1; j++) {
+            cout << "*";
+        }
+        iniS += 2;
+        cout << endl;
+    }
+
 }
 
 int main() {
@@ -326,6 +346,6 @@ int main() {
     // print17(4);
     // print18(5);
     // print19(4);
-    
+    print20(4);
     return 0;
 }
