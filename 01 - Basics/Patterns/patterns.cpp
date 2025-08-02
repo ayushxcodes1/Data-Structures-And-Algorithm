@@ -324,6 +324,15 @@ void print21(int n) {
     }
 }
 
+void print22(int n) {
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+          
+        }
+        cout << endl;  
+    }
+}
+
 int main() {
     // print1(4);
     // print2(5);
