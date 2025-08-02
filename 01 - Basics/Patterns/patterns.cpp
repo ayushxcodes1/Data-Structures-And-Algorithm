@@ -262,6 +262,7 @@ int main() {
     // print14(4);
     // print15(4);
     // print16(4);
-    print17(4);
+    // print17(4);
+    print(4);
     return 0;
 }
