@@ -138,6 +138,45 @@ void print10(int n) {
     }
 }
 
+void print11(int n) {
+    int start = 1;
+    for (int i = 0; i <= n; i++) {
+        if(i % 2 == 0) start = 1;
+        else start = 0;
+        for(int j = 0; j <= i; j++) {
+            cout << start;
+            start = 1 - start;
+        }
+        cout << endl;
+    }
+}
+
+void print12(int n) {
+    int space = 2 * (n - 1);
+    for(int i = 1; i <= n; i++) {
+        //numbers
+        for(int j = 1; j <= i; j++) {
+            cout << j;
+        }
+
+        //spaces
+        for(int j = 1; j <= space; j++) {
+            cout << " ";
+        }
+
+        //numbers
+        for(int j = i; j >= 1; j--) {
+            cout << j;
+        }
+        cout << endl;
+        space -= 2;
+    }
+}
+
+
+
+
+
 int main() {
     // print1(4);
     // print2(5);
@@ -148,6 +187,8 @@ int main() {
     // print7(5);
     // print8(5);
     // print9(5);
-    print10(5);
+    // print10(5);
+    // print11(4);
+    // print12(4);
     return 0;
 }

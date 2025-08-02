@@ -1,1 +1,2 @@
-  print10(5);
+
+        cout << endl;
