@@ -173,8 +173,16 @@ void print12(int n) {
     }
 }
 
-
-
+void print13(int n) {
+    int num = 1;
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= i; j++) {
+            cout << num << " ";
+            num = num + 1;
+        }
+        cout << endl;
+    }
+}
 
 
 int main() {
@@ -190,5 +198,6 @@ int main() {
     // print10(5);
     // print11(4);
     // print12(4);
+    print13(4);
     return 0;
 }
