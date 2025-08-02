@@ -285,6 +285,10 @@ void print19(int n) {
     }
 }
 
+void print20(int n) {
+    
+}
+
 int main() {
     // print1(4);
     // print2(5);
