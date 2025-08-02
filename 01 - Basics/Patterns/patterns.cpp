@@ -236,6 +236,10 @@ void print17(int n) {
     }
 }
 
+void print18(int n) {
+    
+}
+
 int main() {
     // print1(4);
     // print2(5);
