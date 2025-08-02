@@ -194,22 +194,15 @@ void print14(int n) {
 }
 
 void print15(int n) {
-    for(int i = n; i >= 1; i--) {
-        for(char ch = 'A'; ch < 'A' + i; ch++) {
+    for(int i = 0; i < n; i++) {
+        for(char ch = 'A'; ch <= 'A' + (n - i - 1); ch++) {
             cout << ch << " ";
         }
         cout << endl;
     }
 }
 
-void print16(int n) {
-    for(int i = 0; i < n; i++) {
-        for(char ch = 'A'; ch <= 'A' + i; ch++) {
-            cout << ch;
-        }
-        cout << endl;
-    }
-}
+
 
 
 int main() {
@@ -228,5 +221,6 @@ int main() {
     // print13(4);
     // print14(4);
     // print15(4);
+    print15(4);
     return 0;
 }
