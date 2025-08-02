@@ -253,7 +253,7 @@ void print19(int n) {
         }
 
         //space
-        for(int j = 0; j <= 2 * i; j++) {
+        for(int j = 0; j < 2 * i; j++) {
             cout << " ";
         }
 
@@ -283,6 +283,7 @@ int main() {
     // print15(4);
     // print16(4);
     // print17(4);
-    print18(5);
+    // print18(5);
+    print19(4);
     return 0;
 }
