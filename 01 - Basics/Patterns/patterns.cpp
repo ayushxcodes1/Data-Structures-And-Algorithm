@@ -225,6 +225,7 @@ void print17(int n) {
         for(int j = 0; j < 2 * i + 1; j++) {
             cout << ch;
             if(j <= breakpoint) ch++;
+            else ch--;
         }
 
         //spaces
