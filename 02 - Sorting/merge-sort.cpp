@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//TC: O(N * log₂N), SC: O(N)
 void merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp;
     int left = low;
