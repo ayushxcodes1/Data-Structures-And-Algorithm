@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 
+using namespace std;
+
 //Time Complexity - O(N^2)
 void selectionSort(int arr[], int n) {
     for(int i = 0; i <= n - 2; i++) {
@@ -14,8 +16,6 @@ void selectionSort(int arr[], int n) {
         arr[i] = temp;
     }
 }
-
-using namespace std;
 
 int main() {
    int arr[6] = {13, 46, 24, 52, 20, 9};
