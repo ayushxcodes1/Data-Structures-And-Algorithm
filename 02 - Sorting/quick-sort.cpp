@@ -11,7 +11,7 @@ int partition(vector<int> &arr, int low, int high) {
             i++;
         }
 
-        while(arr[j] > pivot && i <= low + 1) {
+        while(arr[j] > pivot && i >= low + 1) {
             j--;
         }
         if(i < j) swap(arr[i], arr[j]);
