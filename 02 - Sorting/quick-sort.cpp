@@ -2,7 +2,9 @@
 
 using namespace std;
 
-
+void qs(vector<int> &arr, int low, int high) {
+    
+}
 
 vector<int> quickSort(vector<int> &arr, int n) {
     qs(arr, 0, n - 1);
