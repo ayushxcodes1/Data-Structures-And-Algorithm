@@ -2,6 +2,10 @@
 
 using namespace std;
 
+int partition(vector<int> &arr, int low, int high) {
+    
+}
+
 void qs(vector<int> &arr, int low, int high) {
     if(low < high) {
         int pIndex = partition(arr, low, high);
