@@ -16,6 +16,11 @@ void merge(vector<int> &arr, int low, int mid, int high) {
            right++;
         }
     }
+
+    while(left <= mid) {
+        temp.push_back(arr[left]);
+        left++;
+    }
 }
 
 void mS(vector<int> &arr, int low, int high) {
