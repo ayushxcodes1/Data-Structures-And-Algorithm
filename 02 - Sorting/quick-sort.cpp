@@ -2,6 +2,8 @@
 
 using namespace std;
 
+
+
 vector<int> quickSort(vector<int> &arr, int n) {
     qs(arr, 0, n - 1);
     return arr;
