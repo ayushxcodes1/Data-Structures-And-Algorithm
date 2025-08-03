@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 
+using namespace std;
+
 //Time Complexity - O(N^2)
 void bubbleSort(int arr[], int n) {
     for(int i = n - 1; i >= 0; i++) {
@@ -13,7 +15,6 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
-using namespace std;
 
 int main() {
    int arr[6] = {13, 46, 24, 52, 20, 9};
