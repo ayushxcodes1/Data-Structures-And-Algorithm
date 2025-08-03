@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-//Time Complexity - O(N)
+//Time Complexity - O(N^2)
 void selectionSort(int arr[], int n) {
     for(int i = 0; i <= n - 2; i++) {
         int mini = i;
