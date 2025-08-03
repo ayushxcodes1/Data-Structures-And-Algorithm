@@ -3,7 +3,11 @@
 using namespace std;
 
 void qs(vector<int> &arr, int low, int high) {
-    
+    if(low < high) {
+        int pIndex = partition(arr, low, high);
+        qs(arr, low, pIndex - 1);
+        qs(arr, pIndex + 1, high);
+    }
 }
 
 vector<int> quickSort(vector<int> &arr, int n) {
