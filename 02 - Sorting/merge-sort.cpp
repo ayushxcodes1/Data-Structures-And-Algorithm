@@ -4,7 +4,11 @@ using namespace std;
 
 void merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp;
-    
+    int left = low;
+    int right = mid + 1;
+    while(left <= mid && right <= high) {
+ 
+    }
 }
 
 void mS(vector<int> &arr, int low, int high) {
