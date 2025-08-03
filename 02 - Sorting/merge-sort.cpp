@@ -4,7 +4,7 @@ using namespace std;
 
 void mS(vector<int> &arr, int low, int high) {
     if(low == high) return;
-    
+    int mid = (low + high) / 2;
 }
 
 void mergeSort(vector<int> &arr, int n) {
