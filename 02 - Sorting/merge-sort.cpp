@@ -3,7 +3,8 @@
 using namespace std;
 
 void mS(vector<int> &arr, int low, int high) {
-     
+    if(low == high) return;
+    
 }
 
 void mergeSort(vector<int> &arr, int n) {
