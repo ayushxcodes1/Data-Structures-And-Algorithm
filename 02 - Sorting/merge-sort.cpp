@@ -2,6 +2,10 @@
 
 using namespace std;
 
+void merge(vector<int> &arr, int low, int mid, int high) {
+    
+}
+
 void mS(vector<int> &arr, int low, int high) {
     if(low == high) return;
     int mid = (low + high) / 2;
