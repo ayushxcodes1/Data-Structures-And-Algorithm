@@ -7,7 +7,7 @@ void mS(vector<int> &arr, int low, int high) {
     int mid = (low + high) / 2;
     mS(arr, low, mid);
     mS(arr, mid + 1, high);
-    
+    merge(arr, low, mid, high);
 }
 
 void mergeSort(vector<int> &arr, int n) {
