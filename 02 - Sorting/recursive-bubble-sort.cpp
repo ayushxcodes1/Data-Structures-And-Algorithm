@@ -10,6 +10,8 @@ void bubbleSort(vector<int> &arr, int n) {
             swap(arr[j], arr[j + 1]);
         }
     }
+
+    bubbleSort(arr, n - 1);
 }
 
 int main() {
