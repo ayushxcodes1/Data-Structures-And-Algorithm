@@ -20,7 +20,7 @@ int main() {
   vector<int> arr = {13, 46, 24, 52, 20, 9};
   int n = arr.size();
 
-  insertionSort(arr, n);
+  insertionSort(arr, 0, n);
 
   for(auto it : arr) {
     cout << it << " ";
