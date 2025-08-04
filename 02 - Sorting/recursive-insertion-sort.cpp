@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Time Complexity - Worst & Avg: O(N^2), Best: O(N)
+//Time Complexity - O(N)
 //Space Complexity - O(N)
 void insertionSort(vector<int> &arr, int n) {
     if(n == 1) return;
