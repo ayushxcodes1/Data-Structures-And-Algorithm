@@ -5,7 +5,14 @@ using namespace std;
 //Time Complexity - Worst & Avg: O(N^2), Best: O(N)
 //Space Complexity - O(N)
 void insertionSort(vector<int> &arr, int n) {
-    
+    if(n == 1) return;
+    for(int j = 1; j < n; j++){
+        if(j > 0 && arr[j - 1] > arr[j]) {
+           swap(arr[j - 1], arr[j]);
+        } 
+    }
+
+    insertionSort(arr, n - 1);
 }
 
 int main() {
