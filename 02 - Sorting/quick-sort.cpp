@@ -2,7 +2,8 @@
 
 using namespace std;
 
-//TC: Best & Avg O(N * logN), Worst O(N^2), SC: Best & Avg O(logN), Worst O(N)
+//Time Complexity: Best & Avg O(N * logN), Worst O(N^2) 
+//Space Complexity: Best & Avg O(logN), Worst O(N)
 int partition(vector<int> &arr, int low, int high) {
     int pivot = arr[low];
     int i = low;
