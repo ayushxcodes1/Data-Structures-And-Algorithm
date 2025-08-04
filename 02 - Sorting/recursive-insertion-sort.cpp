@@ -6,10 +6,11 @@ using namespace std;
 //Space Complexity - O(N)
 void insertionSort(vector<int> &arr, int i, int n) {
     if(n == 1) return;
-    for(int j = 1; j < n; j++){
-        if(j > 0 && arr[j - 1] > arr[j]) {
-           swap(arr[j - 1], arr[j]);
-        } 
+
+    int j = i;
+    while(j > 0 && arr[j - 1] > arr[j]) {
+        swap(arr[j - 1], arr[j]);
+        j--;
     }
 
     insertionSort(arr, i + 1, n);
