@@ -11,7 +11,7 @@ void bubbleSort(vector<int> &arr, int n) {
                didSwap = 1;
             }
         }
-        if(didSwap == 0)
+        if(didSwap == 0) break;
     }
 }
 
