@@ -12,7 +12,7 @@ int secondLargest(vector<int> &arr, int n) {
            largest = arr[i];
         } 
         else if(arr[i] > secLargest) {
-            secLargest = arr[i];
+           secLargest = arr[i];
         }
     }
 }
