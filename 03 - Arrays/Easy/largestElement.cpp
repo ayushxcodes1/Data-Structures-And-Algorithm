@@ -16,6 +16,7 @@ int largestElement(int arr[], int n) {
            largest = arr[i];
         }   
     }
+    return largest;
 }
 
 int main() {
