@@ -7,11 +7,11 @@ int secondLargest(vector<int> &arr, int n) {
     int largest = arr[0];
     int secLargest = 0;
     for(int i = 0; i < n; i++) {
-        if(arr[i] > largest && largest > secLargest) {
+        if(arr[i] > largest) {
            secLargest = largest;
            largest = arr[i];
         } 
-        else {
+        else if(arr[i] > secLargest) {
             arr[i] = secLargest;
         }
     }
