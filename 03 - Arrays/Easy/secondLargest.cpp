@@ -2,10 +2,18 @@
 
 using namespace std;
 
-//Brute - TC: O(NlogN), SC: O(1)
+//Brute - TC: O(NlogN + N), SC: O(1)
 int secondLargest(vector<int> &arr, int n) {
+   int largest = arr[n - 1];
+   int secLargest = -1;
+
     sort(arr.begin(), arr.end());
-    return arr[n - 2];
+    for(int i = n - 2; i >= 0; i--) {
+        if(arr[i] != largest) {
+           secLargest = arr[i];
+           break;
+        }
+    }
 }
 
 //Optimized - TC: O(N), SC: O(1)
