@@ -18,7 +18,7 @@ int secondLargest(vector<int> &arr, int n) {
     return secLargest;
 }
 
-//Better
+//Better - TC: (2N), SC: O(1)
 int secondLargest2(vector<int> &arr, int n) {
    
 }
