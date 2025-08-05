@@ -34,6 +34,9 @@ int secondLargest3(vector<int> &arr, int n) {
            secLargest = largest;
            largest = arr[i];
         } 
+        else if(arr[i] < largest && arr[i] > secLargest) {
+           secLargest = arr[i];
+        }
     }
     return secLargest;
 }
