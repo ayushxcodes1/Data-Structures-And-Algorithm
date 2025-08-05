@@ -3,7 +3,7 @@
 using namespace std;
 
 int largestElement(int arr[], int n) {
-   sort(arr.begin(), arr.end());
+   sort(arr, arr + n);
    return arr[n - 1];
 }
 
