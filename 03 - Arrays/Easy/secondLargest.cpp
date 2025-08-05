@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N), SC: O(1)
+//Optimized - TC: O(N), SC: O(1)
 int secondLargest(vector<int> &arr, int n) {
     int largest = INT_MIN;
     int secLargest = INT_MIN;
