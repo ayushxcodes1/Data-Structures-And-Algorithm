@@ -30,7 +30,7 @@ int secondLargest2(vector<int> &arr, int n) {
         } 
     }
     for(int i = 0; i < n; i++) {
-        if(arr[i] < largest && arr[i] > secLargest) {
+        if(arr[i] > secLargest && arr[i] != largest) {
            secLargest = arr[i];
         }
     }
