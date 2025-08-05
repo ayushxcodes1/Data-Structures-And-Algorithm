@@ -8,7 +8,7 @@ int largestElement(int arr[], int n) {
    return arr[n - 1];
 }
 
-//Optimized
+//Optimized - TC: O(N), SC: O(1)
 int largestElement(int arr[], int n) {
     int largest = arr[0];
     for(int i = 0; i < n; i++) {
