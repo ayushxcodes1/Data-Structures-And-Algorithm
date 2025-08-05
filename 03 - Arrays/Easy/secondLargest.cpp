@@ -4,7 +4,17 @@ using namespace std;
 
 //Brute Force - TC: O(NlogN), SC: O(1)
 int secondLargest(vector<int> &arr, int n) {
-   
+    int largest = arr[0];
+    int secLargest = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] > largest && largest > secLargest) {
+           secLargest = largest;
+           largest = arr[i];
+        } 
+        else {
+            arr[i] = secLargest;
+        }
+    }
 }
 
 int main() {
