@@ -4,8 +4,8 @@ using namespace std;
 
 //Brute - TC: O(NlogN + N), SC: O(1)
 int secondLargest(vector<int> &arr, int n) {
-   int largest = arr[n - 1];
-   int secLargest = -1;
+    int largest = arr[n - 1];
+    int secLargest = -1;
 
     sort(arr.begin(), arr.end());
     for(int i = n - 2; i >= 0; i--) {
