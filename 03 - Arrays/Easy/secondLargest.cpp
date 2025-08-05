@@ -8,13 +8,14 @@ int secondLargest(vector<int> &arr, int n) {
     int secLargest = -1;
 
     sort(arr.begin(), arr.end());
-    
+
     for(int i = n - 2; i >= 0; i--) {
         if(arr[i] != largest) {
            secLargest = arr[i];
            break;
         }
     }
+    return secLargest;
 }
 
 //Optimized - TC: O(N), SC: O(1)
