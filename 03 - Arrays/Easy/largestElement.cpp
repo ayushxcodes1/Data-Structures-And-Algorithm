@@ -9,7 +9,7 @@ int largestElement(int arr[], int n) {
 }
 
 //Optimized - TC: O(N), SC: O(1)
-int largestElement2(int arr[], int n) {
+int largestElement2(vector<int> &arr, int n) {
     int largest = arr[0];
     for(int i = 0; i < n; i++) {
         if(arr[i] > largest) {
@@ -20,8 +20,8 @@ int largestElement2(int arr[], int n) {
 }
 
 int main() {
-  int arr[6] = {2, 8, 6, 13, 5, 9};
-  int n = sizeof(arr) / sizeof(arr[0]);
+  vector<int> arr = {2, 8, 6, 13, 5, 9};
+  int n = arr.size();
   int res = largestElement2(arr, n);
   cout << "Largest Element: " << res;
   return 0;
