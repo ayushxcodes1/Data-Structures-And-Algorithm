@@ -3,8 +3,8 @@
 using namespace std;
 
 //Brute Force - TC: O(NlogN), SC: O(1)
-int largestElement(int arr[], int n) {
-   sort(arr, arr + n);
+int largestElement(vector<int> &arr, int n) {
+   sort(arr.begin(), arr.end());
    return arr[n - 1];
 }
 
