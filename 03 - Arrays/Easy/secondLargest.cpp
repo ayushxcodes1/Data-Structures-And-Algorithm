@@ -18,8 +18,14 @@ int secondLargest(vector<int> &arr, int n) {
     return secLargest;
 }
 
-//Optimized - TC: O(N), SC: O(1)
+//Better
 int secondLargest2(vector<int> &arr, int n) {
+   
+}
+
+
+//Optimized - TC: O(N), SC: O(1)
+int secondLargest3(vector<int> &arr, int n) {
     int largest = INT_MIN;
     int secLargest = INT_MIN;
 
