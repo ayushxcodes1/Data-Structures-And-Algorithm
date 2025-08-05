@@ -4,18 +4,19 @@ using namespace std;
 
 //Brute Force - TC: O(N), SC: O(1)
 int secondLargest(vector<int> &arr, int n) {
-    int largest = 0;
-    int secLargest = 0;
+    int largest = INT_MIN;
+    int secLargest = INT_MIN;
 
     for(int i = 0; i < n; i++) {
         if(arr[i] > largest) {
            secLargest = largest;
            largest = arr[i];
         } 
-        else if(arr[i] > secLargest) {
+        else if(arr[i] > secLargest && arr[i] != largest) {
            secLargest = arr[i];
         }
     }
+    return secLargest;
 }
 
 int main() {
