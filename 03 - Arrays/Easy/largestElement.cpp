@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(NlogN), SC: O(1)
 int largestElement(int arr[], int n) {
    sort(arr, arr + n);
    return arr[n - 1];
