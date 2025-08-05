@@ -28,7 +28,9 @@ int secondLargest2(vector<int> &arr, int n) {
            secLargest = largest;
            largest = arr[i];
         } 
-        else if(arr[i] < largest && arr[i] > secLargest) {
+    }
+    for(int i = 0; i < n; i++) {
+        if(arr[i] < largest && arr[i] > secLargest) {
            secLargest = arr[i];
         }
     }
