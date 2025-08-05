@@ -18,6 +18,6 @@ int main() {
   int arr[5] = {1, 2, 1, 3, 4};
   int n = sizeof(arr) / sizeof(arr[0]);
   int res = isSorted(arr, n);
-  cout << res;
+  cout << boolalpha << res;
   return 0;
 }
