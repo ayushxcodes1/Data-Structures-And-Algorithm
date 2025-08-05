@@ -40,7 +40,7 @@ int secondLargest2(vector<int> &arr, int n) {
 //Optimized - TC: O(N), SC: O(1)
 int secondLargest3(vector<int> &arr, int n) {
     int largest = arr[0];
-    int secLargest = INT_MIN;
+    int secLargest = -1;
 
     for(int i = 0; i < n; i++) {
         if(arr[i] > largest) {
