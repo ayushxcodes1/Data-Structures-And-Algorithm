@@ -2,10 +2,10 @@
 
 using namespace std;
 
-//Brute Force - TC: O(NlogN), SC: O(1)
+//Brute Force - TC: O(N), SC: O(1)
 int secondLargest(vector<int> &arr, int n) {
-    int largest = arr[0];
-    int secLargest = 0;
+    int largest = 0, secLargest = 0;
+    
     for(int i = 0; i < n; i++) {
         if(arr[i] > largest) {
            secLargest = largest;
