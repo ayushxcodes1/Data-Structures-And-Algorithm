@@ -4,7 +4,8 @@ using namespace std;
 
 //TC: O(N), SC: O(1)
 vector<int> leftRotate(vector<int> &arr, int n) {
-  int temp = arr[0];
+  int temp = arr[0]; 
+  
   for(int i = 1; i < n; i++) {
     arr[i - 1] = arr[i];
   }
