@@ -13,7 +13,7 @@ vector<int> rotateArray(vector<int> &arr, int n) {
 }
 
 //Right Rotate
-vector<int> rotateArray(vector<int> &arr, int n) {
+vector<int> rotateArray2(vector<int> &arr, int n) {
   int temp = arr[n - 1];
   for(int i = n - 1; i > 0; i--) {
     arr[i] = arr[i - 1];
@@ -26,7 +26,7 @@ int main() {
   vector<int> arr = {1, 2, 3, 4, 5};
   int n = arr.size();
 
-  vector<int> res = rotateArray(arr, n);
+  vector<int> res = rotateArray2(arr, n);
 
   for(auto it : res) {
     cout << it << " ";
