@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-using namespace std;
+using namespace std; 
 
 //Brute - TC: O(NlogN + N), SC: O(N)
 int removeDuplicates(vector<int> &arr, int n) {
