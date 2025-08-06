@@ -16,9 +16,9 @@ int main() {
   int n = arr.size();
 
   vector<int> res = rotateArray(arr, n, 3);
-  
+
   for(auto it : res) {
-    cout << res << " ";
+    cout << it << " ";
   }
 
   return 0;
