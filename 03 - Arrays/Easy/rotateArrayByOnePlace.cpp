@@ -2,8 +2,8 @@
 
 using namespace std;
 
-//Left Rotate
-vector<int> rotateArray(vector<int> &arr, int n) {
+//TC: O(N), SC: O(1)
+vector<int> leftRotate(vector<int> &arr, int n) {
   int temp = arr[0];
   for(int i = 1; i < n; i++) {
     arr[i - 1] = arr[i];
@@ -12,8 +12,8 @@ vector<int> rotateArray(vector<int> &arr, int n) {
   return arr;
 }
 
-//Right Rotate
-vector<int> rotateArray2(vector<int> &arr, int n) {
+//TC: O(N), SC: O(1)
+vector<int> rightRotate(vector<int> &arr, int n) {
   int temp = arr[n - 1];
   for(int i = n - 1; i > 0; i--) {
     arr[i] = arr[i - 1];
@@ -26,7 +26,7 @@ int main() {
   vector<int> arr = {1, 2, 3, 4, 5};
   int n = arr.size();
 
-  vector<int> res = rotateArray2(arr, n);
+  vector<int> res = rightRotate(arr, n);
 
   for(auto it : res) {
     cout << it << " ";
