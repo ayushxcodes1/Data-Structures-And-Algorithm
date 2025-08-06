@@ -14,7 +14,7 @@ vector<int> rotateArray(vector<int> &arr, int n, int k) {
 int main() {
   vector<int> arr = {1, 2, 3, 4, 5, 6, 7};
   int n = arr.size();
-  int res = rotateArray(arr, n, k);
+  int res = rotateArray(arr, n, 3);
   cout << res;
   return 0;
 }
