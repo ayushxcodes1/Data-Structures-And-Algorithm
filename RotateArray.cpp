@@ -3,11 +3,11 @@
 using namespace std;
 
 vector<int> rotateArray(vector<int> &arr, int n, int k) {
-    int temp = arr[0];
+    int temp = arr[n - 1];
     for(int i = 1; i < n; i++) {
-        arr[i - 1] = arr[i];
+        arr[i] = arr[i - 1];
     }
-    arr[n - 1] = temp;
+    arr[0] = temp;
     return arr;
 }
 
