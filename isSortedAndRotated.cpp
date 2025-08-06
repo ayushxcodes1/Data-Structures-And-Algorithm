@@ -31,7 +31,7 @@ bool check(vector<int> &arr, int n) {
 
 int main() {
   vector<int> arr = {3, 4, 5, 1, 2};
-  int n = sizeof(arr) / sizeof(arr[0]);
+  int n = arr.size();
   bool res = check(arr, n);
   cout << boolalpha << res;
   return 0;
