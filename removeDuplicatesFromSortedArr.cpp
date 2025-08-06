@@ -19,7 +19,7 @@ int removeDuplicates(vector<int> &arr, int n) {
     return index;
 }
 
-//Better - TC: O(N), SC: O(1)
+//Optimal - TC: O(N), SC: O(1)
 int removeDuplicates2(vector<int> &arr, int n) {
     int i = 0;
     for(int j = i + 1; j < n; j++) {
