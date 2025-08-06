@@ -12,7 +12,7 @@ vector<int> rotateArray(vector<int> &arr, int n, int k) {
 }
 
 int main() {
-  vector<int> arr = {1, 2, 3, 4, 5, 6, 7};
+  vector<int> arr = {1, 2, 3, 4, 5};
   int n = arr.size();
 
   vector<int> res = rotateArray(arr, n, 3);
