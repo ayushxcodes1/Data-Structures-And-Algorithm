@@ -19,7 +19,7 @@ int removeDuplicates(vector<int> &arr, int n) {
     return index;
 }
 
-//Better - TC: O(), SC: O()
+//Better - TC: O(N^2), SC: O(1)
 int removeDuplicates2(vector<int> &arr, int n) {
     int cnt = 0;
     for(int i = 0; i < n - 1; i++) {
