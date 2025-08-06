@@ -8,8 +8,8 @@ bool isSorted(vector<int> &arr, int n) {
     if(arr[i] > arr[i + 1]) {
       return false;
     }
-    return true;
   }
+  return true;
 }
 
 bool check(vector<int> &arr, int n) {
