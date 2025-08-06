@@ -19,10 +19,25 @@ int removeDuplicates(vector<int> &arr, int n) {
     return index;
 }
 
+//Better - TC: O(), SC: O()
+int removeDuplicates2(vector<int> &arr, int n) {
+    int cnt = 0;
+    for(int i = 0; i < n - 1; i++) {
+        cnt = i;
+        for(int j = i + 1; j < n; j++) {
+            if(arr[j] > arr[i]) {
+               arr[i + 1] = arr[j];
+               break;
+            }
+        }
+    }
+    return cnt;
+}
+
 int main() {
   vector<int> arr = {1, 2, 2, 3, 4, 5, 5};
   int n = arr.size();
-  int res = removeDuplicates(arr, n);
+  int res = removeDuplicates2(arr, n);
   cout << res;
   return 0;
 }
