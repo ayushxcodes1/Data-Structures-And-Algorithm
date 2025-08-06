@@ -16,7 +16,7 @@ bool check(vector<int> &arr, int n) {
   vector<int> temp = arr;
 
   for(int i = 0; i < n; i++) {
-    if(isSorted(temp, n)) return false;
+    if(isSorted(temp, n)) return true;
 
     //Rotate left by 1
     int first = temp[0];
@@ -24,7 +24,7 @@ bool check(vector<int> &arr, int n) {
       temp[j] = temp[j + 1];
     }
     temp[n - 1] = first;
-  }
+  } 
 
   return false;
 }
