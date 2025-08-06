@@ -10,6 +10,7 @@ int isSorted(int arr[], int n) {
         }
         else {
             return false;
+            
         }
     }
     return true;
