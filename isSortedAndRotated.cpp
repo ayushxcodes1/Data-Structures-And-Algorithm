@@ -29,10 +29,22 @@ bool check(vector<int> &arr, int n) {
   return false;
 }
 
+//Optimal - TC: O(N), SC: O(1)
+bool check2(vector<int> &arr, int n) {
+  int count = 0;
+  for(int i = 0; i < n; i++) {
+    if(arr[i] > arr[(i + 1) % n]) {
+      count++;
+    }      
+  } 
+  return count <= 1;
+}
+
+
 int main() {
   vector<int> arr = {3, 4, 5, 1, 2};
   int n = arr.size();
-  bool res = check(arr, n);
+  bool res = check2(arr, n);
   cout << boolalpha << res;
   return 0;
 }
