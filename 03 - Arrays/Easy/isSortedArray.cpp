@@ -3,14 +3,14 @@
 using namespace std;
 
 //Time Complexity: O(N), Space Complexity: O(1)
-int isSorted(int arr[], int n) {
+bool isSorted(int arr[], int n) {
     for(int i = 1; i < n; i++) {
         if(arr[i - 1] <= arr[i]) {
 
         }
         else {
             return false;
-            
+
         }
     }
     return true;
