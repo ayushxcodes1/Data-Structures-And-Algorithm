@@ -30,21 +30,39 @@ vector<int> findUnion(vector<int> a, vector<int> b) {
   int n1 = a.size();
   int n2 = b.size();
 
-  set<int> st; //O(n1 + n2)
+  vector<int> unionArr;
 
-  for(int i = 0; i < n1; i++) {
-    st.insert(a[i]);  //O(log n1)
+  int i = 0, j = 0;
+
+  while(i < n1 && j < n2) {
+    if(a[i] <= b[j]) {
+      if(unionArr.empty() || unionArr.back() != a[i]) {
+        unionArr.push_back(a[i]);
+      }
+      i++;
+    }
+    else {
+      if(unionArr.empty() || unionArr.back() != b[j]) {
+        unionArr.push_back(b[j]);
+      }
+      j++;
+    }
   }
 
-  for(int i = 0; i < n2; i++) { 
-    st.insert(b[i]); //O(log n2)
+  while(i < n1) {
+    if(unionArr.empty() || unionArr.back() != a[i]) {
+      unionArr.push_back(a[i]);
+    }
+    i++;
   }
 
-  vector<int> unionArr; //O(n1 + n2)
-  for(auto it : st) {
-    unionArr.push_back(it); //O(n1 + n2)
+  while(j < n2) {
+    if(unionArr.empty() || unionArr.back() != b[j]) {
+      unionArr.push_back(b[j]);
+    }
+    j++;
   }
-
+  
   return unionArr;
 }
 
