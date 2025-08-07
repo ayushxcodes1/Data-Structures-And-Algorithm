@@ -8,7 +8,7 @@ int largestElement(vector<int> &arr, int n) {
    return arr[n - 1];
 }
 
-//Optimized - TC: O(N), SC: O(1)
+//Optimal - TC: O(N), SC: O(1)
 int largestElement2(vector<int> &arr, int n) {
     int largest = arr[0];
     for(int i = 0; i < n; i++) {
