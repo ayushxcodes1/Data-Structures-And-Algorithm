@@ -70,7 +70,7 @@ int main() {
   vector<int> a = {2, 2, 3, 4, 5};
   vector<int> b = {1, 1, 2, 3, 4};
 
-  vector<int> res = findUnion(a, b);
+  vector<int> res = findUnion2(a, b);
 
   for(auto it : res) {
     cout << it << " ";
