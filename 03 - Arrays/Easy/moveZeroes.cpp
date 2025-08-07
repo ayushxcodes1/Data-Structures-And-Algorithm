@@ -22,11 +22,13 @@ void moveZeroes(vector<int> &arr, int n) {
 }
 
 //Optimal - TC: O(N), SC: O(1)
-void moveZeroes3(vector<int> &arr, int n) {
+void moveZeroes2(vector<int> &arr, int n) {
     int j = 0;
     for(int i = 0; i < n; i++) {
         if(arr[i] != 0) {
-           swap(arr[i], arr[j]);
+            if(i != j) {
+                swap(arr[i], arr[j]);
+            }
            j++;
         }
     }
