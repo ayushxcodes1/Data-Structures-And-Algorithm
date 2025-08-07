@@ -8,21 +8,21 @@ void moveZeroes(vector<int> &arr, int n) {
 
     for(int i = 0; i < n; i++) { 
         if(arr[i] != 0) {
-           temp.push_back(arr[i]);
+           temp.push_back(arr[i]);  // Store non-zero elements
         } 
     }
 
-    for(int i = 0; i < temp.size(); i++) { 
-        arr[i] = temp[i];
+    for(int i = 0; i < temp.size(); i++) {  
+        arr[i] = temp[i];          // Copy non-zero elements back
     }
 
     for(int i = temp.size(); i < n; i++) { 
-        arr[i] = 0;
+        arr[i] = 0;               // Fill remaining with zeroes
     }
 }
 
 //Optimal - TC: O(N), SC: O(1)
-void moveZeroes2(vector<int> &arr, int n) {
+void moveZeroes3(vector<int> &arr, int n) {
     int j = 0;
     for(int i = 0; i < n; i++) {
         if(arr[i] != 0) {
