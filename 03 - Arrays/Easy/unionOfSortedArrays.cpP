@@ -25,8 +25,8 @@ vector<int> findUnion(vector<int> a, vector<int> b) {
   return unionArr;
 }
 
-//Optimal
-vector<int> findUnion(vector<int> a, vector<int> b) {
+//Optimal - TC: O(n1 + n2), SC: O(n1 + n2)
+vector<int> findUnion2(vector<int> a, vector<int> b) {
   int n1 = a.size();
   int n2 = b.size();
 
