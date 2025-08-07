@@ -26,7 +26,7 @@ void moveZeroes2(vector<int> &arr, int n) {
     int j = 0;
     for(int i = 0; i < n; i++) {
         if(arr[i] != 0) {
-            //no swap
+            //no swap needed if i and j are the same
             if(i != j) { 
                 swap(arr[i], arr[j]);
             }
