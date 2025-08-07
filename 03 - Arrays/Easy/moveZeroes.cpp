@@ -28,7 +28,6 @@ void moveZeroes2(vector<int> &arr, int n) {
         if(arr[i] == 0) {
            j = i;
            break;
-
         }
     }
 
