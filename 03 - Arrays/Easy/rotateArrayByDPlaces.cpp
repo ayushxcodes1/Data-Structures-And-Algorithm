@@ -27,7 +27,7 @@ int main() {
   vector<int> arr = {1, 2, 3, 4, 5};
   int n = arr.size();
 
-  vector<int> res = rightRotate(arr, n);
+  vector<int> res = leftRotate(arr, n);
 
   for(auto it : res) {
     cout << it << " ";
