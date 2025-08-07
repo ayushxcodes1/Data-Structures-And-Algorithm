@@ -6,7 +6,7 @@ using namespace std;
 vector<int> leftRotate(vector<int> &arr, int n, int d) {
   d = d % n;
   
-  vector<int> temp; 
+  int temp[d]; 
   
   for(int i = 0; i < d; i++) { //O(d)
     temp[i] = arr[i];
