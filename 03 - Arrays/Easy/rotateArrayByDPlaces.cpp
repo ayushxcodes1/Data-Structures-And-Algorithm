@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//TC: O(N), SC: O(N)
+//TC: O(n + d), SC: O(d)
 vector<int> leftRotate(vector<int> &arr, int n, int d) {
   d = d % n;
   
@@ -22,7 +22,7 @@ vector<int> leftRotate(vector<int> &arr, int n, int d) {
   for(int i = n - d; i < n; i++) {
     arr[i] = temp[i - (n - d)];
   }
-  
+
   return arr;
 }
 
