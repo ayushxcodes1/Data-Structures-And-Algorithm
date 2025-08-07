@@ -21,7 +21,7 @@ void moveZeroes(vector<int> &arr, int n) {
     }
 }
 
-//Optimal - TC: O(N), SC: O(1)
+//Optimal - TC: O(2N), SC: O(1)
 void moveZeroes2(vector<int> &arr, int n) {
     int j = -1;
     for(int i = 0; i < n; i++) {
