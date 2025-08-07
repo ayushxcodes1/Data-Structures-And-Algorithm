@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - TC: O(3N), SC: O(N)
+//Brute - TC: O(2N), SC: O(N)
 void moveZeroes(vector<int> &arr, int n) {
     vector<int> temp;
 
