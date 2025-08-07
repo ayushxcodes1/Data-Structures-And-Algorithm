@@ -17,12 +17,12 @@ vector<int> findUnion(vector<int> a, vector<int> b) {
     st.insert(b[i]); //O(log n2)
   }
 
-  vector<int> temp; //O(n1 + n2)
+  vector<int> unionArr; //O(n1 + n2)
   for(auto it : st) {
-    temp.push_back(it); //O(n1 + n2)
+    unionArr.push_back(it); //O(n1 + n2)
   }
 
-  return temp;
+  return unionArr;
 }
 
 int main() {
