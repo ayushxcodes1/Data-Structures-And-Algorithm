@@ -23,11 +23,11 @@ void leftRotate(vector<int> &arr, int n, int d) {
   }
 }
 
-//Optimal - TC: O(), SC: O(1)
+//Optimal - TC: O(N), SC: O(1)
 void leftRotate2(vector<int> &arr, int n, int d) {
-  reverse(arr.begin(), arr.begin() + d);
-  reverse(arr.begin() + d, arr.end());
-  reverse(arr.begin(), arr.end());
+  reverse(arr.begin(), arr.begin() + d); //O(d)
+  reverse(arr.begin() + d, arr.end()); //O(n - d)
+  reverse(arr.begin(), arr.end()); //O(n)
 }
 
 int main() {
