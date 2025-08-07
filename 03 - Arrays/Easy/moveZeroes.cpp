@@ -30,7 +30,7 @@ void moveZeroes2(vector<int> &arr, int n) {
             if(i != j) { 
                 swap(arr[i], arr[j]);
             }
-           j++;
+            j++;
         }
     }
 }
