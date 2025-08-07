@@ -2,25 +2,26 @@
 
 using namespace std;
 
+//Brute Force - TC: O(n1 + n2) * log(n1 + n2), SC: O(2 * (n1 + n2))
 vector<int> findUnion(vector<int> a, vector<int> b) {
   int n1 = a.size();
   int n2 = b.size();
 
-  set<int> st;
+  set<int> st; //O(n1 + n2)
 
   for(int i = 0; i < n1; i++) {
-    st.insert(a[i]);
+    st.insert(a[i]);  //O(log n1)
   }
 
-  for(int i = 0; i < n2; i++) {
-    st.insert(b[i]);
+  for(int i = 0; i < n2; i++) { 
+    st.insert(b[i]); //O(log n2)
   }
 
-  vector<int> temp;
+  vector<int> temp; //O(n1 + n2)
   for(auto it : st) {
-    temp.push_back(it);
+    temp.push_back(it); //O(n1 + n2)
   }
-  
+
   return temp;
 }
 
