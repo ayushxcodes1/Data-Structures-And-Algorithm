@@ -29,5 +29,9 @@ int main() {
 
   leftRotate(arr, n, 3);
 
+  for(auto it : arr) {
+    cout << it << " ";
+  }
+
   return 0;
 }
