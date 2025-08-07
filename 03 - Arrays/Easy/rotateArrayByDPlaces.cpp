@@ -5,15 +5,21 @@ using namespace std;
 //TC: O(N), SC: O(1)
 vector<int> leftRotate(vector<int> &arr, int n, int d) {
   vector<int> temp; 
+  
   d = d % n;
   
   for(int i = 0; i < d; i++) {
     temp[i] = arr[i];
   }
  
-  for(int i = n - d; i < n; i++) {
-    arr[]
+  for(int i = d; i < n; i++) {
+    arr[i - d] = arr[i];
   }  
+
+  for(int i = n - d; i < n; i++) {
+    arr[i] = temp[i + (n - d)];
+  }
+  return temp;
 }
 
 //TC: O(N), SC: O(1)
