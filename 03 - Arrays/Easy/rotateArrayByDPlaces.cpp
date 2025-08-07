@@ -22,6 +22,7 @@ vector<int> leftRotate(vector<int> &arr, int n, int d) {
   for(int i = n - d; i < n; i++) {
     arr[i] = temp[i - (n - d)];
   }
+  
   return arr;
 }
 
