@@ -3,8 +3,7 @@
 using namespace std;
 
 //TC: O(n + d), SC: O(d)
-vector<int> leftRotate(vector<int> &arr, int n, int d) {
-  d = d % n;
+void leftRotate(vector<int> &arr, int n, int d) {
   
   int temp[d]; 
   
@@ -22,19 +21,13 @@ vector<int> leftRotate(vector<int> &arr, int n, int d) {
   for(int i = n - d; i < n; i++) {
     arr[i] = temp[i - (n - d)];
   }
-
-  return arr;
 }
 
 int main() {
   vector<int> arr = {1, 2, 3, 4, 5, 6, 7};
   int n = arr.size();
 
-  vector<int> res = leftRotate(arr, n, 3);
-
-  for(auto it : res) {
-    cout << it << " ";
-  }
+  leftRotate(arr, n, 3);
 
   return 0;
 }
