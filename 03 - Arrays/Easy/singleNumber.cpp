@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+//Brute - TC: O(N), SC: O(k)
+void singleNumber(vector<int> &arr) {
+    int n = arr.size();
+    int ans = -1;
+
+    //O(k) - no. of distinct keys in mpp
+    unordered_map<int, int> mpp;
+
+    //O(N)
+    for(int i = 0; i < n; i++) {
+        mpp[arr[i]]++;
+    }
+
+    //O(N)
+    for(auto it : mpp) {
+        if(it.second == 1) {
+           cout << "Single Number: " << it.first;
+        }
+    }
+}
+
+int main() {
+  vector<int> arr = {4, 4, 2, 2, 1, 3, 3};
+  singleNumber(arr);
+  return 0;
+}
