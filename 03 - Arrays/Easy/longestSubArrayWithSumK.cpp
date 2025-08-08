@@ -35,8 +35,9 @@ int longestSubArrayWithSumK2(vector<int> &arr, int k) {
            int len = i - preSumMap[rem];
            maxLen = max(maxLen, i + 1);
         }
-        if(preSumMap.find(sum) == preSumMap.end())
-        {preSumMap[sum] = i;}
+        if(preSumMap.find(sum) == preSumMap.end()) {
+           preSumMap[sum] = i;
+        }
     }
     return maxLen;
 }
