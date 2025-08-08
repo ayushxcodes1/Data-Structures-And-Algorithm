@@ -22,7 +22,7 @@ int longestSubArray(vector<int> &arr, int k) {
 int main() {
   vector<int> arr = {10, 5, 2, 7, 1, 9};
   int k = 7;
-  int len = longestSubArray(arr, 15);
+  int len = longestSubArray(arr, 7);
   cout << "Length of Longest SubArray with Sum K is " << len;
  
   return 0;
