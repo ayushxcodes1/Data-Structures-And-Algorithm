@@ -48,10 +48,10 @@ int findMissing3(vector<int> arr, int n) {
 int findMissing3(vector<int> arr, int n) {
   int xor1 = 0, xor2 = 0;
   for(int i = 0; i < n - 1; i++) {
-    xor1 = xor1 ^ arr[i];
-    xor2 = xor2 ^ (i + 1);
+    xor1 = xor1 ^ arr[i]; //xor of array elements 
+    xor2 = xor2 ^ (i + 1); //xor of 1 To N - 1
   }
-  xor2 = xor2 ^ n;
+  xor2 = xor2 ^ n; //xor of xor2 with N
 
   return xor1 ^ xor2;
 } 
