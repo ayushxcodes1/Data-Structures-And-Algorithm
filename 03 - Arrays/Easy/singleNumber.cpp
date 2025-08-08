@@ -2,6 +2,8 @@
 
 using namespace std;
 
+
+
 //Better - TC: O(N), SC: O(k)
 void singleNumber(vector<int> &arr) {
     int n = arr.size();
@@ -15,7 +17,7 @@ void singleNumber(vector<int> &arr) {
         mpp[arr[i]]++;
     }
 
-    //O(N)
+    //O(k)
     for(auto it : mpp) {
         if(it.second == 1) {
            cout << "Single Number: " << it.first;
