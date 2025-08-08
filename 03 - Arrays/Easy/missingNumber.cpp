@@ -19,7 +19,8 @@ int main() {
   vector<int> arr = {1, 2, 4, 5};
   int n = 5;
 
-  findMissing(arr, n); //3
+  int res = findMissing(arr, n); 
+  cout << "Missing Number: " << res;
 
   return 0;
 }
