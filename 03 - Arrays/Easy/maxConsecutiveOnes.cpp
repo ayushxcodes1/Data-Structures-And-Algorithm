@@ -3,7 +3,20 @@
 using namespace std;
 
 int findMaxConsecutiveOnes(vector<int> arr, int n) {
-   
+    int n = arr.size();
+    int count = 0, maxCount = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] == 1) {
+            count++;
+            maxCount = max(count, maxCount);
+        } 
+        else {
+            count = 0;
+        }
+    }
+    maxCount = max(count, maxCount);
+
+    return maxCount;
 }
 
 int main() {
