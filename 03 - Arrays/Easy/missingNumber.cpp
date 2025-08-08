@@ -26,7 +26,7 @@ int findMissing2(vector<int> arr, int n) {
         j++;
     }
 
-    return -1;
+    return -1; //not found
 }
 
 int main() {
