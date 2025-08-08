@@ -34,8 +34,6 @@ int longestSubArray2(vector<int> &arr, int target) {
     return len;
 }
 
-
-
 int main() {
   vector<int> arr = {10, 5, 2, 7, 1, 9};
   int k = 7;
