@@ -42,7 +42,7 @@ int main() {
   vector<int> arr = {4, 4, 2, 2, 1, 3, 3};
 
   int ans = singleNumber(arr);
-  cout << "SingleNumber: " << ans;
+  cout << "SingleNumber: " << ans << "\n";
 
   singleNumber2(arr);
   return 0;
