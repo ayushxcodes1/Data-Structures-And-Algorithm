@@ -6,7 +6,7 @@ using namespace std;
 int findMissing(vector<int> arr, int n) {
     for(int i = 1; i <= n; i++) {
         bool found = false;
-        for(int j = 0; j < n - 1; j++) {
+        for(int j = 0; j < arr.size(); j++) {
             if(arr[j] == i) {
                found = true;
                break;
@@ -21,7 +21,7 @@ int findMissing(vector<int> arr, int n) {
 int findMissing2(vector<int> arr, int n) {
     int hash[n + 1] = {0};
 
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < arr.size(); i++) {
         hash[arr[i]] = 1;
     }
 
