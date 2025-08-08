@@ -38,7 +38,7 @@ int findMissing3(vector<int> arr, int n) {
     int sum = n * (n + 1) / 2;
     int s2 = 0;
 
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < arr.size(); i++) {
         s2 += arr[i];
     }
 
@@ -61,9 +61,9 @@ int findMissing4(vector<int> arr, int N) {
 
 int main() {
   vector<int> arr = {1, 2, 4, 5};
-  int N = 5;
+  int n = 5;
 
-  int res = findMissing4(arr, N);
+  int res = findMissing3(arr, n);
   cout << "Missing Number: " << res;
 
   return 0;
