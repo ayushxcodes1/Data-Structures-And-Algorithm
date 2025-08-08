@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - TC: O(N), SC: O(k)
+//Better - TC: O(N), SC: O(k)
 void singleNumber(vector<int> &arr) {
     int n = arr.size();
     int ans = -1;
