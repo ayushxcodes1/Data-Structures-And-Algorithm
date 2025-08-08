@@ -40,8 +40,9 @@ int main() {
   vector<int> arr = {4, 4, 2, 2, 1, 3, 3};
 
   int ans = singleNumber(arr);
-  cout << "SingleNumber: " << ans << "\n";
+  cout << "Single Number: " << ans << "\n";
 
-  singleNumber2(arr);
+  int ans2 = singleNumber2(arr);
+   cout << "Single Number: " << ans2;
   return 0;
 }
