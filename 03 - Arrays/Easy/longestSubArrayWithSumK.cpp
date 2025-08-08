@@ -59,6 +59,7 @@ int longestSubArrayWithSumK2(vector<int> &arr, int k) {
         right++;
         if(right < n) sum += arr[right];
     }
+    return maxLen;
 }
 
 
