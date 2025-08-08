@@ -33,7 +33,7 @@ int singleNumber2(vector<int> &arr) {
     }
     
     for(int i = 0; i <= n; i++) {
-        if(hash[i] == 1) {
+        if(hash[arr[i]] == 1) {
            return i;
         }
     }
