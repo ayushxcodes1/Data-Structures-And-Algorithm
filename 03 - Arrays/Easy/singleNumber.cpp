@@ -9,15 +9,12 @@ void singleNumber(vector<int> &arr) {
     int n = arr.size();
     int ans = -1;
 
-    //O(k) - no. of distinct keys in mpp
     unordered_map<int, int> mpp;
 
-    //O(N)
     for(int i = 0; i < n; i++) {
         mpp[arr[i]]++;
     }
 
-    //O(k)
     for(auto it : mpp) {
         if(it.second == 1) {
            cout << "Single Number: " << it.first;
