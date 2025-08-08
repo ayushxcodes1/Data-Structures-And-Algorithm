@@ -17,24 +17,24 @@ int singleNumber(vector<int> &arr) {
     }
 }
 
-//Better - TC: O(N), SC: O(k)
+//Better - TC: O(3N), SC: O(maxi)
 int singleNumber2(vector<int> &arr) {
     int n = arr.size();
 
     int maxi = arr[0];
-    for(int i = 0; i < n; i++) {  //O(N)
+    for(int i = 0; i < n; i++) {  
         maxi = max(maxi, arr[i]);
     }
     
     vector<int> hash(n + 1, 0);
 
-    for(int i = 0; i < n; i++) { //O(N)
+    for(int i = 0; i < n; i++) { 
         hash[arr[i]]++;
     }
     
-    for(int i = 0; i <= n; i++) {
+    for(int i = 0; i <= n; i++) { 
         if(hash[arr[i]] == 1) {
-           return i;
+           return arr[i];
         }
     }
 
