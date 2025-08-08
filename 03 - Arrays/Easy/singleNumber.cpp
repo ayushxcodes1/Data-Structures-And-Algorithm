@@ -2,8 +2,6 @@
 
 using namespace std;
 
-
-
 //Better - TC: O(N), SC: O(k) - k is no. of distinct elements
 void singleNumber(vector<int> &arr) {
     int n = arr.size();
