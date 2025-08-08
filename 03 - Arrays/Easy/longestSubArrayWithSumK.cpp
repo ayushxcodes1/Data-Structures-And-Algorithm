@@ -18,7 +18,7 @@ int longestSubArrayWithSumK(vector<int> &arr, int target) {
     return len;
 }
 
-//Better
+//Better - TC: O(N * logN), SC: O(N)
 int longestSubArrayWithSumK2(vector<int> &arr, int k) {
     int n = arr.size();
     map<int, int> preSumMap;
