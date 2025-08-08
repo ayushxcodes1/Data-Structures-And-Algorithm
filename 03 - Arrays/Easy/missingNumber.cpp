@@ -21,7 +21,7 @@ int findMissing(vector<int> arr, int n) {
 int findMissing2(vector<int> arr, int n) {
     int hash[n + 1] = {0};
 
-    for(int i = 0; i <= n; i++) {
+    for(int i = 0; i < n; i++) {
         hash[arr[i]] = 1;
     }
 
