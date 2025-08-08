@@ -21,7 +21,7 @@ int singleNumber(vector<int> &arr) {
 void singleNumber2(vector<int> &arr) {
     int n = arr.size();
     
-    //O(k) - k is no. of distinct elements
+    //O((N/2) + 1)
     unordered_map<int, int> mpp;
 
     //O(N log M), N is length of array, M is size of map
