@@ -37,7 +37,7 @@ void singleNumber2(vector<int> &arr) {
     }
 }
 
-//Optimal 
+//Optimal - TC: O(N), SC: O(1)
 int singleNumber3(vector<int> &arr) {
     int n = arr.size();
     int xorr = 0;
