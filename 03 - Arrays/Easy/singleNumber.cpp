@@ -40,16 +40,7 @@ void singleNumber2(vector<int> &arr) {
 //Optimal 
 int singleNumber3(vector<int> &arr) {
     int n = arr.size();
-    
-    //O((N/2) + 1)
-    unordered_map<int, int> mpp;
 
-    //O(N log M), N is length of array, M is size of map
-    for(int i = 0; i < n; i++) {
-        mpp[arr[i]]++; 
-    }
-
-    //O((N/2) + 1)
     for(auto it : mpp) {
         if(it.second == 1) {
            cout << "Single Number: " << it.first;
