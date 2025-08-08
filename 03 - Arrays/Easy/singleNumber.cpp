@@ -46,5 +46,6 @@ int main() {
   cout << "Single Number: " << ans << "\n";
  
   singleNumber(arr);
+  
   return 0;
 }
