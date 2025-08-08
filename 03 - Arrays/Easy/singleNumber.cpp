@@ -41,11 +41,7 @@ void singleNumber2(vector<int> &arr) {
 int singleNumber3(vector<int> &arr) {
     int n = arr.size();
 
-    for(auto it : mpp) {
-        if(it.second == 1) {
-           cout << "Single Number: " << it.first;
-        }
-    }
+    
 }
 
 int main() {
