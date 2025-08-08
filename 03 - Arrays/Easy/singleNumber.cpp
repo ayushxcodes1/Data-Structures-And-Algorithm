@@ -21,6 +21,11 @@ int singleNumber(vector<int> &arr) {
 int singleNumber2(vector<int> &arr) {
     int n = arr.size();
     
+    int maxi = arr[0];
+    for(int i = 0; i < n; i++) {
+        maxi = max(maxi, arr[i]);
+    }
+    
     vector<int> hash(n + 1, 0);
 
     for(int i = 0; i < n; i++) {
