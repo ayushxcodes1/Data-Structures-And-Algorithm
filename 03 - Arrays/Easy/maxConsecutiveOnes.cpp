@@ -15,8 +15,6 @@ int findMaxConsecutiveOnes(vector<int> arr) {
             count = 0;
         }
     }
-    maxCount = max(count, maxCount);
-
     return maxCount;
 }
 
