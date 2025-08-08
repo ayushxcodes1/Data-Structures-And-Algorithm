@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(n1 + n2) * log(n1 + n2), SC: O(2 * (n1 + n2))
+//Brute Force - TC: O(n1 + n2) * log(n1 + n2)), SC: O(2 * (n1 + n2))
 vector<int> findUnion(vector<int> a, vector<int> b) {
   int n1 = a.size();
   int n2 = b.size();
