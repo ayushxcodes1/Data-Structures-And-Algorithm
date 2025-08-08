@@ -42,6 +42,21 @@ int findMissing3(vector<int> arr, int n) {
     }
 
     return (sum - s2);
+}
+
+//Optimal2 - TC: O(N), SC: O(1)
+int findMissing3(vector<int> arr, int n) {
+  int xor1 = 0;
+  for(int i = 1; i <= n; i++) {
+    xor1 = xor1 ^ i; 
+  }
+
+  int xor2 = 0;
+  for(int i = 0; i < n - 1; i++) {
+    xor2 = xor2 ^ arr[i];
+  }
+
+  return xor1 ^ xor2;
 } 
 
 int main() {
