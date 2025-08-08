@@ -52,7 +52,8 @@ int findMissing4(vector<int> arr, int N) {
 
   for(int i = 0; i < n; i++) {
     xorAll ^= arr[i];
-    xorAll ^= (i + 1);
+    xorAll ^= (i + 1); //[0, n]
+    // xorAll ^= i; //[1, n]
   }
   xorAll ^= N;  
 
