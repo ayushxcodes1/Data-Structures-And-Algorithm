@@ -44,11 +44,7 @@ int main() {
 
   int ans = singleNumber(arr);
   cout << "Single Number: " << ans << "\n";
-
-  int ans2 = singleNumber2(arr);
-  cout << "Single Number: " << ans2 << "\n";
-
-  singleNumber3(arr);
-
+ 
+  singleNumber(arr);
   return 0;
 }
