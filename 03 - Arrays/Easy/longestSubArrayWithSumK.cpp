@@ -21,9 +21,12 @@ int longestSubArrayWithSumK(vector<int> &arr, int target) {
 //Better
 int longestSubArrayWithSumK2(vector<int> &arr, int k) {
     int n = arr.size();
+    map<int, int> preSumMap;
+    int sum = 0;
+    for(int i = 0; i < n; i++) {
 
-    
-    
+    }
+    return maxLen;
 }
 
 int main() {
