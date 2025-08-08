@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Optimal - TC: O(N), SC: O(1)
+//TC: O(N), SC: O(1)
 int findMaxConsecutiveOnes(vector<int> arr) {
     int n = arr.size();
     int count = 0, maxCount = 0;
