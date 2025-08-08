@@ -17,31 +17,7 @@ int singleNumber(vector<int> &arr) {
     }
 }
 
-//Better - TC: O(3N), SC: O(maxi)
-int singleNumber2(vector<int> &arr) {
-    int n = arr.size();
-
-    int maxi = arr[0];
-    for(int i = 0; i < n; i++) {  
-        maxi = max(maxi, arr[i]);
-    }
-    
-    vector<int> hash(n + 1, 0);
-
-    for(int i = 0; i < n; i++) { 
-        hash[arr[i]]++;
-    }
-    
-    for(int i = 0; i <= n; i++) { 
-        if(hash[arr[i]] == 1) {
-           return arr[i];
-        }
-    }
-
-    return -1;
-}
-
-//Optimal - TC: O(N), SC: O(k)
+//Better - TC: O(N log M), SC: O((N/2) + 1)
 void singleNumber3(vector<int> &arr) {
     int n = arr.size();
     int ans = -1;
@@ -54,7 +30,7 @@ void singleNumber3(vector<int> &arr) {
         mpp[arr[i]]++;
     }
 
-    //O(k)
+    //O((N/2) + 1)
     for(auto it : mpp) {
         if(it.second == 1) {
            cout << "Single Number: " << it.first;
