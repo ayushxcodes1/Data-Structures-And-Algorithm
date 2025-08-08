@@ -18,7 +18,7 @@ int singleNumber(vector<int> &arr) {
 }
 
 //Better - TC: O(N log M), SC: O((N/2) + 1)
-void singleNumber3(vector<int> &arr) {
+void singleNumber2(vector<int> &arr) {
     int n = arr.size();
     int ans = -1;
     
