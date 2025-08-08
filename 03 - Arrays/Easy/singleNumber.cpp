@@ -20,14 +20,11 @@ int singleNumber(vector<int> &arr) {
 //Better - TC: O(N), SC: O(k)
 void singleNumber2(vector<int> &arr) {
     int n = arr.size();
-    int ans = -1;
     
-    //O(k) - k is no. of distinct elements
-    unordered_map<int, int> mpp;
+    vector<int> hash(n + 1, 0);
 
-    //O(N)
     for(int i = 0; i < n; i++) {
-        mpp[arr[i]]++;
+        hash[arr[i]]++;
     }
 
     //O(k)
