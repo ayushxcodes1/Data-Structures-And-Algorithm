@@ -18,7 +18,7 @@ int longestSubArrayWithSumK(vector<int> &arr, int target) {
     return len;
 }
 
-//Better for only +ve's - TC: O(N * logN), SC: O(N) / Optimal for +ve's & -ve's
+//Better for +ve's & 0's - TC: O(N * logN), SC: O(N) / Optimal for both +ve's & -ve's
 int longestSubArrayWithSumK2(vector<int> &arr, int k) {
     int n = arr.size();
     map<int, int> preSumMap;
