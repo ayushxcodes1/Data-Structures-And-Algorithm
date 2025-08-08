@@ -32,7 +32,7 @@ void singleNumber2(vector<int> &arr) {
     //O((N/2) + 1)
     for(auto it : mpp) {
         if(it.second == 1) {
-           cout << "Single Number: " << it.first;
+           cout << "Single Number: " << it.first << endl;
         }
     }
 }
