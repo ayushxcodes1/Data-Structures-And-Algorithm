@@ -18,7 +18,7 @@ int singleNumber(vector<int> &arr) {
 }
 
 //Better - TC: O(N), SC: O(k)
-void singleNumber(vector<int> &arr) {
+void singleNumber2(vector<int> &arr) {
     int n = arr.size();
     int ans = -1;
     
