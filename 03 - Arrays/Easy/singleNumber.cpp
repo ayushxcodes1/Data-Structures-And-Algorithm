@@ -25,9 +25,9 @@ void singleNumber3(vector<int> &arr) {
     //O(k) - k is no. of distinct elements
     unordered_map<int, int> mpp;
 
-    //O(N)
+    //O(N log M)
     for(int i = 0; i < n; i++) {
-        mpp[arr[i]]++;
+        mpp[arr[i]]++; 
     }
 
     //O((N/2) + 1)
