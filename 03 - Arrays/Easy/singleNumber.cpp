@@ -20,9 +20,9 @@ int singleNumber(vector<int> &arr) {
 //Better - TC: O(N), SC: O(k)
 int singleNumber2(vector<int> &arr) {
     int n = arr.size();
-    
+
     int maxi = arr[0];
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++) { 
         maxi = max(maxi, arr[i]);
     }
     
