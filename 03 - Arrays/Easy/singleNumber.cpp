@@ -38,7 +38,7 @@ void singleNumber2(vector<int> &arr) {
 }
 
 //Optimal 
-void singleNumber3(vector<int> &arr) {
+int singleNumber3(vector<int> &arr) {
     int n = arr.size();
     
     //O((N/2) + 1)
