@@ -17,10 +17,24 @@ int findMissing(vector<int> arr, int n) {
     return -1;
 }
 
-//Optimal - TC: O(N), SC: O(1)
+//Better - TC: O(2N), SC: O(N)
 int findMissing2(vector<int> arr, int n) {
+    int hash[n + 1] = {0};
+
+    for(int i = 0; i < n; i++) {
+        hash[arr[i]] = 1;
+    }
+
+    for(int i = 1; i < n; i++) {
+        if(hash[i] == 0) {
+           return i;
+        }
+    }
+} 
+
+//Optimal - TC: O(N), SC: O(1)
+int findMissing3(vector<int> arr, int n) {
     int i = 0, j = 1; 
-    int flag = 1;
     while(i <= n && j <= n) {
         if((arr[i] + 1) != arr[j]) {
            return arr[i] + 1;
