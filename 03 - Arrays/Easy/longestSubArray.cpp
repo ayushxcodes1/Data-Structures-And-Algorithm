@@ -21,7 +21,7 @@ int longestSubArray(vector<int> &arr, int target) {
 }
 
 //Better - TC: O(N^2), SC: O(1)
-int longestSubArray(vector<int> &arr, int target) {
+int longestSubArray2(vector<int> &arr, int target) {
     int n = arr.size();
     int len = 0;
     for(int i = 0; i < n; i++) {
