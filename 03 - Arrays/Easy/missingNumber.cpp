@@ -19,7 +19,7 @@ int findMissing(vector<int> arr, int n) {
 
 //Better - TC: O(2N), SC: O(N)
 int findMissing2(vector<int> arr, int n) {
-    int hash[n + 1] = {0};
+    vector<int> hash(n + 1, 0);
 
     for(int i = 0; i < arr.size(); i++) {
         hash[arr[i]] = 1;
