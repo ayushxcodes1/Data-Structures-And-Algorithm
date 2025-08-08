@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force
+//Brute Force - TC: O(N^3), SC: O(1)
 int longestSubArray(vector<int> &arr, int target) {
     int n = arr.size();
     int len = 0;
