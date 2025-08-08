@@ -70,6 +70,9 @@ int main() {
   cout << "Single Number: " << ans << "\n";
 
   int ans2 = singleNumber2(arr);
-   cout << "Single Number: " << ans2;
+  cout << "Single Number: " << ans2;
+
+  singleNumber3(arr);
+
   return 0;
 }
