@@ -53,7 +53,10 @@ int main() {
   int ans = singleNumber(arr);
   cout << "Single Number: " << ans << "\n";
  
-  singleNumber(arr);
+  singleNumber2(arr);
+
+  int ans3 = singleNumber3(arr);
+  cout << "Single Number: " << ans << "\n";
 
   return 0;
 }
