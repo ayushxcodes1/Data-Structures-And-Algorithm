@@ -51,6 +51,7 @@ int findMissing3(vector<int> arr, int n) {
     xor1 = xor1 ^ arr[i];
     xor2 = xor2 ^ (i + 1);
   }
+  xor2 = xor2 ^ n;
 
   return xor1 ^ xor2;
 } 
