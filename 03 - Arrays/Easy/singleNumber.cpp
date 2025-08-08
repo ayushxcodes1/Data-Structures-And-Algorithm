@@ -40,8 +40,11 @@ void singleNumber2(vector<int> &arr) {
 //Optimal 
 int singleNumber3(vector<int> &arr) {
     int n = arr.size();
-
-    
+    int xor = 0;
+    for(int i = 0; i < n; i++) {
+        xor = xor ^ arr[i];
+    }
+    return xor;
 }
 
 int main() {
