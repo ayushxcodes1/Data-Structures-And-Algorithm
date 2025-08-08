@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute - TC: O(N^2), SC: O(1)
-int longestSubArray2(vector<int> &arr, int target) {
+int longestSubArrayWithSumK(vector<int> &arr, int target) {
     int n = arr.size();
     int len = 0;
     for(int i = 0; i < n; i++) {
@@ -19,15 +19,17 @@ int longestSubArray2(vector<int> &arr, int target) {
 }
 
 //Better
-int longestSubArray2(vector<int> &arr, int target) {
+int longestSubArrayWithSumK2(vector<int> &arr, int k) {
     int n = arr.size();
+
+    
     
 }
 
 int main() {
   vector<int> arr = {10, 5, 2, 7, 1, 9};
   int k = 7;
-  int len = longestSubArray2(arr, 7);
+  int len = longestSubArrayWithSumK2(arr, k);
   cout << "Length of Longest SubArray with Sum K is " << len;
  
   return 0;
