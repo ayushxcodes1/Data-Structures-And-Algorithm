@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force
-int longestSubArraySum(vector<int> &arr) {
+int longestSubArraySum(vector<int> &arr, int k) {
     int n = arr.size();
     int len = 0;
     for(int i = 0; i < n; i++) {
@@ -21,7 +21,8 @@ int longestSubArraySum(vector<int> &arr) {
 
 int main() {
   vector<int> arr = {10, 5, 2, 7, 1, 9};
-  int len = longestSubArraySum(arr);
+  int k = 7;
+  int len = longestSubArraySum(arr, 7);
   cout << "Length is " << len;
  
   return 0;
