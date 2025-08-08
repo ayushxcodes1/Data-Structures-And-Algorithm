@@ -18,7 +18,7 @@ int singleNumber(vector<int> &arr) {
 }
 
 //Better - TC: O(N), SC: O(k)
-void singleNumber2(vector<int> &arr) {
+int singleNumber2(vector<int> &arr) {
     int n = arr.size();
     
     vector<int> hash(n + 1, 0);
