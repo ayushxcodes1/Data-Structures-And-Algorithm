@@ -16,7 +16,7 @@ int findMissing(vector<int> arr, int n) {
 }
 
 //Optimal - TC: O(N), SC: O(1)
-int findMissing(vector<int> arr, int n) {
+int findMissing2(vector<int> arr, int n) {
     int i = 0, j = 1;
     while(i <= n && j <= n) {
         if((arr[i] + 1) != arr[j]) {
