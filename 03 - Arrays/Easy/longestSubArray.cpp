@@ -2,25 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N^3), SC: O(1)
-int longestSubArray(vector<int> &arr, int target) {
-    int n = arr.size();
-    int len = 0;
-    for(int i = 0; i < n; i++) {
-        for(int j = i; j < n; j++) {
-            int sum = 0;
-            for(int k = i; k <= j; k++) {
-                sum += arr[k];
-            }
-            if(sum == target) {
-               len = max(len, j - i + 1);
-            }
-        }
-    }
-    return len;
-}
-
-//Better - TC: O(N^2), SC: O(1)
+//Brute - TC: O(N^2), SC: O(1)
 int longestSubArray2(vector<int> &arr, int target) {
     int n = arr.size();
     int len = 0;
