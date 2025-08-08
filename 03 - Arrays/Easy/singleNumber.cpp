@@ -17,7 +17,7 @@ int singleNumber(vector<int> &arr) {
     }
 }
 
-//Better - TC: O(N log M), SC: O((N/2) + 1)
+//Better - TC: O((N log M) + (N/2 + 1)), SC: O((N/2) + 1)
 void singleNumber2(vector<int> &arr) {
     int n = arr.size();
     int ans = -1;
@@ -25,7 +25,7 @@ void singleNumber2(vector<int> &arr) {
     //O(k) - k is no. of distinct elements
     unordered_map<int, int> mpp;
 
-    //O(N log M)
+    //O(N log M), N is length of array, M is size of map
     for(int i = 0; i < n; i++) {
         mpp[arr[i]]++; 
     }
@@ -46,6 +46,6 @@ int main() {
   cout << "Single Number: " << ans << "\n";
  
   singleNumber(arr);
-  
+
   return 0;
 }
