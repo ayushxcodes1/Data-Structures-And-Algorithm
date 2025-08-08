@@ -26,13 +26,14 @@ void singleNumber2(vector<int> &arr) {
     for(int i = 0; i < n; i++) {
         hash[arr[i]]++;
     }
-
-    //O(k)
-    for(auto it : mpp) {
-        if(it.second == 1) {
-           cout << "Single Number: " << it.first;
+    
+    for(int i = 1; i <= n; i++) {
+        if(hash[i] == 1) {
+           return i;
         }
     }
+
+    return -1;
 }
 
 int main() {

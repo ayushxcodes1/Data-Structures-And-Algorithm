@@ -22,7 +22,7 @@ int findMissing2(vector<int> arr, int n) {
     vector<int> hash(n + 1, 0);
 
     for(int i = 0; i < arr.size(); i++) {
-        hash[arr[i]] = 1;
+        hash[arr[i]]++;
     }
 
     for(int i = 1; i <= n; i++) {
