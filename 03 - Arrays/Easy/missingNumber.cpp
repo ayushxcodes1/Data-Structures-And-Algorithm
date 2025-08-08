@@ -5,7 +5,7 @@ using namespace std;
 //Brute Force - TC: O(N^2), SC: O(1)
 int findMissing(vector<int> arr, int n) {
     for(int i = 1; i <= n; i++) {
-        for(int j = 0; j < arr.size(); j++) {
+        for(int j = 0; j < n - 1; j++) {
             if(arr[j] != i) {
                return i;
             }
