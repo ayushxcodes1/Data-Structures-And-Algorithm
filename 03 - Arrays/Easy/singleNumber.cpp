@@ -20,7 +20,6 @@ int singleNumber(vector<int> &arr) {
 //Better - TC: O((N log M) + (N/2 + 1)), SC: O((N/2) + 1)
 void singleNumber2(vector<int> &arr) {
     int n = arr.size();
-    int ans = -1;
     
     //O(k) - k is no. of distinct elements
     unordered_map<int, int> mpp;
