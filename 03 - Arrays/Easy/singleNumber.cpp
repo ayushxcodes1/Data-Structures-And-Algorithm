@@ -37,7 +37,6 @@ void singleNumber2(vector<int> &arr) {
     }
 }
 
-
 int main() {
   vector<int> arr = {4, 4, 2, 2, 1, 3, 3};
 
