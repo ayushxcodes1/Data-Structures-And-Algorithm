@@ -48,7 +48,6 @@ int findMissing3(vector<int> arr, int n) {
 //Optimal2 - TC: O(N), SC: O(1)
 int findMissing4(vector<int> arr, int N) {
   int n = arr.size();
-  int N = arr.size() + 1;
   int xorAll = 0;
 
   for(int i = 0; i < n; i++) {
