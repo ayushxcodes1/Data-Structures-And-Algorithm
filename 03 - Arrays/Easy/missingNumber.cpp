@@ -19,6 +19,7 @@ int main() {
   vector<int> arr = {1, 2, 4, 5};
   int n = 5;
 
-  findMissing(arr, n);
+  findMissing(arr, n); //3
+
   return 0;
 }
