@@ -17,6 +17,7 @@ int longestSubArray(vector<int> &arr, int target) {
             }
         }
     }
+    return len;
 }
 
 int main() {
