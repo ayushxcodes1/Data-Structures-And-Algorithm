@@ -32,19 +32,17 @@ int findMissing2(vector<int> arr, int n) {
     }
 } 
 
-//Optimal - TC: O(N), SC: O(1)
+//Optimal1 - TC: O(N), SC: O(1)
 int findMissing3(vector<int> arr, int n) {
-    int i = 0, j = 1; 
-    while(i <= n && j <= n) {
-        if((arr[i] + 1) != arr[j]) {
-           return arr[i] + 1;
-        }
-        i++;
-        j++;
+    int sum = n * (n + 1) / 2;
+    int s2 = 0;
+
+    for(int i = 0; i < n; i++) {
+        s2 += arr[i];
     }
 
-    return -1; 
-}
+    return (sum - s2);
+} 
 
 int main() {
   vector<int> arr = {1, 2, 4, 5};
