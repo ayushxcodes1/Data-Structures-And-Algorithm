@@ -43,6 +43,16 @@ int longestSubArrayWithSumK2(vector<int> &arr, int k) {
 }
 
 //Optimal
+int longestSubArrayWithSumK2(vector<int> &arr, int k) {
+    int n = arr.size();
+    int sum = 0;
+    int maxLen = 0;
+    for(int i = 0; i < n; i++) {
+       
+    }
+    return maxLen;
+}
+
 
 int main() {
   vector<int> arr = {10, 5, 2, 7, 1, 9};
