@@ -45,7 +45,7 @@ int main() {
   vector<int> arr = {1, 2, 3, 1, 1, 1, 1, 3, 3};
   int k = 3;
   int len = longestSubArrayWithSumK(arr, k);
-  cout << "Length of Longest SubArray with Sum K is " << len;
+  cout << "Length of Longest SubArray with Sum K is " << len << "\n";
 
   int len2 = longestSubArrayWithSumK2(arr, k);
   cout << "Length of Longest SubArray with Sum K is " << len;
