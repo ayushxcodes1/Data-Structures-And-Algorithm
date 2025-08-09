@@ -71,5 +71,8 @@ int main() {
   int len2 = longestSubArrayWithSumK2(arr, k);
   cout << "Length of Longest SubArray with Sum K is " << len;
  
+  int len2 = longestSubArrayWithSumK2(arr, k);
+  cout << "Length of Longest SubArray with Sum K is " << len;
+ 
   return 0;
 }
