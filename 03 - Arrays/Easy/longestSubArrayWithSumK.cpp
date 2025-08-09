@@ -3,7 +3,9 @@
 using namespace std;
 
 //Brute - TC: O(N^2), SC: O(1)
-
+int longestSubArrayWithSumK(vector<int> &arr, int target) {
+    
+} 
 
 
 int main() {
