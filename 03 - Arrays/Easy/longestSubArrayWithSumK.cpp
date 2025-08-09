@@ -10,9 +10,9 @@ int longestSubArrayWithSumK(vector<int> &arr, int target) {
         int sum = 0;
         for(int j = i; j < n; j++) {
             sum += arr[j];
-        }
-        if(sum == target) {
-           len = max(len, j - i + 1);
+            if(sum == target) {
+               len = max(len, j - i + 1);
+            }
         }
     }
     return len; 
