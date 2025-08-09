@@ -18,12 +18,11 @@ int longestSubArrayWithSumK(vector<int> &arr, int k) {
     return len; 
 } 
 
-//Bettter for +ves & 0's - TC: O(), SC: O() / Optimal for both +ves & -ves
+//Bettter for +ves & 0's - TC: O(), SC: O() / Optimal for +ves, -ves & 0's
 int longestSubArrayWithSumK(vector<int> &arr, int target) {
     int n = arr.size();
    
 } 
-
 
 int main() {
   vector<int> arr = {10, 5, 2, 7, 1, 9};
