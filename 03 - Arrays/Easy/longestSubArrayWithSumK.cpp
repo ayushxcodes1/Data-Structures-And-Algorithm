@@ -38,6 +38,7 @@ int longestSubArrayWithSumK(vector<int> &arr, int k) {
            preSumMap[sum] = i;
         }    
     }
+    return maxLen;
 } 
 
 int main() {
