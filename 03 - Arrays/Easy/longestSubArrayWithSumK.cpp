@@ -41,7 +41,7 @@ int longestSubArrayWithSumK2(vector<int> &arr, int k) {
     return maxLen;
 } 
 
-//Optimal - TC: O(N), SC: O(1)
+//Optimal - TC: O(2N), SC: O(1)
 int longestSubArrayWithSumK3(vector<int> &arr, int k) {
     int n = arr.size();
     int left = 0, right = 0;
