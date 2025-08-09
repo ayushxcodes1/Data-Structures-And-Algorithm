@@ -17,7 +17,7 @@ int longestSubArrayWithSumK(vector<int> &arr, int target) {
             }
         }
     }
-    return len;
+    return len; 
 } 
 
 int main() {
