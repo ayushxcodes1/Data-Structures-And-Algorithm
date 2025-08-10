@@ -67,7 +67,7 @@ int main() {
 
     cout << endl;
 
-    arr = {2, 0, 1, 1, 0};
+    arr = {2, 0, 1, 1, 0}; //reset array
     sortColors3(arr);
     for(auto num : arr) {
         cout << num << " ";
