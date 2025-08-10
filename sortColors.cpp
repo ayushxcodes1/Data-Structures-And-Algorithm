@@ -18,10 +18,10 @@ vector<int> sortColors2(vector<int> &arr) {
         else cnt2++;
     }
  
-    int idx = 0;
-    while(cnt0--) arr[idx++] = 0;
-    while(cnt1--) arr[idx++] = 1;
-    while(cnt2--) arr[idx++] = 2;
+    int i = 0;
+    while(cnt0--) arr[i++] = 0;
+    while(cnt1--) arr[i++] = 1;
+    while(cnt2--) arr[i++] = 2;
 }
 
 int main() {
