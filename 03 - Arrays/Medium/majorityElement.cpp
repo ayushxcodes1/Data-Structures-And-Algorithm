@@ -58,6 +58,7 @@ int majorityElement3(vector<int> arr) {
     if(cnt1 > (n / 2)) {
        return ele;
     }
+    
     return -1;
 }
 
