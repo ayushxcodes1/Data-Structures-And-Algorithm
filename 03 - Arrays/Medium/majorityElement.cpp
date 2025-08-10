@@ -51,7 +51,7 @@ int majorityElement3(vector<int> arr) {
     }
     int cnt1 = 0;
     for(int i = 0; i < n; i++) {
-        if(arr[i] == ele) cnt++;
+        if(arr[i] == ele) cnt1++;
     }
     if(cnt1 > (n / 2)) {
        return ele;
