@@ -27,7 +27,7 @@ int majorityElement2(vector<int> arr) {
     }
 
     for(auto it : mpp) {
-        if(it.second > n / 2) {
+        if(it.second > (n / 2)) {
            return it.first;
         }
     }
