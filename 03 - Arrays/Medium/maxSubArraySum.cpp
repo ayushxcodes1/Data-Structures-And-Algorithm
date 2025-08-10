@@ -33,6 +33,23 @@ int maxSubArraySum(vector<int> &arr) {
   return maxSum; 
 } 
 
+//Follow Up - Print the SubArray with Maximum Sum
+int print(vector<int> &arr) {
+  int n = arr.size();
+  long long sum = 0, maxSum = LONG_MIN;
+  for(int i = 0; i < n; i++) {
+    sum += arr[i];
+
+    if(sum > maxSum) {
+      maxSum = sum;
+    }
+    if(sum < 0) {
+      sum = 0;
+    }
+  }
+  return maxSum; 
+} 
+
 int main() {
   vector<int> arr = {-2, -3, 4, -1, -2, 1, 5, -3};
   int res = maxSubArraySum(arr);
