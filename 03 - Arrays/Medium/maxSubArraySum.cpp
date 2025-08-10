@@ -23,9 +23,7 @@ int maxSubArraySum2(vector<int> &arr) {
   for(int i = 0; i < n; i++) {
     sum += arr[i];
     maxSum = max(maxSum, sum);
-    if(sum < 0) {
-      sum = 0;
-    }
+    if(sum < 0) sum = 0;
   }
   return maxSum; 
 } 
