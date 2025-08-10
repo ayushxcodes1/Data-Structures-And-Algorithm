@@ -16,7 +16,7 @@ vector<int> sortColors2(vector<int> &arr) {
            swap(arr[left], arr[right]);
         }
         left++;
-        right++;
+        right--;
     }
 }
 
@@ -27,6 +27,12 @@ int main() {
     cout << it << " ";
   }
 
+    /*
+    sortColors2(arr);
+    for(auto it : arr) {
+        cout << it << " ";
+    }
+    */
 
   return 0;
 }
