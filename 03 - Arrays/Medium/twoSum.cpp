@@ -14,7 +14,7 @@ void TwoSum(vector<int> &arr, int target) {
     }
 } 
 
-//Better - TC: O(NlogN), SC: O(1)
+//Better - TC: O(NlogN), SC: O(N)
 vector<int> TwoSum2(vector<int> &arr, int target) {
     int n = arr.size();
     map<int, int> mpp;
