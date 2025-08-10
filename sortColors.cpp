@@ -2,9 +2,11 @@
 
 using namespace std;
 
-//Brute Force - TC: O(NlogN), SC: O(1)
+//Brute Force - TC: O(NlogN), SC: O(N)
 vector<int> sortColors(vector<int> &arr) {
-    sort(arr.begin(), arr.end());
+    vector<int> temp = arr;
+    sort(temp.begin(), temp.end());
+    return temp;
 }
 
 //Better - TC: O(N), SC: O(1)
@@ -22,8 +24,8 @@ vector<int> sortColors2(vector<int> &arr) {
 
 int main() {
     vector<int> arr = {2, 0, 1, 1, 0};
-    sortColors(arr);
-    for(auto it : arr) {
+    vector<int> res = sortColors(arr);
+    for(auto it : res) {
         cout << it << " ";
     }
 
