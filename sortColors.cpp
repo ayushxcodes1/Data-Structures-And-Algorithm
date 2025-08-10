@@ -27,18 +27,7 @@ vector<int> sortColors2(vector<int> &arr) {
 //Optimal - TC: O(N), SC: O(1)
 vector<int> sortColors2(vector<int> &arr) {
     int n = arr.size();
-    int cnt0 = 0, cnt1 = 0, cnt2 = 0;
-
-    for(auto num : arr) {
-        if(num == 0) cnt0++;
-        else if(num == 1) cnt1++;
-        else cnt2++;
-    }
- 
-    int i = 0;
-    while(cnt0--) arr[i++] = 0;
-    while(cnt1--) arr[i++] = 1;
-    while(cnt2--) arr[i++] = 2;
+    
 }
 
 int main() {
