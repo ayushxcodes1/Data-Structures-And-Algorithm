@@ -12,6 +12,7 @@ vector<int> TwoSum(vector<int> &arr, int target) {
             } 
         }
     }
+    return {};
 } 
 
 //Optimal - TC: O(NlogN), SC: O(N)
