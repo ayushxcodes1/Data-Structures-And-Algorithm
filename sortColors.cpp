@@ -27,25 +27,19 @@ vector<int> sortColors2(vector<int> &arr) {
     while(cnt2--) arr[i++] = 2;
 }
 
-//Optimal - TC: O(N), SC: O(1)
-vector<int> sortColors2(vector<int> &arr) {
-    int n = arr.size();
-    
-}
-
 int main() {
     vector<int> arr = {2, 0, 1, 1, 0};
     
     vector<int> res = sortColors(arr);
-    for(auto it : res) {
-        cout << it << " ";
+    for(auto num : res) {
+        cout << num << " ";
     }
 
     cout << endl;
 
     sortColors2(arr);
-    for(auto it : arr) {
-        cout << it << " ";
+    for(auto num : arr) {
+        cout << num << " ";
     }
     
   return 0;
