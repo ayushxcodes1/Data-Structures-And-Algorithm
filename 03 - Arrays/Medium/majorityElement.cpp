@@ -49,6 +49,8 @@ int majorityElement3(vector<int> arr) {
         }
         else cnt--;
     }
+
+    //If majority element may exist
     int cnt1 = 0;
     for(int i = 0; i < n; i++) {
         if(arr[i] == ele) cnt1++;
