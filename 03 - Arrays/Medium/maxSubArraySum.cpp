@@ -53,7 +53,7 @@ void printMaxSumSubArray(vector<int> &arr) {
     }
   }
   
-  cout << "SubArray With Maximum Sum: ";
+  cout << "Subarray With Maximum Sum: ";
   for(int i = ansStart; i <= ansEnd; i++) {
     cout << arr[i] << " ";
   }
