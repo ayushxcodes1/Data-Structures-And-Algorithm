@@ -11,7 +11,7 @@ vector<int> sortColors(vector<int> arr) {
 }
 
 //Better - TC: O(2N), SC: O(1)
-vector<int> sortColors2(vector<int> &arr) {
+void sortColors2(vector<int> &arr) {
     int n = arr.size();
     int cnt0 = 0, cnt1 = 0, cnt2 = 0;
 
@@ -25,8 +25,6 @@ vector<int> sortColors2(vector<int> &arr) {
     while(cnt0--) arr[i++] = 0;
     while(cnt1--) arr[i++] = 1;
     while(cnt2--) arr[i++] = 2;
-
-    return arr;
 }
 
 //Optimal - TC: O(N), SC: O(1)
