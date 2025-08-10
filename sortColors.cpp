@@ -66,6 +66,13 @@ int main() {
     for(auto num : arr) {
         cout << num << " ";
     }
+
+    cout << endl;
+
+    sortColors3(arr);
+    for(auto num : arr) {
+        cout << num << " ";
+    }
     
   return 0;
 }
