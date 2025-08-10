@@ -14,6 +14,8 @@ int majorityElement(vector<int> arr) {
         } 
         if(cnt > (n / 2)) return arr[i];
     }
+
+    return -1;
 }
 
 //Better - TC: O(NlogN), SC: O(N)
@@ -29,6 +31,8 @@ int majorityElement2(vector<int> arr) {
            return it.first;
         }
     }
+
+    return -1;
 }
 
 int main() {
