@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+//Brute Force - TC: O(N^2), SC: O(1)
+void TwoSum(vector<int> &arr, int target) {
+    int n = arr.size();
+    for(int i = 0; i < n; i++) {
+        for(int j = i + 1; j < n; j++) {
+            if(arr[i] + arr[j] == target) {
+               cout << "[" << i << "," << j << "]";
+            } 
+        }
+    }
+} 
+
+//Better - TC: O(NlogN), SC: O(1)
+vector<int> TwoSum2(vector<int> &arr, int target) {
+    int n = arr.size();
+    map<int, int> mpp;
+    for(int i = 0; i < n; i++) {
+        int ele = arr[i];
+        int more = target - ele;
+        if(mpp.find(more) != mpp.end()) {
+            return {mpp[more], i};
+        }
+        mpp[ele] = i;
+    }
+    return {};
+} 
+
+int main() {
+  vector<int> arr = {2, 7, 11, 15};
+  TwoSum(arr, 9);
+  return 0;
+}
