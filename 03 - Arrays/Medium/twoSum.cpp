@@ -31,17 +31,16 @@ vector<int> TwoSum2(vector<int> &arr, int target) {
 }
 
 int main() {
-  vector<int> arr = {2, 7, 11, 15};
-  TwoSum(arr, 9);
+    vector<int> arr = {2, 7, 11, 15};
   
-  vector<int> res = TwoSum(arr, 9);
-  for(auto it : res) {
-    cout << "[" << res[0] << "," << res[1] << "]";
-  }
+    vector<int> res = TwoSum(arr, 9);
+    if (!res.empty()) {
+        cout << "[" << res[0] << "," << res[1] << "]\n";
+    }
 
-  vector<int> res2 = TwoSum2(arr, 9);
-  for(auto it : res2) {
-    cout << "[" << res2[0] << "," << res2[1] << "]";
-  }
-  return 0;
+    vector<int> res2 = TwoSum2(arr, 9);
+    if (!res2.empty()) {
+        cout << "[" << res2[0] << "," << res2[1] << "]\n";
+    }
+    return 0;
 }
