@@ -34,6 +34,31 @@ int majorityElement2(vector<int> arr) {
     return -1;
 }
 
+//Optimal - TC: O(2N), SC: O(1)
+int majorityElement3(vector<int> arr) {
+    int n = arr.size();
+    int cnt = 0;
+    int ele;
+    for(int i = 0; i < n; i++) {
+        if(cnt == 0) {
+           cnt = 1;
+           ele = arr[i];
+        }
+        else if(arr[i] == ele) {
+           cnt++;
+        }
+        else cnt--;
+    }
+    int cnt1 = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] == ele) cnt++;
+    }
+    if(cnt1 > (n / 2)) {
+       return ele;
+    }
+    return -1;
+}
+
 int main() {
   vector<int> arr = {2, 2, 1, 1, 1, 2, 2};
   int res = majorityElement(arr);
