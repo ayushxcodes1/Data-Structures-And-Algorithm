@@ -26,8 +26,9 @@ vector<int> sortColors2(vector<int> &arr) {
 
 int main() {
     vector<int> arr = {2, 0, 1, 1, 0};
-    vector<int> res = sortColors(arr);
-    for(auto it : res) {
+    
+    sortColors(arr);
+    for(auto it : arr) {
         cout << it << " ";
     }
 
