@@ -71,7 +71,7 @@ int main() {
 
   cout << endl;
 
-  int res3 = majorityElement2(arr);
+  int res3 = majorityElement3(arr);
   cout << "Majority Element: " << res3;
 
   return 0;
