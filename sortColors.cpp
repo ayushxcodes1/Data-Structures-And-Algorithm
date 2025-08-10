@@ -32,7 +32,7 @@ vector<int> sortColors2(vector<int> &arr) {
 //Optimal - TC: O(N), SC: O(1)
 vector<int> sortColors3(vector<int> &arr) {
     int n = arr.size();
-    int low = 0, mid = n / 2, high = n - 1;
+    int low = 0, mid = 0, high = n - 1;
 
     while(mid <= high) {
         if(arr[mid] == 0) {
@@ -44,7 +44,7 @@ vector<int> sortColors3(vector<int> &arr) {
         }
         else {
            swap(arr[mid], arr[high]);
-           mid++; high--;
+           high--;
         }
     }
     return arr;
