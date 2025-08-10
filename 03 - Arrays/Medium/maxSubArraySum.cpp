@@ -47,11 +47,17 @@ void printMaxSumSubArray(vector<int> &arr) {
       maxSum = sum;
       ansStart = start, ansEnd = i;
     }
-    
+
     if(sum < 0) {
       sum = 0;
     }
-  } 
+  }
+  
+  cout << "SubArray With Maximum Sum" << maxSum << ":" << "\n";
+  for(int i = ansStart; i <= ansEnd; i++) {
+    cout << arr[i] << " ";
+  }
+  cout << endl;
 } 
 
 int main() {
