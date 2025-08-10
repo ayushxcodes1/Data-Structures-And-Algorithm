@@ -31,7 +31,6 @@ int majorityElement2(vector<int> arr) {
            return it.first;
         }
     }
-
     return -1;
 }
 
