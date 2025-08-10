@@ -38,7 +38,7 @@ void printMaxSumSubArray(vector<int> &arr) {
   int n = arr.size();
   long long sum = 0, maxSum = LONG_MIN;
   int start = 0, ansStart = -1, ansEnd = -1;
-  
+
   for(int i = 0; i < n; i++) {
     if(sum == 0) start = i;
     sum += arr[i];
@@ -47,6 +47,7 @@ void printMaxSumSubArray(vector<int> &arr) {
       maxSum = sum;
       ansStart = start, ansEnd = i;
     }
+    
     if(sum < 0) {
       sum = 0;
     }
