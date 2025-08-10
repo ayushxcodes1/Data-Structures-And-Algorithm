@@ -18,7 +18,7 @@ int majorityElement(vector<int> arr) {
     return -1;
 }
 
-//Better - TC: O(NlogN), SC: O(N)
+//Better - TC: O(NlogN + N), SC: O(N)
 int majorityElement2(vector<int> arr) {
     int n = arr.size();
     map<int, int> mpp;
