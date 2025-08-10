@@ -65,10 +65,10 @@ int main() {
   int res = maxSubArraySum(arr);
   cout << "Max SubArray Sum is " << res << "\n";
  
-  // int res2 = maxSubArraySum2(arr);
-  // cout << "Max SubArray Sum is " << res2 << "\n";
+  int res2 = maxSubArraySum2(arr);
+  cout << "Max SubArray Sum is " << res2 << "\n";
 
-  // printMaxSumSubArray(arr);
+  printMaxSumSubArray(arr);
 
   return 0;
 }
