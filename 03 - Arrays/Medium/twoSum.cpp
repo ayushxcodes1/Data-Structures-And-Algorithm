@@ -40,7 +40,7 @@ int main() {
 
     vector<int> res2 = TwoSum2(arr, 9);
     if (!res2.empty()) {
-        cout << "[" << res2[0] << "," << res2[1] << "]\n";
+        cout << "[" << res2[0] << "," << res2[1] << "]";
     }
     return 0;
 }
