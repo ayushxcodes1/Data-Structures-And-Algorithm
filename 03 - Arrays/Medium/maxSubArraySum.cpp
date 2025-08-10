@@ -64,6 +64,11 @@ int main() {
   vector<int> arr = {-2, -3, 4, -1, -2, 1, 5, -3};
   int res = maxSubArraySum(arr);
   cout << "Max SubArray Sum is " << res << "\n";
+ 
+  int res2 = maxSubArraySum(arr);
+  cout << "Max SubArray Sum is " << res2 << "\n";
+
+  printMaxSumSubArray(arr);
 
   return 0;
 }
