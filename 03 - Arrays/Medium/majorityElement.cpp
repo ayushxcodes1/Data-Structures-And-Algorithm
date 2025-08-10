@@ -49,16 +49,17 @@ int majorityElement3(vector<int> arr) {
         }
         else cnt--;
     }
+    return ele;
 
-    //If majority element not always exist
-    int cnt1 = 0;
-    for(int i = 0; i < n; i++) {
-        if(arr[i] == ele) cnt1++;
-    }
-    if(cnt1 > (n / 2)) {
-       return ele;
-    }
-    return -1;
+    //skip this part, if majority element always exist
+    // int cnt1 = 0;
+    // for(int i = 0; i < n; i++) {
+    //     if(arr[i] == ele) cnt1++;
+    // }
+    // if(cnt1 > (n / 2)) {
+    //    return ele;
+    // }
+    // return -1;
 }
 
 int main() {
