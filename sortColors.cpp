@@ -9,7 +9,7 @@ vector<int> sortColors(vector<int> &arr) {
     return temp;
 }
 
-//Better - TC: O(N), SC: O(1)
+//Better - TC: O(2N), SC: O(1)
 vector<int> sortColors2(vector<int> &arr) {
     int n = arr.size();
     int cnt0 = 0, cnt1 = 0, cnt2 = 0;
