@@ -50,8 +50,6 @@ vector<int> sortColors3(vector<int> &arr) {
     return arr;
 }
 
-
-
 int main() {
     vector<int> arr = {2, 0, 1, 1, 0};
     
