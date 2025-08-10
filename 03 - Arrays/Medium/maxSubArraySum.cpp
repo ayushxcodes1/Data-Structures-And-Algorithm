@@ -22,10 +22,7 @@ int maxSubArraySum2(vector<int> &arr) {
   long long sum = 0, maxSum = LONG_MIN;
   for(int i = 0; i < n; i++) {
     sum += arr[i];
-
-    if(sum > maxSum) {
-      maxSum = sum;
-    }
+    maxSum = max(maxSum, sum);
     if(sum < 0) {
       sum = 0;
     }
