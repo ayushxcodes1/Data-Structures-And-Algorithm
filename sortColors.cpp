@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force - TC: O(NlogN), SC: O(N)
-vector<int> sortColors(vector<int> &arr) {
+vector<int> sortColors(vector<int> arr) {
     int n = arr.size();
     vector<int> temp = arr;
     sort(temp.begin(), temp.end());
