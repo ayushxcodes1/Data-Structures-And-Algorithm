@@ -22,7 +22,6 @@ vector<int> sortColors2(vector<int> &arr) {
     while(cnt0--) arr[idx++] = 0;
     while(cnt1--) arr[idx++] = 1;
     while(cnt2--) arr[idx++] = 2;
-    
 }
 
 int main() {
