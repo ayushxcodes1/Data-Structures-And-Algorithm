@@ -29,6 +29,14 @@ vector<int> sortColors2(vector<int> &arr) {
     return arr;
 }
 
+//Optimal - TC: O(N), SC: O(1)
+vector<int> sortColors3(vector<int> &arr) {
+    int n = arr.size();
+    
+}
+
+
+
 int main() {
     vector<int> arr = {2, 0, 1, 1, 0};
     
