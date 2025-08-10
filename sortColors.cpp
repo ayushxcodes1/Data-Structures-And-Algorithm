@@ -4,9 +4,7 @@ using namespace std;
 
 //Brute Force - TC: O(NlogN), SC: O(1)
 vector<int> sortColors(vector<int> &arr) {
-    vector<int> temp = arr;
     sort(temp.begin(), temp.end());
-    return temp;
 }
 
 //Better - TC: O(2N), SC: O(1)
