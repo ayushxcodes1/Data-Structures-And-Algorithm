@@ -6,10 +6,10 @@ using namespace std;
 int maxSubArraySum(vector<int> &arr) {
   int n = arr.size();
   for(int i = 0; i < n; i++) {
-      int sum = 0;
-      for(int j = i; j < n; j++) {
-         
-      }
+    int sum = 0;
+    for(int j = i; j < n; j++) {
+        
+    }
   }
   return len; 
 } 
