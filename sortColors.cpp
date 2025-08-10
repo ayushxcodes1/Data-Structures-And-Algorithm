@@ -2,9 +2,12 @@
 
 using namespace std;
 
-//Brute Force - TC: O(NlogN), SC: O(1)
+//Brute Force - TC: O(NlogN), SC: O(N)
 vector<int> sortColors(vector<int> &arr) {
-    sort(arr.begin(), arr.end());
+    int n = arr.size();
+    vector<int> temp = arr;
+    sort(temp.begin(), temp.end());
+    return temp;
 }
 
 //Better - TC: O(2N), SC: O(1)
