@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force 
+//Brute Force - TC: O(N^2), SC: O(1)
 int majorityElement(vector<int> arr) {
     int n = arr.size();
     for(int i = 0; i < n; i++){
