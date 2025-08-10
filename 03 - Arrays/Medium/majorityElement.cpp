@@ -68,5 +68,11 @@ int main() {
 
   int res2 = majorityElement2(arr);
   cout << "Majority Element: " << res2;
+
+  cout << endl;
+
+  int res3 = majorityElement2(arr);
+  cout << "Majority Element: " << res3;
+
   return 0;
 }
