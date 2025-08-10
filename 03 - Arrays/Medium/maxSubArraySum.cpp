@@ -14,6 +14,23 @@ int maxSubArraySum(vector<int> &arr) {
     maxSum = max(sum, maxSum);
   }
   return maxSum; 
+}
+
+//Optimal - TC: O(N), SC: O(1)
+int maxSubArraySum(vector<int> &arr) {
+  int n = arr.size();
+  long long sum = 0, maxSum = LONG_MIN;
+  for(int i = 0; i < n; i++) {
+    sum += arr[i];
+
+    if(sum > maxSum) {
+      maxSum = sum;
+    }
+    if(sum < 0) {
+      sum = 0;
+    }
+  }
+  return maxSum; 
 } 
 
 int main() {
