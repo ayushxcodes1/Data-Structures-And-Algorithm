@@ -7,8 +7,7 @@ using namespace std;
 //Brute Force - TC: O(N + N/2), SC: O(N)
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
-    vector<int> pos;
-    vector<int> neg;
+    vector<int> pos, neg;
     for(int i = 0; i < n; i++) {
         if(arr[i] > 0) {
            pos.push_back(arr[i]);
