@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(2N), SC: O(N)
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
     vector<int> pos;
@@ -19,7 +20,6 @@ vector<int> rearrangeArray(vector<int> arr) {
         arr[2 * i] = pos[i];
         arr[2 * i + 1] = neg[i];
     }
-    
     return arr;
 }
 
