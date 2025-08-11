@@ -63,9 +63,10 @@ vector<int> rearrangeArray(vector<int> arr) {
             arr[2 * i + 1] = neg[i];
         }
 
-        int index = 0;
+        int index = neg.size() * 2;
         for(int i = neg.size(); i < pos.size(); i++) {
-
+            arr[index] = pos[i];
+            index++;
         }
     }
     else {
