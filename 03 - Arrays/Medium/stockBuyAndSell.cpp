@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute - TC: O(N^2), SC: O(1)
-int stockBuyAndSell(vector<int> &prices) {
+int findMaxProfit(vector<int> &prices) {
     int n = prices.size();
     int maxProfit = 0;
     for(int i = 0; i < n; i++) {
@@ -15,7 +15,7 @@ int stockBuyAndSell(vector<int> &prices) {
 }
 
 //Optimal - TC: O(N), SC: O(1)
-int stockBuyAndSell2(vector<int> &prices) {
+int findMaxProfit2(vector<int> &prices) {
     int n = prices.size();
     int mini = prices[0];
     int maxProfit = 0;
@@ -28,11 +28,12 @@ int stockBuyAndSell2(vector<int> &prices) {
 }
 
 int main() {
+    
   vector<int> prices = {7, 1, 5, 3, 6, 4};
-  int res = stockBuyAndSell(prices);
+  int res = findMaxProfit(prices);
   cout << "Maximum Profit: " << res << "\n";
 
-  int res2 = stockBuyAndSell2(prices);
+  int res2 = findMaxProfit2(prices);
   cout << "Maximum Profit: " << res2;
   return 0;
 }
