@@ -48,6 +48,12 @@ vector<int> rearrangeArray2(vector<int> arr) {
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
     vector<int> pos, neg;
+    for(int i = 0; i < n; i++) {
+
+    }
+    else {
+        
+    }
 }
 
 
