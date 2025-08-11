@@ -28,6 +28,14 @@ vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
     vector<int> ans = arr;
     int posIndex = 0, negIndex = 1;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] < 0) {
+
+        }
+        else {
+            
+        }
+    }
 }
 
 int main() {
