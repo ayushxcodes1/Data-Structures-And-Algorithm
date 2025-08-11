@@ -27,8 +27,6 @@ int stockBuyAndSell2(vector<int> &prices) {
     return maxProfit;
 }
 
-
-
 int main() {
   vector<int> prices = {7, 1, 5, 3, 6, 4};
   int res = stockBuyAndSell(prices);
