@@ -32,6 +32,9 @@ int stockBuyAndSell2(vector<int> &prices) {
 int main() {
   vector<int> prices = {7, 1, 5, 3, 6, 4};
   int res = stockBuyAndSell(prices);
-  cout << "Maximum Profit: " << res;
+  cout << "Maximum Profit: " << res << "\n";
+
+  int res2 = stockBuyAndSell2(prices);
+  cout << "Maximum Profit: " << res2;
   return 0;
 }
