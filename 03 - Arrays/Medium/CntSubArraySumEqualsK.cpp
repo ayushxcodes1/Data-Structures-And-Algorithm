@@ -19,7 +19,7 @@ int maxSubArraySum(vector<int> &arr, int x) {
 }
 
 //Better - TC: O(N^2), SC: O(1)
-int maxSubArraySum(vector<int> &arr, int k) {
+int maxSubArraySum2(vector<int> &arr, int k) {
     int n = arr.size();
     int cnt = 0;
     for(int i = 0; i < n; i++) {
@@ -37,5 +37,8 @@ int main() {
   vector<int> arr = {1, 1, 1};
   int ans = maxSubArraySum(arr, 2);
   cout << ans;
+
+  int ans2 = maxSubArraySum2(arr, 2);
+  cout << ans2;
   return 0;
 }
