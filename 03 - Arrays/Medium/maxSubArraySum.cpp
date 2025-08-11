@@ -5,9 +5,9 @@ using namespace std;
 //Brute - TC: O(N^2), SC: O(1)
 int maxSubArraySum(vector<int> &arr) {
   int n = arr.size();
-  long long maxSum = LONG_MIN;
+  int maxSum = INT_MIN;
   for(int i = 0; i < n; i++) {
-    long long sum = 0;
+    int sum = 0;
     for(int j = i; j < n; j++) {
       sum += arr[j];
       maxSum = max(sum, maxSum);
@@ -19,7 +19,7 @@ int maxSubArraySum(vector<int> &arr) {
 //Optimal - TC: O(N), SC: O(1)
 int maxSubArraySum2(vector<int> &arr) {
   int n = arr.size();
-  long long sum = 0, maxSum = LONG_MIN;
+  int sum = 0, maxSum = INT_MIN;
   for(int i = 0; i < n; i++) {
     sum += arr[i];
     maxSum = max(maxSum, sum);
@@ -31,7 +31,7 @@ int maxSubArraySum2(vector<int> &arr) {
 //Follow Up - Print the SubArray with Maximum Sum
 void printMaxSumSubArray(vector<int> &arr) {
   int n = arr.size();
-  long long sum = 0, maxSum = LONG_MIN;
+  int sum = 0, maxSum = INT_MIN;
   int start = 0, ansStart = -1, ansEnd = -1;
 
   for(int i = 0; i < n; i++) {
