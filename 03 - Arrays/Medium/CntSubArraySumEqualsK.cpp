@@ -26,11 +26,13 @@ int maxSubArraySum2(vector<int> &arr, int k) {
         int sum = 0;
         for(int j = i; j < n; j++) {
             sum += arr[j];
+            if(sum == k) cnt++;
         }
-        if(sum == k) cnt++;
     }
     return cnt; 
 } 
+
+//Optimal
 
 
 int main() {
