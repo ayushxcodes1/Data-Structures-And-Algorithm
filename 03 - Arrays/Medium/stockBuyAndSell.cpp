@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int stockBuyAndSell(vector<int> &arr) {
+void stockBuyAndSell(vector<int> &arr) {
     int n = arr.size();
     int maxProfit = 0;
     int buyDay, sellDay;
@@ -19,6 +19,6 @@ int stockBuyAndSell(vector<int> &arr) {
 
 int main() {
   vector<int> prices = {7, 1, 5, 3, 6, 4};
-
+  
   return 0;
 }
