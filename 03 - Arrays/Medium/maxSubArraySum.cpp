@@ -5,9 +5,9 @@ using namespace std;
 //Brute - TC: O(N^2), SC: O(1)
 int maxSubArraySum(vector<int> &arr) {
   int n = arr.size();
-  int maxSum = INT_MIN;
+  int maxSum = LONG_MIN;
   for(int i = 0; i < n; i++) {
-    int sum = 0;
+    long long sum = 0;
     for(int j = i; j < n; j++) {
       sum += arr[j];
       maxSum = max(sum, maxSum);
