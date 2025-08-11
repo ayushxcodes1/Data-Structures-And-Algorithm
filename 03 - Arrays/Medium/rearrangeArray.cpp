@@ -14,7 +14,7 @@ vector<int> rearrangeArray(vector<int> arr) {
 
         // Otherwise, find the next opposite sign to swap
         for(int j = i + 1; j < n; j++) {
-            if((shouldBePositive && arr[i] > 0) || (!shouldBePositive && arr[j] < 0)) {
+            if((shouldBePositive && arr[j] > 0) || (!shouldBePositive && arr[j] < 0)) {
                 swap(arr[i], arr[j]);
                 break;
             }
