@@ -6,14 +6,27 @@ vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
     for(int i = 0; i < n; i++) {
         for(int j = i + 1; j < n; j++) {
-            //Negative number on Even Index
-            if(arr[i] < 0 && (i % 2 == 0)) {
+            //If +ve on correct place
+            if(arr[i] > 0 && (i % 2 == 0)) {
+               break;
+            }
+
+            //If -ve on correct place
+            else if(arr[i] < 0 && (i % 2 != 0)) {
+               break;
+            }
+
+            //If Negative number on Even Index
+            else if(arr[i] < 0 && (i % 2 == 0)) {
                 if(arr[j] > 0) {
                    swap(arr[i], arr[j]); 
                    break;
                 }
             }
-            else if(arr[i] > 0 && (i % 2 != 0))
+            //If Positive number on Odd Index
+            else if(arr[i] > 0 && (i % 2 != 0)) {
+
+            }
         }
     }
 }
