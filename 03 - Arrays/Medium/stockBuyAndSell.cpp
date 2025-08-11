@@ -6,16 +6,12 @@ using namespace std;
 int stockBuyAndSell(vector<int> &prices) {
     int n = prices.size();
     int maxProfit = 0;
-    int buyDay, sellDay;
     for(int i = 0; i < n; i++) {
-        buyDay = i;
-        int profit = 0;
         for(int j = i + 1; j < n - 1 ; j++) {
-            sellDay = j;
-            profit = prices[i] - prices[j];
+            maxProfit = max(maxProfit, prices[j] - prices[i]);
         }
-        maxProfit = max(profit, maxProfit);
     }
+    return maxProfit;
 }
 
 int main() {
