@@ -21,9 +21,9 @@ int maxSubArraySum(vector<int> &arr) {
 //Better - TC: O(N^2), SC: O(1)
 int maxSubArraySum2(vector<int> &arr) {
   int n = arr.size();
-  int maxSum = INT_MIN;
+  long long maxSum = LONG_MIN;
   for(int i = 0; i < n; i++) {
-    int sum = 0;
+    long long sum = 0;
     for(int j = i; j < n; j++) {
       sum += arr[j];
       maxSum = max(sum, maxSum);
