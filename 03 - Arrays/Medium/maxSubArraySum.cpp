@@ -16,6 +16,22 @@ int maxSubArraySum(vector<int> &arr) {
   return maxSum; 
 }
 
+//Brute - TC: O(N^2), SC: O(1)
+int maxSubArraySum(vector<int> &arr) {
+  int n = arr.size();
+  int maxSum = INT_MIN;
+  for(int i = 0; i < n; i++) {
+    for(int j = i; j < n; j++) {
+      int sum = 0;
+      for(int k = i; k <= j; k++){
+        sum += arr[k];
+      }
+      maxSum = max(sum, maxSum);
+    }
+  }
+  return maxSum; 
+}
+
 //Optimal - TC: O(N), SC: O(1)
 int maxSubArraySum2(vector<int> &arr) {
   int n = arr.size();
