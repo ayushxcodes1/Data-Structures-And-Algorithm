@@ -51,9 +51,6 @@ vector<int> rearrangeArray(vector<int> arr) {
     for(int i = 0; i < n; i++) {
 
     }
-    else {
-        
-    }
 }
 
 
