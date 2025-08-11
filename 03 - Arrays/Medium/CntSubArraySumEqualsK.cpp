@@ -33,7 +33,10 @@ int maxSubArraySum2(vector<int> &arr, int k) {
 } 
 
 //Optimal - TC: O(N), SC: O(1)
-
+int maxSubArraySum2(vector<int> &arr, int k) {
+    int n = arr.size();
+   
+} 
 
 int main() {
   vector<int> arr = {1, 1, 1};
