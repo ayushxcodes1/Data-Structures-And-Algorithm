@@ -56,6 +56,13 @@ vector<int> rearrangeArray(vector<int> arr) {
            neg.push_back(arr[i]);
         }
     }
+
+    if(pos.size() > neg.size()) {
+
+    }
+    else {
+        
+    }
 }
 
 
