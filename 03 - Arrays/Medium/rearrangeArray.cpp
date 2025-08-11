@@ -24,7 +24,7 @@ vector<int> rearrangeArray(vector<int> arr) {
 }
 
 //Optimal - TC: O(N), SC: O(N)
-vector<int> rearrangeArray(vector<int> arr) {
+vector<int> rearrangeArray2(vector<int> arr) {
     int n = arr.size();
     vector<int> ans(n);
     int posIndex = 0, negIndex = 1;
@@ -51,7 +51,7 @@ int main() {
 
   cout << endl;
 
-  vector<int> res2 = rearrangeArray(arr);
+  vector<int> res2 = rearrangeArray2(arr);
   for(auto it : res2) {
     cout << it << " ";
   }
