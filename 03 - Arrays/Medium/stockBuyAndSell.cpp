@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute - TC: O(N^2), SC: O(1)
 int stockBuyAndSell(vector<int> &prices) {
     int n = prices.size();
     int maxProfit = 0;
