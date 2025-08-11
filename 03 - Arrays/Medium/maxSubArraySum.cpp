@@ -80,7 +80,7 @@ int main() {
   cout << "Max SubArray Sum is " << res2 << "\n";
 
   int res3 = maxSubArraySum3(arr);
-  cout << "Max SubArray Sum is " << res2 << "\n";
+  cout << "Max SubArray Sum is " << res3 << "\n";
 
   printMaxSumSubArray(arr);
 
