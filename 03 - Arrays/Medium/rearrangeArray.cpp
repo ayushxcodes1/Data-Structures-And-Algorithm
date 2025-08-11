@@ -44,7 +44,7 @@ vector<int> rearrangeArray2(vector<int> arr) {
 
 /* Variety 2 - positives & negatives are not equal */
 
-//Optimal- TC: O(2N), SC: O(N)
+//TC: O(2N), SC: O(N)
 vector<int> rearrangeArray3(vector<int> arr) {
     int n = arr.size();
     vector<int> pos, neg;
