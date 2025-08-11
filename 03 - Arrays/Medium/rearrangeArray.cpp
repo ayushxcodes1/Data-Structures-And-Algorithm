@@ -5,30 +5,18 @@ using namespace std;
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
     for(int i = 0; i < n; i++) {
+        bool shouldBePositive = (i % 2 == 0);
+
+        // If number at i is already correct, skip
+        if((shouldBePositive && arr[i] > 0) || (!shouldBePositive && arr[i] < 0)) {
+            continue;
+        }
+
+        // Otherwise, find the next opposite sign to swap
         for(int j = i + 1; j < n; j++) {
-            //If +ve on correct place
-            if(arr[i] > 0 && (i % 2 == 0)) {
-               break;
-            }
-
-            //If -ve on correct place
-            else if(arr[i] < 0 && (i % 2 != 0)) {
-               break;
-            }
-
-            //If Negative number on Even Index
-            else if(arr[i] < 0 && (i % 2 == 0)) {
-                if(arr[j] > 0) {
-                   swap(arr[i], arr[j]); 
-                   break;
-                }
-            }
-            //If Positive number on Odd Index
-            else if(arr[i] > 0 && (i % 2 != 0)) {
-                if(arr[j] < 0) {
-                   swap(arr[i], arr[j]); 
-                   break;
-                }
+            if((shouldBePositive && arr[i] > 0) || (!shouldBePositive && arr[j] < 0)) {
+                swap(arr[i], arr[j]);
+                break;
             }
         }
     }
