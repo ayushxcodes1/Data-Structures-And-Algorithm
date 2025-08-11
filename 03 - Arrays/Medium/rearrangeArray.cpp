@@ -99,6 +99,12 @@ int main() {
   for(auto it : res2) {
     cout << it << " ";
   }
+
+  vector<int> arr2 = {-3, -1, 2, -5, 4, 8, -6};
+  vector<int> res3 = rearrangeArray2(arr);
+  for(auto it : res3) {
+    cout << it << " ";
+  }
   
   return 0;
 }
