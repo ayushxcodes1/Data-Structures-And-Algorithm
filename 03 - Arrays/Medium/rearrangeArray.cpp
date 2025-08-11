@@ -27,7 +27,7 @@ vector<int> rearrangeArray(vector<int> arr) {
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
     vector<int> ans = arr;
-    int pos = arr[0], neg = arr[1];
+    int posIndex = arr[0], negIndex = arr[1];
 }
 
 int main() {
