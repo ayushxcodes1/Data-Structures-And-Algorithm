@@ -45,7 +45,7 @@ vector<int> rearrangeArray2(vector<int> arr) {
 /* Variety 2 - positives & negatives are not equal */
 
 //Brute Force - TC: O(2N), SC: O(N)
-vector<int> rearrangeArray(vector<int> arr) {
+vector<int> rearrangeArray3(vector<int> arr) {
     int n = arr.size();
     vector<int> pos, neg;
     for(int i = 0; i < n; i++) {
@@ -101,7 +101,7 @@ int main() {
   }
 
   vector<int> arr2 = {-3, -1, 2, -5, 4, 8, -6};
-  vector<int> res3 = rearrangeArray2(arr);
+  vector<int> res3 = rearrangeArray3(arr2);
   for(auto it : res3) {
     cout << it << " ";
   }
