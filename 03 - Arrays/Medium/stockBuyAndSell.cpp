@@ -3,7 +3,7 @@
 using namespace std;
 
 int stockBuyAndSell(vector<int> &prices) {
-    int n = arr.size();
+    int n = prices.size();
     int maxProfit = 0;
     int buyDay, sellDay;
     for(int i = 0; i < n; i++) {
