@@ -45,7 +45,7 @@ vector<int> rearrangeArray2(vector<int> arr) {
 
 /* Variety 2 - positives & negatives are not equal */
 
-//Brute Force - TC: O(N + N/2), SC: O(N)
+//Brute Force - TC: O(2N), SC: O(N)
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
     vector<int> pos;
