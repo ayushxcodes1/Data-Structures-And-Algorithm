@@ -2,6 +2,8 @@
 
 using namespace std;
 
+/* Variety 1 - positives & negatives are equal */
+
 //Brute Force - TC: O(N + N/2), SC: O(N)
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
@@ -40,6 +42,9 @@ vector<int> rearrangeArray2(vector<int> arr) {
     }
     return ans;
 }
+
+/* Variety 2 - positives & negatives are not equal */
+
 
 int main() {
   vector<int> arr = {-3, -1, 2, -5, 4, 8};
