@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(2N), SC: O(N)
+//Brute Force - TC: O(N + N/2), SC: O(N)
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
     vector<int> pos;
