@@ -11,7 +11,7 @@ int stockBuyAndSell(vector<int> &prices) {
         int profit = 0;
         for(int j = i + 1; j < n - 1 ; j++) {
             sellDay = j;
-            profit = arr[i] - arr[j];
+            profit = prices[i] - prices[j];
         }
         maxProfit = max(profit, maxProfit);
     }
