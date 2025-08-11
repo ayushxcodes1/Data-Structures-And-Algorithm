@@ -25,7 +25,10 @@ vector<int> rearrangeArray(vector<int> arr) {
             }
             //If Positive number on Odd Index
             else if(arr[i] > 0 && (i % 2 != 0)) {
-
+                if(arr[j] < 0) {
+                   swap(arr[i], arr[j]); 
+                   break;
+                }
             }
         }
     }
