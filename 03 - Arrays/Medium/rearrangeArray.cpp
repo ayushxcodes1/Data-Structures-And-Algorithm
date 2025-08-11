@@ -81,7 +81,7 @@ vector<int> rearrangeArray(vector<int> arr) {
             index++;
         }
     }
-    
+    return arr;
 }
 
 
