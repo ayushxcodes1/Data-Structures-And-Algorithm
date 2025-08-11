@@ -4,20 +4,14 @@ using namespace std;
 
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
+    vector<int> positives;
+    vector<int> negatives;
     for(int i = 0; i < n; i++) {
-        bool shouldBePositive = (i % 2 == 0);
-
-        // If number at i is already correct, skip
-        if((shouldBePositive && arr[i] > 0) || (!shouldBePositive && arr[i] < 0)) {
-            continue;
+        if(arr[i] > 0) {
+           positives.push_back(arr[i]);
         }
-
-        // Otherwise, find the next opposite sign to swap
-        for(int j = i + 1; j < n; j++) {
-            if((shouldBePositive && arr[j] > 0) || (!shouldBePositive && arr[j] < 0)) {
-                swap(arr[i], arr[j]);
-                break;
-            }
+        else {
+           negatives.push_back(arr[i]);
         }
     }
     return arr;
