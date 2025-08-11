@@ -47,7 +47,7 @@ int maxSubArraySum3(vector<int> &arr) {
 //Follow Up - Print the SubArray with Maximum Sum
 void printMaxSumSubArray(vector<int> &arr) {
   int n = arr.size();
-  int sum = 0, maxSum = INT_MIN;
+  long long sum = 0, maxSum = LONG_MIN;
   int start = 0, ansStart = -1, ansEnd = -1;
 
   for(int i = 0; i < n; i++) {
