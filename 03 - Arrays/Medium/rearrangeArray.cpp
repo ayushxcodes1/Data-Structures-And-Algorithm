@@ -32,6 +32,7 @@ vector<int> rearrangeArray(vector<int> arr) {
             }
         }
     }
+    return arr;
 }
 
 int main() {
