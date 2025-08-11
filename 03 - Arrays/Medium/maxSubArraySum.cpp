@@ -35,7 +35,7 @@ int maxSubArraySum2(vector<int> &arr) {
 //Optimal - TC: O(N), SC: O(1)
 int maxSubArraySum3(vector<int> &arr) {
   int n = arr.size();
-  int sum = 0, maxSum = INT_MIN;
+  long long sum = 0, maxSum = LONG_MIN;
   for(int i = 0; i < n; i++) {
     sum += arr[i];
     maxSum = max(maxSum, sum);
