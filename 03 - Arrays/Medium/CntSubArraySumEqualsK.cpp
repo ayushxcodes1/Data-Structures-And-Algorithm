@@ -38,6 +38,8 @@ int main() {
   int ans = maxSubArraySum(arr, 2);
   cout << ans;
 
+  cout << endl;
+
   int ans2 = maxSubArraySum2(arr, 2);
   cout << ans2;
   return 0;
