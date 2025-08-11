@@ -15,17 +15,11 @@ vector<int> rearrangeArray(vector<int> arr) {
         }
     }
 
-    for(int i = 0; i < n; i++) {
-        if(i % 2 == 0) {
-           arr[i] = pos[i];
-        } 
+    for(int i = 0; i < n / 2; i++) {
+        arr[2 * i] = pos[i];
+        arr[2 * i + 1] = neg[i];
     }
-
-    for(int i = 0; i < n; i++) {
-        if(i % 2 != 0) {
-           arr[i] = neg[i];
-        } 
-    }
+    
     return arr;
 }
 
