@@ -4,15 +4,27 @@ using namespace std;
 
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
-    vector<int> positives;
-    vector<int> negatives;
+    vector<int> pos;
+    vector<int> neg;
     for(int i = 0; i < n; i++) {
         if(arr[i] > 0) {
-           positives.push_back(arr[i]);
+           pos.push_back(arr[i]);
         }
         else {
-           negatives.push_back(arr[i]);
+           neg.push_back(arr[i]);
         }
+    }
+
+    for(int i = 0; i < n; i++) {
+        if(i % 2 == 0) {
+           arr[i] = pos[i];
+        } 
+    }
+
+    for(int i = 0; i < n; i++) {
+        if(i % 2 != 0) {
+           arr[i] = neg[i];
+        } 
     }
     return arr;
 }
