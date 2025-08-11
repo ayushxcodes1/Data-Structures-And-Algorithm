@@ -17,11 +17,12 @@ int stockBuyAndSell(vector<int> &prices) {
 //Optimal - TC: O(N), SC: O(1)
 int stockBuyAndSell2(vector<int> &prices) {
     int n = prices.size();
+    int mini = prices[0];
     int maxProfit = 0;
     for(int i = 0; i < n; i++) {
-        for(int j = i + 1; j < n - 1 ; j++) {
-            maxProfit = max(maxProfit, prices[j] - prices[i]);
-        }
+        int cost = prices[i] - mini;
+        maxProfit = max(maxProfit, cost);
+        mini = min(mini, prices[i]);
     }
     return maxProfit;
 }
