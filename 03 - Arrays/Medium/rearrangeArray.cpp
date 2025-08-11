@@ -100,6 +100,8 @@ int main() {
     cout << it << " ";
   }
 
+  cout << endl;
+
   vector<int> arr2 = {-3, -1, 2, -5, 4, 8, -6};
   vector<int> res3 = rearrangeArray3(arr2);
   for(auto it : res3) {
