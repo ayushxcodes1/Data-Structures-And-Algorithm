@@ -26,7 +26,7 @@ vector<int> rearrangeArray(vector<int> arr) {
 //Optimal - TC: O(N), SC: O(N)
 vector<int> rearrangeArray(vector<int> arr) {
     int n = arr.size();
-    vector<int> temp = arr;
+    vector<int> ans = arr;
     int pos = arr[0], neg = arr[1];
 }
 
