@@ -32,7 +32,7 @@ int maxSubArraySum2(vector<int> &arr, int k) {
     return cnt; 
 } 
 
-//Optimal
+//Optimal - TC: O(N), SC: O(1)
 
 
 int main() {
