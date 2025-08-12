@@ -38,8 +38,14 @@ vector<int> nextPermutation2(vector<int> arr) {
 
 int main() {
   vector<int> arr = {3, 2, 1};
+
   vector<int> ans = nextPermutation(arr);
   for(auto num : ans) {
+    cout << num << " ";
+  }
+
+  vector<int> ans2 = nextPermutation(arr);
+  for(auto num : ans2) {
     cout << num << " ";
   }
   return 0;
