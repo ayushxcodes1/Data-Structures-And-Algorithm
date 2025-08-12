@@ -11,6 +11,10 @@ vector<int> nextPermutation(vector<int> arr) {
 }
 
 //Optimal 
+vector<int> nextPermutation(vector<int> arr) {
+    next_permutation(arr.begin(), arr.end());
+    return arr;
+}
 
 
 int main() {
