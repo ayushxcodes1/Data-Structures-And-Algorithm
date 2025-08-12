@@ -33,9 +33,9 @@ int longestConsecutiveSequence2(vector<int> &arr) {
     sort(arr.begin(), arr.end());
     
     int n = arr.size();
-    int longest = 1, lastSmaller = INT_MIN, cntCurr = 0;
+    int longest = 1, cntCurr = 0, lastSmaller = INT_MIN;
     for(int i = 0; i < n; i++) {
-     
+        
     }
     return cntCurr;
 }
