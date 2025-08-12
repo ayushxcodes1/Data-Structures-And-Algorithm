@@ -32,6 +32,8 @@ vector<int> nextPermutation(vector<int> arr) {
         }
     }
 
+    reverse(arr.begin() + ind + 1, arr.end());
+
     return arr;
 }
 
