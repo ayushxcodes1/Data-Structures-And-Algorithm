@@ -39,7 +39,7 @@ int maxSubArraySum2(vector<int> &arr, int k) {
   mpp[0] = 1;
   int preSum = 0, cnt = 0;
   for(int i = 0; i < n; i++) {
-
+    preSum += arr[i];
   }
   
   return cnt;
