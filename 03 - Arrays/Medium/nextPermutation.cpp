@@ -22,6 +22,7 @@ vector<int> nextPermutation(vector<int> arr) {
     }
     if(ind == -1) {
        reverse(arr.begin(), arr.end());
+       return arr;
     }
     return arr;
 }
