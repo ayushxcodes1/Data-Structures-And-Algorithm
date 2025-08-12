@@ -44,6 +44,8 @@ int main() {
     cout << it << " "; 
   }
 
+  cout << endl;
+
   vector<int> ans2 = arrayLeaders2(arr);
   cout << "Leaders: ";
   for(auto it : ans2) {
