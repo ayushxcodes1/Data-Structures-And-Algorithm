@@ -30,6 +30,8 @@ int longestConsecutiveSequence(vector<int> &arr) {
 
 //Better - TC: O(), SC: O(1)
 int longestConsecutiveSequence2(vector<int> &arr) {
+    sort(arr.begin(), arr.end());
+    
     int n = arr.size();
     int longest = 1;
     int cnt;
