@@ -12,7 +12,11 @@ vector<int> nextPermutation(vector<int> arr) {
 
 //Optimal 
 vector<int> nextPermutation(vector<int> arr) {
-    
+    int n = arr.size();
+    int ind = -1;
+    for(int i = n - 1; i >= 0; i--) {
+        
+    }
     return arr;
 }
 
