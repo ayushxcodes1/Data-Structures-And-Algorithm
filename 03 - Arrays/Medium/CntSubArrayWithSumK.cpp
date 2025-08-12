@@ -55,12 +55,12 @@ int main() {
 
   cout << endl;
 
-  int ans2 = CntSubArray(arr, 2);
+  int ans2 = CntSubArray2(arr, 2);
   cout << ans2;
 
   cout << endl;
 
-  int ans3 = CntSubArray(arr, 2);
+  int ans3 = CntSubArray3(arr, 2);
   cout << ans3;
   return 0;
 }
