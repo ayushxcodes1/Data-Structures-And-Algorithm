@@ -21,7 +21,7 @@ vector<int> arrayLeaders(vector<int> &arr) {
     return ans;
 }
 
-//Optimal
+//Optimal - TC: O(N), SC: O(N)
 vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
     vector<int> ans;
