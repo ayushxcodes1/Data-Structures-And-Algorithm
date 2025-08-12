@@ -29,6 +29,7 @@ int longestConsecutiveSequence(vector<int> &arr) {
 
 int main() {
   vector<int> arr = {102, 4, 100, 1, 101, 3, 2, 1, 1};
-
+  int ans = longestConsecutiveSequence(arr); 
+  cout << ans;
   return 0;
 }
