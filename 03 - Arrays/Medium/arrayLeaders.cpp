@@ -5,7 +5,7 @@ using namespace std;
 //Brute Force - TC: O(N^2), SC: O(N)
 vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
-    vector<int> leaders;
+    vector<int> ans;
     for(int i = 0; i < n; i++) {
         bool leader = true;
         for(int j = i + 1; j < n; j++) {
@@ -15,10 +15,10 @@ vector<int> arrayLeaders(vector<int> &arr) {
             }
         }
         if(leader) {
-            leaders.push_back(arr[i]);
+            ans.push_back(arr[i]);
         }
     }
-    return leaders;
+    return ans;
 }
 
 //Better
