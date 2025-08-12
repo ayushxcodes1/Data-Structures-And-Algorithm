@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(N), SC: O(1)
 vector<int> nextPermutation(vector<int> arr) {
     next_permutation(arr.begin(), arr.end());
     return arr;
