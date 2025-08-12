@@ -62,6 +62,10 @@ int longestConsecutiveSequence3(vector<int> &arr) {
         st.insert(arr[i]);
     }
 
+    for(auto it : st) {
+        
+    }
+
     return longest;
 }
 
