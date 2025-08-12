@@ -6,17 +6,17 @@ using namespace std;
 vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
     vector<int> leaders;
-    for(int i = 0; i < n - 1; i++) {
-        bool leader = false;
+    for(int i = 0; i < n; i++) {
+        bool leader = true;
         for(int j = i + 1; j < n; j++) {
-            if(!(arr[i] >= arr[j])) {
+            if(arr[j] > arr[i]) {
+               leader = false;
                break;
             }
         }
-        leaders.push_back(arr[i]);
-    }
-    if(leader) {
-        leaders.push_back(arr[n - 1]);
+        if(leader) {
+            leaders.push_back(arr[i]);
+        }
     }
     return leaders;
 }
