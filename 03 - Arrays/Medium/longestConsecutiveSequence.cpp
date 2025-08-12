@@ -49,7 +49,6 @@ int longestConsecutiveSequence2(vector<int> &arr) {
         }
     }
     longest = max(longest, cnt);
-
     return longest;
 }
 
