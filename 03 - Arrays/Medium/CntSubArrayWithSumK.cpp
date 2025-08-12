@@ -32,7 +32,7 @@ int maxSubArraySum2(vector<int> &arr, int k) {
     return cnt; 
 } 
 
-//Optimal - TC: O(N), SC: O(1)
+//Optimal - TC: O(N * logN), SC: O(1)
 int maxSubArraySum3(vector<int> &arr, int k) {
   int n = arr.size();
   map<int, int> mpp;
