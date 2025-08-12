@@ -21,8 +21,8 @@ vector<int> nextPermutation(vector<int> arr) {
       }
   }
   if(ind == -1) {
-      reverse(arr.begin(), arr.end());
-      return arr;
+    reverse(arr.begin(), arr.end());
+    return arr;
   }
 
   for(int i = n - 1; i > ind; i--) {
