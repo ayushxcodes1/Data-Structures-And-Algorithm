@@ -30,7 +30,6 @@ vector<int> nextPermutation(vector<int> arr) {
         swap(arr[i], arr[ind]);
         break;
       }
-
   }
 
   reverse(arr.begin() + ind + 1, arr.end());
