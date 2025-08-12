@@ -3,7 +3,7 @@
 using namespace std;
 
 int longestConsecutiveSequence(vector<int> &arr) {
-    
+    int n = arr.size();
 }
 
 int main() {
