@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//No Brute Solution exist
+//Brute Force - TC: O(N^2 * N!), SC: O(N * N!) - very slow
 
 //Better - TC: O(N), SC: O(1) - Using STL
 vector<int> nextPermutation(vector<int> arr) {
