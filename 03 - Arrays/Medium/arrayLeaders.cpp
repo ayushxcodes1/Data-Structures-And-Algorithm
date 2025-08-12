@@ -30,6 +30,7 @@ vector<int> arrayLeaders(vector<int> &arr) {
         if(arr[i] > maxi) {
            ans.push_back(arr[i]);
         }
+        maxi = max(maxi, arr[i]);
     }
 }
 
