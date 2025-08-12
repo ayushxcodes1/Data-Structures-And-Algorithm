@@ -37,7 +37,8 @@ int maxSubArraySum2(vector<int> &arr, int k) {
   map<int, int> mpp;
   mpp[0] = 1;
   int preSum = 0, cnt = 0;
-   
+  
+  return cnt;
 } 
 
 int main() {
