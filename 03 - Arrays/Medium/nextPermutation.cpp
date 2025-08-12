@@ -36,7 +36,6 @@ vector<int> nextPermutation(vector<int> arr) {
     return arr;
 }
 
-
 int main() {
   vector<int> arr = {3, 2, 1};
   vector<int> ans = nextPermutation(arr);
