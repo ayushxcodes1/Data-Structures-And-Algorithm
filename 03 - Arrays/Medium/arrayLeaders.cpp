@@ -25,6 +25,7 @@ vector<int> arrayLeaders(vector<int> &arr) {
 vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
     vector<int> ans;
+    int maxi = INT_MIN;
     for(int i = 0; i < n; i++) {
        
     }
