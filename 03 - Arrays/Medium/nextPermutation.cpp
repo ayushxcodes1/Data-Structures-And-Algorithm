@@ -44,6 +44,8 @@ int main() {
     cout << num << " ";
   }
 
+  cout << endl;
+
   vector<int> ans2 = nextPermutation(arr);
   for(auto num : ans2) {
     cout << num << " ";
