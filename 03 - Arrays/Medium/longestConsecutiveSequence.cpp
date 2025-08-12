@@ -59,9 +59,8 @@ int longestConsecutiveSequence3(vector<int> &arr) {
     int longest = 1;
     unordered_set<int> st;
     for(int i = 0; i < n; i++) {
-        
-    }
 
+    }
 
     return longest;
 }
