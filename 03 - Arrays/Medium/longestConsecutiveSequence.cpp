@@ -56,8 +56,9 @@ int longestConsecutiveSequence2(vector<int> &arr) {
 int longestConsecutiveSequence3(vector<int> &arr) {
     int n = arr.size();
     if(n == 0) return 0;
-    
-    
+    int longest = 1;
+
+    return longest;
 }
 
 int main() {
