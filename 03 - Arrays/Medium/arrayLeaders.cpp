@@ -22,6 +22,9 @@ vector<int> arrayLeaders(vector<int> arr) {
 
 int main() {
   vector<int> arr = {16, 17, 4, 3, 5, 2};
-
+  vector<int> ans = arrayLeaders(arr);
+  for(auto it : ans) {
+    cout << it << " "; 
+  }
   return 0;
 }
