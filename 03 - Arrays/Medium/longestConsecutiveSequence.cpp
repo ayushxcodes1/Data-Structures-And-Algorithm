@@ -5,7 +5,9 @@ using namespace std;
 int longestConsecutiveSequence(vector<int> &arr) {
     int n = arr.size();
     int longest = 1;
-    
+    for(int i = 0; i < n; i++) {
+        
+    }
 }
 
 int main() {
