@@ -20,8 +20,8 @@ int longestConsecutiveSequence(vector<int> &arr) {
         int x = arr[i];
         cnt = 1;
         while(ls(arr, x + 1) == true) {
-            x = x + 1;
-            cnt = cnt + 1;
+            x += 1;
+            cnt += 1;
         }
     }
     return cnt;
