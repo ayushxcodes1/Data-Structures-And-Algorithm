@@ -85,8 +85,8 @@ int main() {
 
   int ans2 = longestConsecutiveSequence2(arr); 
   cout << ans2;
-  
-  int ans2 = longestConsecutiveSequence2(arr); 
-  cout << ans2;
+
+  int ans3 = longestConsecutiveSequence3(arr); 
+  cout << ans3;
   return 0;
 }
