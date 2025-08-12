@@ -32,7 +32,7 @@ vector<int> leaders2(vector<int> &arr) {
     }
     maxi = max(maxi, arr[i]);
   }
-  //if needs to return in original order - reverse: O(N)
+  //if needs to return in left-to-right order - reverse: O(N)
   //if needs to return in sorted order - sort: O(NlogN)
   return ans;
 }
