@@ -48,7 +48,9 @@ int longestConsecutiveSequence2(vector<int> &arr) {
             lastSmaller = arr[i];
         }
     }
-    return cnt;
+    longest = max(longest, cnt);
+
+    return longest;
 }
 
 int main() {
