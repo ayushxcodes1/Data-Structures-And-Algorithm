@@ -21,7 +21,7 @@ vector<int> arrayLeaders(vector<int> &arr) {
     return ans;
 }
 
-//Better
+//Optimal
 vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
     for(int i = 0; i < n; i++) {
