@@ -67,8 +67,10 @@ int longestConsecutiveSequence3(vector<int> &arr) {
             int cnt = 1;
             int x = it;
             while(st.find(x + 1) != st.end()) {
-                
+                x = x + 1;
+                cnt = cnt + 1;
             }
+            longest = max(longest, cnt);
         }    
     }
 
