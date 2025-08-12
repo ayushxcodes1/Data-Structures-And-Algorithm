@@ -32,6 +32,7 @@ vector<int> arrayLeaders(vector<int> &arr) {
         }
         maxi = max(maxi, arr[i]);
     }
+    return maxi;
 }
 
 int main() {
