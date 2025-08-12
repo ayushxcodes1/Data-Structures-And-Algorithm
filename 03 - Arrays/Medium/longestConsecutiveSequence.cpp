@@ -30,11 +30,11 @@ int longestConsecutiveSequence(vector<int> &arr) {
 
 //Better - TC: O(NlogN + N), SC: O(1)
 int longestConsecutiveSequence2(vector<int> &arr) {
-    int n = arr.size();
-    if(n == 0) return 0;
-
+    if(arr.size() == 0) return 0;
+    
     sort(arr.begin(), arr.end());
     
+    int n = arr.size();
     int lastSmaller = INT_MIN;
     int cnt = 0;
     int longest = 1;  
