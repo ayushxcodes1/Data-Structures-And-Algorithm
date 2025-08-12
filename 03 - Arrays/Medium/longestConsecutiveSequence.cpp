@@ -15,9 +15,10 @@ int ls(vector<int> arr, int num) {
 int longestConsecutiveSequence(vector<int> &arr) {
     int n = arr.size();
     int longest = 1;
+    int cnt;
     for(int i = 0; i < n; i++) {
         int x = arr[i];
-        int cnt = 1;
+        cnt = 1;
         while(ls(arr, x + 1) == true) {
             x = x + 1;
             cnt = cnt + 1;
