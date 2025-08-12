@@ -43,6 +43,10 @@ int longestConsecutiveSequence2(vector<int> &arr) {
            cnt += 1;
            lastSmaller = arr[i];
         }
+        else if(lastSmaller != arr[i]) {
+            cnt = 1;
+            lastSmaller = arr[i];
+        }
     }
     return cnt;
 }
