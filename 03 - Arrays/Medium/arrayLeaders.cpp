@@ -15,7 +15,9 @@ vector<int> arrayLeaders(vector<int> &arr) {
         }
         leaders.push_back(arr[i]);
     }
-    leaders.push_back(arr[n - 1]);
+    if(leader) {
+        leaders.push_back(arr[n - 1]);
+    }
     return leaders;
 }
 
