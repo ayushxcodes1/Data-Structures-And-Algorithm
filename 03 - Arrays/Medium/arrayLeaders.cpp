@@ -6,7 +6,7 @@ using namespace std;
 vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
     vector<int> leaders;
-    int leader = -1;
+    bool leader = false;
     for(int i = 0; i < n - 1; i++) {
         leader = arr[i];
         for(int j = i + 1; j < n; j++) {
