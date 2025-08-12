@@ -6,8 +6,8 @@ using namespace std;
 
 //Better - TC: O(N), SC: O(1) - Using STL
 vector<int> nextPermutation(vector<int> arr) {
-    next_permutation(arr.begin(), arr.end());
-    return arr;
+  next_permutation(arr.begin(), arr.end());
+  return arr;
 }
 
 //Optimal - TC: O(3N), SC: O(1)
