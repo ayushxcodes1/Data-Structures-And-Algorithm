@@ -11,7 +11,7 @@ vector<int> nextPermutation(vector<int> arr) {
 }
 
 //Optimal - TC: O(3N), SC: O(1)
-vector<int> nextPermutation(vector<int> arr) {
+vector<int> nextPermutation2(vector<int> arr) {
   int n = arr.size();
   int ind = -1;
   for(int i = n - 2; i >= 0; i--) {
