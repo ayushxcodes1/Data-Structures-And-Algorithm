@@ -37,7 +37,7 @@ int longestConsecutiveSequence2(vector<int> &arr) {
     for(int i = 0; i < n; i++) {
      
     }
-    return cnt;
+    return cntCurr;
 }
 
 int main() {
