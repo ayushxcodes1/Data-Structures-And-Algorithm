@@ -2,7 +2,9 @@
 
 using namespace std;
 
-//Better - TC: O(N), SC: O(1)
+//No Brute Solution exist
+
+//Better - TC: O(N), SC: O(1) - Using STL
 vector<int> nextPermutation(vector<int> arr) {
     next_permutation(arr.begin(), arr.end());
     return arr;
