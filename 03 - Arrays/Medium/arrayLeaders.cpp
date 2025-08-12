@@ -27,7 +27,6 @@ vector<int> arrayLeaders(vector<int> &arr) {
     for(int i = 0; i < n; i++) {
        
     }
-    return leaders;
 }
 
 int main() {
