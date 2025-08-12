@@ -35,11 +35,13 @@ int longestConsecutiveSequence2(vector<int> &arr) {
 
     sort(arr.begin(), arr.end());
     
-    int longest = 1, cnt = 0, lastSmaller = INT_MIN;
+    int lastSmaller = INT_MIN;
+    int cnt = 0;
+    int longest = 1;  
     for(int i = 0; i < n; i++) {
         
     }
-    return cntCurr;
+    return cnt;
 }
 
 int main() {
