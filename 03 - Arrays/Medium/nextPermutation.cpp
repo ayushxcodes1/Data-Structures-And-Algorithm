@@ -27,8 +27,8 @@ vector<int> nextPermutation(vector<int> arr) {
 
   for(int i = n - 1; i > ind; i--) {
       if(arr[i] < arr[ind]) {
-          swap(arr[i], arr[ind]);
-          break;
+        swap(arr[i], arr[ind]);
+        break;
       }
 
   }
