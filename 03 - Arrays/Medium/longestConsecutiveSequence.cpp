@@ -12,6 +12,7 @@ int ls(vector<int> arr, int num) {
     return false;
 }
 
+//Brute Force - TC: O(N^3), SC: O(1)
 int longestConsecutiveSequence(vector<int> &arr) {
     int n = arr.size();
     int longest = 1;
