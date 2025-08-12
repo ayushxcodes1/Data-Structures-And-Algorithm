@@ -4,6 +4,8 @@ using namespace std;
 
 int longestConsecutiveSequence(vector<int> &arr) {
     int n = arr.size();
+    int longest = 1;
+    
 }
 
 int main() {
