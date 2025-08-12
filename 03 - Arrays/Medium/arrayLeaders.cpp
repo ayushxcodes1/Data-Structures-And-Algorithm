@@ -21,6 +21,15 @@ vector<int> arrayLeaders(vector<int> &arr) {
     return leaders;
 }
 
+//Better
+vector<int> arrayLeaders(vector<int> &arr) {
+    int n = arr.size();
+    for(int i = 0; i < n; i++) {
+       
+    }
+    return leaders;
+}
+
 int main() {
   vector<int> arr = {16, 17, 4, 3, 5, 2};
   vector<int> ans = arrayLeaders(arr);
