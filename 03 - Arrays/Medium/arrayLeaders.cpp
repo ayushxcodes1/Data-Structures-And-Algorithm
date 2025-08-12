@@ -3,14 +3,14 @@
 using namespace std;
 
 //Brute Force
-vector<int> arrayLeaders(vector<int> arr) {
+vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
     vector<int> leaders;
     int leader = -1;
     for(int i = 0; i < n - 1; i++) {
         leader = arr[i];
         for(int j = i + 1; j < n; j++) {
-            if(!(arr[j] >= arr[i])) {
+            if(!(arr[i] >= arr[j])) {
                break;
             }
         }
