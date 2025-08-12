@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - very slow for large numbers
+//Brute Force - very slow
 
 //Better - TC: O(N), SC: O(1) - Using STL
 vector<int> nextPermutation(vector<int> arr) {
