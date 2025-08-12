@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute - TC: O(N^3), SC: O(1)
-int CntSubArray(vector<int> &arr, int x) {
+int cntSubArray(vector<int> &arr, int x) {
   int n = arr.size();
   int cnt = 0;
   for(int i = 0; i < n; i++) {
@@ -19,7 +19,7 @@ int CntSubArray(vector<int> &arr, int x) {
 }
 
 //Better - TC: O(N^2), SC: O(1)
-int CntSubArray2(vector<int> &arr, int k) {
+int cntSubArray2(vector<int> &arr, int k) {
     int n = arr.size();
     int cnt = 0;
     for(int i = 0; i < n; i++) {
@@ -33,7 +33,7 @@ int CntSubArray2(vector<int> &arr, int k) {
 } 
 
 //Optimal - TC: O(N * logN), SC: O(1)
-int CntSubArray3(vector<int> &arr, int k) {
+int cntSubArray3(vector<int> &arr, int k) {
   int n = arr.size();
   map<int, int> mpp;
   mpp[0] = 1;
