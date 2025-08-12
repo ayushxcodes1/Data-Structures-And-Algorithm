@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force
+//Brute Force - TC: O(N^2), SC: O(N)
 vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
     vector<int> leaders;
