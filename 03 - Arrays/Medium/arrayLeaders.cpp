@@ -22,7 +22,7 @@ vector<int> arrayLeaders(vector<int> &arr) {
 }
 
 //Optimal - TC: O(N), SC: O(N)
-vector<int> arrayLeaders(vector<int> &arr) {
+vector<int> arrayLeaders2(vector<int> &arr) {
     int n = arr.size();
     vector<int> ans;
     int maxi = INT_MIN;
@@ -37,9 +37,16 @@ vector<int> arrayLeaders(vector<int> &arr) {
 
 int main() {
   vector<int> arr = {16, 17, 4, 3, 5, 2};
+
   vector<int> ans = arrayLeaders(arr);
   cout << "Leaders: ";
   for(auto it : ans) {
+    cout << it << " "; 
+  }
+
+  vector<int> ans2 = arrayLeaders2(arr);
+  cout << "Leaders: ";
+  for(auto it : ans2) {
     cout << it << " "; 
   }
   return 0;
