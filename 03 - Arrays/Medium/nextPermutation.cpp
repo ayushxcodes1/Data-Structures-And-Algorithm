@@ -10,7 +10,7 @@ vector<int> nextPermutation(vector<int> arr) {
     return arr;
 }
 
-//Optimal 
+//Optimal - TC: O(3N), SC: O(1)
 vector<int> nextPermutation(vector<int> arr) {
     int n = arr.size();
     int ind = -1;
