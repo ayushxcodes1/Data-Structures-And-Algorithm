@@ -52,9 +52,14 @@ int longestConsecutiveSequence2(vector<int> &arr) {
     return longest;
 }
 
+
+
 int main() {
   vector<int> arr = {102, 4, 100, 1, 101, 3, 2, 1, 1};
   int ans = longestConsecutiveSequence(arr); 
   cout << ans;
+
+  int ans2 = longestConsecutiveSequence2(arr); 
+  cout << ans2;
   return 0;
 }
