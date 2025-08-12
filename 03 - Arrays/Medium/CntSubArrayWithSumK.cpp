@@ -25,8 +25,8 @@ int cntSubArray2(vector<int> &arr, int k) {
     for(int i = 0; i < n; i++) {
         int sum = 0;
         for(int j = i; j < n; j++) {
-            sum += arr[j];
-            if(sum == k) cnt++;
+          sum += arr[j];
+          if(sum == k) cnt++;
         }
     }
     return cnt; 
