@@ -8,7 +8,6 @@ vector<int> arrayLeaders(vector<int> &arr) {
     vector<int> leaders;
     bool leader = false;
     for(int i = 0; i < n - 1; i++) {
-        leader = arr[i];
         for(int j = i + 1; j < n; j++) {
             if(!(arr[i] >= arr[j])) {
                break;
