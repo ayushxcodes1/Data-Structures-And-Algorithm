@@ -57,5 +57,8 @@ int main() {
 
   int ans2 = maxSubArraySum2(arr, 2);
   cout << ans2;
+
+  int ans3 = maxSubArraySum3(arr, 2);
+  cout << ans3;
   return 0;
 }
