@@ -6,8 +6,8 @@ using namespace std;
 vector<int> arrayLeaders(vector<int> &arr) {
     int n = arr.size();
     vector<int> leaders;
-    bool leader = false;
     for(int i = 0; i < n - 1; i++) {
+        bool leader = false;
         for(int j = i + 1; j < n; j++) {
             if(!(arr[i] >= arr[j])) {
                break;
