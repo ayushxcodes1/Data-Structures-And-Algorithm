@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute - TC: O(N^3), SC: O(1)
-int maxSubArraySum(vector<int> &arr, int x) {
+int CntSubArray(vector<int> &arr, int x) {
   int n = arr.size();
   int cnt = 0;
   for(int i = 0; i < n; i++) {
@@ -19,7 +19,7 @@ int maxSubArraySum(vector<int> &arr, int x) {
 }
 
 //Better - TC: O(N^2), SC: O(1)
-int maxSubArraySum2(vector<int> &arr, int k) {
+int CntSubArray2(vector<int> &arr, int k) {
     int n = arr.size();
     int cnt = 0;
     for(int i = 0; i < n; i++) {
@@ -33,7 +33,7 @@ int maxSubArraySum2(vector<int> &arr, int k) {
 } 
 
 //Optimal - TC: O(N * logN), SC: O(1)
-int maxSubArraySum3(vector<int> &arr, int k) {
+int CntSubArray3(vector<int> &arr, int k) {
   int n = arr.size();
   map<int, int> mpp;
   mpp[0] = 1;
