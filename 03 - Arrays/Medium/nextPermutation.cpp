@@ -37,7 +37,7 @@ vector<int> nextPermutation2(vector<int> arr) {
 }
 
 int main() {
-  vector<int> arr = {3, 2, 1};
+  vector<int> arr = {3, 1, 2};
 
   vector<int> ans = nextPermutation(arr);
   for(auto num : ans) {
