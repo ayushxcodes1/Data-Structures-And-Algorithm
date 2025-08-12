@@ -16,8 +16,8 @@ vector<int> nextPermutation(vector<int> arr) {
   int ind = -1;
   for(int i = n - 2; i >= 0; i--) {
       if(arr[i] < arr[i + 1]) {
-          ind = i;
-          break;
+        ind = i;
+        break;
       }
   }
   if(ind == -1) {
@@ -30,6 +30,7 @@ vector<int> nextPermutation(vector<int> arr) {
           swap(arr[i], arr[ind]);
           break;
       }
+
   }
 
   reverse(arr.begin() + ind + 1, arr.end());
