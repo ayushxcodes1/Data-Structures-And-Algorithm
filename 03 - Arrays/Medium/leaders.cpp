@@ -40,7 +40,7 @@ vector<int> leaders2(vector<int> &arr) {
 int main() {
   vector<int> arr = {16, 17, 4, 3, 5, 2};
 
-  vector<int> ans = arrayLeaders(arr);
+  vector<int> ans = leaders(arr);
   cout << "Leaders: ";
   for(auto it : ans) {
     cout << it << " "; 
