@@ -50,17 +50,17 @@ int CntSubArray3(vector<int> &arr, int k) {
 
 int main() {
   vector<int> arr = {1, 1, 1};
-  int ans = CntSubArray(arr, 2);
+  int ans = cntSubArray(arr, 2);
   cout << ans;
 
   cout << endl;
 
-  int ans2 = CntSubArray2(arr, 2);
+  int ans2 = cntSubArray2(arr, 2);
   cout << ans2;
 
   cout << endl;
 
-  int ans3 = CntSubArray3(arr, 2);
+  int ans3 = cntSubArray3(arr, 2);
   cout << ans3;
   return 0;
 }
