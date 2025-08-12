@@ -22,7 +22,7 @@ vector<int> nextPermutation2(vector<int> arr) {
   }
   if(ind == -1) {
     reverse(arr.begin(), arr.end());
-    return arr;
+    return;
   }
 
   for(int i = n - 1; i > ind; i--) {
