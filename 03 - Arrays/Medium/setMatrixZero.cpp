@@ -99,6 +99,9 @@ void setmatZero2(vector<vector<int>> &mat) {
             }
         }
     }
+    if(mat[0][0] == 0) {
+       for(int i = 0; i < n; i++) mat[0][j] = 0;
+    }
 }
 
 int main() {
