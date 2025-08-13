@@ -45,7 +45,7 @@ void setMatrixZero(vector<vector<int>> &matrix) {
     }
 }
 
-//Better - TC: O(), SC: O(N * M)
+//Better - TC: O(2*N*M)), SC: O(N + M)
 void setMatrixZero2(vector<vector<int>> &matrix) {
     int n = matrix.size();
     int m = matrix[0].size();
