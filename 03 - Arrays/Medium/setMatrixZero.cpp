@@ -78,8 +78,8 @@ void setmatZero2(vector<vector<int>> &mat) {
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
             if(mat[i][j] == 0) {
-               row[i] = 1;
-               col[j] = 1;
+               //mark the ith row
+               //mark the jth col
             }
         }
     }
