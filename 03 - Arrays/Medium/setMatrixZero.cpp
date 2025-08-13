@@ -21,7 +21,7 @@ void markCol(vector<vector<int>> &mat, int col) {
 }
 
 //Brute Force - TC: O((N*M) * (N+M) + (N*M)), SC: O(1)
-void setmatZero(vector<vector<int>> &mat) {
+void setmatrixZero(vector<vector<int>> &mat) {
     int rows = mat.size();
     int cols = mat[0].size();
     //O(N*M)
@@ -46,7 +46,7 @@ void setmatZero(vector<vector<int>> &mat) {
 }
 
 //Better - TC: O(2*N*M)), SC: O(N + M)
-void setmatZero2(vector<vector<int>> &mat) {
+void setmatrixZero2(vector<vector<int>> &mat) {
     int n = mat.size();
     int m = mat[0].size();
     int col[m] = {0};
@@ -70,7 +70,7 @@ void setmatZero2(vector<vector<int>> &mat) {
 }
 
 //Optimal - TC: O(2*N*M)), SC: O(1)
-void setmatZero3(vector<vector<int>> &mat) {
+void setmatrixZero3(vector<vector<int>> &mat) {
     int n = mat.size();
     int m = mat[0].size();
     // int col[m] = {0}; -> mat[0][...]
@@ -116,7 +116,7 @@ void setmatZero3(vector<vector<int>> &mat) {
 int main() {
     vector<vector<int>> mat = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
 
-    setmatZero(mat);
+    setmatrixZero(mat);
     for (auto &rows : mat) {
         for(int val : rows) {
             cout << val << " ";
@@ -127,7 +127,7 @@ int main() {
     cout << endl;
 
     mat = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
-    setmatZero2(mat);
+    setmatrixZero2(mat);
     for (auto &rows : mat) {
         for(int val : rows) {
             cout << val << " ";
@@ -138,7 +138,7 @@ int main() {
     cout << endl;
 
     mat = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
-    setmatZero3(mat);
+    setmatrixZero3(mat);
     for (auto &rows : mat) {
         for(int val : rows) {
             cout << val << " ";
