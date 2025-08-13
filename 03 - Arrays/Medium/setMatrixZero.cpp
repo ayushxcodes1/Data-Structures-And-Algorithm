@@ -4,7 +4,7 @@ using namespace std;
 
 void markRow(vector<vector<int>> &matrix, int row) {
     int cols = matrix[0].size();
-    for(int i = 0; i < cols; i++) {
+    for(int j = 0; j < cols; j++) {
         if(matrix[row][j] != 0) {
            matrix[row][j] = -1;
         }
@@ -13,9 +13,9 @@ void markRow(vector<vector<int>> &matrix, int row) {
 
 void markCol(vector<vector<int>> &matrix, int col) {
     int row = matrix.size();
-    for(int i = 0; i < col; j++) {
-        if(matrix[i][j] != 0) {
-           matrix[i][j] = -1;
+    for(int i = 0; i < col; i++) {
+        if(matrix[i][col] != 0) {
+           matrix[i][col] = -1;
         }
     }
 }
