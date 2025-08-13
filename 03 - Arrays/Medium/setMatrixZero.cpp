@@ -16,7 +16,7 @@ void setMatrixZero(vector<vector<int>> &matrix) {
 int main() {
     vector<vector<int>> matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
 
-    vector<vector<int>> ans = setMatrixZero(matrix);
+    setMatrixZero(matrix);
     for (const auto &rows : matrix) {
         for (int val : rows) {
             cout << val << " ";
