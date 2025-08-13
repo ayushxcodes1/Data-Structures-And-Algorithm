@@ -74,12 +74,14 @@ void setmatZero2(vector<vector<int>> &mat) {
     int n = mat.size();
     int m = mat[0].size();
     // int col[m] = {0}; -> mat[0][...]
-    // int row[n] = {0}; -> mat[...][0]
+    // int row[n] = {0}; -> 
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
             if(mat[i][j] == 0) {
                //mark the ith row
+               mat[i][0] = 0;
                //mark the jth col
+               mat[0][j] = 0;
             }
         }
     }
