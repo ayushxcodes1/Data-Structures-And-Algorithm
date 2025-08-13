@@ -2,16 +2,18 @@
 
 using namespace std;
 
-void markRow(vector<vector<int>> &matrix, int rows, int i, int j) {
-    for(int i = 0; i < rows; i++) {
-        if(matrix[i][j] != 0) {
-           matrix[i][j] = -1;
+void markRow(vector<vector<int>> &matrix, int row) {
+    int cols = matrix[0].size();
+    for(int i = 0; i < cols; i++) {
+        if(matrix[row][j] != 0) {
+           matrix[row][j] = -1;
         }
     }
 }
 
-void markCol(vector<vector<int>> &matrix, int cols, int i, int j) {
-    for(int i = 0; i < cols; j++) {
+void markCol(vector<vector<int>> &matrix, int i, int col) {
+    int row = matrix.size();
+    for(int i = 0; i < col; j++) {
         if(matrix[i][j] != 0) {
            matrix[i][j] = -1;
         }
