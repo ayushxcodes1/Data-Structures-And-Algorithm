@@ -80,6 +80,8 @@ int main() {
         cout << "\n";
     }
 
+    cout << endl;
+
     matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
     setMatrixZero2(matrix);
     for (auto &rows : matrix) {
