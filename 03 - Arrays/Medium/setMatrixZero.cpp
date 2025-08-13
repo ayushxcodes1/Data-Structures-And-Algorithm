@@ -76,6 +76,8 @@ void setmatZero3(vector<vector<int>> &mat) {
     // int col[m] = {0}; -> mat[0][...]
     // int row[n] = {0}; -> mat[...][0]
     int col0 = 1;
+
+    //O(N*M)
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
             if(mat[i][j] == 0) {
@@ -89,6 +91,8 @@ void setmatZero3(vector<vector<int>> &mat) {
             }
         }
     }
+
+    //O(N*M)
     for(int i = 1; i < n; i++) {
         for(int j = 1; j < m; j++) {
             if(mat[i][j] != 0) {
@@ -99,6 +103,8 @@ void setmatZero3(vector<vector<int>> &mat) {
             }
         }
     }
+    
+    //O(N+M)
     if(mat[0][0] == 0) {
        for(int j = 0; j < m; j++) mat[0][j] = 0;
     }
