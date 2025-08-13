@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(N^2), SC: O(1)
 void setMatrixZero(vector<vector<int>> &matrix) {
    int rows = matrix.size();
    int cols = matrix[0].size();
