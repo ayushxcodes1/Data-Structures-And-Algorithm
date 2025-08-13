@@ -2,23 +2,14 @@
 
 using namespace std;
 
-void markRow(vector<vector<int>> &matrix, int row, int col) {
-
-}
-
-void markCol(vector<vector<int>> &matrix, int row, int col) {
-
-}
-
 //Brute Force - TC: O(N^2), SC: O(1)
 void setMatrixZero(vector<vector<int>> &matrix) {
    int rows = matrix.size();
    int cols = matrix[0].size();
    for(int i = 0; i < rows; i++) {
     for(int j = 0; j < cols; j++) {
-        if(matrix[i][j] = 0) {
-           markRow(matrix, i, j);
-           markCol(matrix, i, j);
+        if(matrix[i][j] = 1) {
+           matrix[i][j] = -1;
         }
     }
    }
