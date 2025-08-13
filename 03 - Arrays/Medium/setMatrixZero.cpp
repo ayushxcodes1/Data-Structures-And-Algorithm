@@ -33,6 +33,7 @@ void setMatrixZero(vector<vector<int>> &matrix) {
         }
     }
 
+    // Convert all -1 marks to zero
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
             if(matrix[i][j] == -1) {
