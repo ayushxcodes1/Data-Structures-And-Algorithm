@@ -27,8 +27,8 @@ void setMatrixZero(vector<vector<int>> &matrix) {
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
             if(matrix[i][j] == 0) {
-                markRow(matrix, rows, i, j);
-                markCol(matrix, cols, i, j);
+                markRow(matrix, i);
+                markCol(matrix, j);
             }
         }
     }
