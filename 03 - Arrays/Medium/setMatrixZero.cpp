@@ -10,7 +10,13 @@ void markRow(vector<vector<int>> &matrix, int rows, int i, int j) {
     }
 }
 
-
+void markCol(vector<vector<int>> &matrix, int cols, int i, int j) {
+    for(int i = 0; i < cols; j++) {
+        if(matrix[i][j] != 0) {
+           matrix[i][j] = -1;
+        }
+    }
+}
 
 //Brute Force - TC: O(N^2), SC: O(1)
 void setMatrixZero(vector<vector<int>> &matrix) {
