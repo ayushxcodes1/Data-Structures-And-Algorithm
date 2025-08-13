@@ -11,7 +11,7 @@ void markRow(vector<vector<int>> &matrix, int row) {
     }
 }
 
-void markCol(vector<vector<int>> &matrix, int i, int col) {
+void markCol(vector<vector<int>> &matrix, int col) {
     int row = matrix.size();
     for(int i = 0; i < col; j++) {
         if(matrix[i][j] != 0) {
