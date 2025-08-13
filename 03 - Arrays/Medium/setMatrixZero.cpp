@@ -2,35 +2,35 @@
 
 using namespace std;
 
-void markRow(vector<vector<int>> &matrix, int row) {
-    int cols = matrix[0].size();
+void markRow(vector<vector<int>> &mat, int row) {
+    int cols = mat[0].size();
     for(int j = 0; j < cols; j++) {
-        if(matrix[row][j] != 0) {
-           matrix[row][j] = -1;
+        if(mat[row][j] != 0) {
+           mat[row][j] = -1;
         }
     }
 }
 
-void markCol(vector<vector<int>> &matrix, int col) {
-    int rows = matrix.size();
+void markCol(vector<vector<int>> &mat, int col) {
+    int rows = mat.size();
     for(int i = 0; i < rows; i++) {
-        if(matrix[i][col] != 0) {
-           matrix[i][col] = -1;
+        if(mat[i][col] != 0) {
+           mat[i][col] = -1;
         }
     }
 }
 
 //Brute Force - TC: O((N*M) * (N+M) + (N*M)), SC: O(1)
-void setMatrixZero(vector<vector<int>> &matrix) {
-    int rows = matrix.size();
-    int cols = matrix[0].size();
+void setmatZero(vector<vector<int>> &mat) {
+    int rows = mat.size();
+    int cols = mat[0].size();
     //O(N*M)
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
-            if(matrix[i][j] == 0) {
+            if(mat[i][j] == 0) {
                 //O(N + M)
-                markRow(matrix, i);
-                markCol(matrix, j);
+                markRow(mat, i);
+                markCol(mat, j);
             }
         }
     }
@@ -38,22 +38,22 @@ void setMatrixZero(vector<vector<int>> &matrix) {
     // Mark all -1 to zero - O(N * M)
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
-            if(matrix[i][j] == -1) {
-               matrix[i][j] = 0;
+            if(mat[i][j] == -1) {
+               mat[i][j] = 0;
             }
         }
     }
 }
 
 //Better - TC: O(2*N*M)), SC: O(N + M)
-void setMatrixZero2(vector<vector<int>> &matrix) {
-    int n = matrix.size();
-    int m = matrix[0].size();
+void setmatZero2(vector<vector<int>> &mat) {
+    int n = mat.size();
+    int m = mat[0].size();
     int col[m] = {0};
     int row[n] = {0};
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
-            if(matrix[i][j] == 0) {
+            if(mat[i][j] == 0) {
                row[i] = 1;
                col[j] = 1;
             }
@@ -63,41 +63,33 @@ void setMatrixZero2(vector<vector<int>> &matrix) {
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
             if(row[i] || col[j]) {
-               matrix[i][j] = 0;
+               mat[i][j] = 0;
             }
         }
     }
 }
 
 //Optimal - TC: O(2*N*M)), SC: O(1)
-void setMatrixZero2(vector<vector<int>> &matrix) {
-    int n = matrix.size();
-    int m = matrix[0].size();
-    int col[m] = {0};
-    int row[n] = {0};
+void setmatZero2(vector<vector<int>> &mat) {
+    int n = mat.size();
+    int m = mat[0].size();
+    // int col[m] = {0}; -> mat[0]
+    // int row[n] = {0};
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
-            if(matrix[i][j] == 0) {
+            if(mat[i][j] == 0) {
                row[i] = 1;
                col[j] = 1;
-            }
-        }
-    }
-
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < m; j++) {
-            if(row[i] || col[j]) {
-               matrix[i][j] = 0;
             }
         }
     }
 }
 
 int main() {
-    vector<vector<int>> matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+    vector<vector<int>> mat = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
 
-    setMatrixZero(matrix);
-    for (auto &rows : matrix) {
+    setmatZero(mat);
+    for (auto &rows : mat) {
         for(int val : rows) {
             cout << val << " ";
         }
@@ -106,9 +98,9 @@ int main() {
 
     cout << endl;
 
-    matrix = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
-    setMatrixZero2(matrix);
-    for (auto &rows : matrix) {
+    mat = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+    setmatZero2(mat);
+    for (auto &rows : mat) {
         for(int val : rows) {
             cout << val << " ";
         }
