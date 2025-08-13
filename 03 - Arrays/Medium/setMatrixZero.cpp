@@ -8,8 +8,10 @@ void setMatrixZero(vector<vector<int>> &matrix) {
    int cols = matrix[0].size();
    for(int i = 0; i < rows; i++) {
     for(int j = 0; j < cols; j++) {
-        matrix[1][j] = 0;
-        matrix[i][1] = 0; 
+        if(matrix[i][j] = 0) {
+           matrix[1][j] = 0;
+           matrix[i][1] = 0; 
+        }
     }
    }
 }
