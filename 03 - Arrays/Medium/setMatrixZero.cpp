@@ -47,21 +47,21 @@ void setMatrixZero(vector<vector<int>> &matrix) {
 
 //Better - TC: O(), SC: O(N * M)
 void setMatrixZero(vector<vector<int>> &matrix) {
-    int m = matrix.size();
-    int n = matrix[0].size();
+    int n = matrix.size();
+    int m = matrix[0].size();
     int col[m] = {0};
     int row[n] = {0};
-    for(int i = 0; i < m; i++) {
-        for(int j = 0; j < n; j++) {
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < m; j++) {
             if(matrix[i][j] == 0) {
                row[i] = 1;
                col[j] = 1;
             }
         }
     }
-    
-    for(int i = 0; i < m; i++) {
-        for(int j = 0; j < n; j++) {
+
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < m; j++) {
             if(matrix[i][j] == 0) {
                row[i] = 1;
                col[j] = 1;
