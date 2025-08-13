@@ -70,7 +70,7 @@ void setmatZero2(vector<vector<int>> &mat) {
 }
 
 //Optimal - TC: O(2*N*M)), SC: O(1)
-void setmatZero2(vector<vector<int>> &mat) {
+void setmatZero3(vector<vector<int>> &mat) {
     int n = mat.size();
     int m = mat[0].size();
     // int col[m] = {0}; -> 
@@ -122,6 +122,17 @@ int main() {
 
     mat = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
     setmatZero2(mat);
+    for (auto &rows : mat) {
+        for(int val : rows) {
+            cout << val << " ";
+        }
+        cout << "\n";
+    }
+
+    cout << endl;
+
+    mat = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+    setmatZero3(mat);
     for (auto &rows : mat) {
         for(int val : rows) {
             cout << val << " ";
