@@ -73,8 +73,8 @@ void setmatZero2(vector<vector<int>> &mat) {
 void setmatZero3(vector<vector<int>> &mat) {
     int n = mat.size();
     int m = mat[0].size();
-    // int col[m] = {0}; -> 
-    // int row[n] = {0}; -> 
+    // int col[m] = {0}; -> mat[0][...]
+    // int row[n] = {0}; -> mat[...][0]
     int col0 = 1;
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
