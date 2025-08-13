@@ -49,7 +49,8 @@ void setMatrixZero(vector<vector<int>> &matrix) {
 void setMatrixZero(vector<vector<int>> &matrix) {
     int m = matrix.size();
     int n = matrix[0].size();
-    int col[m] = 
+    int col[m] = {0};
+    int row[n] = {0};
 }
 
 int main() {
