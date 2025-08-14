@@ -15,6 +15,10 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
     }
 
     //bottom
+    for(int i = left; i <= right; i++) {
+        ans.push_back(mat[top][i]);
+        top++;
+    }
 
     //left
 
