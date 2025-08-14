@@ -24,6 +24,11 @@ void rotateImage2(vector<vector<int>> &mat) {
             swap(mat[i][j], mat[j][i]);
         }
     }
+
+    //Reverse
+    for(int i = 0; i < n; i++) {
+        reverse(mat[i].begin(), mat[i].end());
+    }
 }
 
 int main() {
