@@ -9,7 +9,7 @@ void rotateImage(vector<vector<int>> &mat) {
     vector<vector<int>> ans[n][m];
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
-            
+            ans[j][n - i - 1] = mat[i][j]; 
         }
     }
 
