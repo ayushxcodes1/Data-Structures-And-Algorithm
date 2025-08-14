@@ -22,11 +22,13 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
         }
         right--;
     
-        //left
-        for(int i = right; i >= left; i--) {
-            ans.push_back(mat[bottom][i]);
+        if(top <= bottom) {
+            //left
+            for(int i = right; i >= left; i--) {
+                ans.push_back(mat[bottom][i]);
+            }
+            bottom--;
         }
-        bottom--;
     
         //top
         for(int i = bottom; i >= top; i--) {
