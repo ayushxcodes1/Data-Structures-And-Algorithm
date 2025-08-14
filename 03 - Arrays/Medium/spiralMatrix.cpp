@@ -22,7 +22,10 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
     }
 
     //left
-
+    for(int i = top; i <= bottom; i++) {
+        ans.push_back(mat[i][right]);
+        right--;
+    }
     //top
 }
 
