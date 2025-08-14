@@ -23,7 +23,7 @@ int main() {
         for(int j = 0; j < n; j++) {
             cout << ans[i][j] << " ";
         }
-        cout << "/n";
+        cout << endl;
     }
     
     return 0;
