@@ -29,7 +29,7 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
 
     //top
     for(int i = bottom; i <= top; i++) {
-        ans.push_back(mat[i][right]);
+        ans.push_back(mat[i][left]);
     }
 }
 
