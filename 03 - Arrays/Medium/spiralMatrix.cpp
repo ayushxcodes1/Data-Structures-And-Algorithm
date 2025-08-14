@@ -24,9 +24,13 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
     //left
     for(int i = right; i <= left; i++) {
         ans.push_back(mat[i][right]);
+        bottom--;
     }
 
     //top
+    for(int i = bottom; i <= top; i++) {
+        ans.push_back(mat[i][right]);
+    }
 }
 
 int main() {
