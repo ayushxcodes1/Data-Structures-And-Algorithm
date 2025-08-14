@@ -11,6 +11,6 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
 }
 
 int main() {
-  vector<vector<int>> mat = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+  vector<vector<int>> mat = {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
   return 0;
 }
