@@ -8,6 +8,8 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
     int left = 0, right = m - 1;
     int top = 0, bottom = n - 1;
     vector<int> ans;
+
+    //right
 }
 
 int main() {
