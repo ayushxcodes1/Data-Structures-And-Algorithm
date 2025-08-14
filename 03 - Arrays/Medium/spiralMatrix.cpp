@@ -12,6 +12,8 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
     //right
 
     //bottom
+
+    //left
 }
 
 int main() {
