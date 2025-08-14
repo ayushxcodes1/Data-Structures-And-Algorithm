@@ -3,7 +3,8 @@
 using namespace std;
 
 vector<int> spiralMatrix(vector<vector<int>> &mat) {
-    
+    int n = mat.size();
+    int m = mat[0].size();
 }
 
 int main() {
