@@ -12,7 +12,6 @@ void rotateImage(vector<vector<int>> &mat) {
             ans[j][n - i - 1] = mat[i][j]; 
         }
     }
-
 }
 
 int main() {
