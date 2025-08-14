@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(), SC: O()
+//Brute Force - TC: O(N^2), SC: O(N^2)
 vector<vector<int>> rotateImage(vector<vector<int>> &mat) {
     int n = mat.size();
     vector<vector<int>> ans(n, vector<int>(n, 0));
