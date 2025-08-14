@@ -5,6 +5,8 @@ using namespace std;
 vector<int> spiralMatrix(vector<vector<int>> &mat) {
     int n = mat.size();
     int m = mat[0].size();
+    int left = 0, right = m - 1;
+    int top = 0, bottom = n - 1;
 }
 
 int main() {
