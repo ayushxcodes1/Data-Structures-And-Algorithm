@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force - TC: O(), SC: O()
-void rotateImage(vector<vector<int>> &mat) {
+void rotateImage(vector<vector<int>> mat) {
     int n = mat.size();
     int m = mat[0].size();
     vector<vector<int>> ans[n][m];
