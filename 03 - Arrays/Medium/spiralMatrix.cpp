@@ -43,5 +43,7 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
 
 int main() {
   vector<vector<int>> mat = {{1, 2, 3}, {8, 9, 4}, {7, 6, 5}};
+  vector<vector<int>> ans = spiralMatrix(mat);
+  
   return 0;
 }
