@@ -30,11 +30,13 @@ vector<int> spiralMatrix(vector<vector<int>> &mat) {
             bottom--;
         }
     
-        //top
-        for(int i = bottom; i >= top; i--) {
-            ans.push_back(mat[i][left]);
+        if(left <= right) {
+            //top
+            for(int i = bottom; i >= top; i--) {
+                ans.push_back(mat[i][left]);
+            }
+            left++;
         }
-        left++;
     }
     return ans;
 }
