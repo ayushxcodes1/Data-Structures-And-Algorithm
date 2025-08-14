@@ -108,7 +108,7 @@ void setmatrixZero3(vector<vector<int>> &mat) {
     if(mat[0][0] == 0) {
        for(int j = 0; j < m; j++) mat[0][j] = 0;
     }
-    if(col0 == 0) {
+    if(col0 == 0)    {
        for(int i = 0; i < n; i++) mat[i][0] = 0;
     }
 }
