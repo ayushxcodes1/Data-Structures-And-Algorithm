@@ -22,7 +22,6 @@ vector<vector<int>> rotateImage(vector<vector<int>> &mat) {
           
         }
     }
-    return ans;
 }
 
 int main() {
