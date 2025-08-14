@@ -14,7 +14,7 @@ vector<vector<int>> rotateImage(vector<vector<int>> &mat) {
     return ans;
 }
 
-//Optimal - TC: O(), SC: O(1)
+//Optimal - TC: O(N^2), SC: O(1)
 void rotateImage2(vector<vector<int>> &mat) {
     int n = mat.size();
 
