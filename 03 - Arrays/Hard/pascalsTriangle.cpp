@@ -25,8 +25,9 @@ void nCr2(int n) {
 
 //Optimal - TC: O(N), SC: O(1) 
 void nCr3(int n) {
+    vector<int> ansRow;
     int ans = 1;
-    cout << ans << " ";
+    ans.push_back(ans);
     for(int i = 1; i < n; i++) {
         ans = ans * (n - i);
         ans = ans / i;
