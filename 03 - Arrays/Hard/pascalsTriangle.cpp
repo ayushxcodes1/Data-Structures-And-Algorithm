@@ -54,6 +54,10 @@ vector<vector<int>> nCr4(int n) {
 //Optimal - TC: O(n^2), SC: O(1)
 vector<vector<int>> nCr5(int n) {
     vector<vector<int>> ans;
+    for(int i = 1; i <= n; i++) {
+        ans.push_back(nCr3(i));
+    }
+    return ans;
 }
 
 int main() {
