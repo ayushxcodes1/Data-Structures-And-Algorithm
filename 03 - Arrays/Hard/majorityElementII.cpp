@@ -46,6 +46,8 @@ vector<int> majorityElementII(vector<int> arr) {
 vector<int> majorityElementII(vector<int> arr) {
     int n = arr.size();
     int cnt1 = 0, cnt2 = 0;
+    int ele1 = INT_MIN;
+    int ele2 = INT_MIN;
 }
 
 int main() {
