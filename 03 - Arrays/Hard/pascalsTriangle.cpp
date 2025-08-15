@@ -16,6 +16,7 @@ int nCr(int n, int r) {
 
 /*Variation - 2: Print the Nth row*/
 
+//Brute Force - TC: O(n * r), SC: O(1)
 
 int main() {
   int ans = nCr(4, 2);
