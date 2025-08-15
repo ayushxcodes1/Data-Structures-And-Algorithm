@@ -30,7 +30,7 @@ vector<int> majorityElementII(vector<int> arr) {
     map<int, int> mpp;
     for(int i = 0; i < n; i++) {
         mpp[arr[i]]++;
-        if(mpp[arr[i]] > (n / 3)) {
+        if(mpp[arr[i]] > (n / 3) && ans[0] != arr[i]) {
            ans.push_back(arr[i]);
            mpp[arr[i]] = 0;
         }
