@@ -40,9 +40,9 @@ void nCr3(int n) {
 vector<vector<int>> nCr4(int n) {
     vector<vector<int>> ans;
     for(int row = 1; row <= n; row++) {
-        vector<int> tempLst;
+        vector<int> tempList;
         for(int col = 1; col <= row; col++) {
-            
+            tempList
         }
     }
    
