@@ -84,10 +84,14 @@ int main() {
     cout << it << " ";
   }
 
+  cout << endl;
+
   vector<int> ans2 = majorityElementII2(arr);
   for(auto it : ans2) {
     cout << it << " ";
   }
+
+  cout << endl;
 
   vector<int> ans3 = majorityElementII3(arr);
   for(auto it : ans3) {
