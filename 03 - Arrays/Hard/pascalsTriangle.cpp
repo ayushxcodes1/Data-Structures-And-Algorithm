@@ -54,13 +54,16 @@ int main() {
     cout << ans;
 
     cout << "\n";
+    cout << "\n";
 
     nCr2(4);
     
     cout << "\n";
+    cout << "\n";
 
     nCr3(4);
 
+    cout << "\n";
     cout << "\n";
 
     vector<vector<int>> res = nCr4(4);
