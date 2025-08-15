@@ -63,6 +63,8 @@ vector<int> majorityElementII(vector<int> arr) {
             cnt1--, cnt2--;
         }
     }
+    vector<int> ans;
+    cnt1 = 0, cnt2 = 0;
 }
 
 int main() {
