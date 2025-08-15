@@ -80,8 +80,8 @@ int main() {
     cout << "\n";
     cout << "\n";
 
-    vector<vector<int>> res = nCr4(4);
-    for (auto it : res) {
+    vector<vector<int>> ans4 = nCr4(4);
+    for (auto it : ans4) {
         for (auto ele : it) {
             cout << ele << " ";
         }
@@ -92,8 +92,8 @@ int main() {
     cout << "\n";
 
     
-    vector<vector<int>> res = nCr4(4);
-    for (auto it : res) {
+    vector<vector<int>> ans5 = nCr4(4);
+    for (auto it : ans5) {
         for (auto ele : it) {
             cout << ele << " ";
         }
