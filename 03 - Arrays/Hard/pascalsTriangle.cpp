@@ -31,7 +31,7 @@ vector<int> nCr3(int n) {
     for(int i = 1; i < n; i++) {
         ans = ans * (n - i);
         ans = ans / i;
-        ansRow.push_back(ans);
+        ansRow.push_back(ans);  
     }
     return ansRow;
 }
