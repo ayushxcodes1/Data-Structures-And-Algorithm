@@ -42,10 +42,11 @@ vector<vector<int>> nCr4(int n) {
     for(int row = 1; row <= n; row++) {
         vector<int> tempList;
         for(int col = 1; col <= row; col++) {
-            tempList
+            tempList.push_back(nCr(row-1, col-1));
         }
+        ans.push_back(tempList);
     }
-   
+    return ans;
 }
 
 int main() {
