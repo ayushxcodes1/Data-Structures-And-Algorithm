@@ -34,7 +34,7 @@ vector<int> majorityElementII(vector<int> arr) {
     for(int i = 0; i < n; i++) {
         mpp[arr[i]]++;
 
-        if(mpp[arr[i]] mini) {
+        if(mpp[arr[i]] == mini) {
            ans.push_back(arr[i]);
         }
         if(ans.size() == 2) break;  
