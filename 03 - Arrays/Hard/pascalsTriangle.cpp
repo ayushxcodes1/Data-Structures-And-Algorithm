@@ -23,6 +23,8 @@ void nCr2(int n) {
     }
 }
 
+//Optimal - TC: O(N), SC: O(1) 
+
 int main() {
   int ans = nCr(4, 2);
   cout << ans;
