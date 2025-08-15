@@ -22,5 +22,8 @@ vector<int> majorityElementII(vector<int> arr) {
 int main() {
   vector<int> arr = {1, 1, 2, 3, 3, 2};  
   vector<int> ans = majorityElementII(arr);
+  for(auto it : ans) {
+    cout << it << " ";
+  }
   return 0;
 }
