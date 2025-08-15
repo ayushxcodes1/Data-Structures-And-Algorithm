@@ -76,6 +76,9 @@ int main() {
     cout << "\n";
 
     vector<int> ans3 = nCr3(4);
+    for(auto it : ans3) {
+        cou << it << " ";
+    }
 
     cout << "\n";
     cout << "\n";
