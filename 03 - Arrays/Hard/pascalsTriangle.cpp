@@ -26,6 +26,9 @@ void nCr2(int n) {
 int main() {
   int ans = nCr(4, 2);
   cout << ans;
+
+  int ans2 = nCr2(4, 2);
+  cout << ans2;
   
   return 0;
 }
