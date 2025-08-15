@@ -31,6 +31,7 @@ void nCr3(int n) {
         ans = ans * (n - i);
         ans = ans / i;
     }
+    cout << ans;
 }
 
 int main() {
