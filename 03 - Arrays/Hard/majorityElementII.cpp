@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector<int> majorityElementII(vector<int> arr) {
+vector<int> majorityElementII(vector<int> &arr) {
     int n = arr.size();
     vector<int> ans;
     for(int i = 0; i < n; i++) {
