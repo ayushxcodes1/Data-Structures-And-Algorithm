@@ -56,6 +56,10 @@ vector<vector<int>> genrateRow(int row) {
     
 }
 
+vector<vector<int>> nCr5(int n) {
+    
+}
+
 int main() {
     int ans = nCr(4, 2);
     cout << ans;
