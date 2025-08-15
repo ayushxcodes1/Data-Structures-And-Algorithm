@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//Variation - 1: Given Row and Column, print the element.
+
 //Brute Force - TC: O(r), SC: O(1)
 int nCr(int n, int r) {
     long long res = 1;
