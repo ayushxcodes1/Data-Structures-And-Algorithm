@@ -53,6 +53,7 @@ vector<vector<int>> nCr4(int n) {
 vector<vector<int>> genrateRow(int row) {
     long long ans = 1;
     vector<int> ansRow;
+    ansRow.push_back(1);
     
 }
 
