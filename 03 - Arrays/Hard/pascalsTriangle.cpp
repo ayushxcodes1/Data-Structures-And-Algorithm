@@ -27,7 +27,7 @@ void nCr2(int n) {
 void nCr3(int n) {
     vector<int> ansRow;
     int ans = 1;
-    ans.push_back(ans);
+    ansRow.push_back(ans);
     for(int i = 1; i < n; i++) {
         ans = ans * (n - i);
         ans = ans / i;
