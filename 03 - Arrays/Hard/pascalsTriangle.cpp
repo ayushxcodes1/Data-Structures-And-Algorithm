@@ -24,7 +24,7 @@ void nCr2(int n) {
 }
 
 //Optimal - TC: O(N), SC: O(1) 
-void nCr3(int n) {
+vector<int> nCr3(int n) {
     vector<int> ansRow;
     int ans = 1;
     ansRow.push_back(ans);
