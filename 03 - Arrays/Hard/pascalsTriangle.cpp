@@ -42,5 +42,7 @@ int main() {
 
   nCr2(4);
   
+  cout << "\n";
+
   return 0;
 }
