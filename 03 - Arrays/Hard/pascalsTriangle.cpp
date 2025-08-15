@@ -18,7 +18,9 @@ int nCr(int n, int r) {
 
 //Brute Force - TC: O(n * r), SC: O(1)
 int ncR2(int n) {
-    
+    for(int c = 1; c <= n; c++) {
+        cout << ncR(n - 1, c - 1) << " ";
+    }
 }
 
 int main() {
