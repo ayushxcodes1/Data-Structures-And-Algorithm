@@ -59,6 +59,9 @@ vector<int> majorityElementII(vector<int> arr) {
         }
         else if(arr[i] == ele1) cnt1++;
         else if(arr[i] == ele2) cnt2++;
+        else {
+            cnt1--, cnt2--;
+        }
     }
 }
 
