@@ -38,8 +38,7 @@ void nCr3(int n) {
 
 //Brute Force - TC: O(n * n * r), SC: O(1)
 vector<vector<int>> nCr4(int n) {
-    int ans = 1;
-    cout << ans << " ";
+    vector<vector<int>> ans;
     for(int i = 1; i < n; i++) {
         ans = ans * (n - i);
         ans = ans / i;
