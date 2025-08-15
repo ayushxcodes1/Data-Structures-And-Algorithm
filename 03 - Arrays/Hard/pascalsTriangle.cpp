@@ -31,8 +31,9 @@ void nCr3(int n) {
     for(int i = 1; i < n; i++) {
         ans = ans * (n - i);
         ans = ans / i;
-        cout << ans << " ";
+        ansRow.push_back(ans);
     }
+    return ansRow;
 }
 
 /*Variation - 3: Given N, print the entire pascal's triangle */
