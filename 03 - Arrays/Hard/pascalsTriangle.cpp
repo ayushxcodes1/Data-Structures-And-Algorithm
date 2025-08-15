@@ -25,6 +25,8 @@ void nCr2(int n) {
 
 //Optimal - TC: O(N), SC: O(1) 
 void nCr3(int n) {
+    int ans = 1;
+    cout << ans << " ";
     for(int c = 1; c <= n; c++) {
         cout << nCr(n - 1, c - 1) << " ";
     }
