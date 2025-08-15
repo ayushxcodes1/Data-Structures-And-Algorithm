@@ -17,9 +17,9 @@ int nCr(int n, int r) {
 /*Variation - 2: Print the Nth row*/
 
 //Brute Force - TC: O(n * r), SC: O(1)
-void ncR2(int n) {
+void nCr2(int n) {
     for(int c = 1; c <= n; c++) {
-        cout << ncR(n - 1, c - 1) << " ";
+        cout << nCr(n - 1, c - 1) << " ";
     }
 }
 
