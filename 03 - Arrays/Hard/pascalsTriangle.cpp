@@ -50,16 +50,10 @@ vector<vector<int>> nCr4(int n) {
 }
 
 //Optimal - TC: O(n^2), SC: O(1)
-vector<vector<int>> nCr4(int n) {
-    vector<vector<int>> ans;
-    for(int row = 1; row <= n; row++) {
-        vector<int> tempList;
-        for(int col = 1; col <= row; col++) {
-            tempList.push_back(nCr(row-1, col-1));
-        }
-        ans.push_back(tempList);
-    }
-    return ans;
+vector<vector<int>> genrateRow(int row) {
+    long long ans = 1;
+    vector<int> ansRow;
+    
 }
 
 int main() {
