@@ -63,12 +63,12 @@ int main() {
 
     cout << "\n";
 
-    vector<vector<int>> ans = nCr4(4);
-    for (auto it : ans) {
+    vector<vector<int>> res = nCr4(4);
+    for (auto it : res) {
         for (auto ele : it) {
             cout << ele << " ";
         }
-        cout << "n";
+        cout << "\n";
     }
 
   return 0;
