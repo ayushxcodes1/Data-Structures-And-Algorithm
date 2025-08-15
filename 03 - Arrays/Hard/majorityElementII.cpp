@@ -17,6 +17,7 @@ vector<int> majorityElementII(vector<int> arr) {
                ans.push_back(arr[i]);
             }
         }
+        if(ans.size() == 2) break;
     }
     return ans;
 }
