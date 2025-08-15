@@ -75,7 +75,7 @@ int main() {
     cout << "\n";
     cout << "\n";
 
-    nCr3(4);
+    vector<int> ans3 = nCr3(4);
 
     cout << "\n";
     cout << "\n";
