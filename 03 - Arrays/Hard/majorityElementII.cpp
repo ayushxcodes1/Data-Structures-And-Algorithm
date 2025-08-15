@@ -32,7 +32,6 @@ vector<int> majorityElementII(vector<int> arr) {
         mpp[arr[i]]++;
         if(mpp[arr[i]] > (n / 3)) {
            ans.push_back(arr[i]);
-           mpp[arr[i]] = 0;
         }
         if(ans.size() == 2) break;  
     }
