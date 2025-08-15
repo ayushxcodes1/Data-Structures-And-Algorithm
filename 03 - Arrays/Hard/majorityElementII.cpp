@@ -24,7 +24,7 @@ vector<int> majorityElementII(vector<int> arr) {
 }
 
 //Better - TC: O(NlogN), SC: O(N)
-vector<int> majorityElementII(vector<int> arr) {
+vector<int> majorityElementII2(vector<int> arr) {
     int n = arr.size();
     vector<int> ans;
     map<int, int> mpp;
@@ -43,7 +43,7 @@ vector<int> majorityElementII(vector<int> arr) {
 }
 
 //Optimal - TC: O(2N), SC: O(1)
-vector<int> majorityElementII(vector<int> arr) {
+vector<int> majorityElementII3(vector<int> arr) {
     int n = arr.size();
     int cnt1 = 0, cnt2 = 0;
     int ele1 = INT_MIN;
@@ -81,6 +81,16 @@ int main() {
   vector<int> arr = {1, 1, 1, 2, 2, 2};  
   vector<int> ans = majorityElementII(arr);
   for(auto it : ans) {
+    cout << it << " ";
+  }
+
+  vector<int> ans2 = majorityElementII2(arr);
+  for(auto it : ans2) {
+    cout << it << " ";
+  }
+
+  vector<int> ans3 = majorityElementII3(arr);
+  for(auto it : ans3) {
     cout << it << " ";
   }
   return 0;
