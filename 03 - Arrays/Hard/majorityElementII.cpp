@@ -27,6 +27,7 @@ vector<int> majorityElementII(vector<int> arr) {
 vector<int> majorityElementII(vector<int> arr) {
     int n = arr.size();
     vector<int> ans;
+    map<int, int> mpp;
     for(int i = 0; i < n; i++) {
         
     }
