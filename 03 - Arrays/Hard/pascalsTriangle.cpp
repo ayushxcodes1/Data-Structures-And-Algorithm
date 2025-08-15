@@ -63,7 +63,7 @@ int main() {
 
   cout << "\n";
 
-  nCr4(4);
+  vector<vector<int>> ans = nCr4(4);
 
   return 0;
 }
