@@ -12,7 +12,8 @@ int nCr(int n, int r) {
 }
 
 int main() {
-  
+  int ans = nCr(3, 3);
+  cout << ans;
   
   return 0;
 }
