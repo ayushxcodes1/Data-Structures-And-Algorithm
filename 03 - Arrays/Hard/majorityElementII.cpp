@@ -78,7 +78,7 @@ vector<int> majorityElementII3(vector<int> arr) {
 }
 
 int main() {
-  vector<int> arr = {1, 1, 1, 2, 2, 2};  
+  vector<int> arr = {2, 1, 1, 3, 1, 4, 5, 6};  
   vector<int> ans = majorityElementII(arr);
   for(auto it : ans) {
     cout << it << " ";
