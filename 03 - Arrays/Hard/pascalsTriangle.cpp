@@ -91,5 +91,14 @@ int main() {
     cout << "\n";
     cout << "\n";
 
+    
+    vector<vector<int>> res = nCr4(4);
+    for (auto it : res) {
+        for (auto ele : it) {
+            cout << ele << " ";
+        }
+        cout << "\n";
+    }
+
   return 0;
 }
