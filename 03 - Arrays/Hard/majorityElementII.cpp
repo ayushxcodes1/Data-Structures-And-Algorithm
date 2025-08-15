@@ -53,6 +53,10 @@ vector<int> majorityElementII(vector<int> arr) {
            cnt1 = 1;
            ele1 = arr[i];
         }
+        else if(cnt2 == 0 && ele1 != arr[i]) {
+           cnt2 = 1;
+           ele2 = arr[i];
+        }
     }
 }
 
