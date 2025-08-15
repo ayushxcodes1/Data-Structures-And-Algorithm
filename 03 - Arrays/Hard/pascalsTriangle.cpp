@@ -92,7 +92,7 @@ int main() {
     cout << "\n";
 
     
-    vector<vector<int>> ans5 = nCr4(4);
+    vector<vector<int>> ans5 = nCr5(4);
     for (auto it : ans5) {
         for (auto ele : it) {
             cout << ele << " ";
