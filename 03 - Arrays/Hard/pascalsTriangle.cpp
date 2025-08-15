@@ -44,5 +44,7 @@ int main() {
   
   cout << "\n";
 
+  nCr3(4);
+
   return 0;
 }
