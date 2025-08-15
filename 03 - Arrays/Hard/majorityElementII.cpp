@@ -12,6 +12,9 @@ vector<int> majorityElementII(vector<int> &arr) {
                cnt++;
             }
         }
+        if(cnt > (n / 3)) {
+           ans.push_back(arr[i]);
+        }
     }
 }
 
