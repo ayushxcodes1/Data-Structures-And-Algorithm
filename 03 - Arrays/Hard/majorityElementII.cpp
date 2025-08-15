@@ -16,6 +16,7 @@ vector<int> majorityElementII(vector<int> &arr) {
            ans.push_back(arr[i]);
         }
     }
+    return ans;
 }
 
 int main() {
