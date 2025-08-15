@@ -27,7 +27,7 @@ int main() {
   int ans = nCr(4, 2);
   cout << ans;
 
-  nCr2(4, 2);
+  nCr2(4);
   
   return 0;
 }
