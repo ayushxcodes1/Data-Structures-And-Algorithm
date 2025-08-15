@@ -3,7 +3,7 @@
 using namespace std;
 
 vector<int> majorityElementII(vector<int> &ans) {
-
+   vector<int> ans;
 }
 
 int main() {
