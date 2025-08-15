@@ -29,7 +29,7 @@ vector<int> majorityElementII(vector<int> arr) {
     vector<int> ans;
     map<int, int> mpp;
     for(int i = 0; i < n; i++) {
-        
+        mpp[arr[i]]++;
     }
     return ans;
 }
