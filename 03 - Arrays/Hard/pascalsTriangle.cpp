@@ -53,7 +53,7 @@ vector<vector<int>> nCr4(int n) {
 
 //Optimal - TC: O(n^2), SC: O(1)
 vector<vector<int>> nCr5(int n) {
-    
+    vector<vector<int>> ans;
 }
 
 int main() {
