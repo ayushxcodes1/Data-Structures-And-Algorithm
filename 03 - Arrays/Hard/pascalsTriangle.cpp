@@ -49,7 +49,7 @@ vector<vector<int>> nCr4(int n) {
     return ans;
 }
 
-//Optimal - TC: O(n * n * r), SC: O(1)
+//Optimal - TC: O(n^2), SC: O(1)
 vector<vector<int>> nCr4(int n) {
     vector<vector<int>> ans;
     for(int row = 1; row <= n; row++) {
