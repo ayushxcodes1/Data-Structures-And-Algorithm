@@ -2,7 +2,7 @@
 
 using namespace std;
 
-/*Variation - 1: Given Row No. and Column No., print the element*/
+/*Variation - 1: Given Row No. and Column No., print the element at that place*/
 
 //Brute Force - TC: O(r), SC: O(1)
 int nCr(int n, int r) {
