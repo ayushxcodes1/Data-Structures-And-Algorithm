@@ -69,6 +69,8 @@ vector<int> majorityElementII(vector<int> arr) {
         if(ele1 == arr[i]) cnt1++;
         if(ele2 == arr[i]) cnt2++;
     }
+
+    int mini = (int)(n / 3) + 1;
 }
 
 int main() {
