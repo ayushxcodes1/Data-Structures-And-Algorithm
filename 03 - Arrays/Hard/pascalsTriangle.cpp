@@ -36,7 +36,7 @@ vector<int> nCr3(int n) {
     return ansRow;
 }
 
-/*Variation - 3: Given N, print the entire pascal's triangle */
+/*Variation - 3: Given N, print the first N Rows */
 
 //Brute Force - TC: O(n * n * r), SC: O(1)
 vector<vector<int>> nCr4(int n) {
