@@ -23,6 +23,16 @@ vector<int> majorityElementII(vector<int> arr) {
     return ans;
 }
 
+//Optimal - TC: O(N), SC: O(1)
+vector<int> majorityElementII(vector<int> arr) {
+    int n = arr.size();
+    vector<int> ans;
+    for(int i = 0; i < n; i++) {
+        
+    }
+    return ans;
+}
+
 int main() {
   vector<int> arr = {1, 1, 1, 2, 2, 2};  
   vector<int> ans = majorityElementII(arr);
