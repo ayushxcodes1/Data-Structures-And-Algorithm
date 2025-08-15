@@ -73,6 +73,8 @@ vector<int> majorityElementII(vector<int> arr) {
     int mini = (int)(n / 3) + 1;
     if(cnt1 >= mini) ans.push_back(ele1); 
     if(cnt2 >= mini) ans.push_back(ele2); 
+
+    return ans;
 }
 
 int main() {
