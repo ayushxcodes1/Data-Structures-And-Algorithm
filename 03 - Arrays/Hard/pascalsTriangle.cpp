@@ -7,7 +7,7 @@ using namespace std;
 //Brute Force - TC: O(r), SC: O(1)
 int nCr(int n, int r) {
     long long res = 1;
-    for(int i = 1; i <= r; i++) {
+    for(int i = 0; i < r; i++) {
         res = res * (n - i);
         res = res / (i + 1);
     }
