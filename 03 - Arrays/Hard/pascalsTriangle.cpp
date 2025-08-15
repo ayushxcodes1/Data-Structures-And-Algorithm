@@ -14,6 +14,8 @@ int nCr(int n, int r) {
     return res;
 }
 
+/*Variation - 2: Given Row and Column, print the element*/
+
 int main() {
   int ans = nCr(4, 2);
   cout << ans;
