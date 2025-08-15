@@ -37,7 +37,7 @@ void nCr3(int n) {
 /*Variation - 3: Given N, print the entire pascal's triangle */
 
 //Brute Force - TC: O(n * n * r), SC: O(1)
-void nCr3(int n) {
+void nCr4(int n) {
     int ans = 1;
     cout << ans << " ";
     for(int i = 1; i < n; i++) {
