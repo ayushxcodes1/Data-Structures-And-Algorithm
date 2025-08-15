@@ -50,20 +50,26 @@ vector<vector<int>> nCr4(int n) {
 }
 
 int main() {
-  int ans = nCr(4, 2);
-  cout << ans;
+    int ans = nCr(4, 2);
+    cout << ans;
 
-  cout << "\n";
+    cout << "\n";
 
-  nCr2(4);
-  
-  cout << "\n";
+    nCr2(4);
+    
+    cout << "\n";
 
-  nCr3(4);
+    nCr3(4);
 
-  cout << "\n";
+    cout << "\n";
 
-  vector<vector<int>> ans = nCr4(4);
+    vector<vector<int>> ans = nCr4(4);
+    for (auto it : ans) {
+        for (auto ele : it) {
+            cout << ele << " ";
+        }
+        cout << "n";
+    }
 
   return 0;
 }
