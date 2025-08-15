@@ -49,6 +49,19 @@ vector<vector<int>> nCr4(int n) {
     return ans;
 }
 
+//Optimal - TC: O(n * n * r), SC: O(1)
+vector<vector<int>> nCr4(int n) {
+    vector<vector<int>> ans;
+    for(int row = 1; row <= n; row++) {
+        vector<int> tempList;
+        for(int col = 1; col <= row; col++) {
+            tempList.push_back(nCr(row-1, col-1));
+        }
+        ans.push_back(tempList);
+    }
+    return ans;
+}
+
 int main() {
     int ans = nCr(4, 2);
     cout << ans;
