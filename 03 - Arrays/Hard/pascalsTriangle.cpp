@@ -52,13 +52,6 @@ vector<vector<int>> nCr4(int n) {
 }
 
 //Optimal - TC: O(n^2), SC: O(1)
-vector<vector<int>> genrateRow(int row) {
-    long long ans = 1;
-    vector<int> ansRow;
-    ansRow.push_back(1);
-    
-}
-
 vector<vector<int>> nCr5(int n) {
     
 }
