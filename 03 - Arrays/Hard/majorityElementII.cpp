@@ -42,7 +42,7 @@ vector<int> majorityElementII(vector<int> arr) {
     return ans;
 }
 
-//Optimal - TC: O(N), SC: O(1)
+//Optimal - TC: O(2N), SC: O(1)
 vector<int> majorityElementII(vector<int> arr) {
     int n = arr.size();
     vector<int> ans;
