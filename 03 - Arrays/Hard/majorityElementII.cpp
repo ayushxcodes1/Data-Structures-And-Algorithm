@@ -50,7 +50,8 @@ vector<int> majorityElementII(vector<int> arr) {
     int ele2 = INT_MIN;
     for(int i = 0; i < n; i++) {
         if(cnt1 == 0 && ele2 != arr[i]) {
-
+           cnt1 = 1;
+           ele1 = arr[i];
         }
     }
 }
