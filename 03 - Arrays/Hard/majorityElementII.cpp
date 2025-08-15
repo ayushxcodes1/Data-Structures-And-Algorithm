@@ -45,7 +45,7 @@ vector<int> majorityElementII(vector<int> arr) {
 //Optimal - TC: O(2N), SC: O(1)
 vector<int> majorityElementII(vector<int> arr) {
     int n = arr.size();
-    
+    int cnt1 = 0, cnt2 = 0;
 }
 
 int main() {
