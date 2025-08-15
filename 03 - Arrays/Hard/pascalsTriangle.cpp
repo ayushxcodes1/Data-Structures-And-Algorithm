@@ -29,7 +29,7 @@ void nCr3(int n) {
     cout << ans << " ";
     for(int i = 1; i < n; i++) {
         ans = ans * (n - i);
-        
+        ans = ans / i;
     }
 }
 
