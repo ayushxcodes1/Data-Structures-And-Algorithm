@@ -27,10 +27,10 @@ vector<vector<int>> fourSum(vector<int> arr, int target) {
     return ans;
 }
 
-//Better - TC: O(N^3), SC: O(no. of quadruplets + N)
+//Better - TC: O(N^3), SC: O(N + (no. of quadruplets * 2))
 vector<vector<int>> fourSum2(vector<int> arr, int target) {
     int n = arr.size();
-    set<vector<int>> st;
+    set<vector<int>> st;    
 
     for(int i = 0; i < n; i++) {
         set<int> hashset;
