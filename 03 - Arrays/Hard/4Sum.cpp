@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N^4)
+//Brute Force - TC: O(N^4 * log(no. of unique quadruplets)), SC: O()
 vector<vector<int>> threeSum(vector<int> arr, int target) {
     int n = arr.size();
     set<vector<int>> st;
