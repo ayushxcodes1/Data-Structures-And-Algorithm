@@ -35,9 +35,7 @@ vector<vector<int>> fourSum(vector<int> arr, int target) {
     for(int i = 0; i < n; i++) {
         for(int j = i + 1; j < n; j++) {
             for(int k = j + 1; k < n; k++) {
-                long long sum = (long long)arr[i] + arr[j];
-                sum += arr[k];
-                sum += arr[l];
+                long long sum = (long long)arr[i] + arr[j] + arr[k];
                 if(sum == target) {
                     vector<int> temp = {arr[i], arr[j], arr[k], arr[l]};
                     sort(temp.begin(), temp.end()); 
