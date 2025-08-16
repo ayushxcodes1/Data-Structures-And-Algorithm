@@ -48,6 +48,9 @@ vector<vector<int>> threeSum2(vector<int> arr) {
     int n = arr.size();
     vector<vector<int>> ans;
     sort(arr.begin(), arr.end());
+    for(int i = 0; i < n; i++) {
+        
+    }
 }
 
 
