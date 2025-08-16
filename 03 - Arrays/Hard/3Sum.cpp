@@ -22,7 +22,7 @@ vector<vector<int>> threeSum(vector<int> arr) {
     return ans;
 }
 
-//Brute Force - TC: O(N^3 * log(No. of unique triplets)), SC: O(2 * (No. of unique triplets)
+//Brute Force - TC: O(N^2 * log(No. of unique triplets)), SC: O(2 * (No. of unique triplets) + O(N)
 vector<vector<int>> threeSum2(vector<int> arr) {
     int n = arr.size();
     set<vector<int>> st;
