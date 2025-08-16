@@ -62,7 +62,7 @@ int main() {
   cout << endl;
 
   vector<int> arr = {-1, 0, 1, 2, -1, 4};
-  vector<vector<int>> ans = threeSum(arr);
+  vector<vector<int>> ans = threeSum2(arr);
   for(auto it : ans) {
     for(auto ele : it) {
         cout << ele << " ";
