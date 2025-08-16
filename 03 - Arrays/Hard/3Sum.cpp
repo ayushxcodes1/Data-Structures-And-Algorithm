@@ -52,6 +52,9 @@ vector<vector<int>> threeSum2(vector<int> arr) {
         if(i > 0 && arr[i] == arr[i - 1]) continue;
         int j = i + 1;
         int k = j + 1;
+        while(j < k) {
+            
+        }
     }
 }
 
