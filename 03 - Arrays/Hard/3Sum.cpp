@@ -44,6 +44,9 @@ vector<vector<int>> threeSum2(vector<int> arr) {
             }
         }
     }
+
+    vector<vector<int>> ans(st.begin(), st.end());
+    return ans;
 }
 
 int main() {
