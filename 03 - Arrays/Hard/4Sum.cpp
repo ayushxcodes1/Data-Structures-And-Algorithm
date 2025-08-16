@@ -63,7 +63,10 @@ vector<vector<int>> fourSum3(vector<int> arr, int target) {
             int k = j + 1;
             int l = n - 1;
             while(k < l) {
-                int sum = arr[i] + arr[j] + arr[k];
+                long long sum = arr[i];
+                sum += arr[j];
+                sum += arr[k];
+                sum += arr[l];
                 if(sum < 0) {
                    j++;
                 }
