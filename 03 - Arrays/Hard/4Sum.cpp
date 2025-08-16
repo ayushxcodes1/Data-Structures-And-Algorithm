@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force 
-vector<vector<int>> threeSum(vector<int> arr) {
+vector<vector<int>> threeSum(vector<int> arr, int target) {
     int n = arr.size();
     set<vector<int>> st;
 
