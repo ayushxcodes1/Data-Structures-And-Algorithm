@@ -51,7 +51,7 @@ vector<vector<int>> fourSum2(vector<int> arr, int target) {
     return ans;
 }
 
-//Optimal - TC: O(N^3), SC: O(No. of unique triplets)
+//Optimal - TC: O(N^3), SC: O(No. of unique quadruplets)
 vector<vector<int>> fourSum3(vector<int> arr, int target) {
     int n = arr.size();
     vector<vector<int>> ans;
