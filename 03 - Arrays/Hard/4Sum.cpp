@@ -33,8 +33,8 @@ vector<vector<int>> fourSum(vector<int> arr, int target) {
     set<vector<int>> st;
 
     for(int i = 0; i < n; i++) {
+        set<int> hashset;
         for(int j = i + 1; j < n; j++) {
-            set<int> hashset;
             for(int k = j + 1; k < n; k++) {
                 long long sum = (long long)arr[i] + arr[j] + arr[k];
                 if(sum == target) {
