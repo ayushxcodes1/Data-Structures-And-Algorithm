@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N^3), SC: O()
+//Brute Force - TC: O(N^3), SC: O(N^3)
 vector<vector<int>> threeSum(vector<int> arr) {
     int n = arr.size();
     vector<vector<int>> ans;
