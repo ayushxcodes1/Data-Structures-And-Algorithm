@@ -57,7 +57,12 @@ vector<vector<int>> threeSum2(vector<int> arr) {
             if(sum > 0) {
 
             }
-            else if()
+            else if(sum < 0) {
+
+            }
+            else {
+                
+            }
         }
     }
 }
