@@ -25,7 +25,7 @@ vector<vector<int>> threeSum(vector<int> arr, int target) {
 }
 
 int main() {
-  vector<int> arr = {-1, 0, 1, 2, -1, 4};
+  vector<int> arr = {-1, 0, -1, 0, -2, 2};
 
   vector<vector<int>> ans = threeSum(arr);
   for(auto it : ans) {
