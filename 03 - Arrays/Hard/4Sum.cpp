@@ -74,7 +74,7 @@ vector<vector<int>> fourSum3(vector<int> arr, int target) {
                   l--;
                 }
                 else {
-                   vector<int> temp = {arr[i], arr[j], arr[k]};
+                   vector<int> temp = {arr[i], arr[j], arr[k], arr[l]};
                    ans.push_back(temp);
                    j++;
                    k--;
