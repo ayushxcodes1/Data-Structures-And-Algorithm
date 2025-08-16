@@ -43,7 +43,7 @@ vector<vector<int>> fourSum2(vector<int> arr, int target) {
                     sort(temp.begin(), temp.end()); 
                     st.insert(temp);
                 }
-                hashset.insert(arr[i]);
+                hashset.insert(arr[k]);
             }
         }
     }
