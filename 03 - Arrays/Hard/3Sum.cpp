@@ -65,6 +65,7 @@ vector<vector<int>> threeSum2(vector<int> arr) {
                ans.push_back(temp);
                j++;
                k--;
+               while(j < k && arr[j] == arr[j - 1]) j++;
             }
         }
     }
