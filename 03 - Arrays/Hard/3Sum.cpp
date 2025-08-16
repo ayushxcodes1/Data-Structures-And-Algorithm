@@ -13,7 +13,8 @@ vector<vector<int>> threeSum(vector<int> arr) {
             for(int k = j + 1; k < n; k++) {
                 sum = arr[i] + arr[j] + arr[k];
                 subList.insert(subList.end(), {arr[i], arr[j], arr[k]});
-                if(sum == 0 && subList) {
+                sort(subList.begin(), subList.end());
+                if(sum == 0 && )) {
                    ans.push_back({arr[i], arr[j], arr[k]});
                 }
             }
