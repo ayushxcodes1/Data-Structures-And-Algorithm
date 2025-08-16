@@ -84,8 +84,8 @@ int main() {
     cout << endl;
   }
   
-  vector<vector<int>> ans = threeSum(arr);
-  for(auto it : ans) {
+  vector<vector<int>> ans2 = threeSum(arr);
+  for(auto it : ans2) {
     for(auto ele : it) {
         cout << ele << " ";
     }
