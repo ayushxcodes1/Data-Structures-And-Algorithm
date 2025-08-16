@@ -35,7 +35,6 @@ vector<vector<int>> threeSum2(vector<int> arr) {
                 sort(temp.begin(), temp.end()); 
                 st.insert(temp);
             }
-
         }
     }
     vector<vector<int>> ans(st.begin(), st.end());
