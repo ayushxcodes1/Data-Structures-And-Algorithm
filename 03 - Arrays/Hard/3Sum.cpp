@@ -46,22 +46,8 @@ vector<vector<int>> threeSum2(vector<int> arr) {
 //Optimal - TC: O((NlogN + N^2), SC: O(No. of unique triplets)
 vector<vector<int>> threeSum2(vector<int> arr) {
     int n = arr.size();
-    set<vector<int>> st;
-
-    for(int i = 0; i < n; i++) {
-        set<int> hashset;
-        for(int j = i + 1; j < n; j++) {
-            int third = -(arr[i] + arr[j]);
-            if(hashset.find(third) != hashset.end()) {
-                vector<int> temp = {arr[i], arr[j], third};
-                sort(temp.begin(), temp.end()); 
-                st.insert(temp);
-            }
-            hashset.insert(arr[i]);
-        }
-    }
-    vector<vector<int>> ans(st.begin(), st.end());
-    return ans;
+    vector<vector<int>> ans;
+    sort(arr.begin(), sort.end());
 }
 
 
