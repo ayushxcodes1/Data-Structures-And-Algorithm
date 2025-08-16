@@ -36,7 +36,7 @@ vector<vector<int>> threeSum2(vector<int> arr) {
                 sort(temp.begin(), temp.end()); 
                 st.insert(temp);
             }
-            hashset.insert(arr[i]);
+            hashset.insert(arr[j]);
         }
     }
     vector<vector<int>> ans(st.begin(), st.end());
