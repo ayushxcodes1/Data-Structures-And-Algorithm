@@ -39,7 +39,7 @@ vector<vector<int>> fourSum2(vector<int> arr, int target) {
                 long long sum = (long long)arr[i] + arr[j] + arr[k];
                 long long fourth = target - (sum);
                 if(hashset.find(fourth) != hashset.end()) {
-                    vector<int> temp = {arr[i], arr[j], arr[k], fourth};
+                    vector<int> temp = {arr[i], arr[j], arr[k], (int)fourth};
                     sort(temp.begin(), temp.end()); 
                     st.insert(temp);
                 }
