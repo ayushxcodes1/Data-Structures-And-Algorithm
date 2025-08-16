@@ -102,8 +102,7 @@ int main() {
         cout << ele << " ";
     }
     cout << endl;
-  }
-  
+  }  
 
   return 0;
 }
