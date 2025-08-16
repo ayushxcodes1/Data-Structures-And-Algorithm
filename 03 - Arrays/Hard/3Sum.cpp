@@ -10,10 +10,9 @@ vector<vector<int>> threeSum(vector<int> arr) {
         for(int j = i + 1; j < n - 1; j++) {
             for(int k = j + 1; k < n; k++) {
                 long long sum = arr[i] + arr[j] + arr[k];
-                triplet.insert(triplet.end(), {arr[i], arr[j], arr[k]});
-                sort(triplet.begin(), triplet.end());
-                if(sum == 0 && (find(ans.begin(), ans.end(), triplet) == ans.end())) {
-                   ans.push_back({arr[i], arr[j], arr[k]});
+
+                if(sum == 0) {
+                   vector<int> triplets;
                 }
             }
         }
