@@ -63,7 +63,8 @@ vector<vector<int>> threeSum2(vector<int> arr) {
             else {
                vector<int> temp = {arr[i], arr[j], arr[k]};
                ans.push_back(temp);
-               j++, k--;
+               j++;
+               k--;
             }
         }
     }
