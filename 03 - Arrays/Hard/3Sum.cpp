@@ -43,6 +43,29 @@ vector<vector<int>> threeSum2(vector<int> arr) {
     return ans;
 }
 
+//Better - TC: O(N^2 * log(No. of unique triplets)), SC: O(2 * (No. of unique triplets) + O(N)
+vector<vector<int>> threeSum2(vector<int> arr) {
+    int n = arr.size();
+    set<vector<int>> st;
+
+    for(int i = 0; i < n; i++) {
+        set<int> hashset;
+        for(int j = i + 1; j < n; j++) {
+            int third = -(arr[i] + arr[j]);
+            if(hashset.find(third) != hashset.end()) {
+                vector<int> temp = {arr[i], arr[j], third};
+                sort(temp.begin(), temp.end()); 
+                st.insert(temp);
+            }
+            hashset.insert(arr[i]);
+        }
+    }
+    vector<vector<int>> ans(st.begin(), st.end());
+    return ans;
+}
+
+
+
 int main() {
   vector<int> arr = {-1, 0, 1, 2, -1, 4};
   vector<vector<int>> ans = threeSum(arr);
