@@ -37,7 +37,7 @@ vector<vector<int>> fourSum2(vector<int> arr, int target) {
         for(int j = i + 1; j < n; j++) {
             for(int k = j + 1; k < n; k++) {
                 long long sum = (long long)arr[i] + arr[j] + arr[k];
-                int fourth = target - sum;
+                long long fourth = target - sum;
                 if(hashset.find(fourth) != hashset.end()) {
                     vector<int> temp = {arr[i], arr[j], arr[k], fourth};
                     sort(temp.begin(), temp.end()); 
