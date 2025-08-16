@@ -12,7 +12,7 @@ vector<vector<int>> threeSum(vector<int> arr) {
                 long long sum = arr[i] + arr[j] + arr[k];
 
                 if(sum == 0) {
-                   vector<int> triplets;
+                   vector<int> triplet;
                 }
             }
         }
