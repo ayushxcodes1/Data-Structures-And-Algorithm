@@ -101,6 +101,16 @@ int main() {
     }
     cout << endl;
   }
+
+  cout << endl;
+
+  vector<vector<int>> ans3 = fourSum3(arr, 0);
+  for(auto it : ans3) {
+    for(auto ele : it) {
+        cout << ele << " ";
+    }
+    cout << endl;
+  }
   
   return 0;
 }
