@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N^3), SC: O(No. of unique triplets)
+//Brute Force - TC: O(N^3), SC: O(No. of unique triplets * 2)
 vector<vector<int>> threeSum(vector<int> arr) {
     int n = arr.size();
     set<vector<int>> st;
