@@ -60,6 +60,16 @@ int main() {
     }
     cout << endl;
   }
+
+  cout << endl;
+
+  vector<vector<int>> ans = fourSum(arr, 0);
+  for(auto it : ans) {
+    for(auto ele : it) {
+        cout << ele << " ";
+    }
+    cout << endl;
+  }
   
   return 0;
 }
