@@ -30,6 +30,7 @@ vector<vector<int>> threeSum2(vector<int> arr) {
     for(int i = 0; i < n; i++) {
         set<int> hashset;
         for(int j = i + 1; j < n; j++) {
+            int third = -(arr[i] + arr[j]);
             if(arr[i] + arr[j] + arr[k] == 0) {
                 vector<int> temp = {arr[i], arr[j], arr[k]};
                 sort(temp.begin(), temp.end()); 
