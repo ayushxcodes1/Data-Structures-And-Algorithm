@@ -68,10 +68,10 @@ vector<vector<int>> fourSum3(vector<int> arr, int target) {
                 sum += arr[k];
                 sum += arr[l];
                 if(sum < 0) {
-                   j++;
+                   k++;
                 }
                 else if(sum > 0) {
-                  k--;
+                  l--;
                 }
                 else {
                    vector<int> temp = {arr[i], arr[j], arr[k]};
