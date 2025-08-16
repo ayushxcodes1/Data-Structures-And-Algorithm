@@ -13,7 +13,7 @@ vector<vector<int>> threeSum(vector<int> arr) {
                 if(arr[i] + arr[j] + arr[k] == 0) {
                     vector<int> temp = {arr[i], arr[j], arr[k]};
                     sort(temp.begin(), triplet.end()); 
-                    st.insert(triplet);
+                    st.insert(temp);
                 }
             }
         }
