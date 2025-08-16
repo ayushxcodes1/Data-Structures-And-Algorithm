@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N^4), SC: O(no. of quadruplets)
+//Brute Force - TC: O(N^4), SC: O(no. of quadruplets * 2)
 vector<vector<int>> fourSum(vector<int> arr, int target) {
     int n = arr.size();
     set<vector<int>> st;
