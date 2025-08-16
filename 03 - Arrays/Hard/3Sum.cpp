@@ -49,7 +49,7 @@ vector<vector<int>> threeSum2(vector<int> arr) {
     vector<vector<int>> ans;
     sort(arr.begin(), arr.end());
     for(int i = 0; i < n; i++) {
-        
+        if(i > 0 && arr[i] == arr[i - 1]) continue;
     }
 }
 
