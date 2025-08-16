@@ -27,7 +27,7 @@ vector<vector<int>> threeSum(vector<int> arr) {
 }
 
 //Better - TC: O(N^3), SC: O(N^3)
-vector<vector<int>> threeSum(vector<int> arr) {
+vector<vector<int>> threeSum2(vector<int> arr) {
     int n = arr.size();
     
 }
