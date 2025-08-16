@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(N^3), SC: O()
 vector<vector<int>> threeSum(vector<int> arr) {
     int n = arr.size();
     vector<vector<int>> ans;
@@ -13,7 +14,7 @@ vector<vector<int>> threeSum(vector<int> arr) {
 
                 if(sum == 0) {
                     vector<int> triplet = {arr[i], arr[j], arr[k]};
-                    sort(triplet.begin(), triplet.end());
+                    sort(triplet.begin(), triplet.end()); 
                     if(find(ans.begin(), ans.end(), triplet) == ans.end()) {
                        ans.push_back(triplet);
                     }
