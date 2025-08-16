@@ -61,7 +61,7 @@ vector<vector<int>> threeSum2(vector<int> arr) {
               k--;
             }
             else {
-
+               vector<int> temp = {arr[i], arr[j], arr[k]};
             }
         }
     }
