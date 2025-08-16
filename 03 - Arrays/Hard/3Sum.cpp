@@ -70,6 +70,7 @@ vector<vector<int>> threeSum2(vector<int> arr) {
             }
         }
     }
+    return ans;
 }
 
 
