@@ -76,10 +76,10 @@ vector<vector<int>> fourSum3(vector<int> arr, int target) {
                 else {
                    vector<int> temp = {arr[i], arr[j], arr[k], arr[l]};
                    ans.push_back(temp);
-                   j++;
-                   k--;
-                   while(j < k && arr[j] == arr[j - 1]) j++;
-                   while(j < k && arr[k] == arr[k + 1]) k--;
+                   k++;
+                   l--;
+                   while(k < l && arr[k] == arr[k - 1]) k++;
+                   while(k < l && arr[l] == arr[l + 1]) l--;
                 }
         }
         }
