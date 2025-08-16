@@ -73,8 +73,6 @@ vector<vector<int>> threeSum2(vector<int> arr) {
     return ans;
 }
 
-
-
 int main() {
   vector<int> arr = {-1, 0, 1, 2, -1, 4};
   vector<vector<int>> ans = threeSum(arr);
