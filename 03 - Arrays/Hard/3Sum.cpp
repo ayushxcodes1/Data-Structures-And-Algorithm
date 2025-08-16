@@ -35,13 +35,5 @@ int main() {
 
   cout << endl;
 
-  vector<vector<int>> ans2 = threeSum2(arr);
-  for(auto it : ans2) {
-    for(auto ele : it) {
-        cout << ele << " ";
-    }
-    cout << endl;
-  }
-
   return 0;
 }
