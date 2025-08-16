@@ -11,7 +11,7 @@ vector<vector<int>> threeSum(vector<int> arr, int target) {
         for(int j = i + 1; j < n; j++) {
             for(int k = j + 1; k < n; k++) {
                 for(int l = k + 1; l < n; l++) {
-                    if(arr[i] + arr[j] + arr[k] + arr[l] == 0) {
+                    if(arr[i] + arr[j] + arr[k] + arr[l] == target) {
                         vector<int> temp = {arr[i], arr[j], arr[k], arr[l]};
                         sort(temp.begin(), temp.end()); 
                         st.insert(temp);
