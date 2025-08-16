@@ -15,7 +15,7 @@ vector<vector<int>> threeSum(vector<int> arr) {
                     vector<int> triplet = {arr[i], arr[j], arr[k]};
                     sort(triplet.begin(), triplet.end());
                     if(find(ans.begin(), ans.end(), triplet) == ans.end()) {
-                      ans.push_back(triplet);
+                       ans.push_back(triplet);
                     }
                 }
             }
