@@ -28,7 +28,7 @@ vector<vector<int>> fourSum(vector<int> arr, int target) {
 }
 
 //Better - TC: O(N^3), SC: O(no. of quadruplets)
-vector<vector<int>> fourSum(vector<int> arr, int target) {
+vector<vector<int>> fourSum2(vector<int> arr, int target) {
     int n = arr.size();
     set<vector<int>> st;
 
@@ -63,8 +63,8 @@ int main() {
 
   cout << endl;
 
-  vector<vector<int>> ans = fourSum(arr, 0);
-  for(auto it : ans) {
+  vector<vector<int>> ans2 = fourSum2(arr, 0);
+  for(auto it : ans2) {
     for(auto ele : it) {
         cout << ele << " ";
     }
