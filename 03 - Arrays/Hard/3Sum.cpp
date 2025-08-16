@@ -54,14 +54,14 @@ vector<vector<int>> threeSum2(vector<int> arr) {
         int k = j + 1;
         while(j < k) {
             int sum = arr[i] + arr[j] + arr[k];
-            if(sum > 0) {
-
+            if(sum < 0) {
+       
             }
-            else if(sum < 0) {
+            else if(sum > 0) {
 
             }
             else {
-                
+
             }
         }
     }
