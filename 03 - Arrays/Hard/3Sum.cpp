@@ -44,7 +44,7 @@ vector<vector<int>> threeSum2(vector<int> arr) {
 }
 
 //Optimal - TC: O((NlogN + N^2), SC: O(No. of unique triplets)
-vector<vector<int>> threeSum2(vector<int> arr) {
+vector<vector<int>> threeSum3(vector<int> arr) {
     int n = arr.size();
     vector<vector<int>> ans;
     sort(arr.begin(), arr.end());
