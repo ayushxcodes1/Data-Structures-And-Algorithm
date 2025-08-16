@@ -34,7 +34,6 @@ int main() {
         cout << ele << " ";
     }
     cout << endl;
-    cout << next;
   }
   
   return 0;
