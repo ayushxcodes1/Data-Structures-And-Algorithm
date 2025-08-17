@@ -15,6 +15,7 @@ int maxLength(vector<int> &arr) {
            maxLen = max(maxLen, len);
         }
     }
+    return maxLen;
 }
 
 int main() {
