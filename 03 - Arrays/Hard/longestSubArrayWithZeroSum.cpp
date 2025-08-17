@@ -25,10 +25,13 @@ int maxLength2(vector<int> &arr) {
     int sum = 0, maxLen = 0;
     for(int i = 0; i < n; i++) {
         sum += arr[i];
+        
+        //subarray from 0..i has sum 0
         if(sum == 0) {
            maxLen = i + 1;
         }
-        
+
+        //if sum was seen before
         if(mpp.find(sum) != mpp.end()) {
            maxLen = max(maxLen, i - mpp[sum]);
         } else {
