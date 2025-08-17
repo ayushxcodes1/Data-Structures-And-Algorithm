@@ -24,8 +24,9 @@ int subarrayXor2(vector<int> &arr, int k) {
     map<int, int> mpp;
     int xr = 0;
     mpp[xr]++;
+    int cnt = 0;
     for(int i = 0; i < n; i++) {
-        
+
     }
 }
 
