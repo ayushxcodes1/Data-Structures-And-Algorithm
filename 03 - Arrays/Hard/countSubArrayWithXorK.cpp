@@ -18,6 +18,8 @@ int subarrayXor(vector<int> &arr, int k) {
     return cnt;
 }
 
+//Optimal
+
 int main() {
   vector<int> arr = {1, 1, 1, 1};
 
