@@ -38,6 +38,7 @@ int maxLength2(vector<int> &arr) {
            mpp[sum] = i;
         }
     }
+    return maxLen;
 }
 
 int main() {
