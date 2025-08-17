@@ -5,8 +5,8 @@ using namespace std;
 //Brute Force
 int subarrayXor(vector<int> &arr, int k) {
     int n = arr.size();
-    int xorr = 0;
     for(int i = 0; i < n; i++) {
+        int xorr = 0;
         for(int j = i + 1; j < n; j++) {
             
         }
