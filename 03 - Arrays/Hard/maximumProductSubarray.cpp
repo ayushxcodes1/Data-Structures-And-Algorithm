@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+ 
+vector<int> maxProduct(vector<int> arr) {
+    
+}
 
 int main() {
   vector<int> arr = {2, 3, -2, 4};
