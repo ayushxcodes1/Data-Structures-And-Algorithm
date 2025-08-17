@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force
+//Brute Force -  TC: (N^2), SC: O(1)
 int subarrayXor(vector<int> &arr, int k) {
     int n = arr.size();
     int cnt = 0;
