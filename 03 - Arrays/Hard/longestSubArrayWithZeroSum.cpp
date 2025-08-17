@@ -25,6 +25,9 @@ int maxLength2(vector<int> &arr) {
     int sum = 0, maxLen = 0;
     for(int i = 0; i < n; i++) {
         sum += arr[i];
+        if(sum == 0) {
+           maxLen = i + 1;
+        }
         if(mpp.find(sum) != mpp.end()) {
            maxLen = max(maxLen, i - mpp[sum]);
         }
