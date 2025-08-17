@@ -30,6 +30,8 @@ int maxLength2(vector<int> &arr) {
         }
         if(mpp.find(sum) != mpp.end()) {
            maxLen = max(maxLen, i - mpp[sum]);
+        } else {
+           mpp[sum] = i;
         }
     }
 }
