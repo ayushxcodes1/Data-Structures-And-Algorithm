@@ -24,9 +24,8 @@ int maxLength2(vector<int> &arr) {
     int maxLen = 0;
     for(int i = 0; i < n; i++) {
         
-        }
+        
     }
-    return maxLen;
 }
 
 int main() {
