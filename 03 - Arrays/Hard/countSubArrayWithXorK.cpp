@@ -42,9 +42,9 @@ int main() {
   cout << ans;
 
   cout << endl;
-  
-  int ans = subarrayXor(arr, 0);
-  cout << ans;
+
+  int ans2 = subarrayXor2(arr, 0);
+  cout << ans2;
 
   return 0;
 }
