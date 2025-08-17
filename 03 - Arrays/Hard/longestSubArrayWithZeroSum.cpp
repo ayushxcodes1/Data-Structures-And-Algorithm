@@ -3,7 +3,18 @@
 using namespace std;
 
 int maxLength(vector<int> &arr) {
-    
+    int n = arr.size();
+    int maxLen = 0;
+    for(int i = 0; i < n; i++) {
+        int sum = 0, len = 0;
+        for(int j = i; j < n; j++) {
+            sum += arr[j];
+            len++;
+        }
+        if(sum == 0) {
+           maxLen = max(maxLen, len);
+        }
+    }
 }
 
 int main() {
