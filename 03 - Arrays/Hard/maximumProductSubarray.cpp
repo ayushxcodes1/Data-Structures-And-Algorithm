@@ -4,6 +4,12 @@ using namespace std;
  
 vector<int> maxProduct(vector<int> arr) {
     int n = arr.size();
+    int maxProd = INT_MIN;
+    for(int i = 0; i < n; i++) {
+        for(int j = i; j < n; j++) {
+
+        }
+    }
 }
 
 int main() {
