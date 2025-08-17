@@ -20,7 +20,13 @@ int subarrayXor(vector<int> &arr, int k) {
 
 //Optimal
 int subarrayXor2(vector<int> &arr, int k) {
- 
+    int n = arr.size();
+    map<int, int> mpp;
+    int xr = 0;
+    mpp[xr]++;
+    for(int i = 0; i < n; i++) {
+        
+    }
 }
 
 int main() {
