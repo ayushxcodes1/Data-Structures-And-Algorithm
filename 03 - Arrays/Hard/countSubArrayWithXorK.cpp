@@ -3,7 +3,7 @@
 using namespace std;
 
 int subarrayXor(vector<int> &arr, int k) {
-    
+
 }
 
 int main() {
@@ -11,7 +11,6 @@ int main() {
 
   int ans = subarrayXor(arr, 0);
   cout << ans;
-
 
   return 0;
 }
