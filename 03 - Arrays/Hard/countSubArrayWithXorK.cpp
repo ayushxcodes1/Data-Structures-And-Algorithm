@@ -15,6 +15,7 @@ int subarrayXor(vector<int> &arr, int k) {
             }
         }
     }
+    return cnt;
 }
 
 int main() {
