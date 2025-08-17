@@ -32,6 +32,7 @@ int subarrayXor2(vector<int> &arr, int k) {
         cnt += mpp[x];  
         mpp[xr]++;
     }
+    return cnt;
 }
 
 int main() {
