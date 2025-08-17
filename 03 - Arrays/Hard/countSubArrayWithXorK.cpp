@@ -41,5 +41,10 @@ int main() {
   int ans = subarrayXor(arr, 0);
   cout << ans;
 
+  cout << endl;
+  
+  int ans = subarrayXor(arr, 0);
+  cout << ans;
+
   return 0;
 }
