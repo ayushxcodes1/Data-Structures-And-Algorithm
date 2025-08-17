@@ -5,7 +5,6 @@ using namespace std;
 vector<int> maxProduct(vector<int> arr) {
     int n = arr.size();
     int maxProd = INT_MIN;
-    int start = 0, ansStart = -1, ansEnd = -1;
     vector<int> ans;
     for(int i = 0; i < n; i++) {
         int prod = 1;
