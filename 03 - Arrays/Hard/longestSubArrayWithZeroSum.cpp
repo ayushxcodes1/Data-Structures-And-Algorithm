@@ -7,7 +7,7 @@ int maxLength(vector<int> &arr) {
     int maxLen = 0;
     for(int i = 0; i < n; i++) {
         int sum = 0, len = 0;
-        for(int j = 0; j < i; j++) {
+        for(int j = 0; j <= i; j++) {
             sum += arr[j];
             len++;
         }
