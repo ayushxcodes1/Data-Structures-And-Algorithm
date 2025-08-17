@@ -19,7 +19,7 @@ int subarrayXor(vector<int> &arr, int k) {
 }
 
 //Optimal
-int subarrayXor(vector<int> &arr, int k) {
+int subarrayXor2(vector<int> &arr, int k) {
  
 }
 
