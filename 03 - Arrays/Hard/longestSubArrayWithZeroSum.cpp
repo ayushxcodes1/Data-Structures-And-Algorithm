@@ -46,6 +46,8 @@ int main() {
   int ans = maxLength(arr);
   cout << ans;
 
+  cout << endl;
+
   int ans2 = maxLength(arr);
   cout << ans2;
   return 0;
