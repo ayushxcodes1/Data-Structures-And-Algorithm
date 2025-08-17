@@ -6,7 +6,7 @@ int maxLength(vector<int> &arr) {
     int n = arr.size();
     int maxLen = 0;
     for(int i = 0; i < n; i++) {
-        int sum = 0, len = 0;
+        int sum = 0;
         for(int j = 0; j <= i; j++) {
             sum += arr[j];
             if(sum == 0) {
