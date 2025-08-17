@@ -9,7 +9,6 @@ int maxLength(vector<int> &arr) {
         int sum = 0, len = 0;
         for(int j = 0; j <= i; j++) {
             sum += arr[j];
-            len++;
             if(sum == 0) {
                maxLen = max(maxLen, len);
             }
