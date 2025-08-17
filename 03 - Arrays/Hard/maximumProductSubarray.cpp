@@ -3,7 +3,7 @@
 using namespace std;
  
 vector<int> maxProduct(vector<int> arr) {
-    
+    int n = arr.size();
 }
 
 int main() {
