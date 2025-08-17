@@ -21,10 +21,9 @@ int maxLength(vector<int> &arr) {
 //Better 
 int maxLength2(vector<int> &arr) {
     int n = arr.size();
-    int maxLen = 0;
     map<int, int> mpp;
+    int sum = 0, maxLen = 0;
     for(int i = 0; i < n; i++) {
-        
         
     }
 }
