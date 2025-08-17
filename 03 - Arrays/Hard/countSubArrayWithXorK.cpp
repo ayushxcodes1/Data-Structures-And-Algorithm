@@ -7,7 +7,7 @@ int subarrayXor(vector<int> &arr, int k) {
     int n = arr.size();
     for(int i = 0; i < n; i++) {
         int xorr = arr[i];
-        for(int j = i; j < n; j++) {
+        for(int j = i + 1; j < n; j++) {
             
         }
     }
