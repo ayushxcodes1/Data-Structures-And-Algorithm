@@ -26,7 +26,7 @@ int subarrayXor2(vector<int> &arr, int k) {
     mpp[xr]++;
     int cnt = 0;
     for(int i = 0; i < n; i++) {
-
+        xr = xr ^ arr[i];
     }
 }
 
