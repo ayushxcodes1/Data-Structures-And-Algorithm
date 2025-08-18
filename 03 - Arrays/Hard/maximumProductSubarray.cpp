@@ -33,7 +33,7 @@ int maxProduct2(vector<int> &arr) {
 }
 
 //Optimal2 - TC: O(N), SC: O(1) - Kadane's Algorithm
-int maxProduct2(vector<int> &arr) {
+int maxProduct3(vector<int> &arr) {
   int n = arr.size();
   int ans = INT_MIN;
   int pre = 1, suff = 1;
