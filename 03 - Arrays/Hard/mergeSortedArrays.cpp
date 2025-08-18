@@ -32,7 +32,7 @@ void merge(vector<int> &arr1, vector<int> &arr2, int n, int m) {
     }
 
     //O(M + N)
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n + m; i++) {
         if(i < n) {
             arr1[i] = ans[i];
         }
