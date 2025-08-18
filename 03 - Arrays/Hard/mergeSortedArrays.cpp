@@ -46,6 +46,12 @@ void merge(vector<int> &arr1, vector<int> &arr2, int n, int m) {
 void merge2(vector<int> &arr1, vector<int> arr2, int n, int m) {
     int left = n - 1;
     int right = 0;
+    while(left >= 0 && right < m) {
+        if(arr1[left] > arr2[right]) {
+           swap(arr1[left], arr2[right]);
+           left--, right++;
+        }
+    }
 }
 
 //Optimal2 - TC: O(N + M), SC: O(1) - Gap Method
