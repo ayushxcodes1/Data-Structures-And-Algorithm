@@ -42,7 +42,10 @@ int maxProduct3(vector<int> &arr) {
     int temp = max({arr[i], prod1 * arr[i], prod2 * arr[i]});
     prod2 = min({arr[i], prod1 * arr[i], prod2 * arr[i]});
     prod1 = temp;
+
+    maxProd = max(maxProd, prod1);
   }
+  return maxProd;
 }
 
 int main() {
