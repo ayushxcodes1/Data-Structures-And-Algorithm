@@ -71,7 +71,7 @@ void swapIfGreater(vector<int> &arr1, vector<int> &arr2, int ind1, int ind2) {
     }
 }
 
-void merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
+void merge3(vector<int> &arr1, vector<int> &arr2, int m, int n) {
     int len = (m + n);
     int gap = (len / 2) + (len % 2);
 
@@ -86,7 +86,7 @@ void merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
             }
             //arr2 and arr2
             else if(left >= n){
-                swapIfGreater(arr2, arr2, left - n, right - n);
+                swapIfGreater(arr2, arr2, left - m, right - n);
             }
             //arr1 and arr1
             else {
@@ -94,7 +94,7 @@ void merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
             }
             left++, right++;
         }
-        
+
         if(gap == 1) break;
         gap = (gap / 2) + (gap % 2);
     }
