@@ -85,14 +85,14 @@ int main() {
 
   cout << endl;
 
-  vector<int> ans2 = merge2(arr, arr2, m, n);
+  vector<int> ans2 = merge2(arr1, arr2, m, n);
   for(auto it : ans2) {
     cout << it << " ";
   }
 
   cout << endl;
 
-  vector<int> ans3 = merge3(arr, arr2, m, n);
+  vector<int> ans3 = merge3(arr1, arr2, m, n);
   for(auto it : ans3) {
     cout << it << " ";
   }
