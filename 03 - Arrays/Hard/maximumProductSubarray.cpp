@@ -10,7 +10,7 @@ vector<int> maxProduct(vector<int> arr) {
   for(int i = 0; i < n; i++) {
     int prod = 1;
     for(int j = i; j < n; j++) {
-        prod = prod * arr[j];
+      prod = prod * arr[j];
     }
     maxProd = max(prod, maxProd);
   }
