@@ -43,7 +43,7 @@ void merge(vector<int> &arr1, vector<int> &arr2, int n, int m) {
 }
 
 //Optimal1 - TC: O(NlogN + MlogM), SC: O(1)
-void merge2(vector<int> &arr1, vector<int> arr2, int n, int m) {
+void merge2(vector<int> &arr1, vector<int> &arr2, int n, int m) {
     int left = n - 1;
     int right = 0;
 
@@ -120,7 +120,7 @@ int main() {
 
   arr1 = {1, 3, 5, 7};
   arr2 = {0, 2, 6, 8, 9};
-  merge2(arr1, arr2, 3, 3);
+  merge2(arr1, arr2, 4, 5);
 
   cout << "\narr1 = ";
   for(auto it : arr1) {
@@ -136,7 +136,7 @@ int main() {
 
   arr1 = {1, 3, 5, 7};
   arr2 = {0, 2, 6, 8, 9};
-  merge3(arr1, arr2, 3, 3);
+  merge3(arr1, arr2, 4, 5);
 
   cout << "\narr1 = ";
   for(auto it : arr1) {
