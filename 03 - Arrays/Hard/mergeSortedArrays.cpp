@@ -2,29 +2,8 @@
 
 using namespace std;
 
-//Brute Force - TC: O((M + N) log(M + N)), SC: O(M + N)
+//Brute - TC: O(M + N), SC: O(M + N)
 vector<int> merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
-    int left = arr1[0];
-    int right = arr2[0];
-    vector<int> ans;
-
-    //O(m)
-    for(int i = 0; i < m; i++) {
-        ans.push_back(arr1[i]);
-    }
-
-    //O(n)
-    for(int i = m; i < m + n; i++) {
-        ans.push_back(arr2[i - m]);
-    }
-
-    //O((M+N)log(M+N))
-    sort(ans.begin(), ans.end());
-    return ans;
-}
-
-//Better - TC: O(M + N), SC: O(M + N)
-vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int left = 0, right = 0;
     vector<int> ans;
     
@@ -56,7 +35,7 @@ vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
 }
 
 //Optimal - TC: O(M + N), SC: O(1)
-vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
+vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int p = 0;
     for(int i = 0; i < m + n; i++) {
         if(arr1[i] > arr2[p]) {
@@ -87,13 +66,6 @@ int main() {
 
   vector<int> ans2 = merge2(arr1, arr2, m, n);
   for(auto it : ans2) {
-    cout << it << " ";
-  }
-
-  cout << endl;
-
-  vector<int> ans3 = merge3(arr1, arr2, m, n);
-  for(auto it : ans3) {
     cout << it << " ";
   }
   return 0;
