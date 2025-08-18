@@ -8,11 +8,11 @@ vector<int> maxProduct(vector<int> arr) {
   int maxProd = INT_MIN;
   vector<int> ans;
   for(int i = 0; i < n; i++) {
-      int prod = 1;
-      for(int j = i; j < n; j++) {
-          prod = prod * arr[j];
-      }
-      maxProd = max(prod, maxProd);
+    int prod = 1;
+    for(int j = i; j < n; j++) {
+        prod = prod * arr[j];
+    }
+    maxProd = max(prod, maxProd);
   }
   return;
 }
