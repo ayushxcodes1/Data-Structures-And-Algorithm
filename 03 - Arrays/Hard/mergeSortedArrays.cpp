@@ -65,7 +65,7 @@ vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
 }
 
 //Optimal2 - TC: O(M + N), SC: O(1) - Gap Method
-void swapIfGreater(vector<int> arr1, vector<int> arr2, int ind1, int ind2) {
+void swapIfGreater(vector<int> &arr1, vector<int> &arr2, int ind1, int ind2) {
     if(arr1[ind1] > arr2[ind2]) {
        swap(arr1[ind1], arr2[ind2]);
     }
@@ -74,9 +74,11 @@ void swapIfGreater(vector<int> arr1, vector<int> arr2, int ind1, int ind2) {
 void merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int len = (m + n);
     int gap = (len / 2) + (len % 2);
+
     while(gap > 0) {
         int left = 0;
         int right = left + gap;
+
         while(right < len) {
             //arr1 and arr2
             if(left < n && right >= n) {
@@ -92,6 +94,7 @@ void merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
             }
             left++, right++;
         }
+        
         if(gap == 1) break;
         gap = (gap / 2) + (gap % 2);
     }
