@@ -74,6 +74,33 @@ vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
     }
 }
 
+//Optimal2 - TC: O(M + N), SC: O(1) - Gap Method
+vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
+    int i = m - 1; //last index of arr1's valid part
+    int j = n - 1; //last index of arr2
+    int k = m + n - 1; //last index of arr1
+    
+    //O(M + N)
+    while(i >= 0 && j >= 0) {
+        if(arr1[i] > arr2[j]) {
+           arr1[k] = arr1[i];
+           i--;
+        } 
+        else {
+           arr1[k] = arr2[j];
+           j--;
+        }
+        k--;
+    }
+
+    //copy leftover arr2(if any) - O(M)
+    while(j >= 0) {
+        arr1[k] = arr2[j];
+        j--;
+        k--;
+    }
+}
+
 int main() {
   vector<int> arr1 = {1, 2, 3, 0, 0, 0};
   vector<int> arr2 = {2, 5, 6};
