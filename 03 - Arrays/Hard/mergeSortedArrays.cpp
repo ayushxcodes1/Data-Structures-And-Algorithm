@@ -30,7 +30,7 @@ vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
     
     //O(min(M, N))
     while(left < m && right < n) {
-        if(arr1[left] < arr2[right]) {
+        if(arr1[left] <= arr2[right]) {
            ans.push_back(arr1[left]);
            left++;
         }
