@@ -62,6 +62,11 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
         if(arr[i] > arr2[p]) {
            arr[i + 1] = arr[i];
            arr[i] = arr2[p];
+
+           p++;
+        }
+        if(arr[i] == 0) {
+           arr[i] = arr2[p];
         }
     }
 }
