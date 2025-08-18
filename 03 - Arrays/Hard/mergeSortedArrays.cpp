@@ -2,18 +2,23 @@
 
 using namespace std;
 
+//Brute Force - TC: O()
 vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
     int p1 = arr[0];
     int p2 = arr2[0];
     vector<int> ans;
+
+    //O(m)
     for(int i = 0; i < m; i++) {
         ans.push_back(arr[i]);
     }
 
+    //O(n)
     for(int i = m; i < m + n; i++) {
         ans.push_back(arr2[i - m]);
     }
 
+    //O(NlogN)
     sort(ans.begin(), ans.end());
     return ans;
 }
