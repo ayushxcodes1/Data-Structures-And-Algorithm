@@ -2,19 +2,19 @@
 
 using namespace std;
  
-//Brute Force - TC: O(N^2), SC: O(1)
+//Brute Force - TC: O(N^2), SC: O(N)
 vector<int> maxProduct(vector<int> arr) {
-    int n = arr.size();
-    int maxProd = INT_MIN;
-    vector<int> ans;
-    for(int i = 0; i < n; i++) {
-        int prod = 1;
-        for(int j = i; j < n; j++) {
-            prod = prod * arr[j];
-        }
-        maxProd = max(prod, maxProd);
-    }
-    return;
+  int n = arr.size();
+  int maxProd = INT_MIN;
+  vector<int> ans;
+  for(int i = 0; i < n; i++) {
+      int prod = 1;
+      for(int j = i; j < n; j++) {
+          prod = prod * arr[j];
+      }
+      maxProd = max(prod, maxProd);
+  }
+  return;
 }
 
 int main() {
