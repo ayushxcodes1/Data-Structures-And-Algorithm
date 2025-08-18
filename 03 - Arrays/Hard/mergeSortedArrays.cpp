@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute
+//Brute - TC: O((M + N) log(M + N)), SC: O(1)
 vector<int> merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
     for(int j = 0, i = m; j < n; j++) {
         arr1[i] = arr2[j];
