@@ -72,10 +72,12 @@ void merge3(vector<int> &arr1, vector<int> &arr2, int n, int m) {
     int len = (n + m);
     int gap = (len / 2) + (len % 2);
 
+    //O(log(N + M))
     while(gap > 0) {
         int left = 0;
         int right = left + gap;
 
+        //O(N + M)
         while(right < len) {
             //arr1 and arr2
             if(left < n && right >= n) {
