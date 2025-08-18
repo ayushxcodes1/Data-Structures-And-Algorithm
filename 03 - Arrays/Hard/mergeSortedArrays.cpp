@@ -50,7 +50,7 @@ void merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
 //Optimal1 - TC: O(M + N), SC: O(1) - 3 Pointer Approach
 vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int i = m - 1; //last index of arr1's valid part
-    int j = n - 2; //last index of arr2
+    int j = n - 1; //last index of arr2
     int k = m + n - 1; //last index of arr1
     
     //O(M + N)
