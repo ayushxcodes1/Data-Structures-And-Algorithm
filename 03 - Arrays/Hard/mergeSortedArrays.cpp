@@ -3,14 +3,14 @@
 using namespace std;
 
 //Brute Force - TC: O((M + N) log(M + N)), SC: O(M + N)
-vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
-    int left = arr[0];
+vector<int> merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
+    int left = arr1[0];
     int right = arr2[0];
     vector<int> ans;
 
     //O(m)
     for(int i = 0; i < m; i++) {
-        ans.push_back(arr[i]);
+        ans.push_back(arr1[i]);
     }
 
     //O(n)
@@ -24,14 +24,14 @@ vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
 }
 
 //Better - TC: O(M + N), SC: O(M + N)
-vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
+vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int left = 0, right = 0;
     vector<int> ans;
     
     //O(min(M, N))
     while(left < m && right < n) {
-        if(arr[left] < arr2[right]) {
-           ans.push_back(arr[left]);
+        if(arr1[left] < arr2[right]) {
+           ans.push_back(arr1[left]);
            left++;
         }
         else {
@@ -42,7 +42,7 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
 
     //O(M)
     while(left < m) {
-        ans.push_back(arr[left]);
+        ans.push_back(arr1[left]);
         left++;
     }
 
@@ -56,25 +56,25 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
 }
 
 //Optimal - TC: O(M + N), SC: O(1)
-vector<int> merge3(vector<int> &arr, vector<int> arr2, int m, int n) {
+vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int p = 0;
     for(int i = 0; i < m + n; i++) {
-        if(arr[i] > arr2[p]) {
-           arr[i + 1] = arr[i];
-           arr[i] = arr2[p];
+        if(arr1[i] > arr2[p]) {
+           arr1[i + 1] = arr1[i];
+           arr1[i] = arr2[p];
 
            p++;
         }
-        if(arr[i] == 0) {
-           arr[i] = arr2[p];
+        if(arr1[i] == 0) {
+           arr1[i] = arr2[p];
            p++;
         }
     }
-    return arr;
+    return arr1;
 }
 
 int main() {
-  vector<int> arr = {1, 2, 3, 0, 0, 0};
+  vector<int> arr1 = {1, 2, 3, 0, 0, 0};
   vector<int> arr2 = {2, 5, 6};
   int m = 3, n = 3;
 
