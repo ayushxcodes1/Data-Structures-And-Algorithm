@@ -83,8 +83,17 @@ vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
                 swapIfGreater(arr1, arr2, left, right - n);
             }
             //arr2 and arr2
-            else if(right > n){}
+            else if(left >= n){
+                swapIfGreater(arr2, arr2, left - n, right - n);
+            }
+            //arr1 and arr1
+            else {
+                swapIfGreater(arr1, arr1, left, right);
+            }
+            left++, right++;
         }
+        if(gap == 1) break;
+        gap = (gap / 2) + (gap % 2);
     }
 }
 
