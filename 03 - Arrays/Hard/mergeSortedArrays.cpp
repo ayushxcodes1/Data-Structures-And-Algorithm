@@ -61,7 +61,7 @@ void merge2(vector<int> &arr1, vector<int> &arr2, int n, int m) {
     sort(arr2.begin(), arr2.end()); //O(MlogM)
 }
 
-//Optimal2 - TC: O(N + M), SC: O(1) - Gap Method -> shell sort
+//Optimal2 - TC: O((N + M) * log(N + M)), SC: O(1) - Gap Method -> shell sort
 void swapIfGreater(vector<int> &arr1, vector<int> &arr2, int ind1, int ind2) {
     if(arr1[ind1] > arr2[ind2]) {
        swap(arr1[ind1], arr2[ind2]);
