@@ -116,6 +116,7 @@ int main() {
   cout << endl;
 
   arr1 = {1, 2, 3, 0, 0, 0};
+  arr2 = {2, 5, 6};
   merge2(arr1, arr2, m, n);
   for(auto it : arr1) {
     cout << it << " ";
@@ -124,6 +125,7 @@ int main() {
   cout << endl;
 
   arr1 = {1, 2, 3, 0, 0, 0};
+  arr2 = {2, 5, 6};
   merge3(arr1, arr2, m, n);
   for(auto it : arr1) {
     cout << it << " ";
