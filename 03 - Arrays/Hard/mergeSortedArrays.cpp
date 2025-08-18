@@ -48,7 +48,7 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
 
     //O(N)
     while(p2 < n) {
-        ans.push_back(arr[p2]);
+        ans.push_back(arr2[p2]);
         p2++;
     }
 
