@@ -57,7 +57,13 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
 
 //Optimal - TC: O(M + N), SC: O(1)
 vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
-   
+    int p = 0;
+    for(int i = 0; i < m + n; i++) {
+        if(arr[i] > arr2[p]) {
+           arr[i + 1] = arr[i];
+           arr[i] = arr2[p];
+        }
+    }
 }
 
 int main() {
