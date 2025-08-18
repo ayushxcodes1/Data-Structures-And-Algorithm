@@ -58,5 +58,10 @@ int main() {
   int ans2 = maxProduct(arr);
   cout << ans2 << " ";
 
+  cout << endl;
+
+  int ans3 = maxProduct3(arr);
+  cout << ans3 << " ";
+
   return 0;
 }
