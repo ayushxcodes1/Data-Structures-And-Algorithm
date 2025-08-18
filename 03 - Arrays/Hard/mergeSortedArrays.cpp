@@ -2,7 +2,17 @@
 
 using namespace std;
 
-//Brute - TC: O(M + N), SC: O(M + N)
+//Brute
+vector<int> merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
+    for(int j = 0, i = m; j < n; j++) {
+        arr1[i] = arr2[j];
+        i++;
+    }
+
+    sort(arr1.begin(), arr1.end());
+}
+
+//Better - TC: O(M + N), SC: O(M + N)
 vector<int> merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int left = 0, right = 0;
     vector<int> ans;
