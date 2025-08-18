@@ -71,7 +71,7 @@ void swapIfGreater(vector<int> arr1, vector<int> arr2, int ind1, int ind2) {
     }
 }
 
-vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
+void merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int len = (m + n);
     int gap = (len / 2) + (len % 2);
     while(gap > 0) {
