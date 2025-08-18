@@ -13,7 +13,7 @@ vector<int> maxProduct(vector<int> &arr) {
     }
     maxProd = max(prod, maxProd);
   }
-  return arr;
+  return maxProd;
 }
 
 int main() {
