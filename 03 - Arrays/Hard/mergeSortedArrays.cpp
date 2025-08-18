@@ -70,6 +70,7 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
            p++;
         }
     }
+    return arr;
 }
 
 int main() {
