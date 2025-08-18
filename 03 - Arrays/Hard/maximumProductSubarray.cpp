@@ -14,7 +14,7 @@ vector<int> maxProduct(vector<int> arr) {
     }
     maxProd = max(prod, maxProd);
   }
-  return;
+  return ans;
 }
 
 int main() {
