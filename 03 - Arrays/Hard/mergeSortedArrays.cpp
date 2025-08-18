@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - TC: O(M + N), SC: O(M + N)
+//Brute - TC: O(N + M), SC: O(N + M)
 void merge(vector<int> &arr1, vector<int> &arr2, int n, int m) {
     int left = 0, right = 0;
     vector<int> ans;
