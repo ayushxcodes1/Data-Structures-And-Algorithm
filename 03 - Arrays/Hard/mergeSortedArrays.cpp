@@ -43,8 +43,8 @@ void merge(vector<int> &arr1, vector<int> &arr2, int n, int m) {
 }
 
 //Optimal1 - TC: O(M + N), SC: O(1)
-vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
-    
+void merge2(vector<int> &arr1, vector<int> arr2, int n, int m) {
+    int 
 }
 
 //Optimal2 - TC: O(N + M), SC: O(1) - Gap Method
