@@ -2,6 +2,7 @@
 
 using namespace std;
  
+//Brute Force - TC: O(N^2), SC: O(1)
 vector<int> maxProduct(vector<int> arr) {
     int n = arr.size();
     int maxProd = INT_MIN;
