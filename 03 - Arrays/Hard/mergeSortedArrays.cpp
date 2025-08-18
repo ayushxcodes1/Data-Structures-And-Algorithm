@@ -56,7 +56,7 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
 }
 
 //Optimal - TC: O(M + N), SC: O(1)
-vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
+vector<int> merge3(vector<int> &arr, vector<int> arr2, int m, int n) {
     int p = 0;
     for(int i = 0; i < m + n; i++) {
         if(arr[i] > arr2[p]) {
@@ -85,14 +85,14 @@ int main() {
 
   cout << endl;
 
-  vector<int> ans2 = merge(arr, arr2, m, n);
+  vector<int> ans2 = merge2(arr, arr2, m, n);
   for(auto it : ans2) {
     cout << it << " ";
   }
 
   cout << endl;
 
-  vector<int> ans3 = merge(arr, arr2, m, n);
+  vector<int> ans3 = merge3(arr, arr2, m, n);
   for(auto it : ans3) {
     cout << it << " ";
   }
