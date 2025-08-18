@@ -3,12 +3,12 @@
 using namespace std;
 
 //Brute - TC: O(M + N), SC: O(M + N)
-void merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
+void merge(vector<int> &arr1, vector<int> arr2, int n, int m) {
     int left = 0, right = 0;
     vector<int> ans;
     
     //O(min(M, N))
-    while(left < m && right < n) {
+    while(left < n && right < m) {
         if(arr1[left] <= arr2[right]) {
            ans.push_back(arr1[left]);
            left++;
@@ -20,13 +20,13 @@ void merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
     }
 
     //O(M)
-    while(left < m) {
+    while(left < n) {
         ans.push_back(arr1[left]);
         left++;
     }
 
     //O(N)
-    while(right < n) {
+    while(right < m) {
         ans.push_back(arr2[right]);
         right++;
     }
@@ -104,30 +104,30 @@ void merge3(vector<int> &arr1, vector<int> &arr2, int m, int n) {
 }
 
 int main() {
-  vector<int> arr1 = {1, 2, 3, 0, 0, 0};
-  vector<int> arr2 = {2, 5, 6};
+  vector<int> arr1 = {1, 3, 5, 7};
+  vector<int> arr2 = {0, 2, 6, 8, 9};
 
-  merge(arr1, arr2, 3, 3);
+  merge(arr1, arr2, 4, 5);
   for(auto it : arr1) {
     cout << it << " ";
   }
 
-  cout << endl;
+//   cout << endl;
 
-  arr1 = {1, 2, 3, 0, 0, 0};
-  arr2 = {2, 5, 6};
-  merge2(arr1, arr2, 3, 3);
-  for(auto it : arr1) {
-    cout << it << " ";
-  }
+//   arr1 = {1, 2, 3, 0, 0, 0};
+//   arr2 = {2, 5, 6};
+//   merge2(arr1, arr2, 3, 3);
+//   for(auto it : arr1) {
+//     cout << it << " ";
+//   }
 
-  cout << endl;
+//   cout << endl;
 
-  arr1 = {1, 2, 3, 4};
-  arr2 = {5, 6, 7, 8, 9};
-  merge3(arr1, arr2, 4, 5);
-  for(auto it : arr1) {
-    cout << it << " ";
-  }
+//   arr1 = {1, 2, 3, 4};
+//   arr2 = {5, 6, 7, 8, 9};
+//   merge3(arr1, arr2, 4, 5);
+//   for(auto it : arr1) {
+//     cout << it << " ";
+//   }
   return 0;
 }
