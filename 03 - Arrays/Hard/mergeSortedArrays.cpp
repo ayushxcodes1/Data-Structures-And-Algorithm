@@ -66,7 +66,7 @@ vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
         k--;
     }
 
-    //copy leftover arr2(if any)
+    //copy leftover arr2(if any) - O(M)
     while(j >= 0) {
         arr1[k] = arr2[j];
         j--;
