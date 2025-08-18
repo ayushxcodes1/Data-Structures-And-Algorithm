@@ -81,14 +81,14 @@ void merge3(vector<int> &arr1, vector<int> &arr2, int m, int n) {
 
         while(right < len) {
             //arr1 and arr2
-            if(left < n && right >= m) {
-                swapIfGreater(arr1, arr2, left, right - n);
+            if(left < m && right >= m) {
+                swapIfGreater(arr1, arr2, left, right - m);
             }
-            
+
             //arr2 and arr2
             else if(left >= m){
-                swapIfGreater(arr2, arr2, left - m, right - n);
-            }
+                swapIfGreater(arr2, arr2, left - m, right - m);
+            }   
 
             //arr1 and arr1
             else {
