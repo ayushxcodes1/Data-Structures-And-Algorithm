@@ -13,7 +13,7 @@ void merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
 }
 
 //Better - TC: O(M + N), SC: O(M + N)
-vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
+void merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int left = 0, right = 0;
     vector<int> ans;
     
@@ -45,8 +45,6 @@ vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
     for(int i = 0; i < n + m; i++) {
         arr1[i] = ans[i];
     }
-
-    return arr1;
 }
 
 //Optimal - TC: O(M + N), SC: O(1)
