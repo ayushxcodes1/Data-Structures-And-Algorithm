@@ -24,7 +24,7 @@ vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
 }
 
 //Better 
-vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
+vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
     int p1 = 0, p2 = 0;
     vector<int> ans;
 
