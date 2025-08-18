@@ -19,15 +19,12 @@ int maxProduct(vector<int> &arr) {
 //Optimal1 - TC: O(N), SC: O(1)
 int maxProduct(vector<int> &arr) {
   int n = arr.size();
-  int maxProd = INT_MIN;
+  int ans = INT_MIN;
+  int pre = 1, suff = 1;
   for(int i = 0; i < n; i++) {
-    int prod = 1;
-    for(int j = i; j < n; j++) {
-      prod = prod * arr[j];
-      maxProd = max(prod, maxProd);
-    }
+   
   }
-  return maxProd;
+  return ans;
 }
 
 int main() {
