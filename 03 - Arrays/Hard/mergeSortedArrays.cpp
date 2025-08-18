@@ -42,31 +42,9 @@ void merge(vector<int> &arr1, vector<int> &arr2, int n, int m) {
     }
 }
 
-//Optimal1 - TC: O(M + N), SC: O(1) - 3 Pointer Approach
+//Optimal1 - TC: O(M + N), SC: O(1)
 vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
-    int i = m - 1; //last index of arr1's valid part
-    int j = n - 1; //last index of arr2
-    int k = m + n - 1; //last index of arr1
     
-    //O(M + N)
-    while(i >= 0 && j >= 0) {
-        if(arr1[i] > arr2[j]) {
-           arr1[k] = arr1[i];
-           i--;
-        } 
-        else {
-           arr1[k] = arr2[j];
-           j--;
-        }
-        k--;
-    }
-
-    //copy leftover arr2(if any) - O(M)
-    while(j >= 0) {
-        arr1[k] = arr2[j];
-        j--;
-        k--;
-    }
 }
 
 //Optimal2 - TC: O(N + M), SC: O(1) - Gap Method
