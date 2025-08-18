@@ -28,7 +28,7 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
     int p1 = 0, p2 = 0;
     vector<int> ans;
     
-    //O(M)
+    //O(min(M + N))
     while(p1 < m && p2 < n) {
         if(arr[p1] < arr2[p2]) {
            ans.push_back(arr[p1]);
