@@ -106,9 +106,8 @@ void merge3(vector<int> &arr1, vector<int> &arr2, int m, int n) {
 int main() {
   vector<int> arr1 = {1, 2, 3, 0, 0, 0};
   vector<int> arr2 = {2, 5, 6};
-  int m = 3, n = 3;
 
-  merge(arr1, arr2, m, n);
+  merge(arr1, arr2, 3, 3);
   for(auto it : arr1) {
     cout << it << " ";
   }
@@ -117,16 +116,16 @@ int main() {
 
   arr1 = {1, 2, 3, 0, 0, 0};
   arr2 = {2, 5, 6};
-  merge2(arr1, arr2, m, n);
+  merge2(arr1, arr2, 3, 3);
   for(auto it : arr1) {
     cout << it << " ";
   }
 
   cout << endl;
 
-  arr1 = {1, 2, 3, 0, 0, 0};
-  arr2 = {2, 5, 6};
-  merge3(arr1, arr2, m, n);
+  arr1 = {1, 2, 3, 4};
+  arr2 = {5, 6, 7, 8, 9};
+  merge3(arr1, arr2, 4, 5);
   for(auto it : arr1) {
     cout << it << " ";
   }
