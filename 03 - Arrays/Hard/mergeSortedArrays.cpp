@@ -55,6 +55,38 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
     return ans;
 }
 
+//Optimal - TC: O(M + N), SC: O(1)
+vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
+    int p1 = 0, p2 = 0;
+    vector<int> ans;
+    
+    //O(min(M, N))
+    while(p1 < m && p2 < n) {
+        if(arr[p1] < arr2[p2]) {
+           ans.push_back(arr[p1]);
+           p1++;
+        }
+        else {
+           ans.push_back(arr2[p2]);
+           p2++;
+        }
+    }
+
+    //O(M)
+    while(p1 < m) {
+        ans.push_back(arr[p1]);
+        p1++;
+    }
+
+    //O(N)
+    while(p2 < n) {
+        ans.push_back(arr2[p2]);
+        p2++;
+    }
+
+    return ans;
+}
+
 int main() {
   vector<int> arr = {1, 2, 3, 0, 0, 0};
   vector<int> arr2 = {2, 5, 6};
