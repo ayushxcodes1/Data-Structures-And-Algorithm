@@ -2,17 +2,7 @@
 
 using namespace std;
 
-//Brute - TC: O((M + N) log(M + N)), SC: O(1)
-void merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
-    for(int j = 0, i = m; j < n; j++) {
-        arr1[i] = arr2[j];
-        i++;
-    }
-
-    sort(arr1.begin(), arr1.end());
-}
-
-//Better - TC: O(M + N), SC: O(M + N)
+//Brute - TC: O(M + N), SC: O(M + N)
 void merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int left = 0, right = 0;
     vector<int> ans;
@@ -75,30 +65,8 @@ vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
 }
 
 //Optimal2 - TC: O(M + N), SC: O(1) - Gap Method
-vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
-    int i = m - 1; //last index of arr1's valid part
-    int j = n - 1; //last index of arr2
-    int k = m + n - 1; //last index of arr1
+vector<int> merge4(vector<int> &arr1, vector<int> arr2, int m, int n) {
     
-    //O(M + N)
-    while(i >= 0 && j >= 0) {
-        if(arr1[i] > arr2[j]) {
-           arr1[k] = arr1[i];
-           i--;
-        } 
-        else {
-           arr1[k] = arr2[j];
-           j--;
-        }
-        k--;
-    }
-
-    //copy leftover arr2(if any) - O(M)
-    while(j >= 0) {
-        arr1[k] = arr2[j];
-        j--;
-        k--;
-    }
 }
 
 int main() {
