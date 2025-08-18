@@ -66,7 +66,7 @@ int main() {
 
   cout << endl;
 
-  vector<int> arr1 = {1, 2, 3, 0, 0, 0};
+  arr1 = {1, 2, 3, 0, 0, 0};
   merge2(arr1, arr2, m, n);
   for(auto it : arr1) {
     cout << it << " ";
@@ -74,7 +74,7 @@ int main() {
 
   cout << endl;
 
-  vector<int> arr1 = {1, 2, 3, 0, 0, 0};
+  arr1 = {1, 2, 3, 0, 0, 0};
   merge3(arr1, arr2, m, n);
   for(auto it : arr1) {
     cout << it << " ";
