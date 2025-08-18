@@ -4,8 +4,8 @@ using namespace std;
 
 //Brute Force - TC: O((M + N) log(M + N)), SC: O(M + N)
 vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
-    int p1 = arr[0];
-    int p2 = arr2[0];
+    int left = arr[0];
+    int right = arr2[0];
     vector<int> ans;
 
     //O(m)
@@ -25,31 +25,31 @@ vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
 
 //Better - TC: O(M + N), SC: O(M + N)
 vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
-    int p1 = 0, p2 = 0;
+    int left = 0, right = 0;
     vector<int> ans;
     
     //O(min(M, N))
-    while(p1 < m && p2 < n) {
-        if(arr[p1] < arr2[p2]) {
-           ans.push_back(arr[p1]);
-           p1++;
+    while(left < m && right < n) {
+        if(arr[left] < arr2[right]) {
+           ans.push_back(arr[left]);
+           left++;
         }
         else {
-           ans.push_back(arr2[p2]);
-           p2++;
+           ans.push_back(arr2[right]);
+           right++;
         }
     }
 
     //O(M)
-    while(p1 < m) {
-        ans.push_back(arr[p1]);
-        p1++;
+    while(left < m) {
+        ans.push_back(arr[left]);
+        left++;
     }
 
     //O(N)
-    while(p2 < n) {
-        ans.push_back(arr2[p2]);
-        p2++;
+    while(right < n) {
+        ans.push_back(arr2[right]);
+        right++;
     }
 
     return ans;
