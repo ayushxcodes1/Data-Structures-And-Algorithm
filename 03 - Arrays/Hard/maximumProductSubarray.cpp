@@ -16,7 +16,7 @@ int maxProduct(vector<int> &arr) {
   return maxProd;
 }
 
-//Optimal1 - TC: O(N), SC: O(1)
+//Optimal1 - TC: O(N), SC: O(1) - Observation Based(Intuitive) 
 int maxProduct2(vector<int> &arr) {
   int n = arr.size();
   int ans = INT_MIN;
@@ -32,7 +32,7 @@ int maxProduct2(vector<int> &arr) {
   return ans;
 }
 
-//Optimal2 - TC: O(N), SC: O(1)
+//Optimal2 - TC: O(N), SC: O(1) - Kadane's Algorithm
 int maxProduct2(vector<int> &arr) {
   int n = arr.size();
   int ans = INT_MIN;
