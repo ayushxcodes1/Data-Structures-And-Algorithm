@@ -51,7 +51,12 @@ void merge2(vector<int> &arr1, vector<int> arr2, int n, int m) {
            swap(arr1[left], arr2[right]);
            left--, right++;
         }
+        else {
+            break;
+        }
     }
+    sort(arr1.begin(), arr1.end());
+    sort(arr2.begin(), arr2.end());
 }
 
 //Optimal2 - TC: O(N + M), SC: O(1) - Gap Method
