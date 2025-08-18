@@ -89,5 +89,12 @@ int main() {
   for(auto it : ans2) {
     cout << it << " ";
   }
+
+  cout << endl;
+
+  vector<int> ans3 = merge(arr, arr2, m, n);
+  for(auto it : ans3) {
+    cout << it << " ";
+  }
   return 0;
 }
