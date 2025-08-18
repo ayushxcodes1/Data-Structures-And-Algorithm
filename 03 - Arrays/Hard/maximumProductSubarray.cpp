@@ -32,6 +32,22 @@ int maxProduct2(vector<int> &arr) {
   return ans;
 }
 
+//Optimal2 - TC: O(N), SC: O(1)
+int maxProduct2(vector<int> &arr) {
+  int n = arr.size();
+  int ans = INT_MIN;
+  int pre = 1, suff = 1;
+  for(int i = 0; i < n; i++) {
+    if(pre == 0) pre = 1;
+    if(suff == 0) suff = 1;
+
+    pre = pre * arr[i];
+    pre = suff * arr[n-i-1];
+    ans = max(ans, max(pre, suff));
+  }
+  return ans;
+}
+
 int main() {
   vector<int> arr = {2, 3, -2, 4};
   int ans = maxProduct(arr);
