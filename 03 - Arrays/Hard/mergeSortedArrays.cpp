@@ -68,7 +68,7 @@ void swapIfGreater(vector<int> &arr1, vector<int> &arr2, int ind1, int ind2) {
     }
 }
 
-void merge3(vector<int> &arr1, vector<int> &arr2, int m, int n) {
+void merge3(vector<int> &arr1, vector<int> &arr2, int n, int m) {
     int len = m + n;
     int gap = (len / 2) + (len % 2);
 
@@ -105,26 +105,48 @@ int main() {
   vector<int> arr2 = {0, 2, 6, 8, 9};
 
   merge(arr1, arr2, 4, 5);
+
+  cout << "\narr1 = ";
   for(auto it : arr1) {
     cout << it << " ";
   }
 
-//   cout << endl;
+  cout << "\narr2 = ";
+  for(auto it : arr2) {
+    cout << it << " ";
+  }
 
-//   arr1 = {1, 2, 3, 0, 0, 0};
-//   arr2 = {2, 5, 6};
-//   merge2(arr1, arr2, 3, 3);
-//   for(auto it : arr1) {
-//     cout << it << " ";
-//   }
+  cout << endl;
 
-//   cout << endl;
+  arr1 = {1, 3, 5, 7};
+  arr2 = {0, 2, 6, 8, 9};
+  merge2(arr1, arr2, 3, 3);
 
-//   arr1 = {1, 2, 3, 4};
-//   arr2 = {5, 6, 7, 8, 9};
-//   merge3(arr1, arr2, 4, 5);
-//   for(auto it : arr1) {
-//     cout << it << " ";
-//   }
+  cout << "\narr1 = ";
+  for(auto it : arr1) {
+    cout << it << " ";
+  }
+
+  cout << "\narr2 = ";
+  for(auto it : arr2) {
+    cout << it << " ";
+  }
+
+  cout << endl;
+
+  arr1 = {1, 3, 5, 7};
+  arr2 = {0, 2, 6, 8, 9};
+  merge3(arr1, arr2, 3, 3);
+
+  cout << "\narr1 = ";
+  for(auto it : arr1) {
+    cout << it << " ";
+  }
+
+  cout << "\narr2 = ";
+  for(auto it : arr2) {
+    cout << it << " ";
+  }
+
   return 0;
 }
