@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(M + N + NlogN), SC: O(M + N)
+//Brute Force - TC: O((M + N) log(M + N)), SC: O(M + N)
 vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
     int p1 = arr[0];
     int p2 = arr2[0];
@@ -18,7 +18,7 @@ vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
         ans.push_back(arr2[i - m]);
     }
 
-    //O(NlogN)
+    //O((M+N)log(M+N))
     sort(ans.begin(), ans.end());
     return ans;
 }
