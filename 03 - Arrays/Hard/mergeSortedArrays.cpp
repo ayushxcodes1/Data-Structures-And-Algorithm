@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute - TC: O((M + N) log(M + N)), SC: O(1)
-vector<int> merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
+void merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
     for(int j = 0, i = m; j < n; j++) {
         arr1[i] = arr2[j];
         i++;
@@ -51,20 +51,7 @@ vector<int> merge2(vector<int> &arr1, vector<int> arr2, int m, int n) {
 
 //Optimal - TC: O(M + N), SC: O(1)
 vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
-    int p = 0;
-    for(int i = 0; i < m + n; i++) {
-        if(arr1[i] > arr2[p]) {
-           arr1[i + 1] = arr1[i];
-           arr1[i] = arr2[p];
-
-           p++;
-        }
-        if(arr1[i] == 0) {
-           arr1[i] = arr2[p];
-           p++;
-        }
-    }
-    return arr1;
+   
 }
 
 int main() {
@@ -72,22 +59,24 @@ int main() {
   vector<int> arr2 = {2, 5, 6};
   int m = 3, n = 3;
 
-  vector<int> ans = merge(arr1, arr2, m, n);
-  for(auto it : ans) {
+  merge(arr1, arr2, m, n);
+  for(auto it : arr1) {
     cout << it << " ";
   }
 
   cout << endl;
 
-  vector<int> ans2 = merge2(arr1, arr2, m, n);
-  for(auto it : ans2) {
+  vector<int> arr1 = {1, 2, 3, 0, 0, 0};
+  merge2(arr1, arr2, m, n);
+  for(auto it : arr1) {
     cout << it << " ";
   }
 
   cout << endl;
 
-  vector<int> ans3 = merge3(arr1, arr2, m, n);
-  for(auto it : ans3) {
+  vector<int> arr1 = {1, 2, 3, 0, 0, 0};
+  merge3(arr1, arr2, m, n);
+  for(auto it : arr1) {
     cout << it << " ";
   }
   return 0;
