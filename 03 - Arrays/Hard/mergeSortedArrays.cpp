@@ -29,7 +29,24 @@ vector<int> merge2(vector<int> &arr, vector<int> arr2, int m, int n) {
     vector<int> ans;
 
     while(p1 < m && p2 < n) {
-        
+        if(arr[p1] < arr2[p2]) {
+           ans.push_back(arr[p1]);
+           p1++;
+        }
+        else {
+           ans.push_back(arr[p2]);
+           p2++;
+        }
+    }
+
+    while(p1 < m) {
+        ans.push_back(arr[p1]);
+        p1++;
+    }
+
+    while(p2 < n) {
+        ans.push_back(arr[p2]);
+        p2++;
     }
 
     return ans;
