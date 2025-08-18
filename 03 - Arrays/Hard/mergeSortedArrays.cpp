@@ -78,7 +78,7 @@ int main() {
   vector<int> arr2 = {2, 5, 6};
   int m = 3, n = 3;
 
-  vector<int> ans = merge(arr, arr2, m, n);
+  vector<int> ans = merge(arr1, arr2, m, n);
   for(auto it : ans) {
     cout << it << " ";
   }
