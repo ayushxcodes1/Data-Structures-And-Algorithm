@@ -2,7 +2,7 @@
 
 using namespace std;
 
-vector<int> merge(vector<int> arr, int m, int n) {
+vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
    
 }
 
