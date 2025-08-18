@@ -53,6 +53,7 @@ vector<int> merge3(vector<int> &arr1, vector<int> arr2, int m, int n) {
     int j = n - 2; //last index of arr2
     int k = m + n - 1; //last index of arr1
     
+    //O(M + N)
     while(i >= 0 && j >= 0) {
         if(arr1[i] > arr2[j]) {
            arr1[k] = arr1[i];
