@@ -35,17 +35,17 @@ int maxProduct2(vector<int> &arr) {
 //Optimal2 - TC: O(N), SC: O(1) - Kadane's Algorithm
 int maxProduct3(vector<int> &arr) {
   int n = arr.size();
-  int prod1 = arr[0], prod2 = arr[0];
-  int maxProd = arr[0];
+  int currMax = arr[0], currMin = arr[0];
+  int ans = arr[0];
 
   for(int i = 1; i < n; i++) {
-    int temp = max({arr[i], prod1 * arr[i], prod2 * arr[i]});
-    prod2 = min({arr[i], prod1 * arr[i], prod2 * arr[i]});
-    prod1 = temp;
+    int temp = max({arr[i], currMax * arr[i], currMin * arr[i]});
+    currMin = min({arr[i], currMax * arr[i], currMin * arr[i]});
+    currMax = temp;
 
-    maxProd = max(maxProd, prod1);
+    ans = max(ans, currMax);
   }
-  return maxProd;
+  return ans;
 }
 
 int main() {
