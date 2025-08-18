@@ -31,7 +31,12 @@ vector<int> merge(vector<int> &arr1, vector<int> arr2, int m, int n) {
         right++;
     }
 
-    return ans;
+    //O(N + M)
+    for(int i = 0; i < n + m; i++) {
+        arr1[i] = ans[i];
+    }
+
+    return arr1;
 }
 
 //Optimal - TC: O(M + N), SC: O(1)
@@ -64,9 +69,9 @@ int main() {
 
   cout << endl;
 
-  vector<int> ans2 = merge2(arr1, arr2, m, n);
-  for(auto it : ans2) {
-    cout << it << " ";
-  }
+//   vector<int> ans2 = merge2(arr1, arr2, m, n);
+//   for(auto it : ans2) {
+//     cout << it << " ";
+//   }
   return 0;
 }
