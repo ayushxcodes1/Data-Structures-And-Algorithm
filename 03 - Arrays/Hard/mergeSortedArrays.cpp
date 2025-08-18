@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O()
+//Brute Force - TC: O(M + N + NlogN), SC: O(M + N)
 vector<int> merge(vector<int> &arr, vector<int> arr2, int m, int n) {
     int p1 = arr[0];
     int p2 = arr2[0];
