@@ -42,10 +42,12 @@ void merge(vector<int> &arr1, vector<int> &arr2, int n, int m) {
     }
 }
 
-//Optimal1 - TC: O(M + N), SC: O(1)
+//Optimal1 - TC: O(NlogN + MlogM), SC: O(1)
 void merge2(vector<int> &arr1, vector<int> arr2, int n, int m) {
     int left = n - 1;
     int right = 0;
+
+    //O(min(N, M))
     while(left >= 0 && right < m) {
         if(arr1[left] > arr2[right]) {
            swap(arr1[left], arr2[right]);
@@ -55,8 +57,8 @@ void merge2(vector<int> &arr1, vector<int> arr2, int n, int m) {
             break;
         }
     }
-    sort(arr1.begin(), arr1.end());
-    sort(arr2.begin(), arr2.end());
+    sort(arr1.begin(), arr1.end()); //O(NlogN)
+    sort(arr2.begin(), arr2.end()); //O(MlogM)
 }
 
 //Optimal2 - TC: O(N + M), SC: O(1) - Gap Method
