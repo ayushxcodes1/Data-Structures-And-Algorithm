@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute - TC: O(N^2), SC: O(1)  
-vector<int> findTwoElement(vector<int> &arr) {
+vector<int> findTwoElement(vector<int> arr) {
     int n = arr.size();
     int repeating = -1, missing = -1;
 
@@ -25,7 +25,7 @@ vector<int> findTwoElement(vector<int> &arr) {
 }
 
 //Better - TC: O(2N), SC: O(N) - Hashing
-vector<int> findTwoElement2(vector<int> &arr) {
+vector<int> findTwoElement2(vector<int> arr) {
     int n = arr.size();
     int repeating = -1, missing = -1;
     vector<int> hash(n + 1);
