@@ -17,7 +17,7 @@ vector<int> findTwoElement(vector<int> &arr) {
     }
 
     //Missing
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n - 1; i++) {
         if(arr[i + 1] != arr[i] || arr[i] + 1 != arr[i + 1]) {
            missing = arr[i] + 1;
         }
@@ -29,7 +29,7 @@ vector<int> findTwoElement(vector<int> &arr) {
 int main() {
   vector<int> arr = {4, 3, 6, 2, 1, 1};
   vector<int> ans = findTwoElement(arr);
-  
+
   for(auto it : ans) {
     cout << it << " ";
   }
