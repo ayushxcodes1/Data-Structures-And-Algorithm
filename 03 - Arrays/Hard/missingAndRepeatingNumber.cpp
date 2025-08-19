@@ -41,8 +41,8 @@ vector<int> findTwoElement2(vector<int> arr) {
 
     //O(N)
     for(int i = 1; i <= n; i++) {
-        if(hash[arr[i]] == 2) repeating = i;
-        if(hash[arr[i]] == 0) missing = i;
+        if(hash[i] == 2) repeating = i;
+        if(hash[i] == 0) missing = i;
     }
     
     return {repeating, missing};
