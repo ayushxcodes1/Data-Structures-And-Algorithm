@@ -42,8 +42,11 @@ vector<int> findTwoElement2(vector<int> arr) {
     int repeating = -1, missing = -1;
     for(int i = 1; i <= n; i++) {
         if(hash[i] == 2) repeating = i;
-        if(hash[i] == 0) missing = i;
-        if (repeating != -1 && missing != -1) break;
+        else if(hash[i] == 0) missing = i;
+
+        if (repeating != -1 && missing != -1) {
+            break;
+        }
     }
     
     return {repeating, missing};
