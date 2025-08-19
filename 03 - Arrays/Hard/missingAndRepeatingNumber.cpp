@@ -39,6 +39,11 @@ vector<int> findTwoElement(vector<int> &arr) {
     return {repeating, missing};
 }
 
+
+//Optimal - TC: O(2N), SC: O(1)
+  
+
+
 int main() {
   vector<int> arr = {4, 3, 6, 2, 1, 1};
   vector<int> ans = findTwoElement(arr);
