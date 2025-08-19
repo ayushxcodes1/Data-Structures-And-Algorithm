@@ -25,7 +25,7 @@ vector<int> findTwoElement(vector<int> &arr) {
 }
 
 //Better - TC: O(N), SC: O(N) - Hashing
-vector<int> findTwoElement(vector<int> &arr) {
+vector<int> findTwoElement2(vector<int> &arr) {
     int n = arr.size();
     int repeating = -1, missing = -1;
     vector<int> hash(n + 1);
