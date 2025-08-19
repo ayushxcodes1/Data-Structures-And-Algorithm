@@ -23,41 +23,13 @@ vector<int> findTwoElement(vector<int> &arr) {
 
     return {repeating, missing};
 }
-//Brute Force - TC: O(NlogN + N), SC: O(1)
+
+//Better - TC: O(N), SC: O(N) - Hashing
 vector<int> findTwoElement(vector<int> &arr) {
-    sort(arr.begin(), arr.end()); //O(NlogN)
-
     int n = arr.size();
-    int repeating = -1, missing = -1;
+    vector<int> hash(n + 1);
 
-    //Repeating - //O(N)
-    for(int i = 1; i < n; i++) {
-        if(arr[i] == arr[i - 1]) {
-           repeating = arr[i];
-        }
-    }
-
-    //Missing - O(N)
-    int x = 1; 
-    for(int i = 0; i < n; i++) {
-        if(arr[i] == x) {
-           x++;                       
-        }
-        else if(arr[i] < x) {
-           continue;                
-        }
-        else {                    
-            missing = x;
-            break;
-        }
-    }
-
-    //If last element is missing
-    if(missing == -1) {
-       missing = x;
-    }
-
-    return {repeating, missing};
+    
 }
 
 
