@@ -44,10 +44,6 @@ vector<int> findTwoElement2(vector<int> &arr) {
     return {repeating, missing};
 }
 
-
-
-
-
 int main() {
   vector<int> arr = {4, 3, 6, 2, 1, 1};
 
