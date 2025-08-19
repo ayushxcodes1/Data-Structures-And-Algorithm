@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(NlogN + 2N), SC: O(1)
+//Brute Force - TC: O(NlogN + N), SC: O(1)
 vector<int> findTwoElement(vector<int> &arr) {
     sort(arr.begin(), arr.end()); //O(NlogN)
 
@@ -40,27 +40,19 @@ vector<int> findTwoElement(vector<int> &arr) {
 }
 
 
-//Optimal - TC: O(2N), SC: O(1)  
+//Better - TC: O(N^2), SC: O(1)  
 vector<int> findTwoElement(vector<int> &arr) {
-  int n = arr.size();
-    int repeating = -1, missing = -1;
+   int n = arr.size();
+   int repeating = -1, missing = -1;
 
-    //Repeating - //O(N)
     for(int i = 1; i < n; i++) {
-        
+        int cnt = 0; 
+        for(int j = 0; j < n; j++) {
+            if(arr[j] == i) {
+               cnt++;
+            }
+        }
     }
-
-    //Missing - O(N)
-    for(int i = 0; i < n; i++) {
-     
-    }
-
-    //If last element is missing
-    if(missing == -1) {
-      
-    }
-
-    return {repeating, missing};
 }
 
 
