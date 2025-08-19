@@ -24,7 +24,7 @@ vector<int> findTwoElement(vector<int> &arr) {
         }
     }
 
-    //If missing is last element
+    //If last element is missing
     if(missing == -1) {
        missing = n;
     }
