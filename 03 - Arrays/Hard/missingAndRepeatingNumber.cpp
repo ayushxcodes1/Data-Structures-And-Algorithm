@@ -18,8 +18,8 @@ vector<int> findTwoElement(vector<int> &arr) {
 
     //Missing
     for(int i = 0; i < n; i++) {
-        if(arr[i] == arr[i - 1]) {
-           
+        if(arr[i + 1] != arr[i] || arr[i] + 1 != arr[i + 1]) {
+           missing = arr[i] + 1;
         }
     }
 }
