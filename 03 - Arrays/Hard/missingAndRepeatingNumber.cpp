@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(NlogN + 2N)
+//Brute Force - TC: O(NlogN + 2N), SC: O(1)
 vector<int> findTwoElement(vector<int> &arr) {
     sort(arr.begin(), arr.end()); //O(NlogN)
 
