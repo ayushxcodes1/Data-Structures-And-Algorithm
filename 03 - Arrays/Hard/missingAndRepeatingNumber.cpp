@@ -4,10 +4,11 @@ using namespace std;
 
 //Brute Force - TC: O(NlogN + 2N)
 vector<int> findTwoElement(vector<int> &arr) {
+    sort(arr.begin(), arr.end()); //O(NlogN)
+    
     int n = arr.size();
     int repeating = -1, missing = -1;
 
-    sort(arr.begin(), arr.end()); //O(NlogN)
 
     //Repeating - //O(N)
     for(int i = 1; i < n; i++) {
