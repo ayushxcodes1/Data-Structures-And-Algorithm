@@ -50,6 +50,26 @@ vector<int> findTwoElement2(vector<int> arr) {
     return {repeating, missing};
 }
 
+
+//Optimal - TC: O(N), SC: O(1) - Mathematical
+vector<int> findTwoElement2(vector<int> arr) {
+    long long n = arr.size();
+    //S - SN = x - y
+    //S2 - S2N
+    
+    long long SN = (n * (n + 1)) / 2;
+    long long S2N = (n * (n + 1) * (2*n+1)) / 6;
+    long long S = 0, S2 = 0;
+    for(int i = 0; i < n; i++) {
+        S += arr[i];
+        S2 += (long long)arr[i] * (long long)arr[i];
+    }
+    long long val1 = S - SN;
+    long long val2 = S2 - S2N;
+    val2 = val2 / val1;
+}
+
+
 int main() {
   vector<int> arr = {4, 3, 6, 2, 1, 1};
 
