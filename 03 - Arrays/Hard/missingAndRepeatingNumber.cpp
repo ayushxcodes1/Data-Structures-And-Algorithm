@@ -7,13 +7,17 @@ vector<int> findTwoElement(vector<int> &arr) {
     int repeating = -1;
     int missing = -1;
 
-    sort(arr.begin(), arr.end());
+    sort(arr.begin(), arr.end()); 
 
+    //Repeating
     for(int i = 1; i < n; i++) {
         if(arr[i] == arr[i - 1]) {
            repeating = arr[i];
         }
     }
+
+    //Missing
+
 }
 
 int main() {
