@@ -23,6 +23,7 @@ int maxLength2(vector<int> &arr) {
     int n = arr.size();
     map<int, int> mpp;
     int sum = 0, maxLen = 0;
+    
     for(int i = 0; i < n; i++) {
         sum += arr[i];
         
