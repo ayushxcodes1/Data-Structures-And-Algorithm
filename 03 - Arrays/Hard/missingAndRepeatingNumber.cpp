@@ -33,7 +33,7 @@ vector<int> findTwoElement(vector<int> &arr) {
 
     //If last element is missing
     if(missing == -1) {
-       missing = n;
+       missing = x;
     }
 
     return {repeating, missing};
