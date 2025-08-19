@@ -18,7 +18,7 @@ int subarrayXor(vector<int> &arr, int k) {
     return cnt;
 }
 
-//Optimal - TC: O(NlogN), SC: O(N)
+//Optimal - TC: O(NlogN), SC: O(N) - Prefix Xor
 int subarrayXor2(vector<int> &arr, int k) {
     int n = arr.size();
     map<int, int> mpp;
