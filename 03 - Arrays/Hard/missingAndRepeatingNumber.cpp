@@ -17,10 +17,17 @@ vector<int> findTwoElement(vector<int> &arr) {
     }
 
     //Missing - O(N)
+    int x = 1; 
     for(int i = 0; i < n - 1; i++) {
-        if(arr[i + 1] != arr[i] + 1) {
-           missing = arr[i] + 1;
-           break;
+        if(arr[i] == x) {
+           x++;
+        }
+        else if(arr[i] < x) {
+           continue;
+        }
+        else { 
+            missing = x;
+            break;
         }
     }
 
