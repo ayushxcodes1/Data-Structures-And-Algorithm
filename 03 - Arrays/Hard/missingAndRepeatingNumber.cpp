@@ -22,6 +22,8 @@ vector<int> findTwoElement(vector<int> &arr) {
            missing = arr[i] + 1;
         }
     }
+
+    return {repeating, missing};
 }
 
 int main() {
