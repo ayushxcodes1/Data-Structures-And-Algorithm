@@ -50,8 +50,8 @@ vector<int> findTwoElement2(vector<int> &arr) {
 
 int main() {
   vector<int> arr = {4, 3, 6, 2, 1, 1};
-  vector<int> ans = findTwoElement(arr);
 
+  vector<int> ans = findTwoElement(arr);
   for(auto it : ans) {
     cout << it << " ";
   }
