@@ -30,11 +30,9 @@ int main() {
   vector<int> arr = {4, 3, 6, 2, 1, 1};
   vector<int> ans = findTwoElement(arr);
   
-  cout << "[";
-  for(int i = 0; i < ans.size(); i++) {
-    cout << ans[0] << "," << ans[1];
+  for(auto it : ans) {
+    cout << it << " ";
   }
-  cout << "]" << "\n";
  
   return 0;
 }
