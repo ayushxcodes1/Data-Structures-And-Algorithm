@@ -20,12 +20,12 @@ vector<int> findTwoElement(vector<int> &arr) {
     int x = 1; 
     for(int i = 0; i < n - 1; i++) {
         if(arr[i] == x) {
-           x++;
+           x++;                       
         }
         else if(arr[i] < x) {
-           continue;
+           continue;                
         }
-        else { 
+        else {                    
             missing = x;
             break;
         }
