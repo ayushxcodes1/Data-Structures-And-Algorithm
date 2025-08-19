@@ -15,17 +15,17 @@ void merge(vector<int> &arr1, vector<int> &arr2, int n, int m) {
         }
         else {
            ans.push_back(arr2[right]);
-           right++;
+           right++; 
         }
     }
 
-    //O(M)
+    //O(N)
     while(left < n) {
         ans.push_back(arr1[left]);
         left++;
     }
 
-    //O(N)
+    //O(M)
     while(right < m) {
         ans.push_back(arr2[right]);
         right++;
