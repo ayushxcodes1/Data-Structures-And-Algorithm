@@ -40,7 +40,7 @@ vector<int> findTwoElement(vector<int> &arr) {
 }
 
 
-//Better - TC: O(N^2), SC: O(1)  
+//Brute - TC: O(N^2), SC: O(1)  
 vector<int> findTwoElement(vector<int> &arr) {
     int n = arr.size();
     int repeating = -1, missing = -1;
