@@ -18,7 +18,7 @@ vector<int> findTwoElement(vector<int> &arr) {
 
     //Missing - O(N)
     int x = 1; 
-    for(int i = 0; i < n - 1; i++) {
+    for(int i = 0; i < n; i++) {
         if(arr[i] == x) {
            x++;                       
         }
