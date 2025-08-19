@@ -40,8 +40,28 @@ vector<int> findTwoElement(vector<int> &arr) {
 }
 
 
-//Optimal - TC: O(2N), SC: O(1)
-  
+//Optimal - TC: O(2N), SC: O(1)  
+vector<int> findTwoElement(vector<int> &arr) {
+  int n = arr.size();
+    int repeating = -1, missing = -1;
+
+    //Repeating - //O(N)
+    for(int i = 1; i < n; i++) {
+        
+    }
+
+    //Missing - O(N)
+    for(int i = 0; i < n; i++) {
+     
+    }
+
+    //If last element is missing
+    if(missing == -1) {
+      
+    }
+
+    return {repeating, missing};
+}
 
 
 int main() {
