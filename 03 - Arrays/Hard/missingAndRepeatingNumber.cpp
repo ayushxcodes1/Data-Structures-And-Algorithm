@@ -19,7 +19,7 @@ vector<int> findTwoElement(vector<int> arr) {
         } else if(cnt == 0) {
             missing = i;
         }
-
+        
         if(repeating != -1 && missing != -1) {
            break;
         }
@@ -35,7 +35,7 @@ vector<int> findTwoElement2(vector<int> arr) {
     vector<int> hash(n + 1);
 
     //O(N)
-    for(int i = 1; i <= n; i++) {
+    for(int i = 0; i < n; i++) {
         hash[arr[i]]++; 
     }
 
