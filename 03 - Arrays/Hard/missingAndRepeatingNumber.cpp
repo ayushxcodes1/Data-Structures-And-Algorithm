@@ -30,10 +30,12 @@ vector<int> findTwoElement2(vector<int> &arr) {
     int repeating = -1, missing = -1;
     vector<int> hash(n + 1);
 
+    //O(N)
     for(int i = 0; i < n; i++) {
         hash[arr[i]]++; 
     }
 
+    //O(N)
     for(int i = 1; i < n; i++) {
         if(hash[arr[i]] == 2) repeating = i;
         if(hash[arr[i]] == 0) missing = i;
