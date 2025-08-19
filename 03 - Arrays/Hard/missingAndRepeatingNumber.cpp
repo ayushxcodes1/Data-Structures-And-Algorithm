@@ -24,7 +24,6 @@ vector<int> findTwoElement(vector<int> arr) {
            break;
         }
     }
-
     return {repeating, missing};
 }
 
@@ -48,7 +47,6 @@ vector<int> findTwoElement2(vector<int> arr) {
             break;
         }
     }
-
     return {repeating, missing};
 }
 
