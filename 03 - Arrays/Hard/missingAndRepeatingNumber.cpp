@@ -14,8 +14,11 @@ vector<int> findTwoElement(vector<int> arr) {
                cnt++;
             }
         }
-        if(cnt == 2) repeating = i;
-        else if(cnt == 0) missing = i;
+        if(cnt == 2) {
+            repeating = i;
+        } else if(cnt == 0) {
+            missing = i;
+        }
         
         if(repeating != -1 && missing != -1) {
            break;
