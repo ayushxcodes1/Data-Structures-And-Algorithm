@@ -18,7 +18,7 @@ int maxLength(vector<int> &arr) {
     return maxLen;
 }
 
-//Optimal - TC(NlogN), SC: O(N)
+//Optimal - TC(NlogN), SC: O(N) - Prefix Sum
 int maxLength2(vector<int> &arr) {
     int n = arr.size();
     map<int, int> mpp;
