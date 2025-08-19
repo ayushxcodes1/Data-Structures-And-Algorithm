@@ -72,6 +72,11 @@ vector<int> findTwoElement2(vector<int> arr) {
     return {(int)x, (int)y};
 }
 
+//Optimal2 - TC: O(N), SC: O(1) - XOR
+vector<int> findTwoElement2(vector<int> arr) {
+    
+}
+
 
 int main() {
   vector<int> arr = {4, 3, 6, 2, 1, 1};
