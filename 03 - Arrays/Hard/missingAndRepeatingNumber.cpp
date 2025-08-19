@@ -18,9 +18,15 @@ vector<int> findTwoElement(vector<int> &arr) {
 
     //Missing
     for(int i = 0; i < n - 1; i++) {
-        if(arr[i + 1] != arr[i] || arr[i] + 1 != arr[i + 1]) {
+        if(arr[i] + 1 != arr[i + 1]) {
            missing = arr[i] + 1;
+           break;
         }
+    }
+
+    //If missing is last element
+    if(missing == -1) {
+       missing = n;
     }
 
     return {repeating, missing};
