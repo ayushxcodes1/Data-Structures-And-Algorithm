@@ -52,7 +52,7 @@ vector<int> findTwoElement2(vector<int> arr) {
 
 
 //Optimal1 - TC: O(N), SC: O(1) - Mathematical
-vector<int> findTwoElement2(vector<int> arr) {
+vector<int> findTwoElement3(vector<int> arr) {
     long long n = arr.size();
     //S - SN = x - y
     //S2 - S2N
@@ -73,7 +73,7 @@ vector<int> findTwoElement2(vector<int> arr) {
 }
 
 //Optimal2 - TC: O(N), SC: O(1) - XOR
-vector<int> findTwoElement2(vector<int> arr) {
+vector<int> findTwoElement4(vector<int> arr) {
     
 }
 
