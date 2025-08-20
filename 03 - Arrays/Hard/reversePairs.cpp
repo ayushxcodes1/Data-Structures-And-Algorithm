@@ -56,7 +56,7 @@ void mS(vector<int> &arr, int low, int high) {
 }
 
 //Optimal - TC: O(NlogN + N), SC: O(N)
-int reversePairs2(vector<int> &arr) {
+int reversePairs2(vector<int> &arr, int n) {
     mS(arr, 0, n - 1);
 }
 
