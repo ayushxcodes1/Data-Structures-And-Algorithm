@@ -57,18 +57,19 @@ void mS(vector<int> &arr, int low, int high) {
 
 //Optimal - TC: O(NlogN + N), SC: O(N)
 int reversePairs2(vector<int> &arr) {
-    
+    mS(arr, 0, n - 1);
 }
 
 int main() {
   vector<int> arr = {40, 25, 19, 12, 9, 6, 2};
+  int n = arr.size();
 
-  int ans = reversePairs(arr);
+  int ans = reversePairs(arr, n);
   cout << ans;
 
   cout << "\n";
 
-  int ans2 = reversePairs2(arr);
+  int ans2 = reversePairs2(arr, n);
   cout << ans2;
 
   return 0;
