@@ -76,10 +76,14 @@ vector<int> findTwoElement3(vector<int> arr) {
 vector<int> findTwoElement4(vector<int> arr) {
     long long n = arr.size();
     int xr = 0;
+
+    //Step 1 - Find the xor of all elements
     for(int i = 0; i < n; i++) {
         xr = xr ^ arr[i];
         xr = xr ^ (i + 1);
     }
+
+    //Step 2 - Find the diffrentiating bit
     int bitNo = 0;
     while(1) {
         if( (xr & (1<<bitNo)) != 0) {
