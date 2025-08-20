@@ -16,7 +16,7 @@ int countInversions(vector<int> &arr) {
     return cnt;
 }
 
-//Optimal - TC: O(NlogN), SC: O(N) - Merge Sort Approach
+//Optimal - TC: O(N * logN), SC: O(N) - Merge Sort Approach
 int merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp;
     int left = low;
