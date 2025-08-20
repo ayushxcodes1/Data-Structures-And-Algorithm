@@ -55,7 +55,7 @@ int merge(vector<int> &arr, int low, int mid, int high) {
 
 int mS(vector<int> &arr, int low, int high) {
     int cnt = 0;
-    if(low == high) return;
+    if(low >= high) return cnt;
     int mid = (low + high) / 2;
     mS(arr, low, mid);  
     mS(arr, mid + 1, high);
