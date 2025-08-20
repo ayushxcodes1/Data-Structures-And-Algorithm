@@ -31,7 +31,7 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
 }
 
 //Brute Force - TC: O(NlogN), SC: O(N)
-vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
+vector<vector<int>> mergeIntervals2(vector<vector<int>> &arr) {
     int n = arr.size();
     sort(arr.begin(), arr.end());  
     vector<vector<int>> ans;
