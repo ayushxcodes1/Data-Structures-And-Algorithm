@@ -16,6 +16,7 @@ int countInversions(vector<int> &arr) {
     return cnt;
 }
 
+int cnt = 0;
 //Merge Sort
 void merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp;
@@ -56,12 +57,13 @@ void mS(vector<int> &arr, int low, int high) {
 }
 
 //Optimal - TC: O(NlogN), SC: O(1) - Merge Sort Approach
-int countInversions(vector<int> &arr) {
-    int n = arr.size();
-    
+int countInversions2(vector<int> &arr, int n) {
+    mS(arr, 0, n - 1);
 }
 
 int main() {
   vector<int> arr = {2, 4, 1, 3, 5};
+  int n = arr.size();
+  int ans = countInversions2(arr, n);
   return 0;
 }
