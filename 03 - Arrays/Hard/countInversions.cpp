@@ -16,13 +16,13 @@ int countInversions(vector<int> &arr) {
     return cnt;
 }
 
-int cnt = 0;
 //Merge Sort
 void merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp;
     int left = low;
     int right = mid + 1;
 
+    int cnt = 0;
     while(left <= mid && right <= high) {
         if(arr[left] <= arr[right]) {
            temp.push_back(arr[left]);
