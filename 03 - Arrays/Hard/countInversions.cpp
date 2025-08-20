@@ -16,7 +16,7 @@ int countInversions(vector<int> &arr) {
     return cnt;
 }
 
-//Optimal - TC: O(N^2), SC: O(1) - Merge Sort Approach
+//Optimal - TC: O(NlogN), SC: O(1) - Merge Sort Approach
 int countInversions(vector<int> &arr) {
     int n = arr.size();
     int cnt = 0;
