@@ -32,7 +32,7 @@ int main() {
     for(auto it : ans) {
         cout << "[";
         cout << it[0] << "," << it[1]; 
-        cout << "] ";
+        cout << "]";
     }
 
   return 0;
