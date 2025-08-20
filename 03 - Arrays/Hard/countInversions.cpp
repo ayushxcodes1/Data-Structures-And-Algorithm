@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(N^2), SC: O(1)
 int countInversions(vector<int> &arr) {
     int n = arr.size();
     int cnt = 0;
