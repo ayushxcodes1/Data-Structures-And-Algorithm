@@ -17,6 +17,10 @@ int reversePairs(vector<int> &arr) {
 }
 
 int main() {
+  vector<int> arr = {40, 25, 19, 12, 9, 6, 2};
+
+  int ans = reversePairs(arr);
+  cout << ans;
   
   return 0;
 }
