@@ -94,22 +94,22 @@ vector<int> findTwoElement4(vector<int> arr) {
     int zero = 0; 
     int one = 0;
     for(int i = 0; i < n; i++) {
-        //part of one club
+        //part of 1 group 
         if( (arr[i] & (1<<bitNo)) != 0) {
             one = one ^ arr[i];
         }
-        //part of zeroth club
+        //part of 0 group
         else {
             zero = zero ^ arr[i];
         }
     }
 
     for(int i = 1; i <= n; i++) {
-        //part of one club
+        //part of 1 group 
         if( (i && (1<<bitNo)) != 0) {
             one = one ^ i;
         }
-        //part of zeroth club
+        //part of 0 group
         else {
             zero = zero ^ i;
         }
