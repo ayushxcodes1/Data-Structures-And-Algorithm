@@ -16,7 +16,7 @@ int reversePairs(vector<int> &arr) {
     return cnt;
 }
 
-//Optimal - TC: O(NlogN + N), SC: O(N)
+//Optimal - TC: O(2N * logN), SC: O(N)
 void merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp;
     int left = low;
@@ -51,7 +51,7 @@ int countPairs(vector<int> &arr, int low, int mid, int high) {
     int right = mid + 1;
     int cnt  = 0;
     for(int i = low; i <= mid; i++) {
-        while(right <= high && (long long)arr[i] > 2 * arr[right]) right++;
+        while(right <= high && (long long)arr[i] > 2 * (long long)arr[right]) right++;
         cnt += (right - (mid + 1));
     }
     return cnt;
