@@ -47,8 +47,8 @@ void merge(vector<int> &arr, int low, int mid, int high) {
     }
 }
 
-void countPairs(vector<int> arr, int low, int mid, int high) {
-    
+void countPairs(vector<int> &arr, int low, int mid, int high) {
+
 }
 
 void mS(vector<int> &arr, int low, int high) {
