@@ -92,6 +92,20 @@ int main() {
   for(auto it : ans2) {
     cout << it << " ";
   }
+
+  cout << endl;
+
+  vector<int> ans2 = findTwoElement2(arr);
+  for(auto it : ans2) {
+    cout << it << " ";
+  }
+
+  cout << endl;
+
+  vector<int> ans2 = findTwoElement2(arr);
+  for(auto it : ans2) {
+    cout << it << " ";
+  }
  
   return 0;
 }
