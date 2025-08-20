@@ -37,9 +37,9 @@ int main() {
   cout << ans;
 
   cout << "\n";
-  
-  int ans = reversePairs(arr);
-  cout << ans;
+
+  int ans2 = reversePairs2(arr);
+  cout << ans2;
 
   return 0;
 }
