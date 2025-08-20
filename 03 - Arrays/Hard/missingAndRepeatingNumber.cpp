@@ -91,7 +91,7 @@ vector<int> findTwoElement4(vector<int> arr) {
     int one = 0;
     for(int i = 0; i < n; i++) {
         //part of one club
-        if( (arr[i] && (1<<bitNo)) != 0) {
+        if( (arr[i] & (1<<bitNo)) != 0) {
             one = one ^ arr[i];
         }
         //part of zeroth club
