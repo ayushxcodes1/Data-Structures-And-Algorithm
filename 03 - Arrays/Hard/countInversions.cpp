@@ -3,7 +3,7 @@
 using namespace std;
 
 int countInversions(vector<int> &arr) {
-
+   int n = arr.size();
 }
 
 int main() {
