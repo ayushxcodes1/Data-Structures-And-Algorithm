@@ -6,7 +6,10 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
     int n = arr.size();
     sort(arr.begin(), arr.end());
     vector<vector<int>> ans;
-
+    for(int i = 0; i < n; i++) {
+        int start = arr[i][0];
+        int end = arr[i][1];
+    }
     return ans;
 
 
