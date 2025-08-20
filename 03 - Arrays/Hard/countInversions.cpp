@@ -57,8 +57,8 @@ int mS(vector<int> &arr, int low, int high) {
     int cnt = 0;
     if(low >= high) return cnt;
     int mid = (low + high) / 2;
-    mS(arr, low, mid);  
-    mS(arr, mid + 1, high);
+    cnt += mS(arr, low, mid);  
+    cnt += mS(arr, mid + 1, high);
     cnt = merge(arr, low, mid, high);
     return cnt;
 }
