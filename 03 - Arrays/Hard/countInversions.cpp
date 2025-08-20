@@ -63,7 +63,7 @@ int mS(vector<int> &arr, int low, int high) {
     return cnt;
 }
 
-//Optimal - TC: O(NlogN), SC: O(1) - Merge Sort Approach
+//Optimal - TC: O(NlogN), SC: O(N) - Merge Sort Approach
 int countInversions2(vector<int> &arr, int n) {
     return mS(arr, 0, n - 1);
 }
