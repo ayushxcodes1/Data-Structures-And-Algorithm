@@ -16,7 +16,7 @@ int reversePairs(vector<int> &arr) {
     return cnt;
 }
 
-//Optimal - TC: O(NlogN + N), SC: O(1)
+//Optimal - TC: O(NlogN + N), SC: O(N)
 
 int main() {
   vector<int> arr = {40, 25, 19, 12, 9, 6, 2};
