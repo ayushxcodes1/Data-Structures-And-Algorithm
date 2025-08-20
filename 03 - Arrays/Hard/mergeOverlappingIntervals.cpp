@@ -55,6 +55,15 @@ int main() {
         cout << it[0] << "," << it[1]; 
         cout << "] ";
     }
+    
+    cout << endl;
+
+    vector<vector<int>> ans = mergeIntervals(arr);
+    for(auto it : ans) {
+        cout << "[";
+        cout << it[0] << "," << it[1]; 
+        cout << "] ";
+    }
 
   return 0;
 }
