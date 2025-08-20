@@ -17,7 +17,7 @@ int countInversions(vector<int> &arr) {
 }
 
 //Merge Sort
-void merge(vector<int> &arr, int low, int mid, int high) {
+int merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp;
     int left = low;
     int right = mid + 1;
