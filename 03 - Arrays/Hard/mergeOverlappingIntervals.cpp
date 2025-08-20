@@ -33,7 +33,8 @@ int main() {
         cout << "[";
         cout << it[0] << "," << it[1]; 
         cout << "]";
+        cout << "\n";
     }
-
+     
   return 0;
 }
