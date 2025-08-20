@@ -82,7 +82,7 @@ vector<int> findTwoElement4(vector<int> arr) {
     }
     int bitNo = 0;
     while(1) {
-        if((xr & (1<<bitNo)) != 0) {
+        if( (xr & (1<<bitNo)) != 0) {
             break;
         }
         bitNo++;
@@ -94,14 +94,14 @@ vector<int> findTwoElement4(vector<int> arr) {
         if((arr[i] && (1<<bitNo)) != 0) {
             one = one ^ arr[i];
         }
-        //part of zero club
+        //part of zeroth club
         else {
             zero = zero ^ arr[i];
         }
     }
 
     for(int i = 1; i <= n; i++) {
-        //part of 1 club
+        //part of one club
         if((arr[i] && (1<<bitNo)) != 0) {
             one = one ^ i;
         }
