@@ -54,11 +54,13 @@ int merge(vector<int> &arr, int low, int mid, int high) {
 }
 
 void mS(vector<int> &arr, int low, int high) {
+    int cnt = 0;
     if(low == high) return;
     int mid = (low + high) / 2;
     mS(arr, low, mid);  
     mS(arr, mid + 1, high);
-    merge(arr, low, mid, high);
+    cnt = merge(arr, low, mid, high);
+    return cnt;
 }
 
 //Optimal - TC: O(NlogN), SC: O(1) - Merge Sort Approach
