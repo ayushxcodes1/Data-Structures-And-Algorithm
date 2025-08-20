@@ -115,6 +115,7 @@ vector<int> findTwoElement4(vector<int> arr) {
         }
     }
 
+    //Last Step - Identify the numbers
     int cnt = 0;
     for(int i = 0; i < n; i++) {
         if(arr[i] == zero) cnt++;
