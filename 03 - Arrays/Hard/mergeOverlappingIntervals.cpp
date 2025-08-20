@@ -28,6 +28,7 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
 
 int main() {
     vector<vector<int>> arr = {{1,3}, {2,6}, {8,10}, {15,18}};
+    
     vector<vector<int>> ans = mergeIntervals(arr);
     for(auto it : ans) {
         cout << "[";
