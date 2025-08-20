@@ -40,7 +40,7 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
            ans.push_back(arr[i]);
         }
         else {
-            
+           ans.back()[1] = max(ans.back()[1], arr[i][1]);
         }
     }
     return ans;
