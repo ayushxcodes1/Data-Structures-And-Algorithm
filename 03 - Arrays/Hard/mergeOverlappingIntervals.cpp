@@ -39,7 +39,9 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
         if(ans.empty() || arr[i][0] > ans.back()[1]) {
            ans.push_back(arr[i]);
         }
-        
+        else {
+            
+        }
     }
     return ans;
 }
