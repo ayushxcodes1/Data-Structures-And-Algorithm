@@ -17,6 +17,8 @@ int reversePairs(vector<int> &arr) {
 }
 
 //Merge Sort
+int cnt = 0;
+
 void merge(vector<int> &arr, int low, int mid, int high) {
     vector<int> temp;
     int left = low;
