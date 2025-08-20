@@ -64,7 +64,7 @@ int main() {
   vector<int> arr = {40, 25, 19, 12, 9, 6, 2};
   int n = arr.size();
 
-  int ans = reversePairs(arr, n);
+  int ans = reversePairs(arr);
   cout << ans;
 
   cout << "\n";
