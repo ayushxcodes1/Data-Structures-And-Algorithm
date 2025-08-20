@@ -54,6 +54,7 @@ int countPairs(vector<int> &arr, int low, int mid, int high) {
         while(right <= high && arr[i] > 2 * arr[right]) right++;
         cnt += (right - (mid + 1));
     }
+    return cnt;
 }
 
 void mS(vector<int> &arr, int low, int high) {
