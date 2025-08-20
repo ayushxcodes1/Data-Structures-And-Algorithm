@@ -74,7 +74,33 @@ vector<int> findTwoElement3(vector<int> arr) {
 
 //Optimal2 - TC: O(N), SC: O(1) - XOR
 vector<int> findTwoElement4(vector<int> arr) {
-    
+    long long n = arr.size();
+    int xr = 0;
+    for(int i = 0; i < n; i++) {
+        xr = xr ^ arr[i];
+        xr = xr ^ (i + 1);
+    }
+    int bitNo = 0;
+    while(1) {
+        if((xr & (1<<bitNo)) != 0) {
+            break;
+        }
+        bitNo++;
+    }
+    int zero = 0; 
+    int one = 0;
+    for(int i = 0; i < n; i++) {
+        //part of one club
+        if((arr[i] && (1<<bitNo)) != 0) {
+            one = one ^ arr[i];
+        }
+        //part of zero club
+        else {
+            zero = zero ^ arr[i];
+        }
+    }
+
+
 }
 
 int main() {
