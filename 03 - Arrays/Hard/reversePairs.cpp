@@ -61,17 +61,16 @@ void mS(vector<int> &arr, int low, int high) {
     int cnt = 0;
     if(low == high) return;
     int mid = (low + high) / 2;
-    mS(arr, low, mid);  
-    mS(arr, mid + 1, high);
-    countPairs(arr, low, mid, high);
+    cnt += mS(arr, low, mid);  
+    cnt += mS(arr, mid + 1, high);
+    cnt += countPairs(arr, low, mid, high);
     merge(arr, low, mid, high);
     return cnt;
 }
 
 //Optimal - TC: O(NlogN + N), SC: O(N)
 int reversePairs2(vector<int> &arr, int n) {
-    mS(arr, 0, n - 1);
-    return cnt;
+    return mS(arr, 0, n - 1);
 }
 
 int main() {
