@@ -58,8 +58,8 @@ int main() {
     
     cout << "\n";
 
-    vector<vector<int>> ans = mergeIntervals(arr);
-    for(auto it : ans) {
+    vector<vector<int>> ans2 = mergeIntervals2(arr);
+    for(auto it : ans2) {
         cout << "[";
         cout << it[0] << "," << it[1]; 
         cout << "] ";
