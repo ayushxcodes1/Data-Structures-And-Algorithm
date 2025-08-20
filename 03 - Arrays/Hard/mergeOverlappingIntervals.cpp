@@ -31,10 +31,9 @@ int main() {
     vector<vector<int>> ans = mergeIntervals(arr);
     for(auto it : ans) {
         cout << "[";
-        cout << it[0] << "," << it[1] << " "; 
+        cout << it[0] << "," << it[1]; 
         cout << "]";
     }
 
-    
   return 0;
 }
