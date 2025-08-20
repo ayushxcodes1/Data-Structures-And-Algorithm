@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force - TC: O(N^2), SC: O(1)
-int reversePairs(vector<int> arr) {
+int reversePairs(vector<int> &arr) {
     int n = arr.size();
     int cnt = 0;
     for(int i = 0; i < n - 1; i++) {
