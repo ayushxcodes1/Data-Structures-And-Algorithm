@@ -5,18 +5,18 @@ using namespace std;
 //Brute Force - TC: O(NlogN + 2N), SC: O(N)
 vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
     int n = arr.size();
-    sort(arr.begin(), arr.end());  // Step 1: Sort by start, otherwise end if same
+    sort(arr.begin(), arr.end());  // Step 1: Sort by start element 
     vector<vector<int>> ans;
     for(int i = 0; i < n; i++) {
         int start = arr[i][0];
         int end = arr[i][1];
 
-        // Step 2: If current interval is inside the last merged interval, skip it
+        //If current interval is inside the last merged interval, skip it
         if(!ans.empty() && end <= ans.back()[1]) {
            continue;
         }
 
-        // Step 3: Merge with overlapping intervals
+        //Merge with overlapping intervals
         for(int j = i + 1; j < n; j++) {
             if(arr[j][0] <= end) {
                end = max(end, arr[j][1]); 
