@@ -65,7 +65,7 @@ int main() {
   vector<int> arr = {2, 4, 1, 3, 5};
   int n = arr.size();
 
-  int ans = countInversions(arr, n);
+  int ans = countInversions(arr);
   cout << ans << "\n";
 
   int ans2 = countInversions2(arr, n);
