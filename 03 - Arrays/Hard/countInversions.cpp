@@ -49,6 +49,8 @@ void merge(vector<int> &arr, int low, int mid, int high) {
     for(int i = low; i <= high; i++) {
         arr[i] = temp[i - low];
     }
+
+    return cnt;
 }
 
 void mS(vector<int> &arr, int low, int high) {
