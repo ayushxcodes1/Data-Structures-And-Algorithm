@@ -100,7 +100,18 @@ vector<int> findTwoElement4(vector<int> arr) {
         }
     }
 
+    for(int i = 1; i <= n; i++) {
+        //part of 1 club
+        if((arr[i] && (1<<bitNo)) != 0) {
+            one = one ^ i;
+        }
+        //part of zeroth club
+        else {
+            zero = zero ^ i;
+        }
+    }
 
+    0
 }
 
 int main() {
