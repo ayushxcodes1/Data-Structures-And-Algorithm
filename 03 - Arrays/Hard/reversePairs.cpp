@@ -51,6 +51,9 @@ void merge(vector<int> &arr, int low, int mid, int high) {
 
 void countPairs(vector<int> &arr, int low, int mid, int high) {
     int right = mid + 1;
+    for(int i = low; i <= mid; i++) {
+ 
+    }
 }
 
 void mS(vector<int> &arr, int low, int high) {
