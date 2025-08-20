@@ -5,7 +5,7 @@ using namespace std;
 //Brute Force - TC: O(NlogN + 2N), SC: O(N)
 vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
     int n = arr.size();
-    sort(arr.begin(), arr.end());
+    sort(arr.begin(), arr.end());  // Step 1: Sort by start, otherwise end if same
     vector<vector<int>> ans;
     for(int i = 0; i < n; i++) {
         int start = arr[i][0];
