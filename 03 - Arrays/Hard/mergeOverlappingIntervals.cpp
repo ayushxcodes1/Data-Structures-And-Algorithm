@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(NlogN + 2N), SC: O(N)
 vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
     int n = arr.size();
     sort(arr.begin(), arr.end());
