@@ -56,7 +56,7 @@ int main() {
         cout << "] ";
     }
     
-    cout << endl;
+    cout << "\n";
 
     vector<vector<int>> ans = mergeIntervals(arr);
     for(auto it : ans) {
