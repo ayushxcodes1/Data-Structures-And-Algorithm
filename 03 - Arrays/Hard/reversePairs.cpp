@@ -16,11 +16,13 @@ int reversePairs(vector<int> &arr) {
     return cnt;
 }
 
+//Optimal - TC: O(NlogN), SC: O(1)
+
 int main() {
   vector<int> arr = {40, 25, 19, 12, 9, 6, 2};
 
   int ans = reversePairs(arr);
   cout << ans;
-  
+
   return 0;
 }
