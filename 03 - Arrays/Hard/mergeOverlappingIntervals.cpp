@@ -11,7 +11,7 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &arr) {
         int end = arr[i][1];
     }
     return ans;
-
+}
 
 int main() {
   vector<vector<int>> arr = {{1,3}, {2,6}, {8,10}, {15,18}};
