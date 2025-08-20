@@ -31,6 +31,7 @@ void merge(vector<int> &arr, int low, int mid, int high) {
         //right is smaller
         else {
            temp.push_back(arr[right]);
+           cnt += (mid - left + 1);
            right++;
         }
     }
