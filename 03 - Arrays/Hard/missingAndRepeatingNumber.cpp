@@ -111,7 +111,12 @@ vector<int> findTwoElement4(vector<int> arr) {
         }
     }
 
-    0
+    int cnt = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] == zero) cnt++;
+    }
+    if(cnt == 2) return {zero, one};
+    return {one, zero};
 }
 
 int main() {
