@@ -136,15 +136,15 @@ int main() {
 
   cout << endl;
 
-  vector<int> ans2 = findTwoElement2(arr);
-  for(auto it : ans2) {
+  vector<int> ans3 = findTwoElement3(arr);
+  for(auto it : ans3) {
     cout << it << " ";
   }
 
   cout << endl;
 
-  vector<int> ans2 = findTwoElement2(arr);
-  for(auto it : ans2) {
+  vector<int> ans4 = findTwoElement4(arr);
+  for(auto it : ans4) {
     cout << it << " ";
   }
  
