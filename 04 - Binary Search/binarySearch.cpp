@@ -18,7 +18,7 @@ int search2(vector<int> &arr, int i, int target){
     int n = arr.size();
     if(i == n) return -1;
     if(arr[i] == target) return i;
-    search(arr, i + 1, target);
+    search2(arr, i + 1, target);
 }
 
 int main() {
