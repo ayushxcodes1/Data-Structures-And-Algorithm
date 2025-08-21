@@ -18,8 +18,8 @@ int lowerBound(vector<int> &arr, int x) {
 int lowerBound2(vector<int> &arr, int low, int high, int x) {
     int n = arr.size();
     while(low <= high) {
-       int mid = (low + (high - low)) / 2;
-       
+       int mid = (low + (high - low) / 2);
+
        if(arr[mid] >= x) return mid;
        else if(x > arr[mid]) low = mid + 1;
        else high = mid - 1;
