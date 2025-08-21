@@ -15,7 +15,10 @@ int search(vector<int> &arr, int target) {
 
 //Recursive
 int search(vector<int> &arr, int i, int target){
+    int n = arr.size();
+    if(i == n) return -1;
     search(arr, i + 1, target);
+
 }
 
 int main() {
