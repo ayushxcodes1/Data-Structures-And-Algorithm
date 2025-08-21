@@ -13,7 +13,7 @@ int search(vector<int> &arr, int target) {
     return -1;
 }
 
-//Recursive
+//Recursive - TC: O(N), SC: O(N)
 int search2(vector<int> &arr, int i, int target){
     int n = arr.size();
     if(i == n) return -1;
