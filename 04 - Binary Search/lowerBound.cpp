@@ -29,11 +29,12 @@ int lowerBound2(vector<int> &arr, int low, int high, int x) {
 
 int main() {
   vector<int> arr = {1, 2, 3, 3, 7, 8, 9, 9, 9, 11};
+  int n = arr.size();
 
   int ans = lowerBound(arr, 9);
   cout << ans;
 
-  int ans2 = lowerBound2(arr, 9);
+  int ans2 = lowerBound2(arr, 0, n - 1, 9);
   cout << ans2;
   return 0;
 }
