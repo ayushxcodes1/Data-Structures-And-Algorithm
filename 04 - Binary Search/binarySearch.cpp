@@ -33,7 +33,7 @@ int main() {
   int ans = search(arr, n, 9);
   cout << "Target found at index " << ans << "\n";
 
-//   int ans2 = search2(arr, 0, 9);
-//   cout << "Target found at index " << ans2;
+  int ans2 = search2(arr, 0, 9);
+  cout << "Target found at index " << ans2;
   return 0;
 }
