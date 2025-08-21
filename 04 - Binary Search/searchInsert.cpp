@@ -2,17 +2,17 @@
 
 using namespace std;
 
-int searchInsert(vector<int>& nums, int target) {
-    int n = nums.size();
+int searchInsert(vector<int>& arr, int target) {
+    int n = arr.size();
     int low = 0, high = n - 1;
 
     while(low <= high) {
         int mid = (low + (high - low) / 2);
 
-        if(nums[mid] == target) {
+        if(arr[mid] == target) {
             return mid;
         }
-        else if(nums[mid] > target) {
+        else if(arr[mid] > target) {
             high = mid - 1;
         }
         else {
