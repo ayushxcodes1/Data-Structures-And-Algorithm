@@ -26,6 +26,12 @@ int main() {
   int target = 9;
 
   int ans = lowerBound(arr, 0, n - 1, target);
-  cout << "Lower bound of " << target << " is at index: " << ans;
+  cout << "Lower bound of " << target << " is at index: " << ans << "\n";
+
+  //Using STL
+  auto it = lower_bound(arr.begin(), arr.end(), target);
+  int index = it - arr.begin();
+  cout << "Lower bound of " << target << " is at index: " << index;
+  
   return 0;
 }
