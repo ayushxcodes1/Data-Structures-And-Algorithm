@@ -10,7 +10,7 @@ int search(vector<int> &arr, int n, int target) {
 
         if(arr[mid] == target) {
            return mid;
-        }
+        }   
         else if(target > arr[mid]) {
            low = mid + 1;
         }
