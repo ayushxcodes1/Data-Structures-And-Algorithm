@@ -22,7 +22,7 @@ int search(vector<int> &arr, int n, int target) {
 }
 
 // //Recursive - TC: O(N), SC: O(N)
-int search2(vector<int> &arr, int i, int target){
+int search2(vector<int> &arr, int low, int high, int target){
    
 }
 
@@ -33,7 +33,7 @@ int main() {
   int ans = search(arr, n, 9);
   cout << "Target found at index " << ans << "\n";
 
-  int ans2 = search2(arr, 0, 9);
+  int ans2 = search2(arr, 0, n - 1, 9);
   cout << "Target found at index " << ans2;
   return 0;
 }
