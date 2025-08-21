@@ -22,7 +22,7 @@ int lowerBound2(vector<int> &arr, int low, int high, int x) {
        int mid = (low + (high - low) / 2);
 
         if(arr[mid] >= x) {
-           ans = mid;
+           ans = min(ans, mid);
            high = mid - 1;
         }
         else {
