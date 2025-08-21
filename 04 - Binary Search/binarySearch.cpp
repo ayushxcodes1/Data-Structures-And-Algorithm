@@ -14,7 +14,7 @@ int search(vector<int> &arr, int target) {
 }
 
 //Recursive
-int search(vector<int> &arr, int i, int target){
+int search2(vector<int> &arr, int i, int target){
     int n = arr.size();
     if(i == n) return -1;
     if(arr[i] == target) return i;
