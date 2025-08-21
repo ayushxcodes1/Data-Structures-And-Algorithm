@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Iterative - TC: O(N), SC: O(1)
+//Iterative - TC: O(logN), SC: O(1)
 int search(vector<int> &arr, int n, int target) {
     int low = 0, high = n - 1;
     while(left <= right) {
