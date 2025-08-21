@@ -22,9 +22,9 @@ int search(vector<int> &arr, int n, int target) {
 }
 
 // //Recursive - TC: O(N), SC: O(N)
-// int search2(vector<int> &arr, int i, int target){
+int search2(vector<int> &arr, int i, int target){
    
-// }
+}
 
 int main() {
   vector<int> arr = {-1, 0, 3, 5, 9, 12};  
