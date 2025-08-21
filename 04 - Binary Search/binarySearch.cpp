@@ -21,7 +21,7 @@ int search(vector<int> &arr, int n, int target) {
     return -1;
 }
 
-//Recursive - TC: O(log₂N), SC: O(log₂N)
+//Recursive - TC: O(logN), SC: O(logN)
 int search2(vector<int> &arr, int low, int high, int target){
     if(low > high) return -1;
     int mid = (low + (high - low) / 2);
