@@ -5,9 +5,15 @@ using namespace std;
 //Iterative - TC: O(N), SC: O(1)
 int search(vector<int> &arr, int target) {
     int n = arr.size();
-    for(int i = 0; i < n; i++) {
-        if(arr[i] == target) {
-           return i;
+    int low = 0, high = n - 1;
+    while(left <= right) {
+        int mid = (low + high) / 2;
+
+        if(arr[mid] < target) {
+           low = mid + 1;
+        }
+        else {
+           high = mid - 1;
         }
     }
     return -1;
@@ -15,10 +21,7 @@ int search(vector<int> &arr, int target) {
 
 //Recursive - TC: O(N), SC: O(N)
 int search2(vector<int> &arr, int i, int target){
-    int n = arr.size();
-    if(i == n) return -1;
-    if(arr[i] == target) return i;
-    search2(arr, i + 1, target);
+   
 }
 
 int main() {
