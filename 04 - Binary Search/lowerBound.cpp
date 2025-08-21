@@ -22,8 +22,9 @@ int lowerBound(vector<int> &arr, int low, int high, int target) {
 int main() {
   vector<int> arr = {1, 2, 3, 3, 7, 8, 9, 9, 9, 11};
   int n = arr.size();
+  int target = 9;
 
-  int ans = lowerBound(arr, 0, n - 1, 9);
-  cout << ans;
+  int ans = lowerBound(arr, 0, n - 1, target);
+  cout << "Lower bound of " << target << " is at index: " << ans;
   return 0;
 }
