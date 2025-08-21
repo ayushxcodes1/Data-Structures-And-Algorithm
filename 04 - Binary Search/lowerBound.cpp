@@ -32,7 +32,7 @@ int main() {
   int n = arr.size();
 
   int ans = lowerBound(arr, 9);
-  cout << ans;
+  cout << ans << "\n";
 
   int ans2 = lowerBound2(arr, 0, n - 1, 9);
   cout << ans2;
