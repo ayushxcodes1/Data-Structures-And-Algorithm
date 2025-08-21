@@ -2,7 +2,6 @@
 
 using namespace std;
 
-//Binary Search
 int lowerBound(vector<int> &arr, int low, int high, int target) {
     int n = arr.size();
     int ans = n;
@@ -32,6 +31,6 @@ int main() {
   auto it = lower_bound(arr.begin(), arr.end(), target);
   int index = it - arr.begin();
   cout << "Lower bound of " << target << " is at index: " << index;
-  
+
   return 0;
 }
