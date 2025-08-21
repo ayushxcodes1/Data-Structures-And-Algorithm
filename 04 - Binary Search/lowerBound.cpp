@@ -15,7 +15,7 @@ int lowerBound(vector<int> &arr, int x) {
 }
 
 //Binary Search
-int lowerBound(vector<int> &arr, int low, int high, int x) {
+int lowerBound2(vector<int> &arr, int low, int high, int x) {
     int n = arr.size();
     while(low <= high) {
        int mid = (low + (high - low) / 2);
@@ -29,7 +29,11 @@ int lowerBound(vector<int> &arr, int low, int high, int x) {
 
 int main() {
   vector<int> arr = {1, 2, 3, 3, 7, 8, 9, 9, 9, 11};
+
   int ans = lowerBound(arr, 9);
   cout << ans;
+
+  int ans2 = lowerBound2(arr, 9);
+  cout << ans2;
   return 0;
 }
