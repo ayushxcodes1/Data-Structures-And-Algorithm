@@ -23,7 +23,11 @@ int search2(vector<int> &arr, int i, int target){
 
 int main() {
   vector<int> arr = {-1, 0, 3, 5, 9, 12};
+
   int ans = search(arr, 0, 9);
   cout << "Target found at index " << ans;
+
+  int ans2 = search2(arr, 0, 9);
+  cout << "Target found at index " << ans2;
   return 0;
 }
