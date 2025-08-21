@@ -8,7 +8,10 @@ int search(vector<int> &arr, int n, int target) {
     while(left <= right) {
         int mid = (low + high) / 2;
 
-        if(arr[mid] < target) {
+        if(arr[mid] == target) {
+           return mid;
+        }
+        else if(arr[mid] < target) {
            low = mid + 1;
         }
         else {
