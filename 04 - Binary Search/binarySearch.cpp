@@ -3,7 +3,8 @@
 using namespace std;
 
 int search(vector<int> &arr, int target) {
-
+    int n = arr.size();
+    
 }
 
 int main() {
