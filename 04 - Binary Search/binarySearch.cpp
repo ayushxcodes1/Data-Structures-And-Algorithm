@@ -13,7 +13,7 @@ int search(vector<int> &arr, int target) {
     return -1;
 }
 
-//Iterative - TC: O(N), SC: O(1)
+//Recursive
 int search(vector<int> &arr, int target) {
     int n = arr.size();
     for(int i = 0; i < n; i++) {
