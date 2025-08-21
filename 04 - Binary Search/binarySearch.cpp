@@ -14,13 +14,13 @@ int search(vector<int> &arr, int target) {
 }
 
 //Recursive
-int search(vector<int> &arr, int target) {
-    
+int search(vector<int> &arr, int i, int target){
+    search(arr, i + 1, target);
 }
 
 int main() {
   vector<int> arr = {-1, 0, 3, 5, 9, 12};
-  int ans = search(arr, 9);
+  int ans = search(arr, 0, 9);
   cout << "Target found at index " << ans;
   return 0;
 }
