@@ -30,7 +30,7 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> arr) {
     return ans;
 }
 
-//Better - TC: O(NlogN + N), SC: O(N)
+//Optimal - TC: O(NlogN + N), SC: O(N)
 vector<vector<int>> mergeIntervals2(vector<vector<int>> arr) {
     int n = arr.size();
     sort(arr.begin(), arr.end());  
