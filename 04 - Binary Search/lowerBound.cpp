@@ -15,7 +15,7 @@ int lowerBound(vector<int> &arr, int x) {
 }
 
 int main() {
-  vector<int> arr = {1, 2, 3, 3, 7, 8, 9, 9, 11};
+  vector<int> arr = {1, 2, 3, 3, 7, 8, 9, 9, 9, 11};
   int ans = lowerBound(arr, 9);
   cout << ans;
   return 0;
