@@ -20,9 +20,6 @@ int lowerBound(vector<int> &arr, int low, int high, int target) {
     return ans;
 }
 
-//STL
-
-
 int main() {
   vector<int> arr = {1, 2, 3, 3, 7, 8, 9, 9, 9, 11};
   int n = arr.size();
