@@ -2,13 +2,13 @@
 
 using namespace std;
 
-int lowerBound(vector<int> &arr, int low, int high, int x) {
+int lowerBound(vector<int> &arr, int low, int high, int target) {
     int n = arr.size();
     int ans = n;
     while(low <= high) {
        int mid = (low + (high - low) / 2);
 
-        if(arr[mid] >= x) {
+        if(arr[mid] >= target) {
            ans = mid;
            high = mid - 1;
         }
