@@ -23,9 +23,9 @@ int search(vector<int> &arr, int n, int target) {
 
 // //Recursive - TC: O(N), SC: O(N)
 int search2(vector<int> &arr, int low, int high, int target){
-   int mid = (low + high) / 2;
-   if(low > high) return -1;
-
+    if(low > high) return -1;
+    int mid = (low + high) / 2;
+    
     if(arr[mid] == target) {
         return mid;
     }
