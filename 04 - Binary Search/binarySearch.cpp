@@ -25,7 +25,7 @@ int main() {
   vector<int> arr = {-1, 0, 3, 5, 9, 12};
 
   int ans = search(arr, 9);
-  cout << "Target found at index " << ans;
+  cout << "Target found at index " << ans << "/n";
 
   int ans2 = search2(arr, 0, 9);
   cout << "Target found at index " << ans2;
