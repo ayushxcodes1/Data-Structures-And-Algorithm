@@ -17,19 +17,19 @@ int lowerBound(vector<int> &arr, int x) {
 //Binary Search
 int lowerBound2(vector<int> &arr, int low, int high, int x) {
     int n = arr.size();
-    int ans = 0;
+    int ans = n;
     while(low <= high) {
        int mid = (low + (high - low) / 2);
 
         if(arr[mid] >= x) {
-           ans = min(ans, mid);
+           ans = mid;
            high = mid - 1;
         }
-        else {
+        else {  
             low = mid + 1;
         }
     }
-    return n;
+    return ans;
 }
 
 int main() {
