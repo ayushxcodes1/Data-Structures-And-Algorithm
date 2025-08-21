@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//TC: O(N), SC: O(1)
 int search(vector<int> &arr, int target) {
     int n = arr.size();
     for(int i = 0; i < n; i++) {
