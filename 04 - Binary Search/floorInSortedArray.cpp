@@ -27,7 +27,13 @@ int main() {
   int target = 0;
 
   int ans = findFloor(arr, target);
+  
+  if(ans == -1) {
+    cout << "Floor of " << target << " doesn't exist";
+  }
+  else {
   cout << "Floor of " << target << " is at index: " << ans;
+  }
 
   return 0;
 }
