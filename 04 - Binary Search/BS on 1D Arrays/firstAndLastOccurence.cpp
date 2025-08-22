@@ -38,7 +38,12 @@ int upperBound(vector<int> &arr, int low, int high, int target) {
 
 
 vector<int> firstAndLastPosition(vector<int> &arr, int target) {
-    
+    int n = arr.size();
+    int low = 0, high = n - 1;
+
+    while(low <= high) {
+        
+    }
 }
 
 int main() {
