@@ -41,18 +41,14 @@ int findCeil(vector<int> &arr, int target) {
 }
 
 
+
+
 int main() {
   vector<int> arr = {1, 2, 8, 10, 10, 12, 19};
   int target = 5;
 
   int ans = findFloor(arr, target);
-  if(ans == -1) {
-    cout << "Floor of " << target << " doesn't exist in the array";
-  }
-  else {
-  cout << "Floor of " << target << " is at index: " << ans;
-  }
-
+  
   int ans2 = findFloor(arr, target);
   if(ans == -1) {
     cout << "Floor of " << target << " doesn't exist in the array";
