@@ -50,8 +50,6 @@ vector<int> findFloorAndCeil(vector<int> &arr, int target) {
   return ans;
 }
 
-
-
 int main() {
   vector<int> arr = {1, 2, 8, 10, 10, 12, 19};
   int target = 5;
