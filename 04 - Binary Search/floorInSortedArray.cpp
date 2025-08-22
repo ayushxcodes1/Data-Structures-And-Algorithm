@@ -5,13 +5,11 @@ using namespace std;
 int findFloor(vector<int> &arr, int target) {
     int n = arr.size();
     int low = 0, high = n - 1;
-    int ans = -1;
 
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         
         if(arr[mid] <= target) {
-           ans = mid;
            low = mid + 1;
         }
         else if(arr[mid] > target) {
@@ -19,7 +17,7 @@ int findFloor(vector<int> &arr, int target) {
         }
     }
 
-    return ans;
+    return high;
 }
 
 
