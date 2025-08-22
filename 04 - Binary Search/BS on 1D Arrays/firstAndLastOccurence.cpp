@@ -37,7 +37,6 @@ int upperBound(vector<int> &arr, int low, int high, int target) {
 }
 
 int firstOccurrence(vector<int> &arr, int low, int high, int target) {
-    int n = arr.size();
     int first = -1;
     while(low <= high) {
        int mid = (low + (high - low) / 2);
@@ -57,7 +56,6 @@ int firstOccurrence(vector<int> &arr, int low, int high, int target) {
 }
 
 int lastOccurrence(vector<int> &arr, int low, int high, int target) {
-    int n = arr.size();
     int last = -1;
     while(low <= high) {
        int mid = (low + (high - low) / 2);
