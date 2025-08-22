@@ -21,7 +21,7 @@ int findFloor(vector<int> &arr, int target) {
   else return -1;
 }
 
-int findFloor(vector<int> &arr, int target) {
+int findCeil(vector<int> &arr, int target) {
   int n = arr.size();
   int low = 0, high = n - 1;
 
