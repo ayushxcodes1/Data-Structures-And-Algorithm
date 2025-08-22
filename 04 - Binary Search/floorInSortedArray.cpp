@@ -27,7 +27,7 @@ int main() {
   int target = 5;
 
   int ans = findFloor(arr, target);
-  cout << "Floor of " << target << "is at index: " << ans;
+  cout << "Floor of " << target << " is at index: " << ans;
 
   return 0;
 }
