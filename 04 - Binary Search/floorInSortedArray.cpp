@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int findFloor(vector<int> &arr, int target) {
+int findFloorAndCeil(vector<int> &arr, int target) {
     int n = arr.size();
     int low = 0, high = n - 1;
 
