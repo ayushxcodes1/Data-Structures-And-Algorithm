@@ -40,6 +40,15 @@ int findCeil(vector<int> &arr, int target) {
   else return -1;
 }
 
+vector<int> findFloorAndCeil(vector<int> &arr, int target) {
+  vector<int> ans;
+  int floor = findFloor(arr, target);
+  int ceil = findFloor(arr, target);
+
+  ans.push_back(floor);
+  ans.push_back(ceil);
+  return ans;
+}
 
 
 
