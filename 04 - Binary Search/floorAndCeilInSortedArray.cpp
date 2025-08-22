@@ -28,7 +28,7 @@ vector<int> findFloorAndCeil(vector<int> &arr, int target) {
 
 int main() {
   vector<int> arr = {3, 4, 4, 7, 8, 10};
-  int target = 5;
+  int target = 8;
 
   vector<int> ans = findFloorAndCeil(arr, target);
   cout << "[" << ans[0] << "," << ans[1] << "]";
