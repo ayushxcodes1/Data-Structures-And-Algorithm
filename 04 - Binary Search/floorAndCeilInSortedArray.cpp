@@ -27,15 +27,11 @@ vector<int> findFloorAndCeil(vector<int> &arr, int target) {
 }
 
 int main() {
-  vector<int> arr = {1, 2, 8, 10, 10, 12, 19};
+  vector<int> arr = {3, 4, 4, 7, 8, 10};
   int target = 5;
 
   vector<int> ans = findFloorAndCeil(arr, target);
-  cout << "[";
-  for(auto val : ans) {
-    cout << val << ",";
-  }
-  cout << "]";
+  cout << "[" << ans[0] << "," << ans[1] << "]";
 
   return 0;
 }
