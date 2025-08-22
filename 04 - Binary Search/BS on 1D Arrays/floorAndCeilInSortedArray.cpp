@@ -21,7 +21,7 @@ vector<int> findFloorAndCeil(vector<int> &arr, int target) {
   }
   
   int floor = (high >= 0 ? arr[high] : -1);
-  int ceil = (low >= 0 ? arr[low] : -1);
+  int ceil = (low < 0 ? arr[low] : -1);
 
   return {floor, ceil};
 }
