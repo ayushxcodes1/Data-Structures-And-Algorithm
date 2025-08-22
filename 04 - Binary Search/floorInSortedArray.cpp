@@ -14,7 +14,9 @@ int findFloor(vector<int> &arr, int target) {
            ans = mid;
            low = mid + 1;
         }
-        else if(arr[mid] > target)
+        else if(arr[mid] > target) {
+            high = mid - 1;
+        }
     }
 
     return ans;
