@@ -104,7 +104,7 @@ int main() {
   vector<int> ans = firstAndLastPosition(arr, n, target);
   cout << "[" << ans[0] << "," << ans[1] << "]" << "\n";
 
-  vector<int> ans2 = firstAndLastPosition(arr, n, target);
+  vector<int> ans2 = firstAndLastPosition2(arr, n, target);
   cout << "[" << ans2[0] << "," << ans2[1] << "]";
 
   return 0;
