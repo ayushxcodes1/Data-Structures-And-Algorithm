@@ -24,7 +24,7 @@ int findFloor(vector<int> &arr, int target) {
 
 int main() {
   vector<int> arr = {1, 2, 8, 10, 10, 12, 19};
-  int target = 5;
+  int target = 0;
 
   int ans = findFloor(arr, target);
   cout << "Floor of " << target << " is at index: " << ans;
