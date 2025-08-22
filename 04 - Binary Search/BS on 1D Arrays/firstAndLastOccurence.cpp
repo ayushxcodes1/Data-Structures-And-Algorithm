@@ -88,10 +88,10 @@ vector<int> firstAndLastPosition(vector<int> &arr, int n, int target) {
 
 //Without Using LowerBound & UpperBound
 vector<int> firstAndLastPosition2(vector<int> &arr, int n, int target) {
-    int stIndex = firstOccurrence(arr, 0, n - 1, target);
-    int endIndex = lastOccurrence(arr, 0, n - 1, target);
+    int first = firstOccurrence(arr, 0, n - 1, target);
+    int last = lastOccurrence(arr, 0, n - 1, target);
 
-    return {stIndex, endIndex};
+    return {first, last};
 }
 
 int main() {
