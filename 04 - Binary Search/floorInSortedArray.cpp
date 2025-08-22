@@ -28,15 +28,15 @@ int findCeil(vector<int> &arr, int target) {
   while(low <= high) {
     int mid = (low + (high - low) / 2);
     
-    if(arr[mid] >= target) {
-      low = mid + 1;
+    if(arr[mid] <= target) {
+      high = mid - 1;
     }
     else if(arr[mid] > target) {
       high = mid - 1;
     }
   }
   
-  if(high >= 0) return high;
+  if(low >= 0) return low;
   else return -1;
 }
 
