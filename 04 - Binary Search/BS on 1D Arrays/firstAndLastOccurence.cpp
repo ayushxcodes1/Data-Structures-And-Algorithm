@@ -48,7 +48,8 @@ vector<int> firstAndLastPosition(vector<int> &arr, int n, int target) {
     return {stIndex, endIndex};
 }
 
-vector<int> firstAndLastPosition(vector<int> &arr, int n, int target) {
+//Without Using LowerBound & UpperBound
+vector<int> firstAndLastPosition2(vector<int> &arr, int n, int target) {
     int stIndex = lowerBound(arr, 0, n - 1, target);
     int endIndex = upperBound(arr, 0, n - 1, target) - 1;
 
