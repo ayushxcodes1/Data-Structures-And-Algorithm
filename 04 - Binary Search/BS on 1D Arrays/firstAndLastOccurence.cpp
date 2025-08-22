@@ -40,7 +40,9 @@ vector<int> firstAndLastPosition(vector<int> &arr, int n, int target) {
     int stIndex = lowerBound(arr, 0, n - 1, 8);
     int endIndex = upperBound(arr, 0, n - 1, 8) - 1;
 
-    if((stIndex == n) || arr[stIndex] != target)
+    if((stIndex == n) || arr[stIndex] != target) {
+        return {-1, -1};
+    }
 }
 
 int main() {
