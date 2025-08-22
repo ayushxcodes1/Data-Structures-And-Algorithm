@@ -37,8 +37,10 @@ int upperBound(vector<int> &arr, int low, int high, int target) {
 }
 
 vector<int> firstAndLastPosition(vector<int> &arr, int n, int target) {
-    int stInd = lowerBound(arr, 0, n - 1, 8);
-    int endInd = upperBound(arr, 0, n - 1, 8) - 1;
+    int stIndex = lowerBound(arr, 0, n - 1, 8);
+    int endIndex = upperBound(arr, 0, n - 1, 8) - 1;
+
+    if((stIndex == n) || arr[stIndex] != target)
 }
 
 int main() {
