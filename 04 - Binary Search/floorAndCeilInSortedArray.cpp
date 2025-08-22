@@ -15,7 +15,7 @@ vector<int> findFloorAndCeil(vector<int> &arr, int target) {
     else if(arr[mid] <= target) {
       low = mid + 1;
     }
-    else if(arr[mid] >= target) {
+    else {
       high = mid - 1;
     }
   }
