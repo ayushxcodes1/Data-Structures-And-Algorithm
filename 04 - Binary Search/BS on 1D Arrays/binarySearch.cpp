@@ -5,7 +5,7 @@ using namespace std;
 //Iterative - TC: O(logN), SC: O(1)
 int search(vector<int> &arr, int n, int target) {
     int low = 0, high = n - 1;
-    while(left <= right) {
+    while(low <= high) {
         int mid = (low + (high - low) / 2);
 
         if(arr[mid] == target) {
