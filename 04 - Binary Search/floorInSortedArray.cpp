@@ -2,23 +2,23 @@
 
 using namespace std;
 
-int findFloorAndCeil(vector<int> &arr, int target) {
-    int n = arr.size();
-    int low = 0, high = n - 1;
+int findFloor(vector<int> &arr, int target) {
+  int n = arr.size();
+  int low = 0, high = n - 1;
 
-    while(low <= high) {
-        int mid = (low + (high - low) / 2);
-        
-        if(arr[mid] <= target) {
-           low = mid + 1;
-        }
-        else if(arr[mid] > target) {
-            high = mid - 1;
-        }
-    }
+  while(low <= high) {
+    int mid = (low + (high - low) / 2);
     
-    if(high >= 0) return high;
-    else return -1;
+    if(arr[mid] <= target) {
+      low = mid + 1;
+    }
+    else if(arr[mid] > target) {
+      high = mid - 1;
+    }
+  }
+  
+  if(high >= 0) return high;
+  else return -1;
 }
 
 
