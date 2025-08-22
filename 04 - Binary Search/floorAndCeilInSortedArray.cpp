@@ -20,8 +20,10 @@ vector<int> findAndCeilFloor(vector<int> &arr, int target) {
     }
   }
   
-  if(high >= 0) return {high, low};
-  else return -1;
+  int floor = (high >= 0 ? arr[high] : -1);
+  int floor = (low >= 0 ? arr[low] : -1);
+
+  return {floor, ceil};
 }
 
 int main() {
