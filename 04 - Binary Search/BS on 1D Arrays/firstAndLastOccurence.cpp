@@ -42,7 +42,7 @@ vector<int> firstAndLastPosition(vector<int> &arr, int target) {
     int low = 0, high = n - 1;
 
     while(low <= high) {
-        
+        int mid = (low + (high - low) / 2);
     }
 }
 
