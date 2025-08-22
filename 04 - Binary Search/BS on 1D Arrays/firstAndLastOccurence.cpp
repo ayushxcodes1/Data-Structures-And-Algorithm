@@ -36,7 +36,7 @@ int upperBound(vector<int> &arr, int low, int high, int target) {
     return ans;
 }
 
-vector<int> firstAndLastPosition(vector<int> &arr, int target) {
+vector<int> firstAndLastPosition(vector<int> &arr, int n, int target) {
     int stInd = lowerBound(arr, 0, n - 1, 8);
     int endInd = upperBound(arr, 0, n - 1, 8);
 }
@@ -46,8 +46,8 @@ int main() {
   int n = arr.size();
   int target = 8;
 
-  vector<int> ans = firstAndLastPosition(arr, target);
+  vector<int> ans = firstAndLastPosition(arr, n, target);
   cout << "[" << ans[0] << "," << ans[1] << "]";
-  
+
   return 0;
 }
