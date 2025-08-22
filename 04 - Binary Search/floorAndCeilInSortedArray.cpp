@@ -2,8 +2,9 @@
 
 using namespace std;
 
-int findFloor(vector<int> &arr, int target) {
+int findAndCeilFloor(vector<int> &arr, int target) {
   int n = arr.size();
+  int floor = -1, ceil = -1;
   int low = 0, high = n - 1;
 
   while(low <= high) {
@@ -21,47 +22,13 @@ int findFloor(vector<int> &arr, int target) {
   else return -1;
 }
 
-int findCeil(vector<int> &arr, int target) {
-  int n = arr.size();
-  int low = 0, high = n - 1;
-
-  while(low <= high) {
-    int mid = (low + (high - low) / 2);
-    
-    if(arr[mid] <= target) {
-      high = mid - 1;
-    }
-    else if(arr[mid] > target) {
-      high = mid - 1;
-    }
-  }
-  
-  if(low >= 0) return low;
-  else return -1;
-}
-
-vector<int> findFloorAndCeil(vector<int> &arr, int target) {
-  vector<int> ans;
-  int floor = findFloor(arr, target);
-  int ceil = findFloor(arr, target);
-
-  ans.push_back(floor);
-  ans.push_back(ceil);
-  return ans;
-}
-
 int main() {
   vector<int> arr = {1, 2, 8, 10, 10, 12, 19};
   int target = 5;
 
-  int ans = findFloor(arr, target);
-  
-  int ans2 = findFloor(arr, target);
-  if(ans == -1) {
-    cout << "Floor of " << target << " doesn't exist in the array";
-  }
-  else {
-  cout << "Floor of " << target << " is at index: " << ans;
+  vector<int> ans = findFloorAndCeil(arr, target);
+  for(auto it : ans) {
+    cout << it[0] << " " << it[1];
   }
 
   return 0;
