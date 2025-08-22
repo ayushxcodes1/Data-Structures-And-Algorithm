@@ -47,6 +47,17 @@ vector<int> firstAndLastPosition(vector<int> &arr, int n, int target) {
     return {stIndex, endIndex};
 }
 
+vector<int> firstAndLastPosition(vector<int> &arr, int n, int target) {
+    int stIndex = lowerBound(arr, 0, n - 1, target);
+    int endIndex = upperBound(arr, 0, n - 1, target) - 1;
+
+    if((stIndex == n) || arr[stIndex] != target) {
+        return {-1, -1};
+    }
+
+    return {stIndex, endIndex};
+}
+
 int main() {
   vector<int> arr = {2, 4, 6, 8, 8, 8, 11, 13};
   int n = arr.size();
