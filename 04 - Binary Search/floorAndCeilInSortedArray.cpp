@@ -31,7 +31,11 @@ int main() {
   int target = 5;
 
   vector<int> ans = findFloorAndCeil(arr, target);
-  cout << ans;
+  cout << "[";
+  for(auto val : ans) {
+    cout << val << ",";
+  }
+  cout << "]";
 
   return 0;
 }
