@@ -1,3 +1,7 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
 int firstOccurrence(vector<int> &arr, int low, int high, int target) {
         int first = -1;
         while(low <= high) {
