@@ -51,6 +51,8 @@ int firstOccurrence(vector<int> &arr, int low, int high, int target) {
 
     int main() {
         vector<int> arr = {2, 4, 6, 8, 8, 8, 11, 13};
+        int n = arr.size();
+        int target = 8;
         int ans = countOccurrences(arr, n, target);
         cout << target << " appears " << ans << " times";
     }
