@@ -100,5 +100,6 @@ int main() {
   vector<int> arr2 = {3, 4, 4, 5, 1, 2, 2};
   int ans2 = cntRotations(arr2);
   cout << ans2;
+  
   return 0;
 }
