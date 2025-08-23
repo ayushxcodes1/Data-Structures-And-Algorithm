@@ -15,10 +15,13 @@ int findMin(vector<int>& arr) {
             break;
         }
 
+        // Left half is sorted
         if(arr[low] <= arr[mid]) {
             mini = min(arr[low], mini);
             low = mid + 1;
         }
+
+        // Right half is sorted
         else {
             mini = min(arr[mid], mini);
             high = mid - 1;
