@@ -21,7 +21,10 @@ int singleNumber(vector<int> &arr) {
         if((mid % 2 == 1 && arr[mid] == arr[mid - 1]) || (mid % 2 == 0 && arr[mid] == arr[mid + 1])) {
            low = mid + 1;
         }
+        //we are on right
+        else {
 
+        }
         
     }
     return -1;
