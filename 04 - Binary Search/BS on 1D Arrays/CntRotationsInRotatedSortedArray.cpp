@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//unique
 int cntRotations(vector<int> &arr) {
     int n = arr.size();
     int low = 0, high = n - 1;
