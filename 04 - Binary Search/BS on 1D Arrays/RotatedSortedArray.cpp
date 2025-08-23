@@ -36,7 +36,7 @@ int search(vector<int>& nums, int target) {
 }
 
 int main() {
-  vector<int> arr = {3, 3, 1, 3, 3, 3, 3};
+  vector<int> arr = {4, 5, 6, 7, 0, 1, 2};
   bool ans = search(arr, 1);
   cout << boolalpha << ans;
   return 0;
