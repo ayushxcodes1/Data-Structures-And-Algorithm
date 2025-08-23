@@ -4,7 +4,7 @@ using namespace std;
 
 int singleNumber(vector<int> &arr) {
     int n = arr.size();
-    
+
     if(n == 1) return arr[0];
     if(arr[0] != arr[1]) return arr[0];
     if(arr[n - 1] != arr[n - 2]) return arr[n - 1];
@@ -13,7 +13,7 @@ int singleNumber(vector<int> &arr) {
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         
-        if(n == 1) return arr[0];
+        
 
         
     }
