@@ -3,7 +3,7 @@
 using namespace std;
 
 int findPeakElement(vector<int>& arr) {
-         
+    int n = arr.size();
 }
 
 int main() {
