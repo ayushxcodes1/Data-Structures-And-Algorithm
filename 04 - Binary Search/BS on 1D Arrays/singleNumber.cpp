@@ -3,7 +3,7 @@
 using namespace std;
 
 //Linear Search
-int singleNumber2(vector<int> &arr) {
+int singleNumber(vector<int> &arr) {
     int n = arr.size();
 
     if(n == 1) return arr[0];
@@ -58,7 +58,10 @@ int singleNumber2(vector<int> &arr) {
 
 int main() {
   vector<int> arr = {1, 1, 2, 3, 3, 4, 4, 8, 8};
-  int ans = singleNumber2(arr);
-  cout << "Single Number: " << ans;
+  int ans = singleNumber(arr);
+  cout << "Single Number: " << ans << "\n";
+
+  int ans2 = singleNumber2(arr);
+  cout << "Single Number: " << ans2;
   return 0;
 }
