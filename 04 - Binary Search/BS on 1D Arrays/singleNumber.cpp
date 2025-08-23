@@ -25,7 +25,6 @@ int singleNumber(vector<int> &arr) {
         else {
            high = mid - 1;
         }
-        
     }
     return -1;
 }
