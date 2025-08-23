@@ -3,7 +3,7 @@
 using namespace std;
 
 int singleNumber(vector<int> &arr) {
-    
+    int n = arr.size();
 }
 
 int main() {
