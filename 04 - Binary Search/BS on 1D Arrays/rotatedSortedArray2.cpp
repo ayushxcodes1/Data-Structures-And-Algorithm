@@ -9,6 +9,7 @@ bool search(vector<int>& arr, int target) {
     while(low <= high) {
         int mid = (low + (high - low) / 2);
 
+        //element found
         if(arr[mid] == target) return true;
         
         //trim the search space
