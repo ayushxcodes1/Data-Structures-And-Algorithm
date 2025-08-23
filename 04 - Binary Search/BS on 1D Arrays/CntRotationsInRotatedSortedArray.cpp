@@ -95,6 +95,10 @@ int cntRotations2(vector<int> &arr) {
 int main() {
   vector<int> arr = {3, 4, 5, 1, 2};
   int ans = cntRotations(arr);
-  cout << ans;
+  cout << ans << "/n";
+
+  vector<int> arr2 = {3, 4, 4, 5, 1, 2, 2};
+  int ans2 = cntRotations(arr2);
+  cout << ans2;
   return 0;
 }
