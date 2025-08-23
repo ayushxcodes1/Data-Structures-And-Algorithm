@@ -6,18 +6,14 @@ using namespace std;
 int cntRotations(vector<int> &arr) {
     int n = arr.size();
     int low = 0, high = n - 1;
-    int ans = INT_MAX;
-    int index = -1;
+    int index = 0;
     
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         
         //array is sorted
         if(arr[low] <= arr[high]) {
-            if(arr[low] < ans) {
-                index = low;
-                ans = arr[low];
-            }
+            index = low;
             break;
         }
         
