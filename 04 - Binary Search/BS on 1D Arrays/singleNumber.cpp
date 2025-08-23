@@ -7,11 +7,20 @@ int singleNumber(vector<int> &arr) {
     int low = 0, high = n - 1;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
-        if(arr[low] == arr[mid] && arr[mid] == arr[high]) {
-            return arr[low];
+        
+        if(n == 1) return arr[0];
+
+        //first element
+        if(arr[low] != arr[low + 1]) return arr[low];
+        
+        //last element
+        else if(arr[high] != arr[high - 1]) return arr[high];
+
+        //middle
+        else {
+            if(arr[low] == arr[low + 1]) low += 2;
+            if(arr[high] == arr[high - 1]) high -= 2;
         }
-        if(arr[low] == arr[low + 1]) low += 2;
-        if(arr[high] == arr[high - 1]) high -= 2;
     }
     return -1;
 }
