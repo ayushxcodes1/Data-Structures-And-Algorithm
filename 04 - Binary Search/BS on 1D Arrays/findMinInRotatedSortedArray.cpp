@@ -9,9 +9,9 @@ int findMin(vector<int>& arr) {
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         
-        //Optimization
+        //search space is already sorted 
         if(arr[low] <= arr[high]) {
-            mini = min(arr[low], mini);
+            mini = arr[low];
             break;
         }
 
