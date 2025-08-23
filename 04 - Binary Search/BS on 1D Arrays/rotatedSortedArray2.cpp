@@ -10,6 +10,7 @@ bool search(vector<int>& nums, int target) {
 
         if(nums[mid] == target) return true;
         
+        //trim the search space
         else if(nums[low] == nums[mid] && nums[mid] == nums[high]) {
             low++;
             high--;
