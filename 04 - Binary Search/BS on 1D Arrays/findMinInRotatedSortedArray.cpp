@@ -53,7 +53,7 @@ int findMin2(vector<int>& arr) {
             low = mid + 1;
         }
         else {
-            mini = min(arr[mid], mini);
+            mini = min(arr[high], mini);
             high = mid - 1;
         }
     }
