@@ -23,7 +23,7 @@ int singleNumber(vector<int> &arr) {
         }
         //we are on right
         else {
-
+           high = mid - 1;
         }
         
     }
