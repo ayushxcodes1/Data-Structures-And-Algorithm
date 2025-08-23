@@ -12,6 +12,7 @@ int search(vector<int>& nums, int target) {
         
         //left sorted
         else if(nums[low] <= nums[mid]) {
+            //target exist in left half
             if(nums[low] <= target && target <= nums[mid]) {
                 high = mid - 1; //eliminate right half
             } 
@@ -22,6 +23,7 @@ int search(vector<int>& nums, int target) {
 
         //right sorted
         else {
+            //target exist in right half
             if(nums[mid] <= target && target <= nums[high]) {
                 low = mid + 1; //eliminate left half
             } 
