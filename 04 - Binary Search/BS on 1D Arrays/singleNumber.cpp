@@ -44,11 +44,12 @@ int singleNumber2(vector<int> &arr) {
            return arr[mid];
         }
 
-        //we are on left
-        if((mid % 2 == 1 && arr[mid] == arr[mid - 1]) || (mid % 2 == 0 && arr[mid] == arr[mid + 1])) {
+        //we are on left half
+        if((mid % 2 == 0 && arr[mid] == arr[mid + 1]) || 
+           (mid % 2 == 1 && arr[mid] == arr[mid - 1])) {
            low = mid + 1;
         }
-        //we are on right
+        //we are on right half
         else {
            high = mid - 1;
         }
