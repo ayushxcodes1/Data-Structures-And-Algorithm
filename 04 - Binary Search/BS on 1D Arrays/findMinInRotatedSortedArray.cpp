@@ -23,7 +23,7 @@ int findMin(vector<int>& nums) {
 
 int main() {
   vector<int> arr = {3, 3, 1, 3, 3, 3, 3};
-  bool ans = findMin(arr);
-  cout << boolalpha << ans;
+  int ans = findMin(arr);
+  cout << ans;
   return 0;
 }    
