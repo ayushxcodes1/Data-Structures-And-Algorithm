@@ -22,7 +22,7 @@ int findMin(vector<int>& nums) {
 }
 
 int main() {
-  vector<int> arr = {3, 3, 1, 3, 3, 3, 3};
+  vector<int> arr = {4, 5, 6, 7, 0, 1, 2};
   int ans = findMin(arr);
   cout << ans;
   return 0;
