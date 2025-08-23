@@ -35,7 +35,7 @@ int findMin2(vector<int>& arr) {
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         
-        //trim the search space
+        //contains duplicates - trim the search space
         if(arr[low] == arr[mid] && arr[mid] == arr[high]) {
             mini = min(arr[low], mini);
             low++;
@@ -48,10 +48,13 @@ int findMin2(vector<int>& arr) {
             break;
         }
 
+        // Left half is sorted
         else if(arr[low] <= arr[mid]) {
             mini = min(arr[low], mini);
             low = mid + 1;
         }
+
+        // Right half is sorted
         else {
             mini = min(arr[mid], mini);
             high = mid - 1;
