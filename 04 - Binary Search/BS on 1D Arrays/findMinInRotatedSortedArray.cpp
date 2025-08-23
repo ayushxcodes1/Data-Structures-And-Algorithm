@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Without Duplicates
 int findMin(vector<int>& arr) {
     int n = arr.size();
     int mini = INT_MAX;
@@ -30,7 +31,7 @@ int findMin(vector<int>& arr) {
     return mini;
 }
 
-//Duplicates
+//With Duplicates
 int findMin2(vector<int>& arr) {
     int n = arr.size();
     int mini = INT_MAX;
