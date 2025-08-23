@@ -19,15 +19,16 @@ int cntRotations(vector<int> &arr) {
         
         //left half is sorted
         if(arr[low] <= arr[mid]) {
-            index = low;
+            if(arr[low] <= arr[mid]) {
+                index = low;
+            }
             low = mid + 1;
         }
         
         //right half is sorted
         else {
-            if(arr[mid] < ans) {
+            if(arr[mid] < arr[index]) {
                 index = mid;
-                ans = arr[mid];
             }
             high = mid  - 1;
         }
