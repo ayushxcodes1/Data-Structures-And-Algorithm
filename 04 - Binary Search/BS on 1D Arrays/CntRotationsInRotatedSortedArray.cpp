@@ -40,8 +40,7 @@ int cntRotations(vector<int> &arr) {
 int cntRotations2(vector<int> &arr) {
     int n = arr.size();
     int low = 0, high = n - 1;
-    int ans = INT_MAX;
-    int index = -1;
+    int index = 0;
     
     while(low <= high) {
         int mid = (low + (high - low) / 2);
