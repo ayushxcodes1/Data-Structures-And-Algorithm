@@ -2,7 +2,7 @@
 
 using namespace std;
     
-//TC - Best: O(1), Avg: O(logn), Worst: O(N/2)
+//TC - Best: O(1), Avg: O(logN), Worst: O(N/2)
 bool search(vector<int>& arr, int target) {
     int n = arr.size();
     int low = 0, high = n - 1;
