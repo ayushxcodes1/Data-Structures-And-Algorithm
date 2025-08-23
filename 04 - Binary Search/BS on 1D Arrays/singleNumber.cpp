@@ -4,6 +4,10 @@ using namespace std;
 
 int singleNumber(vector<int> &arr) {
     int n = arr.size();
+    int low = 0, high = n - 1;
+    while(low <= high) {
+        
+    }
 }
 
 int main() {
