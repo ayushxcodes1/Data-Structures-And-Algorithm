@@ -19,6 +19,7 @@ bool search(vector<int>& arr, int target) {
 
         //left sorted
         else if(arr[low] <= arr[mid]) {
+            //target exist in left half
             if(arr[low] <= target && target <= arr[mid]) {
                 high = mid - 1;
             } 
@@ -29,6 +30,7 @@ bool search(vector<int>& arr, int target) {
 
         //right sorted
         else {
+            //target exist in right half
             if(arr[mid] <= target && target <= arr[high]) {
                 low = mid + 1;
             } 
