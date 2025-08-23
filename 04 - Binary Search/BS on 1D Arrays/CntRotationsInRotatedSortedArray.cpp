@@ -54,10 +54,9 @@ int cntRotations2(vector<int> &arr) {
         
         //trim the search space
         if(arr[low] == arr[mid] && arr[mid] == arr[high]) {
-            if(arr[low] < ans) {
-               index = low;
-               ans = arr[low];
-            }
+            index = low;
+            ans = arr[low];
+
             low++; 
             high--;
         }
