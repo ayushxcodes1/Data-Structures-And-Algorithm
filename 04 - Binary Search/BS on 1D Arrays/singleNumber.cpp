@@ -13,6 +13,7 @@ int singleNumber(vector<int> &arr) {
         if(arr[low] == arr[low + 1]) low += 2;
         if(arr[high] == arr[high - 1]) high -= 2;
     }
+    return -1;
 }
 
 int main() {
