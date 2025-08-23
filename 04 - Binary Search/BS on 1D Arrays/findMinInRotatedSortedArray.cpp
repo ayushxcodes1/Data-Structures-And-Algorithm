@@ -63,7 +63,7 @@ int findMin2(vector<int>& arr) {
 int main() {
   vector<int> arr = {4, 5, 6, 7, 0, 1, 2};
   int ans = findMin(arr);
-  cout << ans;
+  cout << ans << "\n";
 
   vector<int> arr2 = {4, 5, 6, 7, 0, 1, 2};
   int ans2 = findMin2(arr2);
