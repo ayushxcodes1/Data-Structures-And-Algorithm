@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int findKRotation(vector<int> &arr) {
+int cntRotations(vector<int> &arr) {
     int n = arr.size();
     int low = 0, high = n - 1;
     int ans = INT_MAX;
@@ -43,5 +43,7 @@ int findKRotation(vector<int> &arr) {
 
 int main() {
   vector<int> arr = {3, 4, 5, 1, 2};
+  int ans = cntRotations(arr);
+  cout << ans;
   return 0;
 }
