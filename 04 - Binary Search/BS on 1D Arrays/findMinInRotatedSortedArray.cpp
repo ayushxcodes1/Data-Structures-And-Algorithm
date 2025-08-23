@@ -37,7 +37,7 @@ int findMin2(vector<int>& arr) {
         
         //trim the search space
         if(arr[low] == arr[mid] && arr[mid] == arr[high]) {
-            mini = min(arr[low], mini)
+            mini = min(arr[low], mini);
             low++;
             high--;
         }
