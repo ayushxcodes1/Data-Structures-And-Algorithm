@@ -21,10 +21,10 @@ bool search(vector<int>& arr, int target) {
         else if(arr[low] <= arr[mid]) {
             //target exist in left half
             if(arr[low] <= target && target <= arr[mid]) {
-                high = mid - 1;
+                high = mid - 1; //eliminate right half
             } 
             else {
-                low = mid + 1;
+                low = mid + 1; //eliminate left half
             }
         }
 
