@@ -43,6 +43,6 @@ bool search(vector<int>& arr, int target) {
 int main() {
   vector<int> arr = {3, 3, 1, 3, 3, 3, 3};
   bool ans = search(arr, 1);
-  cout << ans;
+  cout << boolalpha << ans;
   return 0;
 }    
