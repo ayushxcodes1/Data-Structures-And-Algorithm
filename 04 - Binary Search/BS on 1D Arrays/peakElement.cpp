@@ -5,7 +5,10 @@ using namespace std;
 int findPeakElement(vector<int>& arr) {
     int n = arr.size();
     int low = 0, high = n - 1;
-    
+    while(low <= high) {
+
+    }
+    return -1;
 }
 
 int main() {
