@@ -35,19 +35,19 @@ int findMin2(vector<int>& arr) {
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         
-        //search space is already sorted 
-        if(arr[low] <= arr[high]) {
-            mini = min(arr[low], mini);
-            break;
-        }
-
         //trim the search space
-        else if(arr[low] == arr[mid] && arr[mid] == arr[high]) {
+        if(arr[low] == arr[mid] && arr[mid] == arr[high]) {
             low++;
             high--;
         }
 
-        if(arr[low] <= arr[mid]) {
+        //search space is already sorted 
+        else if(arr[low] <= arr[high]) {
+            mini = min(arr[low], mini);
+            break;
+        }
+
+        else if(arr[low] <= arr[mid]) {
             mini = min(arr[low], mini);
             low = mid + 1;
         }
