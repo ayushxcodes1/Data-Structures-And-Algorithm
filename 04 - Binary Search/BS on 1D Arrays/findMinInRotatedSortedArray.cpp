@@ -2,19 +2,20 @@
 
 using namespace std;
 
-int findMin(vector<int>& nums) {
-    int n = nums.size();
+int findMin(vector<int>& arr) {
+    int n = arr.size();
     int mini = INT_MAX;
     int low = 0, high = n - 1;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
 
-        if(nums[low] <= nums[mid]) {
-            mini = min(nums[low], mini);
+        if(arr[low] <= arr[high]) return arr[low];
+        if(arr[low] <= arr[mid]) {
+            mini = min(arr[low], mini);
             low = mid + 1;
         }
         else {
-            mini = min(nums[mid], mini);
+            mini = min(arr[mid], mini);
             high = mid - 1;
         }
     }
