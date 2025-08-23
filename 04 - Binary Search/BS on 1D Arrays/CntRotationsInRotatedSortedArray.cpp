@@ -57,6 +57,7 @@ int cntRotations2(vector<int> &arr) {
             low++; 
             high--;
         }
+
         //array is sorted
         if(arr[low] <= arr[high]) {
             if(arr[low] < ans) {
@@ -66,7 +67,6 @@ int cntRotations2(vector<int> &arr) {
             break;
         }
 
-        
         //left half is sorted
         if(arr[low] <= arr[mid]) {
             if(arr[low] < ans) {
