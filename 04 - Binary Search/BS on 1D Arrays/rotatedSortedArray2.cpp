@@ -2,6 +2,7 @@
 
 using namespace std;
     
+//TC - Best: O(1), Avg: O(logn), Worst: O(N/2)
 bool search(vector<int>& nums, int target) {
     int n = nums.size();
     int low = 0, high = n - 1;
