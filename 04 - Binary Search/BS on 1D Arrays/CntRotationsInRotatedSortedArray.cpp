@@ -52,33 +52,28 @@ int cntRotations2(vector<int> &arr) {
             high--;
         }
 
-        //array is sorted
+         //array is sorted
         if(arr[low] <= arr[high]) {
-            if(arr[low] < ans) {
-                index = low;
-                ans = arr[low];
-            }
+            index = low;
             break;
         }
-
+        
         //left half is sorted
         if(arr[low] <= arr[mid]) {
-            if(arr[low] < ans) {
+            if(arr[low] <= arr[index]) {
                 index = low;
-                ans = arr[low];
             }
             low = mid + 1;
         }
         
         //right half is sorted
         else {
-            if(arr[mid] < ans) {
+            if(arr[mid] < arr[index]) {
                 index = mid;
-                ans = arr[mid];
             }
             high = mid  - 1;
         }
-    }
+    }   
     return index;
 }
 
