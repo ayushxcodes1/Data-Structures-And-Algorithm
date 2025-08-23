@@ -11,7 +11,7 @@ int findMin(vector<int>& arr) {
         
         //search space is already sorted 
         if(arr[low] <= arr[high]) {
-            mini = arr[low];
+            mini = min(arr[low], mini);
             break;
         }
 
