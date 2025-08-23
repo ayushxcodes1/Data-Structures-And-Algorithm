@@ -13,20 +13,20 @@ int search(vector<int>& nums, int target) {
         //left sorted
         else if(nums[low] <= nums[mid]) {
             if(nums[low] <= target && target <= nums[mid]) {
-                high = mid - 1;
+                high = mid - 1; //eliminate right half
             } 
             else {
-                low = mid + 1;
+                low = mid + 1; //eliminate left half
             }
         }
 
         //right sorted
         else {
             if(nums[mid] <= target && target <= nums[high]) {
-                low = mid + 1;
+                low = mid + 1; //eliminate left half
             } 
             else {
-                high = mid - 1;
+                high = mid - 1; //eliminate right half
             }
         }
     }
