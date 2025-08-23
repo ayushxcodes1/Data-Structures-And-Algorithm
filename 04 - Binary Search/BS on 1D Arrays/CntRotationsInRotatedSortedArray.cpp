@@ -42,8 +42,8 @@ int cntRotations(vector<int> &arr) {
     return index;
 }
 
-//unique
-int cntRotations(vector<int> &arr) {
+//duplicates
+int cntRotations2(vector<int> &arr) {
     int n = arr.size();
     int low = 0, high = n - 1;
     int ans = INT_MAX;
