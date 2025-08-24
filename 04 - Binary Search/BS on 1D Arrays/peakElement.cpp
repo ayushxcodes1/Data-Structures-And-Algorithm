@@ -38,14 +38,16 @@ int findPeakElement2(vector<int>& arr) {
     }
 
     //peak on left
-    high = mid - 1;
+    else if(arr[mid] > arr[mid + 1]){
+      high = mid - 1;
+    }
   }
 
   return -1;
 }
 
 int main() {
-  vector<int> arr = {1, 2, 1, 3, 5, 6, 4};
+   vector<int> arr = {1, 5, 1, 2, 1};
 
   int ans = findPeakElement(arr);
   cout << "Peak Element found at index " << ans << "\n";
