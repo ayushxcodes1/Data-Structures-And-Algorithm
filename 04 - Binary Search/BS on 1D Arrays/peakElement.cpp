@@ -48,7 +48,12 @@ int findPeakElement2(vector<int>& arr) {
 
 int main() {
   vector<int> arr = {1, 2, 1, 3, 5, 6, 4};
+
   int ans = findPeakElement(arr);
-  cout << "Peak Element found at index " << ans;
+  cout << "Peak Element found at index " << ans << "\n";
+
+  int ans2 = findPeakElement2(arr);
+  cout << "Peak Element found at index " << ans2;
+
   return 0;
 }
