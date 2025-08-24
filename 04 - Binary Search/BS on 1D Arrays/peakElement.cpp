@@ -28,9 +28,9 @@ int findPeakElement2(vector<int>& arr) {
   
   int low = 0, high = n - 1;
   while(low <= high) {
-
+     
   }
-  
+
   return -1;
 }
 
