@@ -6,7 +6,7 @@ using namespace std;
 int singleNumber(vector<int> &arr) {
     int n = arr.size();
 
-    if(n == 1) return arr[0];
+    if(n == 1) return 0;
 
     for(int i = 0; i < n; i++) {
         if(i == 0) {
