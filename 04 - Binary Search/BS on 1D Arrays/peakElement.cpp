@@ -19,7 +19,19 @@ int findPeakElement(vector<int>& arr) {
 }
 
 //Binary Search
+int findPeakElement2(vector<int>& arr) {
+  int n = arr.size();
 
+  if(n == 1) return 0;
+  if(arr[0] > arr[1]) return 0;
+  if(arr[n - 1] > arr[n - 2]) return n - 1;
+  
+  int low = 0, high = n - 1;
+  while(low <= high) {
+    
+  }
+  return -1;
+}
 
 int main() {
   vector<int> arr = {1, 2, 1, 3, 5, 6, 4};
