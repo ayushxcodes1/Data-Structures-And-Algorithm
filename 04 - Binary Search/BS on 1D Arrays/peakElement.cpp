@@ -15,6 +15,7 @@ int findPeakElement(vector<int>& arr) {
       return i;
     }
   }
+  return -1;
 }
 
 int main() {
