@@ -32,14 +32,14 @@ int findPeakElement2(vector<int>& arr) {
       return mid;
     }
 
-    //peak on left
-    else if(arr[mid] < arr[mid - 1]) {
-      high = mid - 1;
+    //peak on right
+    else if(arr[mid] > arr[mid - 1]) {
+      low = mid + 1;
     }
 
-    //peak on right
+    //peak on left
     else {
-      return low = mid + 1;
+      high = mid - 1;
     }
   }
 
