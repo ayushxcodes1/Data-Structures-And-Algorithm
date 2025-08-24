@@ -41,7 +41,7 @@ int singleNumber2(vector<int> &arr) {
         int mid = (low + (high - low) / 2);
         
         if(arr[mid] != arr[mid + 1] && arr[mid] != arr[mid - 1]) {
-           return arr[mid];
+           return mid;
         }
 
         //we are on left half
