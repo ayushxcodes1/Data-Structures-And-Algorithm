@@ -29,12 +29,13 @@ int findNthRoot(int n, int m) {
 }
 
 
-//Binary Search - TC: O(NlogN)
+//Binary Search - TC: O(N * logM)
 int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
 
+        //O(logN * logM) using STL pow()
         if(power(mid, n) == m) {
            return mid;
         }
