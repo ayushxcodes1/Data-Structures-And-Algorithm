@@ -12,6 +12,7 @@ int findSqrt(int n) {
            break;
         }
     }
+    return ans;
 }
 
 int main() {
