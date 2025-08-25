@@ -31,7 +31,7 @@ int findSqrt2(int n) {
             low = mid + 1;
         }
     }
-    return low;
+    return low - 1;
 }
 
 int main() {
