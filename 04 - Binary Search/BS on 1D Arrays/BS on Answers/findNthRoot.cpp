@@ -45,23 +45,6 @@ int func(int mid, int n, int m) {
     return 0;   
 }
 
-//O(logN)
-int fastExpo(long long base, long long exp, long long limit) {
-    long long ans = 1; 
-    while(exp > 0) {
-        if(exp % 2 == 1) {
-           ans = ans * base;
-           if(ans > limit) return limit + 1;
-           exp--;
-        } else {
-            base = base * base;
-            if (base > limit) return limit + 1; 
-            exp = exp / 2;
-        }
-    }
-    return ans;
-}
-
 int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
