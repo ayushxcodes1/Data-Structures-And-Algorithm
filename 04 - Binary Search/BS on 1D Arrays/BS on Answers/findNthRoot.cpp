@@ -31,16 +31,11 @@ int findNthRoot(int n, int m) {
 
 //Binary Search
 int findNthRoot2(int n, int m) {
-    for(int i = 1; i <= m; i++) {
-        //O(M * logN) using STL pow()
-        if(power(i, n) == m) {
-            return i;
-        }
-        else if(power(i, n) > m) {
-           break;
-        }
+    int low = 1, high = m;
+    while(low <= high) {
+        int mid = (low + (high - low) / 2);
+        
     }
-    return -1;
 }
 
 int main() {
