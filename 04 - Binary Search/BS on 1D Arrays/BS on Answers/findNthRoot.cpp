@@ -28,7 +28,7 @@ int findNthRoot(int n, int m) {
 }
 
 
-//Optimal - TC: O(N * logM)
+//Optimal - TC: O(N * logM), Fast Expo: O(logN * logM)
 
 //return 1, if == m
 //return 0, if < m
