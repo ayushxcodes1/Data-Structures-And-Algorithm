@@ -34,7 +34,16 @@ int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
-        
+
+        if(power(mid, n) == m) {
+           return mid;
+        }
+        else if(power(mid, n) > m) {
+           high = mid - 1;
+        }
+        else {
+            low = mid + 1;
+        }
     }
 }
 
