@@ -49,12 +49,12 @@ int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
-        long long midPow = fastExpo(mid, n, m);
+        int midN = func(mid, n, m);
         
-        if(midPow == m) {
+        if(midN == 1) {
            return mid;
         }
-        else if(midPow < m) {
+        else if(midN == 0) {
             low = mid + 1;
         }
         else {
