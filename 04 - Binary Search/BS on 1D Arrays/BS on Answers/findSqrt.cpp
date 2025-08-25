@@ -20,11 +20,11 @@ int findSqrt(int n) {
 int findSqrt2(int n) {
     int low = 1, high = n;
     while(low <= high) {
-        int mid = (low + (high - low) / 2);
+        long long mid = (low + (high - low) / 2);
+        long long val = mid * mid;
+        if(val == n) return mid;
 
-        if(mid * mid == n) return mid;
-
-        else if(mid * mid > n) {
+        else if(val > n) {
            high = mid - 1;
         }
         else {
