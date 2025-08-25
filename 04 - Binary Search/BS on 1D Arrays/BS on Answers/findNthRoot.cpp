@@ -28,7 +28,7 @@ int findNthRoot(int n, int m) {
 }
 
 
-//Binary Search - TC: O(N * logM)
+//Optimal - TC: O(N * logM)
 
 //return 1, if == m
 //return 0, if < m
