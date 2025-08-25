@@ -46,7 +46,7 @@ int findNthRoot2(int n, int m) {
             low = mid + 1;
         }
     }
-    return high;
+    return -1;
 }
 
 int main() {
