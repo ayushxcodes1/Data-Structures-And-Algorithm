@@ -29,7 +29,7 @@ int findNthRoot(int n, int m) {
 }
 
 
-//Binary Search
+//Binary Search - TC: O(NlogN)
 int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
