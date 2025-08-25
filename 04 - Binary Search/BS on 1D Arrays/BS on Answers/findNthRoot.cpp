@@ -33,6 +33,8 @@ int findNthRoot(int n, int m) {
 //return 1, if == m
 //return 0, if < m
 //return 2, if > m 
+
+//O(N)
 int func(int mid, int n, int m) {
     long long ans = 1;
     for(int i = 1; i <= n; i++) {
@@ -41,6 +43,11 @@ int func(int mid, int n, int m) {
     }
     if(ans == m) return 1;
     return 0;   
+}
+
+//O(logN)
+int fastExpo(int mid, int n, int m) {
+
 }
 
 int findNthRoot2(int n, int m) {
