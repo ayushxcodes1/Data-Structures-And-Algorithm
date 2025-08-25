@@ -2,14 +2,18 @@
 
 using namespace std;
 
-bool find(int i, int n) {
-    
+int power(int i, int n) {
+    long long ans = 1;
+    for(int j = 0; j < n; j++) {
+        ans = ans * i;
+    }
+    return ans;
 }
 
 //Linear Search
 int findNthRoot(int n, int m) {
     for(int i = 1; i <= m; i++) {
-        if(find(i, n) == m) {
+        if(power(i, n) == m) {
            return i;
         }
     }
