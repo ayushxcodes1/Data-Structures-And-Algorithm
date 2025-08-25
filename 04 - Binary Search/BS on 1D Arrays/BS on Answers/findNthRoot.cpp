@@ -46,7 +46,20 @@ int func(int mid, int n, int m) {
 }
 
 //O(logN)
-int fastExpo(int mid, int n, int m) {
+int fastExpo(long long base, long long exp) {
+    long long ans = 1; 
+    while(exp > 0) {
+        if(exp % 2 == 1) {
+           ans = ans * base;
+           exp--;
+        } else {
+            base = base * base;
+            exp = exp / 2;
+        }
+        return ans;
+    }
+    
+
 
 }
 
