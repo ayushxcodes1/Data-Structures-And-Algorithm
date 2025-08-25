@@ -37,15 +37,15 @@ int findSqrt2(int n) {
 int main() {
   int n = 28;
 
-  //Linear Search
+  //Linear Search - O(N)
   int ans2 = findSqrt(n);
   cout << "Square Root Of " << n << " is " << ans2 << "\n";
 
-  //STL
+  //STL - O(logN)
   int ans = sqrt(n);
   cout << "Square Root Of " << n << " is " << ans << "\n";
 
-  //Binary Search
+  //Binary Search - O(logN)
   int ans3 = findSqrt2(n);
   cout << "Square Root Of " << n << " is " << ans3 << "\n";
   return 0;
