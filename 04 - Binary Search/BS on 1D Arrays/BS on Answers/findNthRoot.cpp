@@ -54,5 +54,8 @@ int main() {
   int ans = findNthRoot(n, m);
   cout << ans << "\n";
 
+  int ans2 = findNthRoot2(n, m);
+  cout << ans2;
+
   return 0;
 }
