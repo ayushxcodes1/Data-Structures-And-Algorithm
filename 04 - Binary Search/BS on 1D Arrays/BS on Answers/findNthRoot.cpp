@@ -66,12 +66,12 @@ int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
-        int midN = fastExpo(mid, n, m);
+        int midPow = fastExpo(mid, n, m);
         
-        if(midN == 1) {
+        if(midPow == m) {
            return mid;
         }
-        else if(midN == 0) {
+        else if(midPow < m) {
             low = mid + 1;
         }
         else {
