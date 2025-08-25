@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Linear Search
 int findSqrt(int n) {
     int ans = 1;
     for(int i = 1; i <= n; i++) {
@@ -15,6 +16,7 @@ int findSqrt(int n) {
     return ans;
 }
 
+//Binary Search
 int findSqrt2(int n) {
     int ans = 1;
     for(int i = 1; i <= n; i++) {
