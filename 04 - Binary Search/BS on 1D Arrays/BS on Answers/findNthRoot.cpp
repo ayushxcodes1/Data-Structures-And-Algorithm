@@ -40,7 +40,7 @@ int func(int mid, int n, int m) {
         if(ans > m) return 2;
     }
     if(ans == m) return 1;
-    return 0;
+    return 0;   
 }
 
 int findNthRoot2(int n, int m) {
@@ -48,7 +48,7 @@ int findNthRoot2(int n, int m) {
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         int midN = func(mid, n, m);
-        //O(logN * logM) using STL pow()
+        
         if(midN == 1) {
            return mid;
         }
