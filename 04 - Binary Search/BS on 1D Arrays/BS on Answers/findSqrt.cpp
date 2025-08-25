@@ -18,16 +18,20 @@ int findSqrt(int n) {
 
 //Binary Search
 int findSqrt2(int n) {
-    int ans = 1;
-    for(int i = 1; i <= n; i++) {
-        if(i * i <= n) {
-           ans = i;
+    int low = 1, high = n;
+    while(low <= high) {
+        int mid = (low + (high - low) / 2);
+
+        if(mid * mid == n) return mid;
+
+        else if(mid * mid > n) {
+           high = mid - 1;
         }
         else {
-           break;
+            low = mid + 1;
         }
     }
-    return ans;
+    return low;
 }
 
 int main() {
