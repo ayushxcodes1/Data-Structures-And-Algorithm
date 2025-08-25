@@ -50,7 +50,7 @@ int findNthRoot2(int n, int m) {
 }
 
 int main() {
-  int n = 3, m = 27;
+  int n = 4, m = 69;
 
   int ans = findNthRoot(n, m);
   cout << ans << "\n";
