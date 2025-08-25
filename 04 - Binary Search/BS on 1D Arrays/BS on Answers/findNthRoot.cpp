@@ -26,6 +26,8 @@ int findNthRoot(int n, int m) {
 }
 
 
+//Binary Search
+
 
 int main() {
   int n = 3, m = 27;
