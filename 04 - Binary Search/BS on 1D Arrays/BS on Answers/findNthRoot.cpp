@@ -30,6 +30,18 @@ int findNthRoot(int n, int m) {
 
 
 //Binary Search - TC: O(N * logM)
+
+//return 1, if == m
+//return 0, if < m
+//return 2, if > m 
+int func(int i, int n) {
+    long long ans = 1;
+    for(int j = 0; j < n; j++) {
+        ans = ans * i;
+    }
+    return ans;
+}
+
 int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
