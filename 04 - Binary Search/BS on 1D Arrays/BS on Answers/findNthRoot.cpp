@@ -56,11 +56,8 @@ int fastExpo(long long base, long long exp) {
             base = base * base;
             exp = exp / 2;
         }
-        return ans;
     }
-    
-
-
+    return ans;
 }
 
 int findNthRoot2(int n, int m) {
