@@ -34,12 +34,14 @@ int findNthRoot(int n, int m) {
 //return 1, if == m
 //return 0, if < m
 //return 2, if > m 
-int func(int i, int n) {
+int func(int mid, int n, int m) {
     long long ans = 1;
-    for(int j = 0; j < n; j++) {
-        ans = ans * i;
+    for(int i = 1; i <= n; i++) {
+        ans = ans * mid;
+        if(ans > m) return 2;
     }
-    return ans;
+    if(ans == m) return 1;
+    return 0;
 }
 
 int findNthRoot2(int n, int m) {
@@ -48,10 +50,10 @@ int findNthRoot2(int n, int m) {
         int mid = (low + (high - low) / 2);
 
         //O(logN * logM) using STL pow()
-        if(power(mid, n) == m) {
+        if(func(mid, n, m) == m) {
            return mid;
         }
-        else if(power(mid, n) > m) {
+        else if(func(mid, n, m) > m) {
            high = mid - 1;
         }
         else {
