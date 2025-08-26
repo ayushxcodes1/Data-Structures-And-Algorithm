@@ -67,7 +67,7 @@ int findNthRoot2(int n, int m) {
 //Optimal2 - TC: O(logN * logM) - Fast Exponentiation 
 long long fastExpo(long a, long n, long long limit) {
     long long ans = 1;
-    while(n > 1) {
+    while(n > 0) {
         if(n % 2 == 1) {
            ans = ans * a;
            if(ans > limit) return limit + 1; //ans is too big
@@ -82,7 +82,7 @@ long long fastExpo(long a, long n, long long limit) {
 int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
-        long mid = (low + (high - low) / 2);
+        long long mid = (low + (high - low) / 2);
         long long val = fastExpo(mid, n, m);
         
         if(val == m) {
