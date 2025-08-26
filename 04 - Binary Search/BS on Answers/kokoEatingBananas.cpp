@@ -2,9 +2,7 @@
 
 using namespace std;
 
-//Brute Force
-
-//Find Max
+//Brute Force - TC: O(max(arr) * N)
 int findMax(vector<int> &arr) {
     int n = arr.size();
     int maxi = arr[0];
