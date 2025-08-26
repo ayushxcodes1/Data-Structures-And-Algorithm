@@ -25,7 +25,7 @@ int computeReqTime(vector<int> &arr, int hourly) {
     return totalhrs;
 }
 
-int func(vector<int> &arr, int h) {
+int minEatingSpped(vector<int> &arr, int h) {
     int maximum = findMax(arr);
     for(int i = 1; i <= maximum; i++) {
         int reqTime = computeReqTime(arr, i);
