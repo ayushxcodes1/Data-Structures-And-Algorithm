@@ -28,7 +28,7 @@ int findNthRoot(int n, int m) {
 }
 
 
-//Optimal - TC: O(N * logM), Fast Expo: O(logN * logM)
+//Optimal1 - TC: O(N * logM) - Binary Search
 
 //return 1, if == m
 //return 0, if < m
@@ -63,6 +63,8 @@ int findNthRoot2(int n, int m) {
     }
     return -1;
 }
+
+//Optimal2 - TC: O(logN * logM) - Fast Exponentiation 
 
 int main() {
   int n = 4, m = 69;
