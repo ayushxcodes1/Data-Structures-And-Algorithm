@@ -20,7 +20,7 @@ int computeReqTime(vector<int> &arr, int hourly) {
     int n = arr.size();
     int totalhrs = 0;
     for(int i = 0; i < n; i++) {
-        totalhrs += ceil(arr[i] / hourly);
+        totalhrs += ceil((double)arr[i] / hourly);
     }
     return totalhrs;
 }
