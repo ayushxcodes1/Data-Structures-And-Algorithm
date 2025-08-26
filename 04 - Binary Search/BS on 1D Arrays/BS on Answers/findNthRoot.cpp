@@ -69,12 +69,12 @@ long long fastExpo(long base, long exp, long long limit) {
     long long ans = 1;
     while(exp > 0) {
         if(exp % 2 == 1) {
-           if(ans > limit / base) return limit + 1; //prevents overflow
+           if(ans > limit / base) return limit + 1; 
            ans = ans * base;
         }   
         exp = exp / 2;
         if(exp > 0){
-            if(base > limit / base) return limit + 1; //prevents overflow
+            if(base > limit / base) return limit + 1; 
             base = base * base;
         }
     }
