@@ -36,7 +36,7 @@ int minEatingSpped(vector<int> &arr, int h) {
 int main() {
   vector<int> arr = {3, 6, 7, 11};
   int h = 8;
-  int ans = func(arr, h);
+  int ans = minEatingSpped(arr, h);
   cout << "Koko can eat all bananas within " << ans << " hours.";
   return 0;
 }
