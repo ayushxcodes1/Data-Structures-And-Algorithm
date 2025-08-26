@@ -12,8 +12,8 @@ int findMax(vector<int> &arr) {
         if(arr[i] > maxi) {
            maxi = arr[i];
         }
-        return maxi;
     }
+    return maxi;
 }
 
 int computeReqTime(vector<int> &arr, int hourly) {
