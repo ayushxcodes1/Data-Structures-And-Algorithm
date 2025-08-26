@@ -35,6 +35,7 @@ int func(vector<int> &arr, int h) {
 
 int main() {
   vector<int> arr = {3, 6, 7, 11};
-  int ans = func(arr);
+  int h = 8;
+  int ans = func(arr, h);
   return 0;
 }
