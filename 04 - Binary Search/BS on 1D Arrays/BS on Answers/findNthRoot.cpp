@@ -70,10 +70,10 @@ long long fastExpo(long base, long exp, long long limit) {
     while(exp > 0) {
         if(exp % 2 == 1) {
            ans = ans * base;
-           if(ans > limit) return limit + 1; //ans is too big
+           if(ans > limit / base) return limit + 1; //ans is too big
         }   
         base = base * base;
-        if(base > limit) return limit + 1; //a is too big
+        if(base > limit / base) return limit + 1; //a is too big
         exp = exp / 2;
     }
     return ans;
