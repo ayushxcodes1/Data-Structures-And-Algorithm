@@ -72,9 +72,11 @@ long long fastExpo(long base, long exp, long long limit) {
            if(ans > limit / base) return limit + 1; //ans is too big
            ans = ans * base;
         }   
-        if(base > limit / base) return limit + 1; //a is too big
-        base = base * base;
         exp = exp / 2;
+        if(exp > 0){
+            if(base > limit / base) return limit + 1; //a is too big
+            base = base * base;
+        }
     }
     return ans;
 }
