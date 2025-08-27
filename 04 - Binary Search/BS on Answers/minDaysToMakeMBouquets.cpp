@@ -23,16 +23,16 @@ int findMinDays(vector<int> &arr, int day, int m, int k) {
             flowers++;
             if(flowers == k) {
                bouquets++;
-               flowers -= k;
+               flowers = 0; // reset after making 1 bouquet
+
             }
         }
         else {
-           flowers = 0; //no adjacent flowers found
+           flowers = 0; //chain breaks
         }
     } 
     
-    if(bouquets >= m) return day;
-    else return -1;
+    return bouquets >= m ? day : -1;
 }
 
 int minDays(vector<int> &arr, int m, int k) {
