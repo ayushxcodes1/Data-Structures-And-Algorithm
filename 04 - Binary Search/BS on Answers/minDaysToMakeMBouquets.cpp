@@ -60,8 +60,8 @@ int minDays(vector<int> &arr, int m, int k) {
 //Binary Search - TC: O(NlogM)
 int minDays2(vector<int> &arr, int m, int k) {
     int n = arr.size();
-    int mini = findMin(arr);
-    int maxi = findMax(arr);
+    int mini = findMini(arr);
+    int maxi = findMaxi(arr);
     int ans = -1;
 
     int low = 1, high = maxi;
