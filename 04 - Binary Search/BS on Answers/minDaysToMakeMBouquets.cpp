@@ -34,35 +34,36 @@ bool findMinDays(vector<int> &arr, int day, int m, int k) {
     return bouquets >= m ? true : false;
 }
 
-int minDays(vector<int> &arr, int m, int k) {
-    int maximum = findMax(arr);
-    for(int i = 1; i <= maximum; i++) {
-        int mini = findMinDays(arr, i, m, k);
-        if(mini == true) return mini;
-    }
-    return -1;
-}  
-
-//Binary Search - TC: O(NlogM)
-int minDays2(vector<int> &arr, int m, int k) {
-    int n = arr.size();
-    int maxi = findMax(arr);
-    int ans = -1;
-
-    int low = 1, high = maxi;
-    while(low <= high) {
-        int mid = (low + (high - low) / 2);
-        int mini = findMinDays(arr, mid, m, k);
-        if(mini == mid) {
-           ans = mid;
-           high = mid - 1;
+    int minDays(vector<int> &arr, int m, int k) {
+        int ans = 0;
+        int maximum = findMax(arr);
+        for(int i = 1; i <= maximum; i++) {
+            bool mini = findMinDays(arr, i, m, k);
+            if(mini == true) return i;
         }
-        else {
-           low = mid + 1;
+        return -1;
+    }  
+
+    //Binary Search - TC: O(NlogM)
+    int minDays2(vector<int> &arr, int m, int k) {
+        int n = arr.size();
+        int maxi = findMax(arr);
+        int ans = -1;
+
+        int low = 1, high = maxi;
+        while(low <= high) {
+            int mid = (low + (high - low) / 2);
+            bool mini = findMinDays(arr, mid, m, k);
+            if(mini == true) {
+            ans = mid;
+            high = mid - 1;
+            }
+            else {
+            low = mid + 1;
+            }
         }
-    }
-    return ans;
-}  
+        return ans;
+    }  
 
 int main() {
   vector<int> arr = {1, 10, 3, 10, 2};
@@ -73,6 +74,6 @@ int main() {
   cout << "Minimum Days Needs To Make M Bouquets are " << ans << "\n";
 
   int ans2 = minDays2(arr, m, k); 
-  cout << "Minimum Days Needs To Make M Bouquets are " << ans << "\n";
+  cout << "Minimum Days Needs To Make M Bouquets are " << ans2 << "\n";
   return 0;
 }
