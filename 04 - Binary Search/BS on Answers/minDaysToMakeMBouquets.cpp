@@ -64,6 +64,9 @@ int main() {
   int m = 3, k = 1;
 
   int ans = minDays(arr, m, k);
-  cout << "Minimum Days Needs To Make M Bouquets are " << ans;
+  cout << "Minimum Days Needs To Make M Bouquets are " << ans << "\n";
+
+  int ans2 = minDays2(arr, m, k); 
+  cout << "Minimum Days Needs To Make M Bouquets are " << ans << "\n";
   return 0;
 }
