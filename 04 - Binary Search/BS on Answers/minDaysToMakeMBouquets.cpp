@@ -60,6 +60,8 @@ int minDays(vector<int> &arr, int m, int k) {
 //Binary Search - TC: O((Maxi - Mini + 1) * logN))
 int minDays2(vector<int> &arr, int m, int k) {
     int n = arr.size();
+    if(n < m * k) return -1; //impossible case
+    
     int mini = findMini(arr);
     int maxi = findMaxi(arr);
     int ans = -1;
