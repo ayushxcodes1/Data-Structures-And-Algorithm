@@ -16,11 +16,11 @@ int findMax(vector<int> &arr) {
 
 int computeReqTime(vector<int> &arr, int hourly) {
     int n = arr.size();
-    int totalhrs = 0;
+    int totalH = 0;
     for(int i = 0; i < n; i++) {
-        totalhrs += ceil((double)arr[i] / (double)hourly);
+        totalH += (arr[i] + hourly - 1) / hourly;
     }
-    return totalhrs;
+    return totalH;
 }
 
 int minEatingSpeed(vector<int> &arr, int h) {
