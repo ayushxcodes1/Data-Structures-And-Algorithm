@@ -44,11 +44,11 @@ bool canMakeBouquets(vector<int> &arr, int day, int m, int k) {
 
 int minDays(vector<int> &arr, int m, int k) {
     int n = arr.size();
+    if(n < m * k) return -1; //impossible case
+
     int ans = 0;
     int mini = findMini(arr);
     int maxi = findMaxi(arr);
-    
-    if(n < m * k) return -1; //impossible case
 
     for(int i = mini; i <= maxi; i++) {
         bool canMake = canMakeBouquets(arr, i, m, k);
