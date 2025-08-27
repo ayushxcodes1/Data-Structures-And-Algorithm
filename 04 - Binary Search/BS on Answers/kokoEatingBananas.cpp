@@ -23,7 +23,7 @@ int computeReqTime(vector<int> &arr, int hourly) {
     return totalhrs;
 }
 
-int minEatingSpped(vector<int> &arr, int h) {
+int minEatingSpeed(vector<int> &arr, int h) {
     int maximum = findMax(arr);
     for(int i = 1; i <= maximum; i++) {
         int reqTime = computeReqTime(arr, i);
@@ -32,7 +32,7 @@ int minEatingSpped(vector<int> &arr, int h) {
 }  
 
 //Binary Search
-int minEatingSpped(vector<int> &arr, int h) {
+int minEatingSpeed2(vector<int> &arr, int h) {
     int maximum = findMax(arr);
     for(int i = 1; i <= maximum; i++) {
         int reqTime = computeReqTime(arr, i);
@@ -43,7 +43,7 @@ int minEatingSpped(vector<int> &arr, int h) {
 int main() {
   vector<int> arr = {3, 6, 7, 11};
   int h = 8;
-  int ans = minEatingSpped(arr, h);
+  int ans = minEatingSpeed(arr, h);
   cout << "Koko can eat all bananas within " << ans << " hours.";
   return 0;
 }
