@@ -24,7 +24,6 @@ bool findMinDays(vector<int> &arr, int day, int m, int k) {
             if(flowers == k) {
                bouquets++;
                flowers = 0; // reset after making 1 bouquet
-
             }
         }
         else {
