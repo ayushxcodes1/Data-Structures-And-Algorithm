@@ -14,7 +14,7 @@ int findMax(vector<int> &arr) {
     return maxi;
 }
 
-int computeReqTime(vector<int> &arr, int hourly) {
+int computeTotalHrs(vector<int> &arr, int hourly) {
     int n = arr.size();
     int totalH = 0;
     for(int i = 0; i < n; i++) {
@@ -26,8 +26,8 @@ int computeReqTime(vector<int> &arr, int hourly) {
 int minEatingSpeed(vector<int> &arr, int h) {
     int maximum = findMax(arr);
     for(int i = 1; i <= maximum; i++) {
-        int reqTime = computeReqTime(arr, i);
-        if(reqTime <= h) return i;  
+        int totalHrs = computeTotalHrs(arr, i);
+        if(totalHrs <= h) return i;  
     }
 }  
 
@@ -39,7 +39,7 @@ int minEatingSpeed2(vector<int> &arr, int h) {
     int low = 1, high = maxi;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
-        int totalhrs = computeReqTime(arr, mid);
+        int totalhrs = computeTotalHrs(arr, mid);
         if(totalhrs <= h) {
            high = mid - 1;
         }
