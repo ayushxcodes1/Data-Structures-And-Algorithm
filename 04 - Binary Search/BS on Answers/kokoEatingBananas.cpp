@@ -29,7 +29,16 @@ int minEatingSpped(vector<int> &arr, int h) {
         int reqTime = computeReqTime(arr, i);
         if(reqTime <= h) return i;
     }
-}   
+}  
+
+//Binary Search
+int minEatingSpped(vector<int> &arr, int h) {
+    int maximum = findMax(arr);
+    for(int i = 1; i <= maximum; i++) {
+        int reqTime = computeReqTime(arr, i);
+        if(reqTime <= h) return i;
+    }
+}  
 
 int main() {
   vector<int> arr = {3, 6, 7, 11};
