@@ -2,9 +2,8 @@
 
 using namespace std;
 
-//Brute Force - TC: O(maxi * N)
+//Brute Force - TC: O(max * N)
 
-//O(N)
 int findMax(vector<int> &arr) {
     int n = arr.size();
     int maxi = arr[0];
@@ -16,7 +15,6 @@ int findMax(vector<int> &arr) {
     return maxi;
 }
 
-//O(N)
 int computeReqTime(vector<int> &arr, int hourly) {
     int n = arr.size();
     int totalhrs = 0;
