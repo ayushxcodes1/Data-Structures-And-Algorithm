@@ -3,7 +3,6 @@
 using namespace std;
 
 //Brute Force - TC: O(M * N) - M is the maximum element in the array
-
 int findMax(vector<int> &arr) {
     int n = arr.size();
     int maxi = arr[0];
