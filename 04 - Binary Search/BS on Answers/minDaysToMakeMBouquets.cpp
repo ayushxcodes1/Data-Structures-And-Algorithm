@@ -36,7 +36,7 @@ int minDays(vector<int> &arr, int m, int k) {
     int ans = 0;
     int maximum = findMax(arr);
     
-    if(n < m * k) return -1;
+    if(n < m * k) return -1; //impossible case
 
     for(int i = 1; i <= maximum; i++) {
         bool canMake = canMakeBouquets(arr, i, m, k);
