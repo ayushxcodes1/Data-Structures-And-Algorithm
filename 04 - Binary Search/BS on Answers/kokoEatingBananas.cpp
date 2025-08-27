@@ -32,7 +32,7 @@ int minEatingSpeed(vector<int> &arr, int h) {
     }
 }  
 
-//Binary Search - TC: O(NlogM))
+//Binary Search - TC: O(NlogM)
 int minEatingSpeed2(vector<int> &arr, int h) {
     int n = arr.size();
     int maxi = findMax(arr);
