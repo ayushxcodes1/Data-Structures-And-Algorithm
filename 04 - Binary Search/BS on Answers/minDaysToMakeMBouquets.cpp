@@ -39,7 +39,7 @@ int minDays(vector<int> &arr, int m, int k) {
     int maximum = findMax(arr);
     for(int i = 1; i <= maximum; i++) {
         int mini = findMinDays(arr, i, m, k);
-        if(mini == i) return i;
+        if(mini != -1) return mini;
     }
     return -1;
 }  
