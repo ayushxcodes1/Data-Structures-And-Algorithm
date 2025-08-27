@@ -25,8 +25,6 @@ int findMax(vector<int> &arr) {
     return maxi;
 }
 
-
-
 bool canMakeBouquets(vector<int> &arr, int day, int m, int k) {
     int n = arr.size();
     int bouquets = 0;
