@@ -14,7 +14,7 @@ int findMax(vector<int> &arr) {
     return maxi;
 }
 
-int findMinDays(vector<int> &arr, int day, int m, int k) {
+bool findMinDays(vector<int> &arr, int day, int m, int k) {
     int n = arr.size();
     int bouquets = 0;
     int flowers = 0;
@@ -32,14 +32,14 @@ int findMinDays(vector<int> &arr, int day, int m, int k) {
         }
     } 
     
-    return bouquets >= m ? day : -1;
+    return bouquets >= m ? true : false;
 }
 
 int minDays(vector<int> &arr, int m, int k) {
     int maximum = findMax(arr);
     for(int i = 1; i <= maximum; i++) {
         int mini = findMinDays(arr, i, m, k);
-        if(mini == i) return mini;
+        if(mini == true) return mini;
     }
     return -1;
 }  
@@ -48,14 +48,21 @@ int minDays(vector<int> &arr, int m, int k) {
 int minDays2(vector<int> &arr, int m, int k) {
     int n = arr.size();
     int maxi = findMax(arr);
+    int ans = -1;
 
     int low = 1, high = maxi;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         int mini = findMinDays(arr, mid, m, k);
-        if(mini == mid) return mid;
+        if(mini == mid) {
+           ans = mid;
+           high = mid - 1;
+        }
+        else {
+           low = mid + 1;
+        }
     }
-    return -1;
+    return ans;
 }  
 
 int main() {
