@@ -17,20 +17,17 @@ int findMax(vector<int> &arr) {
 bool canMakeBouquets(vector<int> &arr, int day, int m, int k) {
     int n = arr.size();
     int bouquets = 0;
-    int flowers = 0;
+    int cnt = 0;
     for(int i = 0; i < n; i++) {
         if(arr[i] <= day) {
-            flowers++;
-            if(flowers == k) {
-               bouquets++;
-               flowers = 0; // reset after making 1 bouquet
-            }
+            cnt++;
         }
         else {
-           flowers = 0; //chain breaks
+           bouquets += (cnt / k);
+           cnt = 0;
         }
     } 
-    
+    bouquets += (cnt / k);
     return bouquets >= m ? true : false;
 }
 
