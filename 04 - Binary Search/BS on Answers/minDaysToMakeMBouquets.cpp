@@ -44,22 +44,19 @@ int minDays(vector<int> &arr, int m, int k) {
     return -1;
 }  
 
-// //Binary Search - TC: O(NlogM)
-// int minEatingSpeed2(vector<int> &arr, int h) {
-//     int n = arr.size();
-//     int maxi = findMax(arr);
+//Binary Search - TC: O(NlogM)
+int minDays2(vector<int> &arr, int m, int k) {
+    int n = arr.size();
+    int maxi = findMax(arr);
 
-//     int low = 1, high = maxi;
-//     while(low <= high) {
-//         int mid = (low + (high - low) / 2);
-//         int totalHrs = computeTotalHrs(arr, mid);
-//         if(totalHrs <= h) {
-//            high = mid - 1;
-//         }
-//         else low = mid + 1;
-//     }
-//     return low;
-// }  
+    int low = 1, high = maxi;
+    while(low <= high) {
+        int mid = (low + (high - low) / 2);
+        int mini = findMinDays(arr, mid, m, k);
+        if(mini == mid) return mid;
+    }
+    return -1;
+}  
 
 int main() {
   vector<int> arr = {1, 10, 3, 10, 2};
