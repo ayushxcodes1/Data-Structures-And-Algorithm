@@ -32,15 +32,15 @@ int minEatingSpeed(vector<int> &arr, int h) {
 }  
 
 //Binary Search
-int minEatingSpeed2(vector<int> &arr, int low, int high, int h) {
+int minEatingSpeed2(vector<int> &arr, int h) {
     int n = arr.size();
-
     int maxi = findMax(arr); //O(N)
+
     int low = 1, high = maxi;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         int totalhrs = computeReqTime(arr, mid); //O(N)
-        if(totalhrs >= mid) {
+        if(totalhrs > mid) {
            high = mid - 1;
         }
         else low = mid + 1;
@@ -56,7 +56,7 @@ int main() {
   int ans = minEatingSpeed(arr, h);
   cout << "Koko can eat all bananas within " << ans << " hours." << "\n";
 
-  int ans2 = minEatingSpeed2(arr, 0, n - 1, h);
+  int ans2 = minEatingSpeed2(arr, h);
   cout << "Koko can eat all bananas within " << ans2 << " hours.";
   return 0;
 }
