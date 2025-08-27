@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force - TC: O(M * N) - M is the maximum element in the array
-int findMin(vector<int> &arr) {
+int findMini(vector<int> &arr) {
     int n = arr.size();
     int mini = INT_MAX;
     for(int i = 0; i < n; i++) {
@@ -14,7 +14,7 @@ int findMin(vector<int> &arr) {
     return mini;
 }
 
-int findMax(vector<int> &arr) {
+int findMaxi(vector<int> &arr) {
     int n = arr.size();
     int maxi = INT_MAX;
     for(int i = 0; i < n; i++) {
@@ -45,8 +45,8 @@ bool canMakeBouquets(vector<int> &arr, int day, int m, int k) {
 int minDays(vector<int> &arr, int m, int k) {
     int n = arr.size();
     int ans = 0;
-    int mini = findMin(arr);
-    int maxi = findMax(arr);
+    int mini = findMini(arr);
+    int maxi = findMaxi(arr);
     
     if(n < m * k) return -1; //impossible case
 
