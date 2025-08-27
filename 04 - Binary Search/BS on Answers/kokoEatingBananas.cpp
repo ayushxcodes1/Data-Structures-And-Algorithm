@@ -18,8 +18,8 @@ int computeTotalHrs(vector<int> &arr, int hourly) {
     int n = arr.size();
     int totalH = 0;
     for(int i = 0; i < n; i++) {
-        //totalH += ceil(arr[i] / hourly); //slow
-        totalH += (arr[i] + hourly - 1) / hourly; //fast
+        totalH += ceil((double)arr[i] / hourly); //slow
+        // totalH += (arr[i] + hourly - 1) / hourly; //fast
     }
     return totalH;
 }
