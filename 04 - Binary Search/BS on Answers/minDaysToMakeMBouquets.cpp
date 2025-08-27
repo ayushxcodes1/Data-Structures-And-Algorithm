@@ -62,7 +62,7 @@ int minDays(vector<int> &arr, int m, int k) {
 // }  
 
 int main() {
-  vector<int> arr = {3, 6, 7, 11};
+  vector<int> arr = {1, 10, 3, 10, 2};
   int n = arr.size();
   int m = 3, k = 1;
 
