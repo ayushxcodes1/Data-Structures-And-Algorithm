@@ -42,12 +42,13 @@ int minEatingSpeed2(vector<int> &arr, int low, int high, int h) {
 
 int main() {
   vector<int> arr = {3, 6, 7, 11};
+  int n = arr.size();
   int h = 8;
 
   int ans = minEatingSpeed(arr, h);
   cout << "Koko can eat all bananas within " << ans << " hours." << "\n";
 
-  int ans2 = minEatingSpeed2(arr, h);
+  int ans2 = minEatingSpeed2(arr, 0, n - 1,h);
   cout << "Koko can eat all bananas within " << ans2 << " hours.";
   return 0;
 }
