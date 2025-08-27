@@ -41,7 +41,7 @@ int minEatingSpeed2(vector<int> &arr, int h) {
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         int totalhrs = computeReqTime(arr, mid); //O(N)
-        if(totalhrs <= mid) {
+        if(totalhrs <= h) {
            ans = mid;
            high = mid - 1;
         }
