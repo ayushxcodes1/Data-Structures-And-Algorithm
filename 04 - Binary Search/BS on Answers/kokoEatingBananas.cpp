@@ -34,18 +34,20 @@ int minEatingSpeed(vector<int> &arr, int h) {
 //Binary Search
 int minEatingSpeed2(vector<int> &arr, int h) {
     int n = arr.size();
+    int ans = INT_MAX;
     int maxi = findMax(arr); //O(N)
 
     int low = 1, high = maxi;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         int totalhrs = computeReqTime(arr, mid); //O(N)
-        if(totalhrs > mid) {
+        if(totalhrs <= mid) {
+           ans = mid;
            high = mid - 1;
         }
         else low = mid + 1;
     }
-    return low;
+    return ans;
 }  
 
 int main() {
