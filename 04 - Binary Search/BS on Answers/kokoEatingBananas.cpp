@@ -38,7 +38,7 @@ int minEatingSpeed2(vector<int> &arr, int low, int high, int h) {
     int maxi = findMax(arr);
     int low = 1, high = maxi;
     while(low <= high) {
-        
+        int mid = (low + (high - low) / 2);
     }
 }  
 
