@@ -48,7 +48,7 @@ int main() {
   int ans = minEatingSpeed(arr, h);
   cout << "Koko can eat all bananas within " << ans << " hours." << "\n";
 
-  int ans2 = minEatingSpeed2(arr, 0, n - 1,h);
+  int ans2 = minEatingSpeed2(arr, 0, n - 1, h);
   cout << "Koko can eat all bananas within " << ans2 << " hours.";
   return 0;
 }
