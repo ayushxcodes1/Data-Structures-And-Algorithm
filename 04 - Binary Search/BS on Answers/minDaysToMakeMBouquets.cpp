@@ -39,7 +39,7 @@ bool canMakeBouquets(vector<int> &arr, int day, int m, int k) {
         }
     } 
     bouquets += (cnt / k);
-    return bouquets >= m ? true : false;
+    return bouquets >= m;
 }
 
 int minDays(vector<int> &arr, int m, int k) {
