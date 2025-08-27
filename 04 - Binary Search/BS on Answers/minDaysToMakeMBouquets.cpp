@@ -45,8 +45,8 @@ bool canMakeBouquets(vector<int> &arr, int day, int m, int k) {
 int minDays(vector<int> &arr, int m, int k) {
     int n = arr.size();
     int ans = 0;
-    int maxi = findMax(arr);
     int mini = findMin(arr);
+    int maxi = findMax(arr);
     
     if(n < m * k) return -1; //impossible case
 
@@ -60,6 +60,7 @@ int minDays(vector<int> &arr, int m, int k) {
 //Binary Search - TC: O(NlogM)
 int minDays2(vector<int> &arr, int m, int k) {
     int n = arr.size();
+    int maxi = findMax(arr);
     int maxi = findMax(arr);
     int ans = -1;
 
