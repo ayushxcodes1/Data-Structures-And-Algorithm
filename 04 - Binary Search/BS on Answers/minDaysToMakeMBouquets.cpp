@@ -57,7 +57,7 @@ int minDays(vector<int> &arr, int m, int k) {
     return -1;
 }  
 
-//Binary Search - TC: O(NlogM)
+//Binary Search - TC: O((Maxi - Mini + 1) * logN))
 int minDays2(vector<int> &arr, int m, int k) {
     int n = arr.size();
     int mini = findMini(arr);
@@ -69,11 +69,11 @@ int minDays2(vector<int> &arr, int m, int k) {
         int mid = (low + (high - low) / 2);
         bool canMake = canMakeBouquets(arr, mid, m, k);
         if(canMake == true) {
-        ans = mid;
-        high = mid - 1;
+            ans = mid;
+            high = mid - 1;
         }
         else {
-        low = mid + 1;
+            low = mid + 1;
         }
     }
     return ans;
