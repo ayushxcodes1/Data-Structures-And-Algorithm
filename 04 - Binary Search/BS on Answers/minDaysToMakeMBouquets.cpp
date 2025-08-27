@@ -64,21 +64,19 @@ int minDays2(vector<int> &arr, int m, int k) {
     
     int mini = findMini(arr);
     int maxi = findMaxi(arr);
-    int ans = -1;
 
     int low = mini, high = maxi;
     while(low <= high) {
         int mid = (low + (high - low) / 2);
         bool canMake = canMakeBouquets(arr, mid, m, k);
         if(canMake == true) {
-            ans = mid;
             high = mid - 1;
         }
         else {
             low = mid + 1;
         }
     }
-    return ans;
+    return low;
 }  
 
 int main() {
