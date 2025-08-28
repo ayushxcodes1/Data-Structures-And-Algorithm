@@ -25,8 +25,8 @@ int computeTotalHrs(vector<int> &arr, int hourly) {
 }
 
 int minEatingSpeed(vector<int> &arr, int h) {
-    int maximum = findMax(arr);
-    for(int i = 1; i <= maximum; i++) {
+    int maxi = findMax(arr);
+    for(int i = 1; i <= maxi; i++) {
         int totalHrs = computeTotalHrs(arr, i);
         if(totalHrs <= h) return i;  
     }
