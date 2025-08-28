@@ -21,6 +21,17 @@ int smallestDivisor(vector<int> &arr, int threshold) {
     }
 }
 
+//Optimal
+int smallestDivisor2(vector<int> &arr, int threshold) {
+    int n = arr.size();
+    int low = 1, high = threshold;
+    while(low <= high) {
+        int mid = low + (high - low) / 2;
+        int sum = findDivisorSum(arr, n, mid);
+
+    }
+}
+
 int main() {
   vector<int> arr = {1, 2, 5, 9};
   int threshold = 6;
