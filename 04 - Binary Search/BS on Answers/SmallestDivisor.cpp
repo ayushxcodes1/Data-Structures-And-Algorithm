@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(maxi * N)
+//Brute Force - TC: O(max * N)
 int findMax(vector<int> &arr) {
     int n = arr.size();
     int maxi = INT_MIN;
@@ -36,7 +36,7 @@ int smallestDivisor(vector<int> &arr, int threshold) {
     return -1;
 }
 
-//Optimal - O(log(maxi) * N)
+//Optimal - O(log(max) * N)
 int smallestDivisor2(vector<int> &arr, int threshold) {
     int n = arr.size();
     int ans = -1;
