@@ -42,6 +42,7 @@ bool canMakeBouquets(vector<int> &arr, int day, int m, int k) {
     return bouquets >= m;
 }
 
+//Brute - TC: O((maxi - mini + 1) * N)
 int minDays(vector<int> &arr, int m, int k) {
     int n = arr.size();
     if(n < m * k) return -1; //impossible case
@@ -57,7 +58,7 @@ int minDays(vector<int> &arr, int m, int k) {
     return -1;
 }  
 
-//Binary Search - TC: O(N * log(Maxi - Mini + 1))
+//Binary Search - TC: O(log(maxi - mini + 1) * N)
 int minDays2(vector<int> &arr, int m, int k) {
     int n = arr.size();
     if(n < m * k) return -1; //impossible case
