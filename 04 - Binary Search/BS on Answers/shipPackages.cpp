@@ -3,6 +3,17 @@
 using namespace std;
 
 //Brute Force
+int findMax(vector<int> &arr) {
+    int n = arr.size();
+    int maxi = INT_MIN;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] > maxi) {
+           maxi = arr[i];
+        }
+    }
+    return maxi;
+}
+
 int findArraySum(vector<int> &arr) {
     int n = arr.size();
     int sum = 0;
@@ -12,15 +23,22 @@ int findArraySum(vector<int> &arr) {
     return sum;
 }
 
+
 bool func(vector<int> &arr, int capacity) {
     int n = arr.size();
     int sum = 0;
-    int days = 1;
+    int days = 0;
+    int rem = 0;
     for(int i = 0; i < n; i++) {
         sum += arr[i];
-        if(sum >= capacity) {
+        if(sum == capacity) {
             days++;
             sum = 0;
+            sum += rem;
+        }
+        else if(sum > capacity) {
+            rem += (sum % capacity);
+            day++;
         }
     }
 }
