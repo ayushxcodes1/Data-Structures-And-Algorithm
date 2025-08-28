@@ -23,7 +23,6 @@ bool func(vector<int> &arr, int capacity) {
             sum = 0;
         }
     }
-
 }
 
 int shipPackages(vector<int> &arr, int days) {
