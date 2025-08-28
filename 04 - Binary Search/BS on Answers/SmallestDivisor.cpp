@@ -6,7 +6,7 @@ using namespace std;
 int findDivisorSum(vector<int> &arr, int n, int d) {
     int sum = 0;
     for(int i = 0; i < n; i++) {
-        sum += ceil((double)arr[i] / d);
+        sum += (arr[i] + d - 1) / d;
     }
     return sum;
 }
@@ -32,7 +32,7 @@ int smallestDivisor2(vector<int> &arr, int threshold) {
         int divisorSum = findDivisorSum(arr, n, mid);
         
         if(divisorSum <= threshold) {
-           return mid;
+           high = mid - 1;
         }
         else low = mid + 1;
     }
@@ -45,7 +45,7 @@ int main() {
 
   int ans = smallestDivisor(arr, threshold);
   cout << ans << "\n";
-  
+
   int ans2 = smallestDivisor2(arr, threshold);
   cout << ans2;
   
