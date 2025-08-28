@@ -28,7 +28,7 @@ bool func(vector<int> &arr, int capacity) {
 int shipPackages(vector<int> &arr, int days) {
     int n = arr.size();
     int arraySum = findArraySum(arr);
-    for(int i = 1; i <= sum; i++) {
+    for(int i = 1; i <= arraySum; i++) {
         bool x = func(arr, i);
         if(x == true) {
            return i;
