@@ -28,7 +28,6 @@ int func(vector<int> &arr, int capacity) {
     int sum = 0;
     int days = 0;
     for(int i = 0; i < n; i++) {
-        sum += arr[i];
         if(sum + arr[i] > capacity) {
             days++;
             sum = 0;
