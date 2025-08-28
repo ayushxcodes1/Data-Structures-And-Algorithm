@@ -48,7 +48,7 @@ int func(int mid, int n, int m) {
 int findNthRoot2(int n, int m) {
     int low = 1, high = m;
     while(low <= high) {
-        int mid = (low + (high - low) / 2);
+        int mid = low + (high - low) / 2;
         int midN = func(mid, n, m);
         
         if(midN == 1) {
