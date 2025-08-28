@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force
-int sumOfN(vector<int> &arr) {
+int findSum(vector<int> &arr) {
     int n = arr.size();
     int sum = 0;
     for(int i = 0; i < n; i++) {
@@ -28,7 +28,7 @@ bool func(vector<int> &arr, int capacity) {
 
 int shipPackages(vector<int> &arr, int days) {
     int n = arr.size();
-    int sum = sumOfN(arr);
+    int sum = findSum(arr);
     for(int i = 1; i <= sum; i++) {
         bool x = func(arr, i);
         if(x == true) {
