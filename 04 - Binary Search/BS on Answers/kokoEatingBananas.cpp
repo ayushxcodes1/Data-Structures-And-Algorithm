@@ -39,7 +39,7 @@ int minEatingSpeed2(vector<int> &arr, int h) {
 
     int low = 1, high = maxi;
     while(low <= high) {
-        int mid = (low + (high - low) / 2);
+        int mid = low + (high - low) / 2;
         int totalHrs = computeTotalHrs(arr, mid);
         if(totalHrs <= h) {
            high = mid - 1;
