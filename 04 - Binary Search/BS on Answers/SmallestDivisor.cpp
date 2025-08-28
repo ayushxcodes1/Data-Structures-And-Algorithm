@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force
-int findDivisor(vector<int> &arr, int n, int d) {
+int findDivisorSum(vector<int> &arr, int n, int d) {
     int sum = 0;
     for(int i = 0; i < n; i++) {
         sum += ceil(arr[i] / d);
@@ -14,7 +14,7 @@ int findDivisor(vector<int> &arr, int n, int d) {
 int smallestDivisor(vector<int> &arr, int threshold) {
     int n = arr.size();
     for(int i = 1; i <= threshold; i++) {
-        findDivisor(arr, n, i);
+        findDivisorSum(arr, n, i);
     }
 }
 
