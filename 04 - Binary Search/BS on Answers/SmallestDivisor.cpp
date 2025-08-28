@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force
 int smallestDivisor(vector<int> &arr, int threshold) {
     int n = arr.size();
 }
