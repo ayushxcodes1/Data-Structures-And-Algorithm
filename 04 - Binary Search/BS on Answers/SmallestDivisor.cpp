@@ -44,7 +44,10 @@ int main() {
   int threshold = 6;
 
   int ans = smallestDivisor(arr, threshold);
-  cout << ans;
+  cout << ans << "\n";
+  
+  int ans2 = smallestDivisor2(arr, threshold);
+  cout << ans2;
   
   return 0;
 }
