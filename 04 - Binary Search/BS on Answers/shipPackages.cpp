@@ -45,8 +45,8 @@ int shipPackages(vector<int> &arr, int days) {
     int maxi = findMax(arr);
     int arraySum = findArraySum(arr);
     for(int i = maxi; i <= arraySum; i++) {
-        bool allShipped = func(arr, i);
-        if(allShipped == true) {
+        int daysReq = func(arr, i);
+        if(daysReq <= days) {
            return i;
         }
     }
