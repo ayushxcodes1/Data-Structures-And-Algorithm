@@ -39,7 +39,6 @@ int smallestDivisor(vector<int> &arr, int threshold) {
 //Optimal - O(log(max) * N)
 int smallestDivisor2(vector<int> &arr, int threshold) {
     int n = arr.size();
-    int ans = -1;
     int maxi = findMax(arr);
     int low = 1, high = maxi;
     while(low <= high) {
