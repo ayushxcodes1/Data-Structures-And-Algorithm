@@ -5,13 +5,11 @@ using namespace std;
 //Brute Force
 int sumOfN(vector<int> &arr) {
     int n = arr.size();
-    int maxi = INT_MIN;
+    int sum = 0;
     for(int i = 0; i < n; i++) {
-        if(arr[i] > maxi) {
-           maxi = arr[i];
-        }
+        sum += arr[i];
     }
-    return maxi;
+    return sum;
 }
 
 int shipPackages(vector<int> &arr, int threshold) {
