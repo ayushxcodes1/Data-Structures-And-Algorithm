@@ -55,13 +55,13 @@ int smallestDivisor2(vector<int> &arr, int threshold) {
 }
 
 int main() {
-  vector<int> arr = {1, 2, 5, 9};
-  int threshold = 6;
+  vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  int days = 5;
 
-  int ans = smallestDivisor(arr, threshold);
+  int ans = shipPackages(arr, days);
   cout << ans << "\n";
 
-  int ans2 = smallestDivisor2(arr, threshold);
+  int ans2 = shipPackages2(arr, days);
   cout << ans2;
   
   return 0;
