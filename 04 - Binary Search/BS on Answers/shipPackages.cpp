@@ -12,8 +12,8 @@ int sumOfN(vector<int> &arr) {
     return sum;
 }
 
-int shipPackages(vector<int> &arr, int threshold) {
-    
+int shipPackages(vector<int> &arr, int days) {
+    in
 }
 
 int main() {
