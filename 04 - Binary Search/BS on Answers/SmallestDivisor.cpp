@@ -50,7 +50,7 @@ int smallestDivisor2(vector<int> &arr, int threshold) {
         }
         else low = mid + 1;
     }
-    return -1;
+    return low;
 }
 
 int main() {
