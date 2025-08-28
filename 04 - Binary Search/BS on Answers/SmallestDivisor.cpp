@@ -3,8 +3,16 @@
 using namespace std;
 
 //Brute Force
+int findDivisor(vector<int> &arr, int n) {
+    
+
+}
+
 int smallestDivisor(vector<int> &arr, int threshold) {
     int n = arr.size();
+    for(int i = 1; i <= threshold; i++) {
+        findDivisor(arr, n);
+    }
 }
 
 int main() {
