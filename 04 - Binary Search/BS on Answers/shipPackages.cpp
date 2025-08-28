@@ -29,8 +29,8 @@ int shipPackages(vector<int> &arr, int days) {
     int n = arr.size();
     int arraySum = findArraySum(arr);
     for(int i = 1; i <= arraySum; i++) {
-        bool x = func(arr, i);
-        if(x == true) {
+        bool allShipped = func(arr, i);
+        if(allShipped == true) {
            return i;
         }
     }
