@@ -17,7 +17,8 @@ int findMaxi(vector<int> &arr) {
 int findDivisorSum(vector<int> &arr, int n, int d) {
     int sum = 0;
     for(int i = 0; i < n; i++) {
-        sum += (arr[i] + d - 1) / d;
+        // sum += (arr[i] + d - 1) / d; //fast
+        sum += ceil((double)arr[i] / d); //slow
     }
     return sum;
 }
