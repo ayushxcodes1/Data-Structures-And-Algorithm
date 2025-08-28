@@ -6,7 +6,7 @@ using namespace std;
 int findDivisorSum(vector<int> &arr, int n, int d) {
     int sum = 0;
     for(int i = 0; i < n; i++) {
-        sum += ceil(arr[i] / d);
+        sum += ceil((double)arr[i] / d);
     }
     return sum;
 }
