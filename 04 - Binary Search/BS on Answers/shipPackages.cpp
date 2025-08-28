@@ -23,7 +23,6 @@ int findArraySum(vector<int> &arr) {
     return sum;
 }
 
-
 bool func(vector<int> &arr, int capacity) {
     int n = arr.size();
     int sum = 0;
