@@ -19,17 +19,24 @@ int smallestDivisor(vector<int> &arr, int threshold) {
            return i;
         }
     }
+    return -1;
 }
 
 //Optimal
 int smallestDivisor2(vector<int> &arr, int threshold) {
     int n = arr.size();
+    int ans = -1;
     int low = 1, high = threshold;
     while(low <= high) {
         int mid = low + (high - low) / 2;
-        int sum = findDivisorSum(arr, n, mid);
-
+        int divisorSum = findDivisorSum(arr, n, mid);
+        
+        if(divisorSum <= threshold) {
+           return mid;
+        }
+        else low = mid + 1;
     }
+    return -1;
 }
 
 int main() {
