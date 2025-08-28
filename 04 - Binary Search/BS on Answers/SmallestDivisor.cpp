@@ -3,6 +3,17 @@
 using namespace std;
 
 //Brute Force - Tc(threshold * N)
+int findMaxi(vector<int> &arr) {
+    int n = arr.size();
+    int maxi = INT_MIN;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] > maxi) {
+           maxi = arr[i];
+        }
+    }
+    return maxi;
+}
+
 int findDivisorSum(vector<int> &arr, int n, int d) {
     int sum = 0;
     for(int i = 0; i < n; i++) {
@@ -13,7 +24,9 @@ int findDivisorSum(vector<int> &arr, int n, int d) {
 
 int smallestDivisor(vector<int> &arr, int threshold) {
     int n = arr.size();
-    for(int i = 1; i <= threshold; i++) {
+    int maxi = findMaxi(arr);
+
+    for(int i = 1; i <= maxi; i++) {
         int sum = findDivisorSum(arr, n, i);
         if(sum <= threshold) {
            return i;
@@ -26,7 +39,8 @@ int smallestDivisor(vector<int> &arr, int threshold) {
 int smallestDivisor2(vector<int> &arr, int threshold) {
     int n = arr.size();
     int ans = -1;
-    int low = 1, high = threshold;
+    int maxi = findMaxi(arr);
+    int low = 1, high = maxi;
     while(low <= high) {
         int mid = low + (high - low) / 2;
         int divisorSum = findDivisorSum(arr, n, mid);
