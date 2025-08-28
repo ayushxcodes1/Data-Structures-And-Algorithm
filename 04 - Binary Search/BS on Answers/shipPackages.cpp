@@ -23,23 +23,21 @@ int findArraySum(vector<int> &arr) {
     return sum;
 }
 
-bool func(vector<int> &arr, int capacity) {
+int func(vector<int> &arr, int capacity) {
     int n = arr.size();
     int sum = 0;
     int days = 0;
-    int rem = 0;
     for(int i = 0; i < n; i++) {
         sum += arr[i];
-        if(sum == capacity) {
+        if(sum + arr[i] > capacity) {
             days++;
             sum = 0;
-            sum += rem;
         }
-        else if(sum > capacity) {
-            rem += (sum % capacity);
-            day++;
+        else {
+           sum += arr[i];
         }
     }
+    return days;
 }
 
 int shipPackages(vector<int> &arr, int days) {
