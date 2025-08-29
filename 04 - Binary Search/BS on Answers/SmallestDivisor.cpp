@@ -32,7 +32,7 @@ int smallestDivisor2(vector<int> &arr, int threshold) {
     int low = 1, high = maxi;
     while(low <= high) {
         int mid = low + (high - low) / 2;
-        int divisorSum = findDivisorSum(arr, n, mid);
+        int divisorSum = findDivisorSum(arr, mid);
         
         if(divisorSum <= threshold) {
            high = mid - 1;
