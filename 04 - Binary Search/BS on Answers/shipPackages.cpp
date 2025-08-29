@@ -75,6 +75,9 @@ int main() {
 
   int ans = shipPackages(arr, days);
   cout << ans << "\n";
+
+  int ans2 = shipPackages2(arr, days);
+  cout << ans2;
   
   return 0;
 }
