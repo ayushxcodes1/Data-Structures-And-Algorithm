@@ -13,7 +13,7 @@ int findKthMissing(vector<int> &arr, int k) {
 }
 
 //Optimal - TC: O(logN), SC: O(1)
-int findKthMissing(vector<int> &arr, int k) {
+int findKthMissing2(vector<int> &arr, int k) {
     int n = arr.size();
     int low = 1, high = n - 1;
     while(low <= high) {
@@ -32,5 +32,9 @@ int main() {
   int k = 5;
 
   int ans = findKthMissing(arr, k);
+  cout << "Missing Number is " << ans << "\n";
+
+  int ans2 = findKthMissing2(arr, k);
+  cout << "Missing Number is " << ans2;
   return 0;
 }
