@@ -3,7 +3,8 @@
 using namespace std;
 
 //Brute Force - TC: O(max * N)
-int findDivisorSum(vector<int> &arr, int n, int d) {
+int findDivisorSum(vector<int> &arr, int d) {
+    int n = arr.size();
     int sum = 0;
     for(int i = 0; i < n; i++) {
         // sum += (arr[i] + d - 1) / d; //fast
@@ -16,7 +17,7 @@ int smallestDivisor(vector<int> &arr, int threshold) {
     int n = arr.size();
     int maxi = *max_element(arr.begin(), arr.end());;
     for(int i = 1; i <= maxi; i++) {
-        int divisorSum = findDivisorSum(arr, n, i);
+        int divisorSum = findDivisorSum(arr, i);
         if(divisorSum <= threshold) {
            return i;
         }
