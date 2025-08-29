@@ -41,10 +41,10 @@ int computeDaysReq(vector<int> &arr, int capacity) {
 
 int shipPackages(vector<int> &arr, int days) {
     int n = arr.size();
-    int maxi = findMax(arr); //O(N)
-    int arraySum = findArraySum(arr); //O(N)
-    for(int i = maxi; i <= arraySum; i++) { //O(sum - max)
-        int daysReq = computeDaysReq(arr, i); //O(N)
+    int maxi = findMax(arr); 
+    int arraySum = findArraySum(arr); 
+    for(int i = maxi; i <= arraySum; i++) { 
+        int daysReq = computeDaysReq(arr, i); 
         if(daysReq <= days) {
            return i;
         }
