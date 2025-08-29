@@ -30,7 +30,6 @@ int computeDaysReq(vector<int> &arr, int capacity) {
     for(int i = 0; i < n; i++) {
         if(sum + arr[i] > capacity) {
             days++;
-            sum = 0;
             sum = arr[i];
         }
         else {
