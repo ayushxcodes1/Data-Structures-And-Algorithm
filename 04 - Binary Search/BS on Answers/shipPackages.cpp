@@ -3,26 +3,6 @@
 using namespace std;
 
 //Brute Force - TC: O((sum - max + 1) * N)
-int findMax(vector<int> &arr) {
-    int n = arr.size();
-    int maxi = INT_MIN;
-    for(int i = 0; i < n; i++) {
-        if(arr[i] > maxi) {
-           maxi = arr[i];
-        }
-    }
-    return maxi;
-}
-
-int findArraySum(vector<int> &arr) {
-    int n = arr.size();
-    int sum = 0;
-    for(int i = 0; i < n; i++) {
-        sum += arr[i];
-    }
-    return sum;
-}
-
 int computeDaysReq(vector<int> &arr, int capacity) {
     int n = arr.size();
     int load = 0;
@@ -41,8 +21,8 @@ int computeDaysReq(vector<int> &arr, int capacity) {
 
 int shipPackages(vector<int> &arr, int days) {
     int n = arr.size();
-    int maxi = findMax(arr); 
-    int arraySum = findArraySum(arr); 
+        int maxi = *max_element(arr.begin(), arr.end());
+        int arraySum = accumulate(arr.begin(), arr.end(), 0);
     for(int i = maxi; i <= arraySum; i++) { 
         int daysReq = computeDaysReq(arr, i); 
         if(daysReq <= days) {
