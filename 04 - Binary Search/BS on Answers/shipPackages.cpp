@@ -57,8 +57,16 @@ int shipPackages2(vector<int> &arr, int days) {
     int arraySum = findArraySum(arr); 
     int low = maxi, high = arraySum;
     while(low <= high) {
-        
+        int mid = low + (high - low) / 2;
+        int daysReq = computeDaysReq(arr, mid);
+        if(daysReq <= days) {
+           high = mid - 1;
+        }
+        else {
+           low = mid + 1;
+        }
     }
+    return low;
 }
 
 int main() {
