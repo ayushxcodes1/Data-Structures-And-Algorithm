@@ -33,8 +33,8 @@ int shipPackages(vector<int> &arr, int days) {
 
 int shipPackages2(vector<int> &arr, int days) {
     int n = arr.size();
-    int maxi = findMax(arr); 
-    int arraySum = findArraySum(arr); 
+    int maxi = *max_element(arr.begin(), arr.end());
+    int arraySum = accumulate(arr.begin(), arr.end(), 0); 
     int low = maxi, high = arraySum;
     while(low <= high) {
         int mid = low + (high - low) / 2;
