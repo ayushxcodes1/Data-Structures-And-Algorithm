@@ -31,6 +31,7 @@ int shipPackages(vector<int> &arr, int days) {
     }
 }
 
+//Optimal - TC: O(log(sum - max + 1) * N)
 int shipPackages2(vector<int> &arr, int days) {
     int n = arr.size();
     int maxi = *max_element(arr.begin(), arr.end());
