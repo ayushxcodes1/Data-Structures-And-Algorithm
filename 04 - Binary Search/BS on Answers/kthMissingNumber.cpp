@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(N), SC: O(1)
 int findKthMissing(vector<int> &arr, int k) {
     int n = arr.size();
     for(int i = 0; i < n; i++) {
