@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O((sum - max) * N)
+//Brute Force - TC: O((sum - max + 1) * N)
 int findMax(vector<int> &arr) {
     int n = arr.size();
     int maxi = INT_MIN;
