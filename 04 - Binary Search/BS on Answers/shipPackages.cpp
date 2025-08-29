@@ -42,9 +42,7 @@ int shipPackages2(vector<int> &arr, int days) {
         if(daysReq <= days) {
            high = mid - 1;
         }
-        else {
-           low = mid + 1;
-        }
+        else low = mid + 1;
     }
     return low;
 }
