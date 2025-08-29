@@ -51,6 +51,18 @@ int shipPackages(vector<int> &arr, int days) {
     }
 }
 
+int shipPackages2(vector<int> &arr, int days) {
+    int n = arr.size();
+    int maxi = findMax(arr); 
+    int arraySum = findArraySum(arr); 
+    for(int i = maxi; i <= arraySum; i++) { 
+        int daysReq = computeDaysReq(arr, i); 
+        if(daysReq <= days) {
+           return i;
+        }
+    }
+}
+
 int main() {
   vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   int days = 5;
