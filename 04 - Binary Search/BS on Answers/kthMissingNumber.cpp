@@ -9,6 +9,7 @@ int findKthMissing(vector<int> &arr, int k) {
         if(arr[i] <= k) k++;
         else break;
     }
+    return k;
 }
 
 //Optimal - TC: O(logN), SC: O(1)
