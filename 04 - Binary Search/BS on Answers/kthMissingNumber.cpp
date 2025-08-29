@@ -11,6 +11,15 @@ int findKthMissing(vector<int> &arr, int k) {
     }
 }
 
+//Optimal - TC: O(logN), SC: O(1)
+int findKthMissing(vector<int> &arr, int k) {
+    int n = arr.size();
+    for(int i = 0; i < n; i++) {
+        if(arr[i] <= k) k++;
+        else break;
+    }
+}
+
 int main() {
   vector<int> arr = {2, 3, 4, 7, 11};
   int k = 5;
