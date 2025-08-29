@@ -21,8 +21,8 @@ int computeDaysReq(vector<int> &arr, int capacity) {
 
 int shipPackages(vector<int> &arr, int days) {
     int maxi = *max_element(arr.begin(), arr.end());
-    int arraySum = accumulate(arr.begin(), arr.end(), 0);
-    for(int i = maxi; i <= arraySum; i++) { 
+    int sum = accumulate(arr.begin(), arr.end(), 0);
+    for(int i = maxi; i <= sum; i++) { 
         int daysReq = computeDaysReq(arr, i); 
         if(daysReq <= days) {
            return i;
@@ -34,8 +34,8 @@ int shipPackages(vector<int> &arr, int days) {
 int shipPackages2(vector<int> &arr, int days) {
     int n = arr.size();
     int maxi = *max_element(arr.begin(), arr.end());
-    int arraySum = accumulate(arr.begin(), arr.end(), 0); 
-    int low = maxi, high = arraySum;
+    int sum = accumulate(arr.begin(), arr.end(), 0); 
+    int low = maxi, high = sum;
     while(low <= high) {
         int mid = low + (high - low) / 2;
         int daysReq = computeDaysReq(arr, mid);
