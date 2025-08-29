@@ -16,8 +16,8 @@ int smallestDivisor(vector<int> &arr, int threshold) {
     int n = arr.size();
     int maxi = *max_element(arr.begin(), arr.end());;
     for(int i = 1; i <= maxi; i++) {
-        int sum = findDivisorSum(arr, n, i);
-        if(sum <= threshold) {
+        int divisorSum = findDivisorSum(arr, n, i);
+        if(divisorSum <= threshold) {
            return i;
         }
     }
