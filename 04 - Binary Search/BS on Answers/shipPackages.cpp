@@ -23,7 +23,7 @@ int findArraySum(vector<int> &arr) {
     return sum;
 }
 
-int func(vector<int> &arr, int capacity) {
+int computeDaysReq(vector<int> &arr, int capacity) {
     int n = arr.size();
     int sum = 0;
     int days = 0;
@@ -44,7 +44,7 @@ int shipPackages(vector<int> &arr, int days) {
     int maxi = findMax(arr);
     int arraySum = findArraySum(arr);
     for(int i = maxi; i <= arraySum; i++) {
-        int daysReq = func(arr, i);
+        int daysReq = computeDaysReq(arr, i);
         if(daysReq <= days) {
            return i;
         }
