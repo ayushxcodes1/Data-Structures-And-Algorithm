@@ -53,7 +53,7 @@ int allocateMinimumPages2(vector<int> &arr, int k) {
       low = mid + 1;
     }
   }
-  return high;
+  return low;
 }
 
 int main() {
