@@ -12,7 +12,9 @@ int findPages(vector<int> &arr, int pages, int k) {
       last = arr[i];
       totalPages = 0;
     }
-    if(cntStu >= k) return true;
+    else {
+      totalPages += arr[i];
+    }
   }
   return false;
 }
