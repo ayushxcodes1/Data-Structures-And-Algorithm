@@ -5,14 +5,14 @@ using namespace std;
 int findPages(vector<int> &arr, int pages) {
   int n = arr.size();
   int cntStu = 1;
-  int totalPages = arr[0];
-  for(int i = 1; i < n; i++) {
-    if(totalPages >= pages) {
-      cntStu++;
-      totalPages = 0;
+  int totalPages = 0;
+  for(int i = 0; i < n; i++) {
+    if(totalPages + arr[i] <= pages) {
+      totalPages += arr[i];
     }
     else {
-      totalPages += arr[i];
+      cntStu++;
+      totalPages = 0;
     }
   }
   return cntStu;
