@@ -4,8 +4,16 @@ using namespace std;
 
 bool canWePlace(vector<int> &stalls, int dist, int k) {
     int n = stalls.size();
-    
-
+    int cntCows = 1;
+    int last = stalls[0];
+    for(int i = 1; i < n; i++) {
+        if(stalls[i] - last >= dist) {
+           cntCows++;
+           last = stalls[i];
+        }
+    }
+    if(cntCows >= k) return true;
+    else return false;
 }
 
 int aggressiveCows(vector<int> &stalls, int k) {
