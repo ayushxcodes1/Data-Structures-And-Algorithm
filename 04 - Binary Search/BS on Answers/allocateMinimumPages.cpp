@@ -23,9 +23,9 @@ int allocateMinimumPages(vector<int> &arr, int k) {
   int n = arr.size();
   if(k > n) return -1;
   
-  int max = *max_element(arr.begin(), arr.end());
+  int maxi = *max_element(arr.begin(), arr.end());
   int sum = accumulate(arr.begin(), arr.end(), 0);
-  for(int i = max; i <= sum; i++) {
+  for(int i = maxi; i <= sum; i++) {
     int cntStu = countStudents(arr, i);
     
     if(cntStu == k) { 
@@ -40,10 +40,10 @@ int allocateMinimumPages2(vector<int> &arr, int k) {
   int n = arr.size();
   if(k > n) return -1;
   
-  int max = *max_element(arr.begin(), arr.end());
+  int maxi = *max_element(arr.begin(), arr.end());
   int sum = accumulate(arr.begin(), arr.end(), 0);
 
-  int low = max, high = sum;
+  int low = maxi, high = sum;
   while(low <= high) {
     int mid = low + (high - low) / 2;
     int cntStu = countStudents(arr, mid);
