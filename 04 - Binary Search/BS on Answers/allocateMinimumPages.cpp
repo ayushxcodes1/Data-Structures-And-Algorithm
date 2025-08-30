@@ -28,7 +28,7 @@ int allocateMinimumPages(vector<int> &arr, int k) {
   for(int i = max; i <= sum; i++) {
     int cntStu = countStudents(arr, i);
     
-    if(cntStu == k) {
+    if(cntStu == k) { 
       return i;
     }
   } 
