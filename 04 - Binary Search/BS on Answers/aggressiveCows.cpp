@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O((max - min) * N) - Greedy Approach
+//Brute Force - TC: O(NlogN + (max - min) * N) - Greedy Approach
 bool canWePlace(vector<int> &stalls, int dist, int k) {
     int n = stalls.size();
     int cntCows = 1;
@@ -30,7 +30,7 @@ int aggressiveCows(vector<int> &stalls, int k) {
     return limit;
 }
 
-//Optimal - TC: O(NlogN + N * (max - min))
+//Optimal - TC: O(NlogN + (max - min) * N)
 int aggressiveCows2(vector<int> &stalls, int k) {
     sort(stalls.begin(), stalls.end());
 
