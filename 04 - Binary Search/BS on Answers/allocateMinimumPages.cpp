@@ -4,7 +4,8 @@ using namespace std;
 
 int allocateMinimumPages(vector<int> &arr, int k) {
   int n = arr.size();
-  int limit
+  int max = *max_element(arr.begin(), arr.end());
+  int sum = accumulate(arr.begin(), arr.end(), 0);
   
 }
 
