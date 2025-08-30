@@ -34,7 +34,6 @@ int aggressiveCows(vector<int> &stalls, int k) {
 int aggressiveCows2(vector<int> &stalls, int k) {
     sort(stalls.begin(), stalls.end());
 
-    int n = stalls.size();
     int limit = stalls[n - 1] - stalls[0];
     int low = 1, high = limit;
     while(low <= high) {
