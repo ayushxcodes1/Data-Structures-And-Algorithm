@@ -48,12 +48,10 @@ int allocateMinimumPages2(vector<int> &arr, int k) {
     int mid = low + (high - low) / 2;
     int cntStu = countStudents(arr, mid);
 
-    if(cntStu == k) {
-      high = mid - 1;
-    }
-    else {
+    if(cntStu > k) {
       low = mid + 1;
     }
+    else high = mid - 1;
   }
   return low;
 }
