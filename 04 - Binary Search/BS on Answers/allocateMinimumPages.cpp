@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int findPages(vector<int> &arr, int pages, int k) {
+int findPages(vector<int> &arr, int pages) {
   int n = arr.size();
   int cntStu = 1;
   int totalPages = arr[0];
