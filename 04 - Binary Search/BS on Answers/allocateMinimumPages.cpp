@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int allocateBooks(vector<int> &arr, int k) {
+int allocateMinimumPages(vector<int> &arr, int k) {
   int n = arr.size();
   int limit
   
@@ -12,7 +12,7 @@ int main() {
   vector<int> arr = {12, 34, 67, 90};
   int k = 2;
   
-  int ans = allocateBooks(arr, k);
+  int ans = allocateMinimumPages(arr, k);
   cout << ans << "\n";
   return 0;
 }
