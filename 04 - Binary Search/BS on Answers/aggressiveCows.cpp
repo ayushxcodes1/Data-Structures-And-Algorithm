@@ -52,6 +52,9 @@ int main() {
   int k = 4;
 
   int ans = aggressiveCows(stalls, k);
+  cout << ans << "\n";
+
+  int ans = aggressiveCows(stalls, k);
   cout << ans;
   return 0;
 }
