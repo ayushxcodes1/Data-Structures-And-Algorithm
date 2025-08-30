@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force - TC: O((sum - max + 1) * N)
-int findPages(vector<int> &arr, int pages) {
+int countStudents(vector<int> &arr, int pages) {
   int n = arr.size();
   int cntStu = 1;
   int totalPages = 0;
@@ -25,8 +25,9 @@ int allocateMinimumPages(vector<int> &arr, int k) {
   
   int max = *max_element(arr.begin(), arr.end());
   int sum = accumulate(arr.begin(), arr.end(), 0);
+  int cntStu = countStudents(arr, mid);
   for(int i = max; i <= sum; i++) {
-    if(findPages(arr, i) == k) {
+    if(cntStu == k) {
       return i;
     }
   } 
@@ -44,7 +45,7 @@ int allocateMinimumPages2(vector<int> &arr, int k) {
   int low = max, high = sum;
   while(low <= high) {
     int mid = low + (high - low) / 2;
-    int cntStu = findPages(arr, mid);
+    int cntStu = countStudents(arr, mid);
 
     if(cntStu == k) {
       high = mid - 1;
