@@ -2,12 +2,9 @@
 
 using namespace std;
 
-int findPages(vector<int> &arr, int k) {
-    
-}
-
 int allocateBooks(vector<int> &arr, int k) {
-  
+  int n = arr.size();
+ 
 }
 
 int main() {
