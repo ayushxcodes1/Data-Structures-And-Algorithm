@@ -50,9 +50,9 @@ int allocateMinimumPages(vector<int> &arr, int k) {
       return mid;
     }
     else if(cntStu > k) {
-      high = mid - 1;
+      low = mid + 1;
     }
-    else low = mid + 1;
+    else high = mid - 1;
   }
 }
 
