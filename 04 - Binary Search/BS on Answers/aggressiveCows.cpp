@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O((max - min) * N)
+//Brute Force - TC: O((max - min) * N) - Greedy Approach
 bool canWePlace(vector<int> &stalls, int dist, int k) {
     int n = stalls.size();
     int cntCows = 1;

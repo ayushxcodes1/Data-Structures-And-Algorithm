@@ -4,7 +4,8 @@ using namespace std;
 
 int allocateBooks(vector<int> &arr, int k) {
   int n = arr.size();
- 
+  int limit
+  
 }
 
 int main() {
