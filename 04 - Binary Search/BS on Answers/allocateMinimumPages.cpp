@@ -44,7 +44,12 @@ int allocateMinimumPages(vector<int> &arr, int k) {
   int low = max, high = sum;
   while(low <= high) {
     int mid = low + (high - low) / 2;
-    if(findPages(arr, mid) == k) {
+    int cntStu = findPages(arr, mid);
+
+    if(cntStu == k) {
+      return mid;
+    }
+    else if(cntStu > k) {
       high = mid - 1;
     }
     else low = mid + 1;
