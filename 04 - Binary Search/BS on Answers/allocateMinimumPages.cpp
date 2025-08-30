@@ -15,7 +15,7 @@ int findPages(vector<int> &arr, int pages, int k) {
       totalPages += arr[i];
     }
   }
-  return false;
+  return cntStu;
 }
 
 int allocateMinimumPages(vector<int> &arr, int k) {
