@@ -2,8 +2,19 @@
 
 using namespace std;
 
-int findPages(vector<int> &arr, int i, int k) {
-
+int findPages(vector<int> &arr, int pages, int k) {
+  int n = arr.size();
+  int stu = 1, last = arr[0];
+  int totalPages = arr[0];
+  for(int i = 1; i < n; i++) {
+    if(totalPages >= pages) {
+      stu++;
+      last = arr[i];
+      totalPages = 0;
+    }
+    if(stu >= k) return true;
+  }
+  return false;
 }
 
 int allocateMinimumPages(vector<int> &arr, int k) {
