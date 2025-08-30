@@ -12,8 +12,8 @@ bool canWePlace(vector<int> &stalls, int dist, int k) {
            cntCows++;
            last = stalls[i];
         }
+        if(cntCows >= k) return true;
     }
-    if(cntCows >= k) return true;
     else return false;
 }
 
