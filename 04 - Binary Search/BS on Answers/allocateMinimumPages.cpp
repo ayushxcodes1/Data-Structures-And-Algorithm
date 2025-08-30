@@ -40,12 +40,12 @@ int allocateMinimumPages(vector<int> &arr, int k) {
   
   int max = *max_element(arr.begin(), arr.end());
   int sum = accumulate(arr.begin(), arr.end(), 0);
-  for(int i = max; i <= sum; i++) {
-    if(findPages(arr, i) == k) {
-      return i;
-    }
-  } 
-  return -1;
+
+  int low = max, high = sum;
+  while(low <= high) {
+    int mid = low + (high - low) / 2;
+    
+  }
 }
 
 int main() {
