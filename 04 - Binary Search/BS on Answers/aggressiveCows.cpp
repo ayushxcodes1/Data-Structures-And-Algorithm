@@ -30,7 +30,7 @@ int aggressiveCows(vector<int> &stalls, int k) {
     return limit;
 }
 
-//Optimal 
+//Optimal - TC: O(NlogN + N * (max - min))
 int aggressiveCows2(vector<int> &stalls, int k) {
     sort(stalls.begin(), stalls.end());
 
