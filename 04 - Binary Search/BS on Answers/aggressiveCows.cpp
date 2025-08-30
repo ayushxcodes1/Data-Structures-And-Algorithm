@@ -44,7 +44,7 @@ int aggressiveCows2(vector<int> &stalls, int k) {
         }
         else low = mid + 1;
     }
-    return low;
+    return high;
 }
 
 int main() {
