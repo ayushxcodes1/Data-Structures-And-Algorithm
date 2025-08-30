@@ -54,7 +54,7 @@ int main() {
   int ans = aggressiveCows(stalls, k);
   cout << ans << "\n";
 
-  int ans = aggressiveCows(stalls, k);
-  cout << ans;
+  int ans2 = aggressiveCows2(stalls, k);
+  cout << ans2;
   return 0;
 }
