@@ -34,7 +34,7 @@ int allocateMinimumPages(vector<int> &arr, int k) {
 }
 
 //Optimal - TC: O(log(sum - max + 1) * N)
-int allocateMinimumPages(vector<int> &arr, int k) {
+int allocateMinimumPages2(vector<int> &arr, int k) {
   int n = arr.size();
   if(k > n) return -1;
   
@@ -62,5 +62,8 @@ int main() {
   
   int ans = allocateMinimumPages(arr, k);
   cout << ans << "\n";
+
+  int ans2 = allocateMinimumPages2(arr, k);
+  cout << ans2 << "\n";
   return 0;
 }
