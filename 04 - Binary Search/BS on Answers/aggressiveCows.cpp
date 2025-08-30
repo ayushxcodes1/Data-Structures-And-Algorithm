@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O((max - min) * N)
 bool canWePlace(vector<int> &stalls, int dist, int k) {
     int n = stalls.size();
     int cntCows = 1;
