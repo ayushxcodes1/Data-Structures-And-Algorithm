@@ -21,7 +21,7 @@ int countStudents(vector<int> &arr, int pages) {
 
 int allocateMinimumPages(vector<int> &arr, int k) {
   int n = arr.size();
-  if(k > n) return -1;
+  if(k > n) return -1; //impossible case
   
   int maxi = *max_element(arr.begin(), arr.end());
   int sum = accumulate(arr.begin(), arr.end(), 0);
@@ -38,7 +38,7 @@ int allocateMinimumPages(vector<int> &arr, int k) {
 //Optimal - TC: O(log(sum - max + 1) * N)
 int allocateMinimumPages2(vector<int> &arr, int k) {
   int n = arr.size();
-  if(k > n) return -1;
+  if(k > n) return -1; //impossible case
   
   int maxi = *max_element(arr.begin(), arr.end());
   int sum = accumulate(arr.begin(), arr.end(), 0);
