@@ -26,7 +26,7 @@ int allocateMinimumPages(vector<int> &arr, int k) {
   int sum = accumulate(arr.begin(), arr.end(), 0);
   for(int i = max; i <= sum; i++) {
     if(findPages(arr, i) == k) {
-      return (i);
+      return i;
     }
   } 
   return -1;
