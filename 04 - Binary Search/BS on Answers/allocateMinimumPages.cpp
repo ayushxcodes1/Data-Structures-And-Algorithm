@@ -3,7 +3,7 @@
 using namespace std;
 
 int findPages(vector<int> &arr, int i, int k) {
-  
+
 }
 
 int allocateMinimumPages(vector<int> &arr, int k) {
@@ -11,8 +11,11 @@ int allocateMinimumPages(vector<int> &arr, int k) {
   int max = *max_element(arr.begin(), arr.end());
   int sum = accumulate(arr.begin(), arr.end(), 0);
   for(int i = max; i <= sum; i++) {
-  
+    if(findPages(arr, i, k) == false) {
+      return (i - 1);
+    }
   } 
+  return -1;
 }
 
 int main() {
