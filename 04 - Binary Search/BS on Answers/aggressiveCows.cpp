@@ -14,7 +14,7 @@ bool canWePlace(vector<int> &stalls, int dist, int k) {
         }
         if(cntCows >= k) return true;
     }
-    else return false;
+    return false;
 }
 
 int aggressiveCows(vector<int> &stalls, int k) {
