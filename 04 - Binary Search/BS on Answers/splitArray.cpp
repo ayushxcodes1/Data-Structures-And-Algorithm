@@ -3,11 +3,11 @@
 using namespace std;
 
 int splitArray(vector<int> &arr, int k) {
-    
+    sort(arr.begin(), arr.end());
 }
 
 int main() {
-  vector<int> arr = {2, 5, 7, 8, 10};
+  vector<int> arr = {7, 2, 5, 10, 8};
   int k = 2;
 
   int ans = splitArray(arr, k);
