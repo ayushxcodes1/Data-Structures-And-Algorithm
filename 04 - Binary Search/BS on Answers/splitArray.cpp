@@ -4,6 +4,10 @@ using namespace std;
 
 int splitArray(vector<int> &arr, int k) {
     sort(arr.begin(), arr.end());
+
+    int n = arr.size();
+    int partition = ceil((double)n / k);
+
 }
 
 int main() {
