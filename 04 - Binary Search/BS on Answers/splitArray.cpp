@@ -54,13 +54,13 @@ int findPages2(vector<int> &arr, int n, int k) {
 
 //Brute Force - TC: O((sum - max + 1) * N)
 int splitArray(vector<int> &arr, int k) {
-    return findPages(arr, arr.size(), k);
+  return findPages(arr, arr.size(), k);
 }
 
 
 //Optimal - TC: O(log(sum - max + 1) * N)
 int splitArray2(vector<int> &arr, int k) {
-    return findPages2(arr, arr.size(), k);
+  return findPages2(arr, arr.size(), k);
 }
 
 int main() {
