@@ -2,7 +2,6 @@
 
 using namespace std;
 
-//Brute Force - TC: O((Maxi - Mini + 1) * N)
 int findMini(vector<int> &arr) {
     int n = arr.size();
     int mini = INT_MAX;
