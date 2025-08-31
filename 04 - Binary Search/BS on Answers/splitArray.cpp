@@ -17,6 +17,7 @@ int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
            cnt = 0; 
         }
     }
+    maxSum = max(sum, maxSum);
     return maxSum;
 }
 
