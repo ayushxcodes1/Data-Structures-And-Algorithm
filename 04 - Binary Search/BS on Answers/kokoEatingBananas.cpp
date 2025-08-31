@@ -2,7 +2,6 @@
 
 using namespace std;
 
-//Brute Force - TC: O(M * N) - M is the maximum element in the array
 int findMax(vector<int> &arr) {
     int n = arr.size();
     int maxi = arr[0];
@@ -24,6 +23,7 @@ int computeTotalHrs(vector<int> &arr, int hourly) {
     return totalH;
 }
 
+//Brute Force - TC: O(M * N) - M is the maximum element in the array
 int minEatingSpeed(vector<int> &arr, int h) {
     int maxi = findMax(arr);
     for(int i = 1; i <= maxi; i++) {
