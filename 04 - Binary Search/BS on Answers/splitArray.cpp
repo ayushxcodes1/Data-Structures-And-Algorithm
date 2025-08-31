@@ -6,7 +6,7 @@ int splitArray(vector<int> &arr, int k) {
     sort(arr.begin(), arr.end());
 
     int n = arr.size();
-    int partition = ceil((double)n / k);
+    int NoOfElements = ceil((double)n / k);
 
 }
 
