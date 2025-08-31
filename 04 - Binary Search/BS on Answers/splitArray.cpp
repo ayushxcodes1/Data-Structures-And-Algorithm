@@ -2,7 +2,6 @@
 
 using namespace std;
 
-//Brute Force - TC: O((sum - max + 1) * N)
 int countStudents(vector<int> &arr, int pages) {
   int n = arr.size();
   int cntStu = 1;
@@ -53,10 +52,13 @@ int findPages2(vector<int> &arr, int n, int k) {
   return low;
 }
 
+//Brute Force - TC: O((sum - max + 1) * N)
 int splitArray(vector<int> &arr, int k) {
     return findPages(arr, arr.size(), k);
 }
 
+
+//Optimal - TC: O(log(sum - max + 1) * N)
 int splitArray2(vector<int> &arr, int k) {
     return findPages2(arr, arr.size(), k);
 }
