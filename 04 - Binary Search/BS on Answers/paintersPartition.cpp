@@ -18,11 +18,10 @@ for(int i = 0; i < n; i++) {
 return cntStu;
 }
 
-//Brute Force - TC: O((sum - max + 1) * N)
 int findPages(vector<int> &arr, int n, int k) {
-if(k > n) return -1; //impossible case
-
-int maxi = *max_element(arr.begin(), arr.end());
+    if(k > n) return -1; //impossible case
+    
+    int maxi = *max_element(arr.begin(), arr.end());
 int sum = accumulate(arr.begin(), arr.end(), 0);
 for(int i = maxi; i <= sum; i++) {
     int cntStu = countStudents(arr, i);
@@ -34,30 +33,31 @@ for(int i = maxi; i <= sum; i++) {
 return -1;
 }
 
-//Optimal - TC: O(log(sum - max + 1) * N)
 int findPages2(vector<int> &arr, int n, int k) {
-if(k > n) return -1; //impossible case
-
-int maxi = *max_element(arr.begin(), arr.end());
-int sum = accumulate(arr.begin(), arr.end(), 0);
+    if(k > n) return -1; //impossible case
+    
+    int maxi = *max_element(arr.begin(), arr.end());
+    int sum = accumulate(arr.begin(), arr.end(), 0);
 
 int low = maxi, high = sum;
 while(low <= high) {
     int mid = low + (high - low) / 2;
     int cntStu = countStudents(arr, mid);
-
+    
     if(cntStu > k) {
-    low = mid + 1;
+        low = mid + 1;
     }
     else high = mid - 1;
 }
 return low;
 }
 
+//Brute Force - TC: O((sum - max + 1) * N)
 int minTime(vector<int>& arr, int k) {
     return findPages(arr, arr.size(), k);
 }
 
+//Optimal - TC: O(log(sum - max + 1) * N)
 int minTime2(vector<int>& arr, int k) {
     return findPages(arr, arr.size(), k);
 }
