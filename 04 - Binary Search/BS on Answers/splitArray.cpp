@@ -25,8 +25,8 @@ int splitArray(vector<int> &arr, int k) {
 
     int n = arr.size();
     int NoOfEle = ceil((double)n / k);
-    int MaxSum = findMaxSum(arr, k, NoOfEle);
-  
+    int maxSum = findMaxSum(arr, k, NoOfEle);
+    
 }
 
 int main() {
