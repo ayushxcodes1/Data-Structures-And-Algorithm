@@ -66,6 +66,9 @@ int main() {
   int k = 2;
 
   int ans = splitArray(arr, k);
-  cout << ans;
+  cout << ans << "\n";
+
+  int ans2 = splitArray2(arr, k);
+  cout << ans2;
   return 0;
 }
