@@ -6,9 +6,17 @@ int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
     int n = arr.size();
     int maxSum = INT_MIN;
     int partition = 0;
-    int sum = 0;  
+    int sum = 0, cnt = 0;
     for(int i = 0; i < n; i++) {
-        sum 
+        if(cnt != NoOfELe) {
+           sum += arr[i];
+        }
+        else {
+           maxSum = max(sum, maxSum);
+           sum = 0;
+           cnt = 0; 
+        }
+        cnt++;
     }
 }
 
