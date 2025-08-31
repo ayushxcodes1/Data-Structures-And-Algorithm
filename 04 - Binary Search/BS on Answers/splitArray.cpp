@@ -10,13 +10,12 @@ int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
         if(cnt != NoOfELe) {
            cnt++;
            sum += arr[i];
+           maxSum = max(sum, maxSum);
         }
         else {
-           maxSum = max(sum, maxSum);
            sum = 0;
            cnt = 0; 
         }
-        maxSum = max(sum, maxSum); 
     }
     return maxSum;
 }
