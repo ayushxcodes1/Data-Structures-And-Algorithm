@@ -7,16 +7,23 @@ int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
     int maxSum = INT_MIN;
     int sum = 0, cnt = 0;
     for(int i = 0; i < n; i++) {
-        if(cnt != NoOfELe) {
-           cnt++;
-           sum += arr[i];
-        }
-        else {
+        cnt++;
+        sum += arr[i];
+        cout << "sum: " << sum << "cnt: " << cnt << '\n'; 
+        
+        if(cnt == NoOfELe){
            maxSum = max(sum, maxSum);
            sum = 0;
            cnt = 0; 
+           cout << "sum: " << sum << "cnt: " << cnt << "maxSum: " << maxSum << '\n'; 
         }
+
     }
+
+    if(cnt > 0) {
+       maxSum = max(sum, maxSum);
+    }
+
     return maxSum;
 }
 
