@@ -34,8 +34,31 @@ int findPages(vector<int> &arr, int n, int k) {
   return -1;
 }
 
+int findPages2(vector<int> &arr, int n, int k) {
+  if(k > n) return -1; //impossible case
+  
+  int maxi = *max_element(arr.begin(), arr.end());
+  int sum = accumulate(arr.begin(), arr.end(), 0);
+
+  int low = maxi, high = sum;
+  while(low <= high) {
+    int mid = low + (high - low) / 2;
+    int cntStu = countStudents(arr, mid);
+
+    if(cntStu > k) {
+      low = mid + 1;
+    }
+    else high = mid - 1;
+  }
+  return low;
+}
+
 int splitArray(vector<int> &arr, int k) {
     return findPages(arr, arr.size(), k);
+}
+
+int splitArray2(vector<int> &arr, int k) {
+    return findPages2(arr, arr.size(), k);
 }
 
 int main() {
