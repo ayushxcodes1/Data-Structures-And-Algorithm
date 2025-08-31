@@ -17,6 +17,7 @@ int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
            cnt = 0; 
         }
     }
+    return maxSum;
 }
 
 int splitArray(vector<int> &arr, int k) {
