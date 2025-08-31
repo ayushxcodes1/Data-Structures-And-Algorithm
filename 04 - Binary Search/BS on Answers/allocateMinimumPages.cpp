@@ -19,7 +19,7 @@ int countStudents(vector<int> &arr, int pages) {
   return cntStu;
 }
 
-int allocateMinimumPages(vector<int> &arr, int k) {
+int findPages(vector<int> &arr, int k) {
   int n = arr.size();
   if(k > n) return -1; //impossible case
   
@@ -36,7 +36,7 @@ int allocateMinimumPages(vector<int> &arr, int k) {
 }
 
 //Optimal - TC: O(log(sum - max + 1) * N)
-int allocateMinimumPages2(vector<int> &arr, int k) {
+int findPages2(vector<int> &arr, int k) {
   int n = arr.size();
   if(k > n) return -1; //impossible case
   
@@ -60,10 +60,10 @@ int main() {
   vector<int> arr = {12, 34, 67, 90};
   int k = 2;
   
-  int ans = allocateMinimumPages(arr, k);
+  int ans = findPages(arr, k);
   cout << ans << "\n";
 
-  int ans2 = allocateMinimumPages2(arr, k);
+  int ans2 = findPages2(arr, k);
   cout << ans2 << "\n";
   return 0;
 }
