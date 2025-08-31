@@ -2,16 +2,23 @@
 
 using namespace std;
 
+int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
+    int n = arr.size();
+    int maxSum = INT_MIN;
+    int partition = 0;
+    int sum = 0;  
+    for(int i = 0; i < n; i++) {
+        sum 
+    }
+}
+
 int splitArray(vector<int> &arr, int k) {
     sort(arr.begin(), arr.end());
 
     int n = arr.size();
-    int NoOfElements = ceil((double)n / k);
-    int maxSum = INT_MIN;
-    int partition = 0;
-    for(int i = 0; i < n; i++) {
-
-    }
+    int NoOfEle = ceil((double)n / k);
+    int MaxSum = findMaxSum(arr, k, NoOfEle);
+  
 }
 
 int main() {
