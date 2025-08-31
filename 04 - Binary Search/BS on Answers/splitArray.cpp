@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(NlogN + )
 int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
     int n = arr.size();
     int maxSum = INT_MIN;
@@ -15,7 +16,6 @@ int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
            sum = 0;
            cnt = 0; 
         }
-
     }
 
     if(cnt > 0) {
@@ -26,8 +26,6 @@ int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
 }
 
 int splitArray(vector<int> &arr, int k) {
-    sort(arr.begin(), arr.end());
-
     int n = arr.size();
     int NoOfEle = ceil((double)n / k);
     int maxSum = findMaxSum(arr, k, NoOfEle);
