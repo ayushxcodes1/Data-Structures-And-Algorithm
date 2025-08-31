@@ -2,21 +2,21 @@
 
 using namespace std;
 
-//Brute Force - TC: O(NlogN + (max - min) * N) - Greedy Approach
 bool canWePlace(vector<int> &stalls, int dist, int k) {
     int n = stalls.size();
     int cntCows = 1;
     int last = stalls[0];
     for(int i = 1; i < n; i++) {
         if(stalls[i] - last >= dist) {
-           cntCows++;
-           last = stalls[i];
+            cntCows++;
+            last = stalls[i];
         }
         if(cntCows >= k) return true;
     }
     return false;
 }
 
+//Brute Force - TC: O(NlogN + (max - min) * N) - Greedy Approach
 int aggressiveCows(vector<int> &stalls, int k) {
     sort(stalls.begin(), stalls.end());
 
