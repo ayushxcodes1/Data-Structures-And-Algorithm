@@ -59,7 +59,7 @@ int minTime(vector<int>& arr, int k) {
 
 //Optimal - TC: O(log(sum - max + 1) * N)
 int minTime2(vector<int>& arr, int k) {
-    return findPages(arr, arr.size(), k);
+    return findPages2(arr, arr.size(), k);
 }
 
 int main() {
