@@ -7,7 +7,11 @@ int splitArray(vector<int> &arr, int k) {
 
     int n = arr.size();
     int NoOfElements = ceil((double)n / k);
+    int maxSum = INT_MIN;
+    int partition = 0;
+    for(int i = 0; i < n; i++) {
 
+    }
 }
 
 int main() {
