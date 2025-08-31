@@ -3,33 +3,39 @@
 using namespace std;
 
 //Brute Force - TC: O(NlogN + )
-int findMaxSum(vector<int> &arr, int k, int NoOfELe) {
-    int n = arr.size();
-    int maxSum = INT_MIN;
-    int sum = 0, cnt = 0;
-    for(int i = 0; i < n; i++) {
-        cnt++;
-        sum += arr[i];
-        
-        if(cnt == NoOfELe){
-           maxSum = max(sum, maxSum);
-           sum = 0;
-           cnt = 0; 
-        }
+int countStudents(vector<int> &arr, int pages) {
+  int n = arr.size();
+  int cntStu = 1;
+  int totalPages = 0;
+  for(int i = 0; i < n; i++) {
+    if(totalPages + arr[i] <= pages) {
+      totalPages += arr[i];
     }
-
-    if(cnt > 0) {
-       maxSum = max(sum, maxSum);
+    else {
+      cntStu++;
+      totalPages = arr[i];
     }
+  }
+  return cntStu;
+}
 
-    return maxSum;
+int findPages(vector<int> &arr, int n, int k) {
+  if(k > n) return -1; //impossible case
+  
+  int maxi = *max_element(arr.begin(), arr.end());
+  int sum = accumulate(arr.begin(), arr.end(), 0);
+  for(int i = maxi; i <= sum; i++) {
+    int cntStu = countStudents(arr, i);
+    
+    if(cntStu == k) { 
+      return i;
+    }
+  } 
+  return -1;
 }
 
 int splitArray(vector<int> &arr, int k) {
-    int n = arr.size();
-    int NoOfEle = ceil((double)n / k);
-    int maxSum = findMaxSum(arr, k, NoOfEle);
-    return maxSum;
+    return findPages(arr, arr.size(), k);
 }
 
 int main() {
