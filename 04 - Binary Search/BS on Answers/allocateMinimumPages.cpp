@@ -2,7 +2,6 @@
 
 using namespace std;
 
-//Brute Force - TC: O((sum - max + 1) * N)
 int countStudents(vector<int> &arr, int pages) {
   int n = arr.size();
   int cntStu = 1;
@@ -19,6 +18,7 @@ int countStudents(vector<int> &arr, int pages) {
   return cntStu;
 }
 
+//Brute Force - TC: O((sum - max + 1) * N)
 int findPages(vector<int> &arr, int k) {
   int n = arr.size();
   if(k > n) return -1; //impossible case
