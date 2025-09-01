@@ -95,6 +95,6 @@ int main() {
   cout << ans2 << "\n";
 
   double ans3 = minimizeMaxDist3(stations, k);
-  cout << ans3 << "\n";
+  cout << ans3;
   return 0;
 }
