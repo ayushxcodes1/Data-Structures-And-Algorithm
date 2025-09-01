@@ -20,7 +20,7 @@ double minimizeMaxDist(vector<int> &stations, int k) {
     }
 
     double maxAns = -1;
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n - 1; i++) {
         double diff = (stations[i + 1] - stations[i]);
         double sectionLen = diff / (double)(howMany[i] + 1);
         maxAns = max(maxAns, sectionLen);
@@ -32,7 +32,7 @@ int main() {
   vector<int> stations = {3, 6, 12, 19, 33};
   int k = 3;
 
-  int ans = minimizeMaxDist(stations, k);
+  double ans = minimizeMaxDist(stations, k);
   cout << ans << "\n";
   return 0;
 }
