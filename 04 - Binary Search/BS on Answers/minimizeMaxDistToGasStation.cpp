@@ -55,7 +55,12 @@ int numberOfGasStationsRequired(double dist, vector<int> &stations) {
     int cnt = 0;
     for(int i = 1; i < n; i++) {
         int numberInBetween = ((stations[i] - stations[i - 1]) / dist);
+        if((stations[i] - stations[i - 1]) / dist == numberInBetween * dist) {
+            numberInBetween--;
+        }
+        cnt += numberInBetween;
     }
+    return cnt;
 }
 
 double minimizeMaxDist3(vector<int> &stations, int k) {
