@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(K * N)
 double minimizeMaxDist(vector<int> &stations, int k) {
     int n = stations.size();
     vector<int> howMany(n - 1, 0);
