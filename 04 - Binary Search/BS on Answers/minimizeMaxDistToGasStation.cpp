@@ -29,12 +29,12 @@ double minimizeMaxDist(vector<int> &stations, int k) {
     return maxAns;
 }
 
-//Optimal - TC: O()
+//Better - TC: O(NlogN * klogN)
 double minimizeMaxDist2(vector<int> &stations, int k) {
     int n = stations.size();
     vector<int> howMany(n - 1, 0);
     priority_queue<pair<double, int>> pq;
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n - 1; i++) {
         pq.push({stations[i + 1] - stations[i], i});
     }
     for(int gasStation = 1; gasStation <= k; gasStation++) {
@@ -42,7 +42,7 @@ double minimizeMaxDist2(vector<int> &stations, int k) {
         int secInd = tp.second;
         howMany[secInd]++;
         double iniDiff = stations[secInd + 1] - stations[secInd];
-        double newSecLen = iniDiff / (double)(howMany[secInd + 1]);
+        double newSecLen = iniDiff / (double)(howMany[secInd] + 1);
         pq.push({newSecLen, secInd});
     }
 
