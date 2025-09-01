@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(K * N)
+//Brute Force - TC: O(K * N), SC: O()
 double minimizeMaxDist(vector<int> &stations, int k) {
     int n = stations.size();
     vector<int> howMany(n - 1, 0);
@@ -49,7 +49,7 @@ double minimizeMaxDist2(vector<int> &stations, int k) {
     return pq.top().first;
 }
 
-//Optimal - TC: O(Nlog(len) + N), SC: O(1)
+//Optimal - TC: O(Nlog(len)), SC: O(1)
 int numberOfGasStationsRequired(double dist, vector<int> &stations) {
     int n = stations.size();
     int cnt = 0;
