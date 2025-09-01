@@ -38,7 +38,12 @@ double minimizeMaxDist2(vector<int> &stations, int k) {
         pq.push({stations[i + 1] - stations[i], i});
     }
     for(int gasStation = 1; gasStation <= k; gasStation++) {
-        
+        auto tp = pq.top(); pq.pop();
+        int secInd = tp.second;
+        howMany[secInd]++;
+        double iniDiff = stations[secInd + 1] - stations[secInd];
+        double newSecLen = iniDiff / (double)(howMany[secInd + 1]);
+        pq.push({newSecLen, secInd});
     }
 
     return pq.top().first;
