@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(K * N), SC: O()
+//Brute Force - TC: O(K * N), SC: O(n - 1)
 double minimizeMaxDist(vector<int> &stations, int k) {
     int n = stations.size();
     vector<int> howMany(n - 1, 0);
