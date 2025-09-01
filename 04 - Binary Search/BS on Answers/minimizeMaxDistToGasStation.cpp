@@ -50,23 +50,32 @@ double minimizeMaxDist2(vector<int> &stations, int k) {
 }
 
 //Optimal 
+int numberOfGasStationsRequired(double dist, vector<int> &stations) {
+    int n = stations.size();
+    int cnt = 0;
+    for(int i = 1; i < n; i++) {
+        int numberInBetween = ((stations[i] - stations[i - 1]) / dist);
+    }
+}
+
 double minimizeMaxDist3(vector<int> &stations, int k) {
     int n = stations.size();
-    vector<int> howMany(n - 1, 0);
-    priority_queue<pair<double, int>> pq;
+    double low = 0;
+    double high = 0;
     for(int i = 0; i < n - 1; i++) {
-        pq.push({stations[i + 1] - stations[i], i});
-    }
-    for(int gasStation = 1; gasStation <= k; gasStation++) {
-        auto tp = pq.top(); pq.pop();
-        int secInd = tp.second;
-        howMany[secInd]++;
-        double iniDiff = stations[secInd + 1] - stations[secInd];
-        double newSecLen = iniDiff / (double)(howMany[secInd] + 1);
-        pq.push({newSecLen, secInd});
+        high = max(high, (double)(stations[i + 1] - stations[i]));
     }
 
-    return pq.top().first;
+    double diff = 1e-2;
+    while(high - low > diff) {
+        long double mid = (low + high) / (2.0);
+        int cnt = numberOfGasStationsRequired(mid, stations);
+        if(cnt > k) {
+           low = mid;
+        }
+        else high = mid;
+    }
+    return high;
 }
 
 
