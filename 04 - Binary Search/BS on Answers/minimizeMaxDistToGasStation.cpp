@@ -50,7 +50,7 @@ double minimizeMaxDist2(vector<int> &stations, int k) {
 }
 
 //Optimal 
-double minimizeMaxDist2(vector<int> &stations, int k) {
+double minimizeMaxDist3(vector<int> &stations, int k) {
     int n = stations.size();
     vector<int> howMany(n - 1, 0);
     priority_queue<pair<double, int>> pq;
