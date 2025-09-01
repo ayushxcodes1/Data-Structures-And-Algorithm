@@ -55,5 +55,8 @@ int main() {
 
   double ans = minimizeMaxDist(stations, k);
   cout << ans << "\n";
+  
+  double ans2 = minimizeMaxDist2(stations, k);
+  cout << ans2 << "\n";
   return 0;
 }
