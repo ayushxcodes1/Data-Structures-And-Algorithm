@@ -29,7 +29,7 @@ double minimizeMaxDist(vector<int> &stations, int k) {
     return maxAns;
 }
 
-//Better - TC: O(NlogN * klogN)
+//Better - TC: O(NlogN * klogN) - Max Heap Approach
 double minimizeMaxDist2(vector<int> &stations, int k) {
     int n = stations.size();
     vector<int> howMany(n - 1, 0);
