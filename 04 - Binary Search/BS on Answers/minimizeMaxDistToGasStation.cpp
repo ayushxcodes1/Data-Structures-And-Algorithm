@@ -29,7 +29,7 @@ double minimizeMaxDist(vector<int> &stations, int k) {
     return maxAns;
 }
 
-//Better - TC: O(NlogN * klogN) - Max Heap Approach
+//Better - TC: O(NlogN * klogN), SC: O(n - 1 for howMany array) + O(n - 1 for priority queue) - Max Heap Approach
 double minimizeMaxDist2(vector<int> &stations, int k) {
     int n = stations.size();
     vector<int> howMany(n - 1, 0);
@@ -49,7 +49,7 @@ double minimizeMaxDist2(vector<int> &stations, int k) {
     return pq.top().first;
 }
 
-//Optimal 
+//Optimal - TC: O(Nlog(len) + N), SC: O(1)
 int numberOfGasStationsRequired(double dist, vector<int> &stations) {
     int n = stations.size();
     int cnt = 0;
