@@ -35,7 +35,7 @@ double minimizeMaxDist2(vector<int> &stations, int k) {
     vector<int> howMany(n - 1, 0);
     priority_queue<pair<double, int>> pq;
     for(int i = 0; i < n - 1; i++) {
-        pq.push({stations[i + 1] - stations[i], i});
+        pq.push({stations[i + 1] - stations[i], i}); 
     }
     for(int gasStation = 1; gasStation <= k; gasStation++) {
         auto tp = pq.top(); pq.pop();
