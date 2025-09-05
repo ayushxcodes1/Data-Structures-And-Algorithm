@@ -83,7 +83,6 @@ double minimizeMaxDist3(vector<int> &stations, int k) {
     return high;
 }
 
-
 int main() {
   vector<int> stations = {3, 6, 12, 19, 33};
   int k = 3;
