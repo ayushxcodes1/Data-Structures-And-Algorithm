@@ -6,10 +6,10 @@ using namespace std;
 double findMedian(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
-    vector<int> temp; //O(N1 + N2)
+    vector<int> temp;
 
     int i = 0, j = 0;
-    while(i < n1 && j < n2) { //O(min(N1, N2))
+    while(i < n1 && j < n2) { 
         if(arr1[i] < arr2[j]) {
            temp.push_back(arr1[i]);
            i++;
@@ -20,14 +20,14 @@ double findMedian(vector<int> &arr1, vector<int> &arr2) {
         }
     }
 
-    //push leftover from arr1
-    while(i < n1) { //O(N1)
+    //push leftovers from arr1
+    while(i < n1) {
         temp.push_back(arr1[i]);
         i++;
     }
 
     //push leftovers from arr2
-    while(j < n2) { //O(N2)
+    while(j < n2) { 
         temp.push_back(arr2[j]);
         j++;
     }
