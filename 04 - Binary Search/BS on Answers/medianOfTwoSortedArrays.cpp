@@ -10,7 +10,7 @@ int findMedian(vector<int> &arr1, vector<int> &arr2) {
 
     int i = 0, j = 0;
     while(i < n1 && j < n2) {
-        if(arr1[i] > arr2[j]) {
+        if(arr1[i] < arr2[j]) {
            temp.push_back(arr1[i]);
            i++;
         }
