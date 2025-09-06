@@ -92,7 +92,10 @@ int main() {
   vector<int> arr2 = {3, 4}; 
  
   double ans = findMedian(arr1, arr2);
-  cout << "Median is " << ans;
+  cout << "Median is " << ans << "\n";
+
+  double ans2 = findMedia2(arr1, arr2);
+  cout << "Median is " << ans2;
 
   return 0;
 }
