@@ -43,6 +43,9 @@ double findMedian(vector<int> &arr1, vector<int> &arr2) {
     return (double)evenAns;
 }
 
+
+//Optimal - TC: O(log(N1 + N2))
+
 int main() {
   vector<int> arr1 = {1, 2};
   vector<int> arr2 = {3, 4}; 
