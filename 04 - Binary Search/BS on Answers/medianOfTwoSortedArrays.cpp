@@ -47,7 +47,6 @@ double findMedian(vector<int> &arr1, vector<int> &arr2) {
 double findMedian(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
-    vector<int> temp;
 
     int i = 0, j = 0;
     while(i < n1 && j < n2) { 
