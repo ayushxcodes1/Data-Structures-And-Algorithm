@@ -42,6 +42,7 @@ int findMedian(vector<int> &arr1, vector<int> &arr2) {
        int evenAns = ((n / 2 - 1) + (n / 2)) / 2;
        return temp[evenAns];
     }
+    return -1;
 }
 
 int main() {
