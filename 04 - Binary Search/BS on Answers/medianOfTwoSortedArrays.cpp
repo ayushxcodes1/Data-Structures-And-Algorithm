@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(min(N1, N2) + O(N1)), SC: O(N1 + N2)
+//Brute Force - TC: O(N1 + N2), SC: O(N1 + N2)
 double findMedian(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
