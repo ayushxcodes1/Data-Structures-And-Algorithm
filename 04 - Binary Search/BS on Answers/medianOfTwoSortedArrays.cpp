@@ -44,7 +44,7 @@ double findMedian(vector<int> &arr1, vector<int> &arr2) {
 }
 
 //Optimal - TC: O(log(N1 + N2)), SC: O(N1 + N2)
-double findMedian(vector<int> &arr1, vector<int> &arr2) {
+double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
     vector<int> temp;
