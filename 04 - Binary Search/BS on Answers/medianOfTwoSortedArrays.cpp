@@ -39,7 +39,7 @@ double findMedian(vector<int> &arr1, vector<int> &arr2) {
     }
        
     //even length
-    int evenAns = (temp[n / 2 - 1] + temp[n / 2]) / 2;
+    double evenAns = (temp[n / 2 - 1] + temp[n / 2]) / 2;
     return evenAns;
 }
 
