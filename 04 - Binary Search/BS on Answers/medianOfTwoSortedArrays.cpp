@@ -73,7 +73,9 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
         j++;
     }
     
+    
     int low = 0, high = temp.size() - 1;
+    int ele1 = -1, ele2 = -1;
     while(low <= high) {
         int mid = low + (high - low) / 2;
         
