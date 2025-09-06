@@ -83,8 +83,8 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
         j++;
     }
 
-    if(n % 2 == 1) return ele1;
-    return (double)((double) (ele1 + ele2)) / 2.0;
+    if(n % 2 == 1) return ele2; //odd
+    return (double)((double) (ele1 + ele2)) / 2.0; //even
 }
 
 int main() {
