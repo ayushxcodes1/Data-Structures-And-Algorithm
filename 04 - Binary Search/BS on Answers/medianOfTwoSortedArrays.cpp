@@ -2,8 +2,12 @@
 
 using namespace std;
 
+//Brute Force
 int findMedian(vector<int> &arr1, vector<int> &arr2) {
-
+    int n1 = arr1.size(); 
+    int n2 = arr2.size();
+    
+    
 }
 
 int main() {
@@ -12,6 +16,6 @@ int main() {
 
   int ans = findMedian(arr1, arr2);
   cout << "Median is " << ans;
-  
+
   return 0;
 }
