@@ -39,13 +39,13 @@ double findMedian(vector<int> &arr1, vector<int> &arr2) {
     }
        
     //even length
-    double evenAns = (temp[n / 2 - 1] + temp[n / 2]) / 2;
-    return evenAns;
+    double evenAns = ((double)temp[n / 2 - 1] + (double)temp[n / 2]) / 2;
+    return (double)evenAns;
 }
 
 int main() {
-  vector<int> arr1 = {1, 3, 4, 7, 10, 12};
-  vector<int> arr2 = {2, 3, 6, 15}; 
+  vector<int> arr1 = {1, 2};
+  vector<int> arr2 = {3, 4}; 
  
   double ans = findMedian(arr1, arr2);
   cout << "Median is " << ans;
