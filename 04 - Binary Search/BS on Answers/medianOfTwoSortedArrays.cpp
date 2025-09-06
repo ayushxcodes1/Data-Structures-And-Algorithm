@@ -6,7 +6,7 @@ using namespace std;
 int findMedian(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
-    vector<int> temp(n1 + n2, 0);
+    vector<int> temp;
 
     int i = 0, j = 0;
     while(i < n1 && j < n2) {
