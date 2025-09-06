@@ -44,7 +44,7 @@ double findMedian(vector<int> &arr1, vector<int> &arr2) {
 }
 
 //Optimal - TC: O(log(N1 + N2)), SC: O(N1 + N2)
-double findMedian2(vector<int> &arr1, vector<int> &arr2) {
+double findMedian(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
     vector<int> temp;
@@ -72,14 +72,16 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
         temp.push_back(arr2[j]);
         j++;
     }
-    
-    
-    int low = 0, high = temp.size() - 1;
-    int ele1 = -1, ele2 = -1;
-    while(low <= high) {
-        int mid = low + (high - low) / 2;
-        
+
+    int n = temp.size();
+    if(n % 2 == 1) {
+       //odd length
+       return temp[n / 2];
     }
+       
+    //even length
+    double evenAns = ((double)temp[n / 2 - 1] + (double)temp[n / 2]) / 2;
+    return (double)evenAns;
 }
 
 int main() {
