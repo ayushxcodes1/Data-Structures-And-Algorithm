@@ -114,7 +114,10 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
            if(n % 2 == 1) return max(l1, l2);
            return ((double)(max(l1, l2) + min(r1, r2))) / 2.0;
         }
+        else if(l1 > l2) high = mid1 - 1;
+        else low = mid1 + 1;
     } 
+    return 0;
 }
 
 int main() {
