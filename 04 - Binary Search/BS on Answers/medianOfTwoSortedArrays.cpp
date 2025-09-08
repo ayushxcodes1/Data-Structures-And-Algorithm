@@ -130,7 +130,7 @@ int main() {
   double ans2 = findMedian2(arr1, arr2);
   cout << "Median is " << ans2 << "\n";
 
-  double ans2 = findMedian2(arr1, arr2);
+  double ans2 = findMedian3(arr1, arr2);
   cout << "Median is " << ans2;
 
   return 0;
