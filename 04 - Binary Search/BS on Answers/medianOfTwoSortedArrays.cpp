@@ -99,8 +99,10 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     int n2 = arr2.size();
     int n = (n1 + n2);
 
-    
-   
+    int low = 0, high = n - 1;
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+    }
 }
 
 int main() {
