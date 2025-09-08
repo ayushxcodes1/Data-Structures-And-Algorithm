@@ -77,7 +77,7 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     }
 
     while(j < n2) { 
-        if(cnt == ind1) ind1e1 = arr2[j];
+        if(cnt == ind1) ind1ele = arr2[j];
         if(cnt == ind2) ind2ele = arr2[j];
         cnt++;
         j++;
