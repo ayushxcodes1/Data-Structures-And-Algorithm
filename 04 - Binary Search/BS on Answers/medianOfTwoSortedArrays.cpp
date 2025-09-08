@@ -108,7 +108,8 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
         int r1 = INT_MAX, r2 = INT_MAX;
         if(mid1 < n1) r1 = arr1[mid1];
         if(mid2 < n1) r1 = arr2[mid2];
-        if()
+        if(mid1 - 1 >= 0) l1 = arr1[mid1 - 1];
+        if(mid1 - 1 >= 0) l2 = arr2[mid2 - 1];
     } 
 }
 
