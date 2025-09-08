@@ -97,7 +97,7 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
 double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
-    
+    if(n1 > n2) return median(arr2, arr1);
 }
 
 int main() {
