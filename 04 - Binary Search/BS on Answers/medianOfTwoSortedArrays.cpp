@@ -43,7 +43,7 @@ double findMedian(vector<int> &arr1, vector<int> &arr2) {
     return (double)evenAns;
 }
 
-//Better - TC: O(log(N1 + N2)), SC: O(N1 + N2)
+//Better - TC: O(N1 + N2)
 double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
@@ -93,7 +93,7 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     return (double)((double) (ind1ele + ind2ele)) / 2.0; //even
 }
 
-//Optimal - TC: O(log(N1 + N2))
+//Optimal - TC: O(log(N1 + N2)), SC: O(1)
 double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
