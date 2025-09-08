@@ -93,6 +93,56 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     return (double)((double) (ind1ele + ind2ele)) / 2.0; //even
 }
 
+//Better - TC: O(log(N1 + N2)), SC: O(N1 + N2)
+double findMedian2(vector<int> &arr1, vector<int> &arr2) {
+    int n1 = arr1.size(); 
+    int n2 = arr2.size();
+
+    int i = 0, j = 0;
+    int n = (n1 + n2);
+    int ind2 = n / 2;
+    int ind1 = ind2 - 1;
+    int cnt = 0;
+    int ind1ele = -1, ind2ele = -1;
+    while(i < n1 && j < n2) { 
+        if(arr1[i] < arr2[j]) {
+           if(cnt == ind1) ind1ele = arr1[i];
+           if(cnt == ind2) ind2ele = arr1[i];
+           cnt++;
+           i++;
+        }
+        else {
+            if(cnt == ind1) ind1ele = arr2[j];
+            if(cnt == ind2) ind2ele = arr2[j];
+            cnt++;
+            j++;
+        }
+    }
+
+    while(i < n1) {
+        if(cnt == ind1) ind1ele = arr1[i];
+        if(cnt == ind2) {
+            ind2ele = arr1[i];
+            break;
+        }
+        cnt++;
+        i++;
+    }
+
+    while(j < n2) { 
+        if(cnt == ind1) ind1ele = arr2[j];
+        if(cnt == ind2) {
+            ind2ele = arr2[j];
+            break;
+        }
+        cnt++;
+        j++;
+    }
+
+    if(n % 2 == 1) return ind2ele; //odd
+    return (double)((double) (ind1ele + ind2ele)) / 2.0; //even
+}
+
 int main() {
   vector<int> arr1 = {1, 2};
   vector<int> arr2 = {3, 4}; 
