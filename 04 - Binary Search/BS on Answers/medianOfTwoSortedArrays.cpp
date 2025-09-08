@@ -56,35 +56,35 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     int ind1e1 = -1, ind2ele = -1;
     while(i < n1 && j < n2) { 
         if(arr1[i] < arr2[j]) {
-           if(cnt == ind1) ele1 = arr1[i];
-           if(cnt == ind2) ele2 = arr1[i];
+           if(cnt == ind1) ind1e1 = arr1[i];
+           if(cnt == ind2) ind2ele = arr1[i];
            cnt++;
            i++;
         }
         else {
-            if(cnt == ind1) ele1 = arr2[j];
-            if(cnt == ind2) ele2 = arr2[j];
+            if(cnt == ind1) ind1e1 = arr2[j];
+            if(cnt == ind2) ind2ele = arr2[j];
             cnt++;
             j++;
         }
     }
 
     while(i < n1) {
-        if(cnt == ind1) ele1 = arr1[i];
-        if(cnt == ind2) ele2 = arr1[i];
+        if(cnt == ind1) ind1e1 = arr1[i];
+        if(cnt == ind2) ind2ele = arr1[i];
         cnt++;
         i++;
     }
 
     while(j < n2) { 
-        if(cnt == ind1) ele1 = arr2[j];
-        if(cnt == ind2) ele2 = arr2[j];
+        if(cnt == ind1) ind1e1 = arr2[j];
+        if(cnt == ind2) ind2ele = arr2[j];
         cnt++;
         j++;
     }
 
-    if(n % 2 == 1) return ele2; //odd
-    return (double)((double) (ele1 + ele2)) / 2.0; //even
+    if(n % 2 == 1) return ind2ele; //odd
+    return (double)((double) (ind1e1 + ind2ele)) / 2.0; //even
 }
 
 int main() {
