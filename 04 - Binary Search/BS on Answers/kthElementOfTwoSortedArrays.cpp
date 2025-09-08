@@ -6,7 +6,7 @@ int kthElement(vector<int> &arr1, vector<int> &arr2, int k) {
     int n1 = arr1.size(); 
     int n2 = arr2.size();
     if(n1 > n2) return kthElement(arr2, arr1, k);
-    int low = 0, high = min(k, n1);
+    int low = max(0, k-n2), high = min(k, n1);
     int left = k;
     int n = n1 + n2;
     while(low <= high) {
