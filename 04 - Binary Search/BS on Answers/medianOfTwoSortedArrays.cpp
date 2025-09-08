@@ -100,7 +100,7 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
     if(n1 > n2) return findMedian2(arr2, arr1);
     int low = 0, high = n1;
     int left = (n1 + n2 + 1) / 2;
-     
+    int n = n1 + n2; 
 }
 
 int main() {
