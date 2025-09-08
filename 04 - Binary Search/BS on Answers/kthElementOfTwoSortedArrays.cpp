@@ -3,7 +3,8 @@
 using namespace std;
 
 int kthElement(vector<int> &arr1, vector<int> &arr2, int k) {
-    
+    int n1 = arr1.size();
+    int n2 = arr2.size();
 }
 
 int main() {
