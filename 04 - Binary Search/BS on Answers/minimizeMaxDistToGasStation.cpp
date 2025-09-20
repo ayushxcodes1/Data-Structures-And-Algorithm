@@ -34,6 +34,8 @@ double minimizeMaxDist2(vector<int> &stations, int k) {
     int n = stations.size();
     vector<int> howMany(n - 1, 0);
     priority_queue<pair<double, int>> pq;
+
+    
     for(int i = 0; i < n - 1; i++) {
         pq.push({stations[i + 1] - stations[i], i}); 
     }
