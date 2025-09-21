@@ -94,14 +94,14 @@ double findMedian2(vector<int> &arr1, vector<int> &arr2) {
 }
 
 //Optimal - TC: O(min(logN + logM))), SC: O(1)
-double findMedian3(vector<int> &arr1, vector<int> &arr2) {
-    int n1 = arr1.size(); 
-    int n2 = arr2.size();
-    if(n1 > n2) return findMedian3(arr2, arr1);
-    int low = 0, high = n1;
-    int left = (n1 + n2 + 1) / 2;
-    int n = n1 + n2;
-    while(low <= high) {
+    double findMedian3(vector<int> &arr1, vector<int> &arr2) {
+        int n1 = arr1.size(); 
+        int n2 = arr2.size();
+        if(n1 > n2) return findMedian3(arr2, arr1);
+        int low = 0, high = n1;
+        int left = (n1 + n2 + 1) / 2;
+        int n = n1 + n2;
+        while(low <= high) {
         int mid1 = (low + high) / 2;
         int mid2 = left - mid1;
         int l1 = INT_MIN, l2 = INT_MIN;
