@@ -9,7 +9,7 @@ int main() {
        cout << "eligible for driving license.";
     }
     else {
-       
+       cout << "eligible for driving license.";
     }
     return 0;
 }
