@@ -9,13 +9,11 @@ using namespace std;
 // Array Basics - 1D, 2D
 // String Basics
 
-int sum(int a, int b)
-{
+int sum(int a, int b) {
     return a + b;
 }
 
-int main()
-{
+int main() {
     int res = sum(5, 6);
     cout << res;
     return 0;
