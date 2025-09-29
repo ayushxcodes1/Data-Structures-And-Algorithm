@@ -7,10 +7,10 @@ int main() {
     cout << "Enter your age: ";
     cin >> age;
     if(age >= 18) {
-       cout << "Eligible for driving license.";
+       cout << "You are an adult!";
     }
     else {
-       cout << "Not eligible for driving license.";
+       cout << "You are not an adult!";
     }
     return 0;
 }
