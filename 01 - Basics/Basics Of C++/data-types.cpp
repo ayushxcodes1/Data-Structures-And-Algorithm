@@ -3,10 +3,7 @@
 using namespace std;
 
 int main() {
-    //int, long, long long, float, double
-    //string and getline
-    //char
-
+   
     int a = 10;
     long long b = 10000000000LL;
     float c = 5.5;
