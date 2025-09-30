@@ -12,5 +12,5 @@ int main() {
     else {
        cout << "You are not an adult!";
     }
-    return 0;
+    return 0;   
 }
