@@ -28,6 +28,7 @@ bool search(vector<int> arr, int m, int target) {
         }
         else low = mid + 1;
     }
+    return false;
 }
 bool searchMatrix(vector<vector<int>> &mat, int n, int m, int target) {
     for(int i = 0; i < n; i++) {
