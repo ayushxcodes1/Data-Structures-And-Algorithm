@@ -64,5 +64,8 @@ int main() {
   int ans  = rowWithMaxOnes(mat);
   cout << ans;
 
+  int ans2  = rowWithMaxOnes(mat);
+  cout << ans2;
+
   return 0;
 }
