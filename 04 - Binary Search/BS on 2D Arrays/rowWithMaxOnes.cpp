@@ -7,11 +7,12 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
   int rows = mat.size();
   int cols = mat[0].size();
   
-  int cnt = 0, maxCnt = INT_MIN;
+  int maxCnt = INT_MIN;
   int ans = -1;
   for(int i = 0; i < rows; i++) {
+    int cnt = 0;
     for(int j = 0; j < cols; j++) {
-      
+
     }
   }
 }
