@@ -15,7 +15,7 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
       if(mat[i][j] == 1) cnt++;
     }
     if(cnt > maxCnt) {
-      maxCnt = max(cnt, maxCnt);
+      maxCnt = cnt;
       ind = i;
     }
   }
