@@ -4,7 +4,7 @@ using namespace std;
 
 //Brute & Better follows same approach as MedianOfTwoSortedArrays Problem.
 
-//Optimal - TC: O(log(min(M, N))), SC: O(1)
+//Optimal - TC: O(log(min(N, M))), SC: O(1)
 int kthElement(vector<int> &arr1, vector<int> &arr2, int k) {
   int n1 = arr1.size(); 
   int n2 = arr2.size();
