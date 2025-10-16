@@ -34,6 +34,9 @@ bool search(vector<int> arr, int m, int target) {
 bool searchMatrix(vector<vector<int>> &mat, int n, int m, int target) {
     for(int i = 0; i < n; i++) {
         bool ans = search(mat[i], m, target);
+        if(ans == true) {
+           return true;
+        }
     }
     return false;
 }
