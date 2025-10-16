@@ -48,5 +48,8 @@ int main() {
 
   bool ans = searchMatrix(mat, n, m, 3);
   cout << ans;
+
+  bool ans2 = searchMatrix2(mat, n, m, 3);
+  cout << ans2;
   return 0;
 }
