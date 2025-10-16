@@ -17,7 +17,9 @@ bool searchMatrix(vector<vector<int>> &mat, int n, int m, int target) {
 //Optimal - TC: O(N * M), SC: O(1)
 bool search(vector<int> arr, int m, int target) {
     int low = 0, high = m - 1;
-    
+    while(low <= high) {
+        int mid = (low + high) / 2;
+    }
 }
 bool searchMatrix(vector<vector<int>> &mat, int n, int m, int target) {
     for(int i = 0; i < n; i++) {
