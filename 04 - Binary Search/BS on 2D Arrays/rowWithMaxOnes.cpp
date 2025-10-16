@@ -22,6 +22,8 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
   return ans;
 }
 
+//Better - TC:O(M * N), SC: O(1)
+
 int main() {
   vector<vector<int>> mat = {{0,1,1,1}, 
                              {0,0,1,1}, 
@@ -30,6 +32,6 @@ int main() {
 
   int ans  = rowWithMaxOnes(mat);
   cout << ans;
-  
+
   return 0;
 }
