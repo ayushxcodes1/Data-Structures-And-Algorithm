@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC:O(M * N), SC: O(1)
+//Brute Force - TC:O(N * M), SC: O(1)
 int rowWithMaxOnes(vector<vector<int>> &mat) {
   int rows = mat.size();
   int cols = mat[0].size();
