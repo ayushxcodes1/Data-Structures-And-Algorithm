@@ -9,7 +9,7 @@ bool searchMatrix(vector<vector<int>> &mat, int n, int m, int target) {
             if(mat[i][j] == target) {
                return true;
             }
-        }
+        }  
     }
     return false;
 }
