@@ -42,7 +42,7 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
   int n = mat.size();
   int m = mat[0].size();
   
-  int maxCnt = -1;
+  int maxCnt = 0;
   int ind = -1;
   for(int i = 0; i < n; i++) {
     int cnt = 0;
