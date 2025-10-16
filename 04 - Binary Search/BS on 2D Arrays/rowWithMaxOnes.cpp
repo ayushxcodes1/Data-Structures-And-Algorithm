@@ -22,7 +22,7 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
   return ind;
 }
 
-//Better - TC:O(M * N), SC: O(1)
+//Optimal - TC:O(M * N), SC: O(1)
 
 int main() {
   vector<vector<int>> mat = {{0,1,1,1}, 
