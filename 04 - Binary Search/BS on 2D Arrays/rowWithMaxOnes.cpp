@@ -38,6 +38,24 @@ int lowerBound(vector<int> arr, int n, int x) {
   return ans;
 }
 
+int rowWithMaxOnes(vector<vector<int>> &mat) {
+  int rows = mat.size();
+  int cols = mat[0].size();
+  
+  int maxCnt = -1;
+  int ind = -1;
+  for(int i = 0; i < rows; i++) {
+    int cnt = 0;
+    for(int j = 0; j < cols; j++) {
+      if(mat[i][j] == 1) cnt++;
+    }
+    if(cnt > maxCnt) {
+      maxCnt = max(cnt, maxCnt);
+      ind = i;
+    }
+  }
+  return ind;
+}
 
 int main() {
   vector<vector<int>> mat = {{0,1,1,1}, 
