@@ -38,7 +38,7 @@ int lowerBound(vector<int> arr, int n, int x) {
   return ans;
 }
 
-int rowWithMaxOnes(vector<vector<int>> &mat) {
+int rowWithMaxOnes2(vector<vector<int>> &mat) {
   int n = mat.size();
   int m = mat[0].size();
   
