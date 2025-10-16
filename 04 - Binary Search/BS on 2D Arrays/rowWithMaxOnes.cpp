@@ -2,7 +2,7 @@
 
 using namespace std;
 
-
+int rowWithMaxOnes()
 
 int main() {
   
