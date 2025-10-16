@@ -4,7 +4,11 @@ using namespace std;
 
 //Brute Force
 bool searchMatrix(vector<vector<int>> &mat, int n, int m) {
-    
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < m; j++) {
+            
+        }
+    }
 }
 
 int main() {
