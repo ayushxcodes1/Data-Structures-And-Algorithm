@@ -17,10 +17,8 @@ bool searchMatrix(vector<vector<int>> &mat, int n, int m, int target) {
 //Optimal - TC: O(N * M), SC: O(1)
 bool searchMatrix(vector<vector<int>> &mat, int n, int m, int target) {
     for(int i = 0; i < n; i++) {
-        for(int j = 0; j < m; j++) {
-            if(mat[i][j] == target) {
-               return true;
-            }
+        if(mat[i][j] == target) {
+            return true;
         }
     }
     return false;
