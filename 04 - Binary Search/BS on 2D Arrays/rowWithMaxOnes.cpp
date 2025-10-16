@@ -12,9 +12,14 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
   for(int i = 0; i < rows; i++) {
     int cnt = 0;
     for(int j = 0; j < cols; j++) {
-
+      if(mat[i][j] == 1) cnt++;
+    }
+    if(cnt > maxCnt) {
+      maxCnt = max(cnt, maxCnt);
+      ans = i;
     }
   }
+  return ans;
 }
 
 int main() {
