@@ -2,8 +2,8 @@
 
 using namespace std;
 
-int rowWithMaxOnes() {
-  
+int rowWithMaxOnes(vector<int> &mat) {
+
 }
 
 int main() {
