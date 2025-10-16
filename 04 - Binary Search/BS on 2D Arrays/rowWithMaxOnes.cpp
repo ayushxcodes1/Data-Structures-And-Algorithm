@@ -8,7 +8,7 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
   int cols = mat[0].size();
   
   int maxCnt = INT_MIN;
-  int ans = -1;
+  int ind = -1;
   for(int i = 0; i < rows; i++) {
     int cnt = 0;
     for(int j = 0; j < cols; j++) {
@@ -16,10 +16,10 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
     }
     if(cnt > maxCnt) {
       maxCnt = max(cnt, maxCnt);
-      ans = i;
+      ind = i;
     }
   }
-  return ans;
+  return ind;
 }
 
 //Better - TC:O(M * N), SC: O(1)
