@@ -42,12 +42,7 @@ bool searchMatrix2(vector<vector<int>> &mat, int n, int m, int target) {
 
 //Optimal - TC: O(log(N * M)), SC: O(1)
 bool searchMatrix3(vector<vector<int>> &mat, int n, int m, int target) {
-    for(int i = 0; i < n; i++) {
-        if(mat[i][0] <= target && target <= mat[i][m - 1]) {
-            return bs(mat[i], m, target);
-        }
-    }
-    return false;
+   
 }
 
 int main() {
