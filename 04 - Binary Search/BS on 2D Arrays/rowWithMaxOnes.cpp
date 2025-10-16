@@ -2,8 +2,9 @@
 
 using namespace std;
 
-int rowWithMaxOnes(vector<int> &mat, int r, int c) {
-
+//Brute Force - TC:O(M * N), SC: O(1)
+int rowWithMaxOnes(vector<int> &mat) {
+  
 }
 
 int main() {
