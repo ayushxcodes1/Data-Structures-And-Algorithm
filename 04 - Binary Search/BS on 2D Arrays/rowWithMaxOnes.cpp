@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int rowWithMaxOnes(vector<int> &mat) {
+int rowWithMaxOnes(vector<int> &mat, int r, int c) {
 
 }
 
