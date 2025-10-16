@@ -65,5 +65,8 @@ int main() {
 
   bool ans2 = searchMatrix2(mat, n, m, 3);
   cout << ans2;
+  
+  bool ans2 = searchMatrix2(mat, n, m, 3);
+  cout << ans2;
   return 0;
 }
