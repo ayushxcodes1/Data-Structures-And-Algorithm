@@ -19,6 +19,14 @@ bool search(vector<int> arr, int m, int target) {
     int low = 0, high = m - 1;
     while(low <= high) {
         int mid = (low + high) / 2;
+
+        if(arr[mid] == target) {
+           return true;
+        } 
+        else if(arr[mid] > target) {
+            high = mid - 1;
+        }
+        else low = mid + 1;
     }
 }
 bool searchMatrix(vector<vector<int>> &mat, int n, int m, int target) {
