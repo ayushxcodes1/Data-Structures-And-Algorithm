@@ -25,7 +25,7 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
 //Optimal - TC:O(N * logM), SC: O(1)
 int lowerBound(vector<int> arr, int n, int x) {
   int low = 0, high = n - 1;
-  int ans = -1;
+  int ans = n;
   while(low <= high) {
     int mid = (low + high) / 2;
 
