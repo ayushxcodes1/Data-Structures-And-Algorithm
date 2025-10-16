@@ -61,12 +61,12 @@ int main() {
   int m = mat[0].size();
 
   bool ans = searchMatrix(mat, n, m, 3);
-  cout << ans;
+  cout << "Brute: " << ans << endl;
 
   bool ans2 = searchMatrix2(mat, n, m, 3);
-  cout << ans2;
+   cout << "Better: " << ans2 << endl;
 
   bool ans3 = searchMatrix3(mat, n, m, 3);
-  cout << ans3;
+  cout << "Optimal: " << ans3 << endl;
   return 0;
 }
