@@ -6,7 +6,10 @@ using namespace std;
 int rowWithMaxOnes(vector<vector<int>> &mat) {
   int rows = mat.size();
   int cols = mat[0].size();
-
+  
+  int cnt = 0, maxCnt = INT_MIN;
+  int ans = -1;
+  
 }
 
 int main() {
