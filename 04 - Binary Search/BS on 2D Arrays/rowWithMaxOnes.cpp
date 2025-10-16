@@ -27,5 +27,9 @@ int main() {
                              {0,0,1,1}, 
                              {1,1,1,1}, 
                              {0,0,0,0}};
+
+  int ans  = rowWithMaxOnes(mat);
+  cout << ans;
+  
   return 0;
 }
