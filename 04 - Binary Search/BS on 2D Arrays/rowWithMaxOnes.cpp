@@ -45,10 +45,10 @@ int rowWithMaxOnes(vector<vector<int>> &mat) {
   int maxCnt = 0;
   int ind = -1;
   for(int i = 0; i < n; i++) {
-    int cnt = 0;
+    int cnt = m - lowerBound(mat[i], m, 1);
     int ind = -1;
     if(cnt > maxCnt) {
-      maxCnt = max(cnt, maxCnt);
+      maxCnt = cnt;
       ind = i;
     }
   }
