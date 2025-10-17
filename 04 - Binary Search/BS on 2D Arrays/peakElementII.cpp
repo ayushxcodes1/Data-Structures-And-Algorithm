@@ -7,6 +7,7 @@ using namespace std;
 
 
 int main() {
-  vector<vector<int>> mat = {{10, 20, 15}, {21, 30, 14}, {7, 16, 32}}  
+  vector<vector<int>> mat = {{10, 20, 15}, {21, 30, 14}, {7, 16, 32}};
+  
   return 0;
 }
