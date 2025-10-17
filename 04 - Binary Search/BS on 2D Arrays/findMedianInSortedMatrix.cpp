@@ -51,7 +51,10 @@ int findMedian(vector<vector<int>> &mat, int n, int m) {
         high = max(high, mat[i][m-1]);
     }
 
-    
+    int req = (n * m) / 2;
+    while(low <= high) {
+        
+    }
 
 }
 
