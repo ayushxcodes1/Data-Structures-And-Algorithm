@@ -48,6 +48,7 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
         }
         else low = mid + 1;
     }
+    return {-1, -1};
 }
 
 
