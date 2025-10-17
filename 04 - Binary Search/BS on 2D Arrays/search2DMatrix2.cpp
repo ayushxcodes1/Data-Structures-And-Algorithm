@@ -40,7 +40,7 @@ bool searchMatrix2(vector<vector<int>> &mat, int n, int m, int target) {
     return false;
 }
 
-//Optimal - TC: O(log(N * M)), SC: O(1)
+//Optimal - TC: O(log(N * M)), SC: O(1) - Staircase Search
 bool searchMatrix3(vector<vector<int>> &mat, int n, int m, int target) {
     int low = 0, high = n * m - 1;
     while(low <= high) {
