@@ -69,8 +69,8 @@ int main() {
     int ans = findMedian(mat, n, m);
     cout << "Brute: " << ans << endl;
 
-    int ans = findMedian2(mat, n, m);
-    cout << "Brute: " << ans << endl;
+    int ans2 = findMedian2(mat, n, m);
+    cout << "Optimal: " << ans2 << endl;
 
   return 0;
 }
