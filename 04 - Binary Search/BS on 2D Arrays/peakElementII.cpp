@@ -75,10 +75,10 @@ int main() {
   vector<int> ans = findPeakIndex(mat, n, m);
   cout << "Brute: {" << ans[0] << "," << ans[1] << "}" << endl;
 
-  vector<int> ans = findPeakIndex(mat, n, m);
+  vector<int> ans2 = findPeakIndex2(mat, n, m);
   cout << "Better: {" << ans[0] << "," << ans[1] << "}" << endl;
 
-  vector<int> ans = findPeakIndex(mat, n, m);
+  pair<int, int> ans = findPeakIndex3(mat, n, m);
   cout << "Optimal: {" << ans[0] << "," << ans[1] << "}" << endl;
 
   return 0;
