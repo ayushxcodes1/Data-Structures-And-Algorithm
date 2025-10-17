@@ -21,7 +21,7 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
 }
 
 //Better - TC: O(N * M), SC: O(1)
-pair<int, int> findPeakIndex(vector<vector<int>> &mat, int n, int m) { 
+pair<int, int> findPeakIndex2(vector<vector<int>> &mat, int n, int m) { 
     int maxValue = INT_MIN;
     pair<int,int> peak;
     for(int i = 0; i < n; i++) {
@@ -48,7 +48,7 @@ int findMaxIndex(vector<vector<int>> &mat, int n, int m, int col) {
     return index;
 }
 
-vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) { 
+vector<int> findPeakIndex3(vector<vector<int>> &mat, int n, int m) { 
     int low = 0, high = m - 1;
     while(low <= high) {
         int mid = (low + high) / 2;
