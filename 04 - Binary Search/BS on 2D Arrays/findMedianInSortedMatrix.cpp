@@ -39,7 +39,7 @@ int upperBound(vector<int> &arr, int low, int high, int target) {
 int cntSmallEqual(vector<vector<int>> &mat, int n, int m, int x) {
     int cnt = 0; 
     for(int i = 0; i < n; i++) {
-        cnt += upperBound(mat[i], n, m, x);
+        cnt += upperBound(mat[i], 0, m-1, x);
     }
     return cnt;
 }
