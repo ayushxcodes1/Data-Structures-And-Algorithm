@@ -54,10 +54,11 @@ int findMedian(vector<vector<int>> &mat, int n, int m) {
     int req = (n * m) / 2;
     while(low <= high) {
         int mid = (low + high) / 2;
-        int smallEqual = cntSmallEqual(mat, n, m, mid)
+        int smallEqual = cntSmallEqual(mat, n, m, mid);
         if(smallEqual <= req) low = mid + 1;
         else high = mid - 1;
     }
+    return low;
 }
 
 int main() {
