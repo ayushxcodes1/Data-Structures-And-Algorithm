@@ -54,7 +54,7 @@ int findMedian2(vector<vector<int>> &mat, int n, int m) {
     int req = (n * m) / 2;
     while(low <= high) {
         int mid = (low + high) / 2;
-        int smallEqual = cntSmallestEqual(mat, n, m, mid);
+        int smallEqual = cntSmallestEqual(mat, n, m);
         if(smallEqual <= req) low = mid + 1;
         else high = mid - 1;
     }
