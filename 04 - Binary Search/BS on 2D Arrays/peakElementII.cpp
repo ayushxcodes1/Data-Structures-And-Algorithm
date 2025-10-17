@@ -9,8 +9,8 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
             int top = (i > 0) ? mat[i - 1][j] : -1;
             int bottom = (i < n - 1) ? mat[i + 1][j] : -1;
             int left = (j > 0) ? mat[i][j - 1] : -1;
-            int right = (i > 0) ? mat[i][j + 1] : -1;
-            
+            int right = (j < m - 1) ? mat[i][j + 1] : -1;
+
             if(mat[i][j] > left && mat[i][j] > right && 
                mat[i][j] > top && mat[i][j] > bottom) {
                return {i, j};
