@@ -18,7 +18,7 @@ int findMedian(vector<vector<int>> &mat, int n, int m) {
     return temp[temp.size() / 2];
 }
 
-//Brute Force - TC: O((N * M) * log(N * M)), SC: O(1)
+//Optimal - TC: O((N * M) * log(N * M)), SC: O(1)
 int upperBound(vector<int> &arr, int low, int high, int target) {
     int n = arr.size();
     int ans = n;
