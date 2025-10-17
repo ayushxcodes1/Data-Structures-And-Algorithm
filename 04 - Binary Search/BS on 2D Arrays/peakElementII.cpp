@@ -25,7 +25,9 @@ int findMaxIndex(vector<int> arr, int n) {
     int maxValue = -1;
     int index = -1;
     for(int i = 0; i < n; i++) {
-       if()
+        if(mat[i][col] > maxValue) {
+           maxValue
+        }
     }
 }
 
