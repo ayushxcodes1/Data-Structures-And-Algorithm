@@ -20,7 +20,7 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
     return {-1, -1};
 }
 
-//Brute Force - TC: O(N * M * 4), SC: O(1)
+//Better - TC: O(N * M * 4), SC: O(1)
 vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) { 
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
