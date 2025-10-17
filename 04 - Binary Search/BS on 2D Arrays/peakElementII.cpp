@@ -28,11 +28,11 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
         for(int j = 0; j < m; j++) {
             if(mat[i][j] > maxValue) {
                 maxValue = mat[i][j];
-                peak{i, j};
+                peak = {i, j};
             }
         }
     }
-    return;
+    return peak;
 }
 
 //Optimal - TC: O(N * logM), SC: O(1)
