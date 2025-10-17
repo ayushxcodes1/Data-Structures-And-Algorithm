@@ -5,12 +5,15 @@ using namespace std;
 //Brute Force - TC: O((N * M) * log(N * M)), SC: O(N * M)
 int findMedian(vector<vector<int>> &mat, int n, int m) {
     vector<int> temp;
+
+    //O(N * M)
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
             temp.push_back(mat[i][j]);
         }
     }
 
+    //O((N * M) * log(N * M))
     sort(temp.begin(), temp.end());
     return temp[temp.size() / 2];
 }
