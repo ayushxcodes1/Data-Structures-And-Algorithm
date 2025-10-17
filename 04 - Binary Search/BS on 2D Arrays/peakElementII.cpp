@@ -32,7 +32,7 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
             }
         }
     }
-    return {-1, -1};
+    return;
 }
 
 //Optimal - TC: O(N * logM), SC: O(1)
