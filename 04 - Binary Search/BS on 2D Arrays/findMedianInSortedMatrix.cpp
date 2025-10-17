@@ -16,6 +16,7 @@ int findMedian(vector<vector<int>> &mat, int n, int m) {
 
 int main() {
   vector<vector<int>> mat = {{1, 3, 5}, {2, 6, 9}, {3, 6, 9}};
-  
+  int ans = findMedian(mat, n, m);
+  cout << "Brute: " << ans << endl;
   return 0;
 }
