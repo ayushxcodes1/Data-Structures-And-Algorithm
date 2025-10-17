@@ -21,12 +21,13 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
 }
 
 //Optimal - TC: O(N * M), SC: O(1)
-int findMaxIndex(vector<int> arr, int n) {
+int findMaxIndex(vector<vector<int>> &mat, int n) {
     int maxValue = -1;
     int index = -1;
     for(int i = 0; i < n; i++) {
         if(mat[i][col] > maxValue) {
-           maxValue
+           maxValue = mat[i][col];
+           index = i;
         }
     }
 }
