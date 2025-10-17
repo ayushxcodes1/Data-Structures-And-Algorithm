@@ -34,20 +34,10 @@ int findMaxIndex(vector<vector<int>> &mat, int n, int m, int col) {
 }
 
 vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) { 
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < m; j++) {
-            int top = (i > 0) ? mat[i - 1][j] : -1;
-            int bottom = (i < n - 1) ? mat[i + 1][j] : -1;
-            int left = (j > 0) ? mat[i][j - 1] : -1;
-            int right = (j < m - 1) ? mat[i][j + 1] : -1;
-
-            if(mat[i][j] > left && mat[i][j] > right && 
-               mat[i][j] > top && mat[i][j] > bottom) {
-               return {i, j};
-            }
-        }
+    int low = 0, high = m - 1;
+    while(low <= high) {
+        
     }
-    return {-1, -1};
 }
 
 
