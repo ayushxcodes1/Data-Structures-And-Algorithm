@@ -19,7 +19,7 @@ int findMedian(vector<vector<int>> &mat, int n, int m) {
 }
 
 //Optimal - TC: O((N * logM) * log(max - min)), SC: O(1)
-int upperBound(vector<int> &arr, int x, int n) {
+int upperBound(vector<int> &arr, int n, int x) {
     int low = 0, high = n - 1;
     int ans = n;
     while(low <= high) {
@@ -39,7 +39,7 @@ int upperBound(vector<int> &arr, int x, int n) {
 int cntSmallEqual(vector<vector<int>> &mat, int n, int m, int x) {
     int cnt = 0; 
     for(int i = 0; i < n; i++) {
-        cnt += upperBound(mat[i], x, m);
+        cnt += upperBound(mat[i], m, x);
     }
     return cnt;
 }
