@@ -30,6 +30,7 @@ int findMaxIndex(vector<vector<int>> &mat, int n, int m, int col) {
            index = i;
         }
     }
+    return index;
 }
 
 vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) { 
