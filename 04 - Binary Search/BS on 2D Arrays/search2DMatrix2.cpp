@@ -19,7 +19,7 @@ int main() {
   int n = mat.size();
   int m = mat[0].size();
 
-  bool ans = searchMatrix(mat, n, m, 3);
+  bool ans = searchMatrix(mat, n, m, 5);
   cout << "Brute: " << ans << endl;
 
   return 0;
