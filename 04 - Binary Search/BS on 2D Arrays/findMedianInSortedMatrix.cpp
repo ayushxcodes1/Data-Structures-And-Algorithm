@@ -3,7 +3,11 @@
 using namespace std;
 
 int findMedian(vector<vector<int>> &mat, int n, int m) {
-    
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < m; j++) {
+            
+        }
+    }
 }
 
 int main() {
