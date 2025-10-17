@@ -9,6 +9,10 @@ int findMedian(vector<vector<int>> &mat, int n, int m) {
             temp.push_back(mat[i][j]);
         }
     }
+
+    sort(temp.begin(), temp.end());
+
+    
 }
 
 int main() {
