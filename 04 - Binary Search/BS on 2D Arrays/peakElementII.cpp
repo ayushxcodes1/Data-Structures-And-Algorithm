@@ -69,6 +69,11 @@ vector<int> findPeakIndex3(vector<vector<int>> &mat, int n, int m) {
 
 int main() {
   vector<vector<int>> mat = {{10, 20, 15}, {21, 30, 14}, {7, 16, 32}};
+  int n = mat.size();
+  int m = mat[0].size();
+
+  vector<int> ans = findPeakIndex(mat, n, m);
+  cout << "{" << ans[0] << "," << ans[1] << "}";
 
   return 0;
 }
