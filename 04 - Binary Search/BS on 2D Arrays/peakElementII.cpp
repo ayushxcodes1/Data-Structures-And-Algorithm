@@ -4,6 +4,11 @@ using namespace std;
 
 //Brute Force - TC: O(N * M * 4), SC: O(1)
 vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
+    int left = (i > 0) ? mat[i][j - 1] : -1;
+    int right = (i > 0) ? mat[i][j - 1] : -1;
+    int top = (i > 0) ? mat[i][j - 1] : -1;
+    int bottom = (i > 0) ? mat[i][j - 1] : -1;
+
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
             if(mat[i][j] > left && mat[i][j] > right && 
