@@ -77,9 +77,9 @@ int main() {
 
   vector<int> ans = findPeakIndex(mat, n, m);
   cout << "Better: {" << ans[0] << "," << ans[1] << "}" << endl;
-  
+
   vector<int> ans = findPeakIndex(mat, n, m);
-  cout << "{" << ans[0] << "," << ans[1] << "}";
+  cout << "Optimal: {" << ans[0] << "," << ans[1] << "}" << endl;
 
   return 0;
 }
