@@ -49,5 +49,8 @@ int main() {
   bool ans = searchMatrix(mat, n, m, 5);
   cout << "Brute: " << ans << endl;
 
+  bool ans2 = searchMatrix2(mat, n, m, 3);
+  cout << "Better: " << ans2 << endl;
+
   return 0;
 }
