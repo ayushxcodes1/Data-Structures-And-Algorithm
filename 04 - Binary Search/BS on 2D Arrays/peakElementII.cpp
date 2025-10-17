@@ -29,7 +29,7 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
             if(mat[i][j] > maxValue) {
             maxValue = mat[i][j];
             index = i;
-            }
+        }
     }
     return {-1, -1};
 }
