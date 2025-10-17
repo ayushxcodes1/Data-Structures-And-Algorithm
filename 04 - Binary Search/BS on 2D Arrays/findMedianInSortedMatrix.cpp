@@ -11,8 +11,7 @@ int findMedian(vector<vector<int>> &mat, int n, int m) {
     }
 
     sort(temp.begin(), temp.end());
-
-    
+    return temp[temp.size() / 2];
 }
 
 int main() {
