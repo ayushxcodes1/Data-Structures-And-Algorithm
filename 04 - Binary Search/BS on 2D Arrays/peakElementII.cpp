@@ -22,13 +22,13 @@ vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) {
 
 //Better - TC: O(N * M), SC: O(1)
 vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) { 
-    int maxValue = -1;
-    int index = -1;
+    int maxValue = INT_MIN;
+    pair<int,int> peak;
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
             if(mat[i][j] > maxValue) {
                 maxValue = mat[i][j];
-                index = i;
+                peak{i, j};
             }
         }
     }
