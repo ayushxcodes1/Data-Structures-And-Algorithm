@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O((N * M) * log(N * M)), SC: O(N * M)
 int findMedian(vector<vector<int>> &mat, int n, int m) {
     vector<int> temp;
     for(int i = 0; i < n; i++) {
@@ -21,5 +22,6 @@ int main() {
 
     int ans = findMedian(mat, n, m);
     cout << "Brute: " << ans << endl;
+
   return 0;
 }
