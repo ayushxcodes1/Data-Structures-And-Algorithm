@@ -62,5 +62,8 @@ int main() {
   bool ans2 = searchMatrix2(mat, n, m, 3);
   cout << "Better: " << ans2 << endl;
 
+  bool ans3 = searchMatrix3(mat, n, m, 3);
+  cout << "Optimal: " << ans3 << endl;
+
   return 0;
 }
