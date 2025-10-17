@@ -36,7 +36,7 @@ int findMaxIndex(vector<vector<int>> &mat, int n, int m, int col) {
 vector<int> findPeakIndex(vector<vector<int>> &mat, int n, int m) { 
     int low = 0, high = m - 1;
     while(low <= high) {
-        
+        int mid = (low + high) / 2;
     }
 }
 
