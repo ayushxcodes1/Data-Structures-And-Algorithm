@@ -44,7 +44,7 @@ int cntSmallEqual(vector<vector<int>> &mat, int n, int m, int x) {
     return cnt;
 }
 
-int findMedian(vector<vector<int>> &mat, int n, int m) {
+int findMedian2(vector<vector<int>> &mat, int n, int m) {
     int low = INT_MAX, high = INT_MIN;
     for(int i = 0; i < n; i++) {
         low = min(low, mat[i][0]);
@@ -67,6 +67,9 @@ int main() {
     int m = mat[0].size();
 
     int ans = findMedian(mat, n, m);
+    cout << "Brute: " << ans << endl;
+
+    int ans = findMedian2(mat, n, m);
     cout << "Brute: " << ans << endl;
 
   return 0;
