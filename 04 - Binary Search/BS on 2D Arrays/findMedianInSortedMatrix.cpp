@@ -36,10 +36,10 @@ int upperBound(vector<int> &arr, int low, int high, int target) {
     return ans;
 }
 
-int cntSmallestEqual(vector<vector<int>> &mat, int n, int m, int x) {
+int cntSmallestEqual(vector<vector<int>> &mat, int n, int m) {
     int cnt = 0; 
     for(int i = 0; i < n; i++) {
-        cnt += upperBound(mat[i], 0, m-1, x);
+        cnt += upperBound(mat[i], 0, m-1);
     }
     return cnt;
 }
