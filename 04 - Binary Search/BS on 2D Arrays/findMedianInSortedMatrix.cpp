@@ -36,7 +36,7 @@ int upperBound(vector<int> &arr, int low, int high, int target) {
     return ans;
 }
 
-int countSmallEqual(vector<vector<int>> &mat, int n, int m, int x) {
+int cntSmallEqual(vector<vector<int>> &mat, int n, int m, int x) {
     int cnt = 0; 
     for(int i = 0; i < n; i++) {
         cnt += upperBound(mat[i], n, m, x);
@@ -53,7 +53,8 @@ int findMedian(vector<vector<int>> &mat, int n, int m) {
 
     int req = (n * m) / 2;
     while(low <= high) {
-        
+        int mid = (low + high) / 2;
+        int smallEqual = cntSmallEqual(mat, n, m, mid)
     }
 
 }
