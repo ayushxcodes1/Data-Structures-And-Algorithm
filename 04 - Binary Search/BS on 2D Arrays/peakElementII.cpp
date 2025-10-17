@@ -73,6 +73,12 @@ int main() {
   int m = mat[0].size();
 
   vector<int> ans = findPeakIndex(mat, n, m);
+  cout << "Brute: {" << ans[0] << "," << ans[1] << "}" << endl;
+
+  vector<int> ans = findPeakIndex(mat, n, m);
+  cout << "Better: {" << ans[0] << "," << ans[1] << "}" << endl;
+  
+  vector<int> ans = findPeakIndex(mat, n, m);
   cout << "{" << ans[0] << "," << ans[1] << "}";
 
   return 0;
