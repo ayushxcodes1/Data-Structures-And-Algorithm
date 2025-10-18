@@ -16,10 +16,8 @@ bool validParenthesis(string s) {
                    c == '{' && st.top() == '}' ||
                    c == '[' && st.top() == ']') {
                 }
-            }
         }
     }
-    return st.empty();
 }
 
 int main() {
