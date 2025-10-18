@@ -12,6 +12,7 @@ bool validParenthesis(string s) {
         }
         else {
             if(st.empty()) return false;
+            
             if(c == '(' && st.top() == ')' ||
                 c == '{' && st.top() == '}' ||
                 c == '[' && st.top() == ']') {
