@@ -40,7 +40,7 @@ string validParenthesis2(string s) {
 
 int main() {
   string s = "(()())(())";
-  string res = validParenthesis2(s);
+  string res = validParenthesis(s);
   cout << "Brute: " << res << endl;
 
   string res2 = validParenthesis2(s);
