@@ -7,11 +7,9 @@ bool validParenthesis(string s) {
     stack<char> st;
 
     for(auto c : s) {
-        if(c == '(' && st.top() == ')' ||
-           c == '{' && st.top() == '}' ||
-           c == '[' && st.top() == ']') {
-           
-        }
+       if(c == '(' || c == '{' || c == '[') {
+        
+       }
     }
     return st.empty();
 }
