@@ -23,7 +23,7 @@ bool validParenthesis(string s) {
     }
     return st.empty();
 }
-//Approach 1 - TC: O(N), SC: O(N) - Using Stack
+//Approach 1 - TC: O(N), SC: O(N)
 bool validParenthesis(string s) {
     stack<char> st;
 
