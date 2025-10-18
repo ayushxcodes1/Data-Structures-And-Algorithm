@@ -11,8 +11,6 @@ bool validParenthesis(string s) {
            st.push(c);
         }
         else {
-            if(st.empty()) return false;
-            
             if(c == ')' && st.top() == '(' ||
                c == '}' && st.top() == '{' ||
                c == ']' && st.top() == '[') {
