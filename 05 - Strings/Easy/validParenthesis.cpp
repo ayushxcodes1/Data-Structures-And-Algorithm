@@ -10,6 +10,10 @@ bool validParenthesis(string s) {
         if(c == '(' || c == '{' || c == '[') {
            st.push(c);
         }
+        else {
+            if(st.empty()) return false;
+            
+        }
     }
     return st.empty();
 }
