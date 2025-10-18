@@ -11,9 +11,9 @@ bool validParenthesis(string s) {
            st.push(c);
         }
         else {
-            if(c == ')' && st.top() == '(' ||
-               c == '}' && st.top() == '{' ||
-               c == ']' && st.top() == '[') {
+            if(c == ')' && st.top() != '(' ||
+               c == '}' && st.top() != '{' ||
+               c == ']' && st.top() != '[') {
                return false;
             }
             st.pop();
