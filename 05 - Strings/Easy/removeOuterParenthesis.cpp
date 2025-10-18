@@ -22,5 +22,8 @@ string removeOuterParenthesis(string s) {
 
 int main() {
   string s = "(()())(())";
+  string res = removeOuterParenthesis(s);
+  cout << res;
+  
   return 0;
 }
