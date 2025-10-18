@@ -32,7 +32,7 @@ string removeOuterParenthesis(string s) {
         }
         else {
            cnt--;
-           if(cnt > 0) res += '(';
+           if(cnt > 0) res += ')';
         }
     }
     return res;
