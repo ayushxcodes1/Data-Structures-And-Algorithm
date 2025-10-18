@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force - TC: O(N), SC: O(N) - Using Stack
-string removeOuterParenthesis(string s) {
+string validParenthesis(string s) {
     stack<char> st;
     string res = "";
 
@@ -21,7 +21,7 @@ string removeOuterParenthesis(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(1) - Depth Counter
-string removeOuterParenthesis2(string s) {
+string validParenthesis2(string s) {
     string res = "";
     int cnt = 0;
 
