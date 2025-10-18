@@ -31,8 +31,8 @@ string removeOuterParenthesis(string s) {
            cnt++;
         }
         else {
-           st.pop();
-           if(!st.empty()) res += c;
+           cnt--;
+           if(cnt > 0) res += '(';
         }
     }
     return res;
