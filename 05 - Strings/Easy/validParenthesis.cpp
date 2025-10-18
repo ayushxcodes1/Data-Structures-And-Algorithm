@@ -58,6 +58,9 @@ bool validParenthesis(string s) {
         else if(c == '[') {
            st.push(']');
         }
+        else if(st.empty() || st.top() != c) {
+           return false;
+        }
         else {
             st.pop();
         }
