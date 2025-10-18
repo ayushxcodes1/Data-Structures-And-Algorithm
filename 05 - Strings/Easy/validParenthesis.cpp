@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute Force - TC: O(N), SC: O(N) - Using Stack
-string validParenthesis(string s) {
+bool validParenthesis(string s) {
     stack<char> st;
     string res = "";
 
