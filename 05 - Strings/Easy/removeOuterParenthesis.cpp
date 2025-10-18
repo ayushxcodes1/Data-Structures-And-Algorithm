@@ -41,7 +41,7 @@ string removeOuterParenthesis2(string s) {
 int main() {
   string s = "(()())(())";
   string res = removeOuterParenthesis(s);
-  cout << "Brute: " << res;
+  cout << "Brute: " << res << endl;
 
   string res2 = removeOuterParenthesis2(s);
   cout << "Optimal: " << res2;
