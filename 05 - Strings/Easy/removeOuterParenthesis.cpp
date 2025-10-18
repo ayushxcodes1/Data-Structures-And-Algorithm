@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N), SC: O(N) - Stack
+//Brute Force - TC: O(N), SC: O(N) - Using Stack
 string removeOuterParenthesis(string s) {
  
 }
