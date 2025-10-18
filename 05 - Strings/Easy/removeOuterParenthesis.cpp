@@ -21,7 +21,7 @@ string removeOuterParenthesis(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(1) - Depth Counter
-string removeOuterParenthesis(string s) {
+string removeOuterParenthesis2(string s) {
     string res = "";
     int cnt = 0;
 
