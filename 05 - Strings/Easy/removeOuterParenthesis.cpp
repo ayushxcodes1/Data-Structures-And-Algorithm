@@ -22,7 +22,6 @@ string removeOuterParenthesis(string s) {
 
 //Optimal - TC: O(N), SC: O(1) - Depth Counter
 string removeOuterParenthesis(string s) {
-    stack<char> st;
     string res = "";
 
     for(auto c : s) {
