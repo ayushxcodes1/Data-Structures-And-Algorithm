@@ -8,7 +8,7 @@ bool validParenthesis(string s) {
 
     for(auto c : s) {
         if(c == '(' || c == '{' || c == '[') {
-          st.push(c);
+           st.push(c);
         }
     }
     return st.empty();
