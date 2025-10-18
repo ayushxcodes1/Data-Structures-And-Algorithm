@@ -5,7 +5,6 @@ using namespace std;
 //Brute Force - TC: O(N), SC: O(N) - Using Stack
 bool validParenthesis(string s) {
     stack<char> st;
-    string res = "";
 
     for(auto c : s) {
         if(c == '(') {
