@@ -44,7 +44,7 @@ bool validParenthesis(string s) {
     }
     return st.empty();
 }
-//Brute Force - TC: O(N), SC: O(N) - Using Stack
+//Approach 2 - TC: O(N), SC: O(N)
 bool validParenthesis(string s) {
     stack<char> st;
 
