@@ -7,7 +7,9 @@ string removeOuterParenthesis(string s) {
     stack<char> st;
     string res = "";
 
-    
+    for(auto c : s) {
+        
+    }
 }
 
 int main() {
