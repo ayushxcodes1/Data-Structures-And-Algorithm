@@ -27,8 +27,8 @@ string removeOuterParenthesis(string s) {
 
     for(auto c : s) {
         if(c == '(') {
-           if(!st.empty()) res += c;
-           st.push(c);
+           if(cnt > 0) res += '(';
+           cnt++;
         }
         else {
            st.pop();
