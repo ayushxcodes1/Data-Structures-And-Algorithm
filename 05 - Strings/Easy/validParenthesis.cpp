@@ -10,7 +10,7 @@ bool validParenthesis(string s) {
         if(c == '(' && st.top() == ')' ||
            c == '{' && st.top() == '}' ||
            c == '[' && st.top() == ']') {
-
+           
         }
     }
     return st.empty();
