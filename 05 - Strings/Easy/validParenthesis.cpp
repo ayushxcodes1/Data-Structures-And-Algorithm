@@ -7,9 +7,9 @@ bool validParenthesis(string s) {
     stack<char> st;
 
     for(auto c : s) {
-       if(c == '(' || c == '{' || c == '[') {
+        if(c == '(' || c == '{' || c == '[') {
           st.push(c);
-       }
+        }
     }
     return st.empty();
 }
