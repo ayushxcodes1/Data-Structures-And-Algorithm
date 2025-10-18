@@ -40,10 +40,10 @@ string validParenthesis2(string s) {
 
 int main() {
   string s = "(()())(())";
-  string res = removeOuterParenthesis(s);
+  string res = validParenthesis2(s);
   cout << "Brute: " << res << endl;
 
-  string res2 = removeOuterParenthesis2(s);
+  string res2 = validParenthesis2(s);
   cout << "Optimal: " << res2;
 
   return 0;
