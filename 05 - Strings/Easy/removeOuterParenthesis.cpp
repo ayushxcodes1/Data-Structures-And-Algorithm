@@ -43,5 +43,8 @@ int main() {
   string res = removeOuterParenthesis(s);
   cout << res;
 
+  string res2 = removeOuterParenthesis2(s);
+  cout << res2;
+
   return 0;
 }
