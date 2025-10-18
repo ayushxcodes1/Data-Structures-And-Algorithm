@@ -22,7 +22,7 @@ bool validParenthesis(string s) {
 
 int main() {
   string s = "(()())(())";
-  string res = validParenthesis(s);
+  bool res = validParenthesis(s);
   cout << "Brute: " << res << endl;
 
   return 0;
