@@ -20,31 +20,10 @@ string validParenthesis(string s) {
     return res;
 }
 
-//Optimal - TC: O(N), SC: O(1) - Depth Counter
-string validParenthesis2(string s) {
-    string res = "";
-    int cnt = 0;
-
-    for(auto c : s) {
-        if(c == '(') {
-            if(cnt > 0) res += c;
-            cnt++;
-        }
-        else {
-            cnt--;
-            if(cnt > 0) res += c;
-        }
-    }
-    return res;
-}
-
 int main() {
   string s = "(()())(())";
   string res = validParenthesis(s);
   cout << "Brute: " << res << endl;
-
-  string res2 = validParenthesis2(s);
-  cout << "Optimal: " << res2;
 
   return 0;
 }
