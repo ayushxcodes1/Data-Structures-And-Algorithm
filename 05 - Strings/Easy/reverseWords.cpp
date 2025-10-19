@@ -87,6 +87,7 @@ string reverseWords4(string s) {
 
            l = r;
         }
+        i++;
     }
     
     
