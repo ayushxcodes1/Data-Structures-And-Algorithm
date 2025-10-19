@@ -4,6 +4,7 @@ using namespace std;
 
 string reverseWords(string s) {
     stack<string> st;
+    string word = "";
 
     for(auto c : s) {
         if(c == ' ' && word == "") continue;
