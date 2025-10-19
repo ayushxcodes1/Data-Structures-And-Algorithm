@@ -13,11 +13,9 @@ string largestOddNumber(string s) {
         if(lastDigit % 2 == 0) {
            num = num / 10; 
         }
+        ans = num; 
+        return ans;
     }
-
-    //odd
-    ans = num; 
-    return ans;
 }
 
 int main() {
