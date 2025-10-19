@@ -9,13 +9,11 @@ string largestOddNumber(string s) {
     int lastDigit = num % 10;
     
     //even
-    if(lastDigit % 2 == 0) {
+    while(lastDigit % 2 == 0) {
        num = num / 10; 
     }
-    else {
-       ans = num;  
-       return ans;
-    }
+    ans = num;  
+    return ans;
 }
 
 int main() {
