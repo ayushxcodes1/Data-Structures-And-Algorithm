@@ -53,5 +53,9 @@ int main() {
 
   string ans = reverseWords(s);
   cout << ans << endl;
+
+  string ans2 = reverseWords2(s);
+  cout << ans2 << endl;
+
   return 0;
 }
