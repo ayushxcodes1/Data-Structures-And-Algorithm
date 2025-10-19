@@ -35,11 +35,12 @@ string reverseWords2(string s) {
     stringstream ss(s);
     string token = "";
     string ans = "";
-    int n = s.length();
-
+    
     while(ss >> token) {
         ans = token + " " + ans;
     }
+
+    int n = ans.length();
     return ans.substr(0, n-1);
 }
 
