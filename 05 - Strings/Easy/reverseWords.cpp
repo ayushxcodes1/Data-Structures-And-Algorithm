@@ -34,7 +34,10 @@ string reverseWords(string s) {
     string token = "";
     string ans = "";
 
-    while()
+    while(ss >> token) {
+        ans = token + " " + ans;
+    }
+    return ans.substr(0, n-1);
 }
 
 //Optimal - TC: O(N), SC: O(1)
