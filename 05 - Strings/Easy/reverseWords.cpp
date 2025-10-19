@@ -71,7 +71,8 @@ string reverseWords3(string s) {
 string reverseWords4(string s) {
     reverse(s.begin(), s.end());
 
-    
+    int i = 0;
+    int l = 0, r = 0;
     
 }
 
