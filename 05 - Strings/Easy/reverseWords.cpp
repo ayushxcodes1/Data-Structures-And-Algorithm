@@ -43,10 +43,10 @@ string reverseWords2(string s) {
     return ans;
 }
 
-//Optimal - TC: O(N), SC: O(1)
+//Approach 3 - TC: O(N), SC: O(N) 
 string reverseWords3(string s) {
     int n = s.length();
-    string ans = "";
+    string ans = ""; //extra space
 
     reverse(s.begin(), s.end());
 
