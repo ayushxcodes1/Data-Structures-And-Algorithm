@@ -45,6 +45,11 @@ string reverseWords2(string s) {
 
 //Optimal - TC: O(N), SC: O(1)
 string reverseWords3(string s) {
+    int n = s.length();
+    string ans = "";
+
+    reverse(s.begin(), s.end());
+
     
 }
 
