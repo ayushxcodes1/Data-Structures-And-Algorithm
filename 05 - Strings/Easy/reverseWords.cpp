@@ -2,6 +2,9 @@
 
 using namespace std;
 
+string reverseWords(string s) {
+    
+}
 
 int main() {
   string s = "  hello  world  ";
