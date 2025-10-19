@@ -9,7 +9,8 @@ string reverseWords(string s) {
     for(auto c : s) {
         if(c == ' ' && word == "") continue;
         else if(c == ' ' && word != "") {
-            
+            st.push(word);
+            word = "";
         }
     }
 }
