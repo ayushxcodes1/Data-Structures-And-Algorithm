@@ -2,7 +2,9 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N), SC: O(N) - Using Stack
+//Brute Force 
+
+//Approach 1 - TC: O(N), SC: O(N) - Using Stack
 string reverseWords(string s) {
     stack<string> st;
     string word = "";
@@ -28,7 +30,7 @@ string reverseWords(string s) {
     return ans;
 }
 
-//Brute Force - TC: O(N), SC: O(N) - Using STL
+//Approach 2 - TC: O(N), SC: O(N) - Using STL
 string reverseWords(string s) {
     stringstream ss(s);
     string token = "";
