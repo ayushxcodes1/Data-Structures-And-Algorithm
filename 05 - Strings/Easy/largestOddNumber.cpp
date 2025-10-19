@@ -21,5 +21,8 @@ string largestOddNumber(string s) {
 int main() {
   string s = "52";
 
+  string ans = largestOddNumber(s);
+  cout << ans;
+  
   return 0;
 }
