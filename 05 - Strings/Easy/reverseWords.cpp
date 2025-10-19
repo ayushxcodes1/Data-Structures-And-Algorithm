@@ -56,7 +56,14 @@ string reverseWords3(string s) {
             word += s[i];
             i++;
         }
+
+        reverse(word.begin(), word.end());
+     
+        if(word.length() > 0) {
+           ans += " " + word;
+        }    
     }
+    return ans.substr(1);
 }
 
 int main() {
@@ -67,6 +74,9 @@ int main() {
 
   string ans2 = reverseWords2(s);
   cout << "Brute Using STL: " << ans2 << endl;
+
+  string ans3 = reverseWords2(s);
+  cout << "Optimal: " << ans3 << endl;
 
   return 0;
 }
