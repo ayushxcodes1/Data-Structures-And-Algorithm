@@ -2,11 +2,13 @@
 
 using namespace std;
 
+//Brute Force - TC: O(N), SC: O(N)
 string reverseWords(string s) {
     stack<string> st;
     string word = "";
     string ans = "";
 
+    //O(N)
     for(auto c : s) {
         if(c == ' ' && word == "") continue;
         else if(c == ' ' && word != "") {
@@ -17,7 +19,7 @@ string reverseWords(string s) {
     }
     if(word != "") st.push(word);
 
-    //building answer
+    //O(N)
     while(!st.empty()) {
         ans += st.top();
         st.pop();
