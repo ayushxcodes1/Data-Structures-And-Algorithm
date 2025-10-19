@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Approach 1 - TC: O(N), SC: O(N)
+//Approach 1 - TC: O(N), SC: O(N) - Using Stack
 bool validParenthesis(string s) {
     stack<char> st;
 
