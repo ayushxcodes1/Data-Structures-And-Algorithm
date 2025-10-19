@@ -28,7 +28,7 @@ string reverseWords(string s) {
     return ans;
 }
 
-//Brute Force - TC: O(N), SC: O(N) - Using STl
+//Brute Force - TC: O(N), SC: O(N) - Using STL
 string reverseWords(string s) {
     stringstream ss(s);
     string token = "";
