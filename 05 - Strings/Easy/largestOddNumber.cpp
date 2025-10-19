@@ -14,7 +14,7 @@ string largestOddNumber(string s) {
     }
 
     //odd
-    ans = num;  
+    ans = num; 
     return ans;
 }
 
