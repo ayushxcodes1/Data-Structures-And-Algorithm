@@ -14,6 +14,7 @@ string largestOddNumber(string s) {
     }
     else {
        ans = num;  
+       return ans;
     }
 }
 
