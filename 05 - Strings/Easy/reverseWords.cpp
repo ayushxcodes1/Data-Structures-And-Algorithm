@@ -8,25 +8,31 @@ using namespace std;
 string reverseWords(string s) {
     stack<string> st;
     string word = "";
-    string ans = "";
-
-    //O(N)
+    
+    // O(N) - Parse words into stack
     for(auto c : s) {
-        if(c == ' ' && word == "") continue;
-        else if(c == ' ' && word != "") {
-            st.push(word);
-            word = "";  
+        if(c == ' ') {
+            if(!word.empty()) {
+                st.push(word);
+                word = "";
+            }
         }
-        else word += c;
+        else {
+            word += c;
+        }
     }
-    if(word != "") st.push(word);
-
-    //O(N)
+    if(!word.empty()) st.push(word);
+    
+    // O(N) - Build result with reserved space
+    string ans;
+    ans.reserve(s.length());
+    
     while(!st.empty()) {
         ans += st.top();
         st.pop();
         if(!st.empty()) ans += " ";
     }
+    
     return ans;
 }
 
