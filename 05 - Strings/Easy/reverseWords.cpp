@@ -19,11 +19,11 @@ string reverseWords(string s) {
 
     //building answer
     while(!st.empty()) {
-        word += st.top();
+        ans += st.top();
         st.pop();
-        if(!st.empty()) word += " ";
+        if(!st.empty()) ans += " ";
     }
-    return word;
+    return ans;
 }
 
 int main() {
