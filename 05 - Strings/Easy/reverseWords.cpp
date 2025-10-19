@@ -6,7 +6,7 @@ string reverseWords(string s) {
     stack<string> st;
 
     for(auto c : s) {
-        if(c == " ") continue;
+        if(c == '' ') continue;
     }
 }
 
