@@ -14,6 +14,14 @@ string reverseWords(string s) {
         }
         else word + c;
     }
+
+    word += st.top();
+    st.pop();
+    word += " ";
+    word += st.top();
+    st.pop();
+
+    
 }
 
 int main() {
