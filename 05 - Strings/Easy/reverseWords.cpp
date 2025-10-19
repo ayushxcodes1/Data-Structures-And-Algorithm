@@ -52,10 +52,10 @@ int main() {
   string s = "  hello  world  ";
 
   string ans = reverseWords(s);
-  cout << ans << endl;
+  cout << "Brute Using Stack: "<< ans << endl;
 
   string ans2 = reverseWords2(s);
-  cout << ans2 << endl;
+  cout << "Brute Using STL: " << ans2 << endl;
 
   return 0;
 }
