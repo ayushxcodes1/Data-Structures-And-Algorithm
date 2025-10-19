@@ -37,12 +37,8 @@ string reverseWords2(string s) {
     string ans = "";
     
     while(ss >> token) {
-        if(ans.empty()) {
-           ans = token;
-        }
-        else {
-            ans = token + " " + ans;
-        }
+        if(ans.empty()) ans = token;
+        else ans = token + " " + ans;
     }
     return ans;
 }
