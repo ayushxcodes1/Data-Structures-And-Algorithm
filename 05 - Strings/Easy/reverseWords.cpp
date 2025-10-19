@@ -30,28 +30,11 @@ string reverseWords(string s) {
 
 //Brute Force - TC: O(N), SC: O(N) - Using STl
 string reverseWords(string s) {
-    stringstream ss();
+    stringstream ss(s);
     string token = "";
     string ans = "";
 
-    //O(N)
-    for(auto c : s) {
-        if(c == ' ' && word == "") continue;
-        else if(c == ' ' && word != "") {
-            st.push(word);
-            word = "";  
-        }
-        else word += c;
-    }
-    if(word != "") st.push(word);
-
-    //O(N)
-    while(!st.empty()) {
-        ans += st.top();
-        st.pop();
-        if(!st.empty()) ans += " ";
-    }
-    return ans;
+    while()
 }
 
 //Optimal - TC: O(N), SC: O(1)
