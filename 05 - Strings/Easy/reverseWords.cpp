@@ -76,7 +76,7 @@ string reverseWords4(string s) {
     int n = s.length();
     while(i < n) {
         while(i < n && s[i] != ' ') {
-            
+            s[r++] = s[i++];
         }
     }
     
