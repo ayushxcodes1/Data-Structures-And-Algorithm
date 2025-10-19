@@ -7,7 +7,7 @@ string reverseWords(string s) {
     string word = "";
 
     for(auto c : s) {
-        
+        if(c == ' ' && word == "") continue;
     }
 }
 
