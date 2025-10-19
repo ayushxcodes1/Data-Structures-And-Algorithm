@@ -43,33 +43,34 @@ string reverseWords2(string s) {
     return ans;
 }
 
-//Optimal - TC: O(N), SC: O(1) - Two Pointer Approach 
-string reverseWords3(string s) {
-    int n = s.length();
-    
-}
 
 //Approach 3 - TC: O(N), SC: O(N) 
 string reverseWords3(string s) {
     int n = s.length();
     string ans = ""; //extra space
-
+    
     reverse(s.begin(), s.end());
-
+    
     for(int i = 0; i < n; i++) {
         string word = "";
         while(i < n && s[i] != ' ') {
             word += s[i];
             i++;
         }
-
+        
         reverse(word.begin(), word.end());
-     
+        
         if(word.length() > 0) {
-           ans += " " + word;
+            ans += " " + word;
         }    
     }
     return ans.substr(1);
+}
+
+//Optimal - TC: O(N), SC: O(1) - Two Pointer Approach 
+string reverseWords3(string s) {
+    int n = s.length();
+    
 }
 
 int main() {
@@ -82,6 +83,9 @@ int main() {
   cout << "Brute Using STL: " << ans2 << endl;
 
   string ans3 = reverseWords2(s);
+  cout << "Brute 3: " << ans3 << endl;
+ 
+  string ans4 = reverseWords4(s);
   cout << "Optimal: " << ans3 << endl;
 
   return 0;
