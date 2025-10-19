@@ -6,10 +6,13 @@ string largestOddNumber(string s) {
     int num = stoi(s); //52
     string ans = "";
     
+    while(num > 0) {
+
+    }
     int lastDigit = num % 10;
     
     //even
-    while(lastDigit % 2 == 0) {
+    if(lastDigit % 2 == 0) {
        num = num / 10; 
     }
 
