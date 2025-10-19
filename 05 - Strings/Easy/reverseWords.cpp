@@ -33,6 +33,7 @@ string reverseWords(string s) {
     stringstream ss(s);
     string token = "";
     string ans = "";
+    int n = s.length();
 
     while(ss >> token) {
         ans = token + " " + ans;
