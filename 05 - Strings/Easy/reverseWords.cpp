@@ -28,7 +28,7 @@ string reverseWords(string s) {
     return ans;
 }
 
-//Brute Force - TC: O(N), SC: O(N) - Using Stack
+//Brute Force - TC: O(N), SC: O(N) - Using STl
 string reverseWords(string s) {
     stack<string> st;
     string word = "";
