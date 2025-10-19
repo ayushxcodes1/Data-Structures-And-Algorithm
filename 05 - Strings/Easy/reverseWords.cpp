@@ -43,7 +43,7 @@ string reverseWords2(string s) {
     return ans;
 }
 
-//Approach 3 - TC: O(N), SC: O(N) 
+//Optimal - TC: O(N), SC: O(1) - Using Two Pointers 
 string reverseWords3(string s) {
     int n = s.length();
     string ans = ""; //extra space
