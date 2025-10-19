@@ -30,8 +30,8 @@ string reverseWords(string s) {
 
 //Brute Force - TC: O(N), SC: O(N) - Using STl
 string reverseWords(string s) {
-    stack<string> st;
-    string word = "";
+    stringstream ss();
+    string token = "";
     string ans = "";
 
     //O(N)
