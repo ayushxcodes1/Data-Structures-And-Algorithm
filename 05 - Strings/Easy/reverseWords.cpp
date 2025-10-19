@@ -12,8 +12,9 @@ string reverseWords(string s) {
             st.push(word);
             word = "";  
         }
-        else word + c;
+        else word += c;
     }
+    if(word != "") st.push(word);
 
     //building answer
     while(!st.empty()) {
