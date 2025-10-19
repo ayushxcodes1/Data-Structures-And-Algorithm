@@ -3,7 +3,7 @@
 using namespace std;
 
 string largestOddNumber(string s) {
-    int num = s;
+    int num = stoi(s);
     int lastDigit = num % 10;
     string ans = "";
 
