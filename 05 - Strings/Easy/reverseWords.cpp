@@ -27,6 +27,7 @@ string reverseWords(string s) {
 
 int main() {
   string s = "  hello  world  ";
-  int n = s.length();
+
+  string ans = reverseWords(s);
   return 0;
 }
