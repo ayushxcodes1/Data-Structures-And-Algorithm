@@ -15,13 +15,13 @@ string reverseWords(string s) {
         else word + c;
     }
 
-    word += st.top();
-    st.pop();
-    word += " ";
-    word += st.top();
-    st.pop();
-
-    
+    while(!st.empty()) {
+        word += st.top();
+        st.pop();
+        if(st.size() != 1) {
+            word += " ";
+        }
+    }
 }
 
 int main() {
