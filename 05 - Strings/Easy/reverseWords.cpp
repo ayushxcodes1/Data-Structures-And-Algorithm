@@ -7,12 +7,7 @@ string reverseWords(string s) {
     string word = "";
 
     for(auto c : s) {
-        if(c == ' ' && word == "") continue;
-        else if(c == ' ' && word != "") {
-            st.push(word);
-            word = "";
-        }
-        else word + c;
+        
     }
 }
 
