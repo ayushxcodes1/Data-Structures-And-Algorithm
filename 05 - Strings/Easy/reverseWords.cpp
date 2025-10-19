@@ -69,7 +69,9 @@ string reverseWords3(string s) {
 
 //Optimal - TC: O(N), SC: O(1) - Two Pointer Approach 
 string reverseWords4(string s) {
-    int n = s.length();
+    reverse(s.begin(), s.end());
+
+    
     
 }
 
