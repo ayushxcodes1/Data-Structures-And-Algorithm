@@ -31,7 +31,7 @@ string reverseWords(string s) {
 }
 
 //Approach 2 - TC: O(N), SC: O(N) - Using STL
-string reverseWords(string s) {
+string reverseWords2(string s) {
     stringstream ss(s);
     string token = "";
     string ans = "";
