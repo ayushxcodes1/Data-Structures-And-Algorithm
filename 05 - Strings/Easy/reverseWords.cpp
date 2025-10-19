@@ -9,7 +9,7 @@ string reverseWords(string s) {
     stack<string> st;
     string word = "";
     
-    // O(N) - Parse words into stack
+    // O(N)
     for(auto c : s) {
         if(c == ' ') {
             if(!word.empty()) {
