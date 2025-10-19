@@ -22,6 +22,7 @@ string reverseWords(string s) {
             word += " ";
         }
     }
+    return word;
 }
 
 int main() {
