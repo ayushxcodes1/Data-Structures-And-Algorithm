@@ -3,7 +3,7 @@
 using namespace std;
 
 string largestOddNumber(string s) {
-    int num = stoi(s); //52
+    int num = stoi(s);
     string ans = "";
     
     while(num > 0) {
@@ -13,9 +13,12 @@ string largestOddNumber(string s) {
         if(lastDigit % 2 == 0) {
            num = num / 10; 
         }
-        ans = num; 
-        return ans;
+        else {
+            ans = to_string(num); 
+            break;
+        }
     }
+    return ans;
 }
 
 int main() {
