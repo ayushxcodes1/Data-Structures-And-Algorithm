@@ -15,6 +15,7 @@ string reverseWords(string s) {
         else word + c;
     }
 
+    //building answer
     while(!st.empty()) {
         word += st.top();
         st.pop();
