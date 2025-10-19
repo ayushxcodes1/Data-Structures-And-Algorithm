@@ -23,7 +23,7 @@ string reverseWords(string s) {
     }
     if(!word.empty()) st.push(word);
     
-    // O(N) - Build result with reserved space
+    // O(N) 
     string ans;
     ans.reserve(s.length());
     
