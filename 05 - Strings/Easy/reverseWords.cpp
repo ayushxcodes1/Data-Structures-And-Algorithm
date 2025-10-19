@@ -89,8 +89,8 @@ string reverseWords4(string s) {
         }
         i++;
     }
-    
-    
+    s = s.substr(0, r-1);
+    return s;
 }
 
 int main() {
