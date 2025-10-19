@@ -81,6 +81,11 @@ string reverseWords4(string s) {
 
         if(l < r) {
            reverse(s.begin() + l, s.begin() + r);
+
+           s[r] = ' ';
+           r++;
+
+           l = r;
         }
     }
     
