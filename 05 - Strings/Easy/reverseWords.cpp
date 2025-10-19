@@ -20,9 +20,7 @@ string reverseWords(string s) {
     while(!st.empty()) {
         word += st.top();
         st.pop();
-        if(st.size() != 1) {
-            word += " ";
-        }
+        if(!st.empty()) word += " ";
     }
     return word;
 }
