@@ -30,28 +30,7 @@ string reverseWords(string s) {
 
 //Optimal - TC: O(N), SC: O(1)
 string reverseWords(string s) {
-    stack<string> st;
-    string word = "";
-    string ans = "";
-
-    //O(N)
-    for(auto c : s) {
-        if(c == ' ' && word == "") continue;
-        else if(c == ' ' && word != "") {
-            st.push(word);
-            word = "";  
-        }
-        else word += c;
-    }
-    if(word != "") st.push(word);
-
-    //O(N)
-    while(!st.empty()) {
-        ans += st.top();
-        st.pop();
-        if(!st.empty()) ans += " ";
-    }
-    return ans;
+    
 }
 
 int main() {
