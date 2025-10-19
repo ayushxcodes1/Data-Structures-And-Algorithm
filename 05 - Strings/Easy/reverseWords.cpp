@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force 
+//Brute Force
 
 //Approach 1 - TC: O(N), SC: O(N) - Using Stack
 string reverseWords(string s) {
