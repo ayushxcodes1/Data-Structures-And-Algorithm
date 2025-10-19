@@ -29,6 +29,6 @@ int main() {
   string s = "  hello  world  ";
 
   string ans = reverseWords(s);
-  cout << ans;
+  cout << ans << endl;
   return 0;
 }
