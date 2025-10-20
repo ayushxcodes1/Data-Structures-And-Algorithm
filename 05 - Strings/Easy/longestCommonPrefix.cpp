@@ -2,13 +2,13 @@
 
 using namespace std;
 
-string longestCommonPrefix(vector<int> &str) {
-    int n = str.size();
+string longestCommonPrefix(vector<int> &s) {
+    int n = s.size();
     string word = "";
     string ans = "";
     int i = 0;
     while(i < n) {
-        
+        word += s[i];
     }
 }    
 
