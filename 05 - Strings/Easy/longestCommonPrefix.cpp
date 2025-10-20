@@ -13,6 +13,6 @@ string longestCommonPrefix(vector<int> &s) {
 }    
 
 int main() {
-  vector<string> str = {"flower", "flow", "flight"};
+  vector<string> s = {"flower", "flow", "flight"};
   return 0;
 }
