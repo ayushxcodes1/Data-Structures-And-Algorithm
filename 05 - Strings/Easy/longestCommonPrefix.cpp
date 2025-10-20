@@ -10,8 +10,8 @@ string longestCommonPrefix(vector<int> &s) {
     int i = 0;
     while(i < n) {
         if(ans.empty()) {
-            word1 += s[i];
-            word2 += s[i + 1];
+            word1 = s[i];
+            word2 = s[i + 1];
     
             int l = 0;
             int r = 0;
@@ -21,6 +21,10 @@ string longestCommonPrefix(vector<int> &s) {
                r++;
             }
             i += 2;
+        }
+        else {
+            word1 = s[i];
+            
         }
 
     }
