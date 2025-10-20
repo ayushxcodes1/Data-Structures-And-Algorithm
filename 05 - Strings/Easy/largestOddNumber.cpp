@@ -4,13 +4,11 @@ using namespace std;
 
 string largestOddNumber(string s) {
     int num = stoi(s);
-    string ans = "";
     
     while(num % 2 == 0) {
         num = num / 10; 
     }
-    ans = to_string(num); 
-    return ans;
+    return to_string(num);
 }
 
 int main() {
