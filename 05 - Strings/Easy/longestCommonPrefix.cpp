@@ -5,6 +5,7 @@ using namespace std;
 string longestCommonPrefix(vector<string> &s) {
     int n = s.size();
     if(n == 0) return "";
+    
     string word1 = "";
     string word2 = "";
     string ans = "";
