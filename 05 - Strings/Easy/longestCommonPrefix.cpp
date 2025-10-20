@@ -24,9 +24,9 @@ string longestCommonPrefix(vector<int> &s) {
         }
         else {
             word1 = s[i];
-            
+            ans 
         }
-
+        ans = "";
     }
 }    
 
