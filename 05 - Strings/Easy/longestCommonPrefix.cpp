@@ -42,8 +42,9 @@ string longestCommonPrefix(vector<string> &s) {
                break;
             }
         }
+        if(prefixLen == 0) return "";
     }
-    
+    return s[0].substr(0, prefixLen);
 }    
 
 int main() {
