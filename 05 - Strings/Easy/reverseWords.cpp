@@ -32,7 +32,6 @@ string reverseWords(string s) {
         st.pop();
         if(!st.empty()) ans += " ";
     }
-    
     return ans;
 }
 
