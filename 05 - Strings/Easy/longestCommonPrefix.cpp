@@ -30,6 +30,11 @@ string longestCommonPrefix(vector<string> &s) {
 //Optimal - TC: O(N * M), SC: (1)
 string longestCommonPrefix(vector<string> &s) {
    if(s.empty()) return "";
+
+   int n = s.size();
+   int prefixLen = s[0].size();
+
+   for(int i = 1; i < )
     
 }    
 
