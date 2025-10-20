@@ -36,7 +36,7 @@ string reverseWords(string s) {
 }
 
 //Approach 2 - TC: O(N), SC: O(N) - Using STL
-string reverseWords(string s) {
+string reverseWordsOptimal(string s) {
     stringstream ss(s);
     string token;
     vector<string> words;
@@ -46,8 +46,15 @@ string reverseWords(string s) {
 
     reverse(words.begin(), words.end());
 
-    return join(words.begin(), words.end(), " ");
+    string ans = "";
+    for (int i = 0; i < words.size(); i++) {
+        if (i > 0) ans += " ";
+        ans += words[i];
+    }
+
+    return ans;
 }
+
 
 
 
