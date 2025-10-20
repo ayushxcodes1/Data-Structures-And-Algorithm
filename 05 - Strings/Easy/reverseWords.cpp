@@ -55,9 +55,6 @@ string reverseWordsOptimal(string s) {
     return ans;
 }
 
-
-
-
 //Approach 3 - TC: O(N), SC: O(N) 
 string reverseWords3(string s) {
     int n = s.length();
