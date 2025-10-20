@@ -27,7 +27,7 @@ string longestCommonPrefix(vector<string> &s) {
     return ans;
 }
 
-//Optimal - TC: O(N * M), SC: (1)
+//Optimal - TC: O(N * M), SC: (1) - Prefix Length Appraoch
 string longestCommonPrefix2(vector<string> &s) {
     if(s.empty()) return "";
 
