@@ -36,17 +36,19 @@ string reverseWords(string s) {
 }
 
 //Approach 2 - TC: O(N), SC: O(N) - Using STL
-string reverseWords2(string s) {
+string reverseWordsOptimal(string s) {
     stringstream ss(s);
-    string token = "";
-    string ans = "";
-    
-    while(ss >> token) {
-        if(ans.empty()) ans = token;
-        else ans = token + " " + ans;
-    }
-    return ans;
+    string token;
+    vector<string> words;
+
+    while (ss >> token)
+        words.push_back(token);
+
+    reverse(words.begin(), words.end());
+
+    return join(words.begin(), words.end(), " ");
 }
+
 
 
 //Approach 3 - TC: O(N), SC: O(N) 
