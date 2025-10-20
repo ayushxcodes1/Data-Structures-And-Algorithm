@@ -51,9 +51,9 @@ int main() {
   vector<string> s = {"flower", "flow", "flight"};
   
   string ans = longestCommonPrefix(s);
-  cout << ans << endl;
+  cout << "Brute: " << ans << endl;
 
   string ans2 = longestCommonPrefix2(s);
-  cout << ans2;
+  cout << "Optimal: " << ans2;
   return 0;
 }
