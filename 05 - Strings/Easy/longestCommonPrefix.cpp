@@ -12,7 +12,7 @@ string longestCommonPrefix(vector<string> &s) {
     //O(N)
     for(int i = 1; i < n; i++) {
         string curr = s[i];
-        string temp = "";
+        string temp = "";   
         int len = min(ans.size(), curr.size());
 
         //O(M)
