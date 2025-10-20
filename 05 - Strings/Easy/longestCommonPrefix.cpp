@@ -26,7 +26,7 @@ string longestCommonPrefix(vector<int> &s) {
             word1 = s[i];
             word2 = ans;
             ans = "";
-            
+
             int l = 0;
             int r = 0;
             while(word1[l] == word2[r]) {
@@ -36,8 +36,8 @@ string longestCommonPrefix(vector<int> &s) {
             }
             i++;
         }
-
     }
+    return ans;
 }    
 
 int main() {
