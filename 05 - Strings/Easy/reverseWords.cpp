@@ -36,7 +36,7 @@ string reverseWords(string s) {
 }
 
 //Approach 2 - TC: O(N), SC: O(N) - Using STL
-string reverseWordsOptimal(string s) {
+string reverseWords(string s) {
     stringstream ss(s);
     string token;
     vector<string> words;
