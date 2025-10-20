@@ -13,10 +13,12 @@ string longestCommonPrefix(vector<string> &s) {
         string temp = "";
         int len = min(ans.size(), curr.size());
         for(int j = 0; j < len; j++) {
-            
+            if(ans[j] == curr[j]) temp += ans[j];
+            else break;
         }
+        ans = temp;
+        if(ans.empty()) return "";
     }
-
     return ans;
 }    
 
