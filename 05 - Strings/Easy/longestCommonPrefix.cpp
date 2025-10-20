@@ -36,6 +36,9 @@ string longestCommonPrefix(vector<string> &s) {
 
     for(int i = 1; i < n; i++) {
         prefixLen = min(prefixLen, (int)s[i].size());
+        for(int j = 0; j < prefixLen; j++) {
+            
+        }
     }
     
 }    
