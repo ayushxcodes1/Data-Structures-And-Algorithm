@@ -16,7 +16,7 @@ string longestCommonPrefix(vector<int> &s) {
         int l = 0;
         int r = 0;
         if(word[l] == word2[r]) {
-           ans += word[l]
+           ans += word[l];
            l++;
            r++;
         }
