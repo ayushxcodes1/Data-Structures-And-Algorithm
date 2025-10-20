@@ -9,17 +9,19 @@ string longestCommonPrefix(vector<int> &s) {
     string ans = "";
     int i = 0;
     while(i < n) {
-        word1 += s[i];
-        word2 += s[i + 1];
-
-        int l = 0;
-        int r = 0;
-        if(word1[l] == word2[r]) {
-           ans += word1[l];
-           l++;
-           r++;
+        if(ans.empty()) {
+            word1 += s[i];
+            word2 += s[i + 1];
+    
+            int l = 0;
+            int r = 0;
+            if(word1[l] == word2[r]) {
+               ans += word1[l];
+               l++;
+               r++;
+            }
+            i++;
         }
-        i++;
     }
 }    
 
