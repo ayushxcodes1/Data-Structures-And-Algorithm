@@ -2,7 +2,7 @@
 
 using namespace std;
 
-string longestCommonPrefix(vector<int> &s) {
+string longestCommonPrefix(vector<string> &s) {
     int n = s.size();
     string word1 = "";
     string word2 = "";
