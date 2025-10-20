@@ -11,7 +11,7 @@ string longestCommonPrefix(vector<int> &s) {
     while(i < n) {
         word1 += s[i];
         i++;
-        word12 += s[i];
+        word2 += s[i];
 
         int l = 0;
         int r = 0;
