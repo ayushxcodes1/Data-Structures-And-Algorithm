@@ -22,7 +22,7 @@ string largestOddNumber(string s) {
 }
 
 int main() {
-  string s = "52";
+  string s = "4201";
 
   string ans = largestOddNumber(s);
   cout << ans;
