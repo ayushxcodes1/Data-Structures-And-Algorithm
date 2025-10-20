@@ -6,7 +6,7 @@ using namespace std;
 string largestOddNumber(string s) {
     if(s == "") return "";
 
-    int num = stoi(s);
+    int num = stoi(s);//O(N)
     
     //O(N)
     while(num % 2 == 0) {
