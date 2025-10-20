@@ -7,12 +7,7 @@ string largestOddNumber(string s) {
     string ans = "";
     
     while(num % 2 == 0) {
-        int lastDigit = num % 10;
-        
-        //even
-        if(lastDigit % 2 == 0) {
-           num = num / 10; 
-        }
+        num = num / 10; 
     }
     ans = to_string(num); 
     return ans;
