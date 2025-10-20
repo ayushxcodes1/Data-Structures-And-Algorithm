@@ -10,7 +10,9 @@ string largestOddNumber(string s) {
     while(num % 2 == 0) {
         num = num / 10; 
     }
+
     if(num == 0) return "";
+    
     return to_string(num);
 }
 
