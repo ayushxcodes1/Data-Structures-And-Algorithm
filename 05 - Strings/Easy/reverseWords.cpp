@@ -4,7 +4,7 @@ using namespace std;
 
 //Brute Force
 
-//TC: O(N), SC: O(N) - Using Stack
+//Approach 1 - TC: O(N), SC: O(N) - Using Stack
 string reverseWords(string s) {
     stack<string> st;
     string word = "";
