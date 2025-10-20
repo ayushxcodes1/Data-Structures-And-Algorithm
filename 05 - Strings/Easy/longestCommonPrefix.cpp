@@ -4,19 +4,19 @@ using namespace std;
 
 string longestCommonPrefix(vector<int> &s) {
     int n = s.size();
-    string word = "";
-    string word2 = "";
+    string word1 = "";
+    string word12 = "";
     string ans = "";
     int i = 0;
     while(i < n) {
-        word += s[i];
+        word1 += s[i];
         i++;
-        word2 += s[i];
+        word12 += s[i];
 
         int l = 0;
         int r = 0;
-        if(word[l] == word2[r]) {
-           ans += word[l];
+        if(word1[l] == word1[r]) {
+           ans += word1[l];
            l++;
            r++;
         }
