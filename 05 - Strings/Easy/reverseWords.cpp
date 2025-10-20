@@ -46,14 +46,15 @@ string reverseWordsOptimal(string s) {
 
     reverse(words.begin(), words.end());
 
-    string ans = "";
+    ostringstream out;
     for (int i = 0; i < words.size(); i++) {
-        if (i > 0) ans += " ";
-        ans += words[i];
+        if (i > 0) out << " ";
+        out << words[i];
     }
 
-    return ans;
+    return out.str();
 }
+
 
 //Approach 3 - TC: O(N), SC: O(N) 
 string reverseWords3(string s) {
