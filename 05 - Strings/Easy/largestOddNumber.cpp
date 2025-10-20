@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - TC(N), SC: O(N)
+//Optimal - TC(N), SC: O(1)
 string largestOddNumber(string s) {
     int n = s.size();
 
