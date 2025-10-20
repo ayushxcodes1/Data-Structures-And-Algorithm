@@ -3,6 +3,8 @@
 using namespace std;
 
 string largestOddNumber(string s) {
+    if(s == "") return "";
+    
     int num = stoi(s);
     
     while(num % 2 == 0) {
