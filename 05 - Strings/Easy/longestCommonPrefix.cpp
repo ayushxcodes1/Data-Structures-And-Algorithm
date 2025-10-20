@@ -20,7 +20,7 @@ string longestCommonPrefix(vector<int> &s) {
                l++;
                r++;
             }
-            i++;
+            i += 2;
         }
 
     }
