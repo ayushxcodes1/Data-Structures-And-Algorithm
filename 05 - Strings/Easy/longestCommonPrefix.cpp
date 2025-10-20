@@ -5,40 +5,10 @@ using namespace std;
 string longestCommonPrefix(vector<string> &s) {
     int n = s.size();
     if(n == 0) return "";
-    
-    string word1 = "";
-    string word2 = "";
-    string ans = "";
-    int i = 0;
-    while(i < n) {
-        if(ans.empty()) {
-            word1 = s[i];
-            word2 = s[i + 1];
-    
-            int l = 0;
-            int r = 0;
-            while(word1[l] == word2[r] && l < word1.size() && r < word2.size()) {
-               ans += word1[l];
-               l++;
-               r++;
-            }
-            i += 2;
-        }
-        else {
-            word1 = s[i];
-            word2 = ans;
-            ans = "";
 
-            int l = 0;
-            int r = 0;
-            while(word1[l] == word2[r]) {
-               ans += word1[l];
-               l++;
-               r++;
-            }
-            i++;
-        }
-    }
+    string ans = "";
+
+    
     return ans;
 }    
 
