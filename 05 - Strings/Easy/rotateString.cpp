@@ -50,7 +50,7 @@ int main() {
   cout << "Brute: " << ans << endl;
 
   bool ans3 = rotateString2(s, goal);
-  cout << "Brute 2: " << ans33 << endl;
+  cout << "Brute 2: " << ans3 << endl;
 
   bool ans2 = rotateString3(s, goal);
   cout << "Optimal: " << ans2 << endl;
