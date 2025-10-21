@@ -31,7 +31,7 @@ bool rotateString(string s, string goal) {
     return false;
 }
 
-
+//Optimal - TC: O(N), SC: O(1)
 
 int main() {
   string s = "abcde";
