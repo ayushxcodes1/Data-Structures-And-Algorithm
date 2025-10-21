@@ -14,7 +14,7 @@ bool rotateString(string s, string goal) {
     return false;
 }
 
-//Brute 2 - TC: O(N^2), SC: O(1) - Manual
+//Brute - TC: O(N^2), SC: O(1)
 bool rotateString2(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
