@@ -3,6 +3,7 @@
 using namespace std;
 
 //Brute Force
+
 //Approach 1 - TC: O(N^2), SC: O(1)
 bool rotateString(string s, string goal) {
     int n = s.size();
