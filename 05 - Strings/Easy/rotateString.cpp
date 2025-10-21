@@ -4,7 +4,20 @@ using namespace std;
 
 //Brute Force
 
-//Approach 1 - TC: O(N^2), SC: O(1) - Manual
+
+//Brute - TC: O(N^2), SC: O(N) - Using substr()
+bool rotateString(string s, string goal) {
+    int n = s.size();
+    if(n != goal.size()) return false;
+    
+    for(int i = 0; i < n; i++) {
+        s = s.substr(1) + s[0];
+        if (s == goal) return true;
+    }
+    return false;
+}
+
+//Better - TC: O(N^2), SC: O(1) - Manual
 bool rotateString(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
@@ -20,28 +33,13 @@ bool rotateString(string s, string goal) {
     return false;
 }
 
-//Approach 2 - TC: O(N^2), SC: O(1) - Using substr()
+//Optimal - TC: O(N), SC: O(N)
 bool rotateString(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
 
-    for(int i = 0; i < n; i++) {
-        s = s.substr(1) + s[0];
-        if (s == goal) return true;
-    }
-    return false;
-}
-
-//Optimal - TC: O(N), SC: O(1)
-bool rotateString(string s, string goal) {
-    int n = s.size();
-    if(n != goal.size()) return false;
-
-    for(int i = 0; i < n; i++) {
-        s = s.substr(1) + s[0];
-        if (s == goal) return true;
-    }
-    return false;
+    string doubledS = s + s;
+    return doubledS.find(goal) != string::npos;
 }
 
 int main() {
