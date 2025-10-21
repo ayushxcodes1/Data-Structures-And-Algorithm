@@ -3,7 +3,9 @@
 using namespace std;
 
 bool rotateString(string s, string goal) {
+    int n = s.size();
 
+    
 }
 
 int main() {
