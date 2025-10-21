@@ -2,9 +2,6 @@
 
 using namespace std;
 
-//Brute Force
-
-
 //Brute - TC: O(N^2), SC: O(N) - Using substr()
 bool rotateString(string s, string goal) {
     int n = s.size();
