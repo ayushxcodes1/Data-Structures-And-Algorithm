@@ -20,12 +20,8 @@ bool rotateString2(string s, string goal) {
     if(n != goal.size()) return false;
 
     for(int i = 0; i < n; i++) {
-        char temp = s[0];
-        for(int j = 1; j < n; j++) {
-            s[j - 1] = s[j]; 
-        }
-        s[n - 1] = temp;
         if(s == goal) return true;
+        rotate(s.begin(), s.begin() + 1, s.end());
     }
     return false;
 }
