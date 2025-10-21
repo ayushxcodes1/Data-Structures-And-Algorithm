@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute - TC: O(N^2), SC: O(1)
-bool rotateString2(string s, string goal) {
+bool rotateString(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
 
@@ -15,7 +15,7 @@ bool rotateString2(string s, string goal) {
 }
 
 //Optimal - TC: O(N), SC: O(N)
-bool rotateString3(string s, string goal) {
+bool rotateString2(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
 
@@ -30,10 +30,7 @@ int main() {
   bool ans = rotateString(s, goal);
   cout << "Brute: " << ans << endl;
 
-  bool ans3 = rotateString2(s, goal);
-  cout << "Brute 2: " << ans3 << endl;
-
-  bool ans2 = rotateString3(s, goal);
+  bool ans2 = rotateString2(s, goal);
   cout << "Optimal: " << ans2 << endl;
 
   return 0;
