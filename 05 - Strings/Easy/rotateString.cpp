@@ -29,7 +29,6 @@ bool rotateString(string s, string goal) {
         if (s == goal) return true;
     }
     return false;
-   
 }
 
 int main() {
