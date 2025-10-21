@@ -17,7 +17,7 @@ bool rotateString(string s, string goal) {
     return false;
 }
 
-//Optimal - TC: O(N), SC: O(1)
+//Optimal - TC: O(N^2), SC: O(1)
 bool rotateString(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
