@@ -18,7 +18,7 @@ bool rotateString(string s, string goal) {
 
 int main() {
   string s = "abcde";
-  string goal = "cdeab";
+  string goal = "abced";
 
   bool ans = rotateString(s, goal);
   cout << ans;
