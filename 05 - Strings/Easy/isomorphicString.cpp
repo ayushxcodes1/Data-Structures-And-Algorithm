@@ -5,6 +5,7 @@ using namespace std;
 bool isomorphicString(string s, string t) {
     unordered_map<char, char> mpp;
     
+    mpp[s[0]] = t[0];
 
     for(int i = 1; i < s.size(); i++) {
         
