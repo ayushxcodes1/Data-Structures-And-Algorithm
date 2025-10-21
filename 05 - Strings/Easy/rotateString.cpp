@@ -2,8 +2,8 @@
 
 using namespace std;
 
-bool rotateString() {
-    
+bool rotateString(string s, string goal) {
+
 }
 
 int main() {
