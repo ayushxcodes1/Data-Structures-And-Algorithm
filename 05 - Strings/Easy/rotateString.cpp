@@ -48,9 +48,9 @@ int main() {
 
   bool ans = rotateString(s, goal);
   cout << "Optimal: " << ans << endl;
-  
-  bool ans = rotateString(s, goal);
-  cout << "Optimal: " << ans << endl;
+
+  bool ans2 = rotateString(s, goal);
+  cout << "Optimal: " << ans2 << endl;
 
   return 0;
 }
