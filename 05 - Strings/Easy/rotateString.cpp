@@ -2,7 +2,8 @@
 
 using namespace std;
 
-//Brute Force - TC: O(N^2), SC: O(1)
+//Brute Force
+//Approach 1 - TC: O(N^2), SC: O(1)
 bool rotateString(string s, string goal) {
     int n = s.size();
     
@@ -17,7 +18,7 @@ bool rotateString(string s, string goal) {
     return false;
 }
 
-//Optimal - TC: O(N^2), SC: O(1)
+//Approach 2 - TC: O(N^2), SC: O(1)
 bool rotateString(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
