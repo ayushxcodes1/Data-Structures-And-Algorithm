@@ -34,7 +34,7 @@ bool rotateString(string s, string goal) {
 }
 
 //Optimal - TC: O(N), SC: O(N)
-bool rotateString(string s, string goal) {
+bool rotateString2(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
 
