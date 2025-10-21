@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 //Optimal - TC: O(N), SC: O(1)
 bool isomorphicString(string s, string t) {
     unordered_map<char, char> m1, m2;
