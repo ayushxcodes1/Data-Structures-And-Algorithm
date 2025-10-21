@@ -47,7 +47,7 @@ int main() {
   string goal = "abced";
 
   bool ans = rotateString(s, goal);
-  cout << ans;
+  cout << "Optimal: " << ans << endl;
 
   return 0;
 }
