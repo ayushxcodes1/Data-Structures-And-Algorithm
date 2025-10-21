@@ -49,10 +49,10 @@ int main() {
   bool ans = rotateString(s, goal);
   cout << "Brute: " << ans << endl;
 
-  bool ans2 = rotateString2(s, goal);
-  cout << "Optimal: " << ans2 << endl;
-  
-  bool ans2 = rotateString2(s, goal);
+  bool ans3 = rotateString2(s, goal);
+  cout << "Brute 2: " << ans33 << endl;
+
+  bool ans2 = rotateString3(s, goal);
   cout << "Optimal: " << ans2 << endl;
 
   return 0;
