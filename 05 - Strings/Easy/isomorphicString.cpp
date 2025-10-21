@@ -6,7 +6,7 @@ bool isomorphicString(string s, string t) {
     unordered_map<char, char> mpp;
     
 
-    for(int i = 0; i < s.size(); i++) {
+    for(int i = 1; i < s.size(); i++) {
         
     }
 }
