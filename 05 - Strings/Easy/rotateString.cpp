@@ -18,7 +18,7 @@ bool rotateString(string s, string goal) {
 }
 
 //Better - TC: O(N^2), SC: O(1) - Manual
-bool rotateString(string s, string goal) {
+bool rotateString2(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
 
@@ -34,7 +34,7 @@ bool rotateString(string s, string goal) {
 }
 
 //Optimal - TC: O(N), SC: O(N)
-bool rotateString2(string s, string goal) {
+bool rotateString3(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
 
@@ -47,7 +47,7 @@ int main() {
   string goal = "abced";
 
   bool ans = rotateString(s, goal);
-  cout << "Optimal: " << ans << endl;
+  cout << "Brute: " << ans << endl;
 
   bool ans2 = rotateString(s, goal);
   cout << "Optimal: " << ans2 << endl;
