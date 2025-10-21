@@ -2,18 +2,6 @@
 
 using namespace std;
 
-//Brute 1 - TC: O(N^2), SC: O(N) - Using substr()
-bool rotateString(string s, string goal) {
-    int n = s.size();
-    if(n != goal.size()) return false;
-    
-    for(int i = 0; i < n; i++) {
-        s = s.substr(1) + s[0];
-        if (s == goal) return true;
-    }
-    return false;
-}
-
 //Brute - TC: O(N^2), SC: O(1)
 bool rotateString2(string s, string goal) {
     int n = s.size();
