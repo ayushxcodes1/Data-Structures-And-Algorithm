@@ -4,7 +4,7 @@ using namespace std;
 
 //Brute Force
 
-//Approach 1 - TC: O(N^2), SC: O(1)
+//Approach 1 - TC: O(N^2), SC: O(1) - Manual
 bool rotateString(string s, string goal) {
     int n = s.size();
     
@@ -19,7 +19,7 @@ bool rotateString(string s, string goal) {
     return false;
 }
 
-//Approach 2 - TC: O(N^2), SC: O(1)
+//Approach 2 - TC: O(N^2), SC: O(1) - Using substr()
 bool rotateString(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
@@ -30,6 +30,8 @@ bool rotateString(string s, string goal) {
     }
     return false;
 }
+
+
 
 int main() {
   string s = "abcde";
