@@ -7,7 +7,8 @@ using namespace std;
 //Approach 1 - TC: O(N^2), SC: O(1) - Manual
 bool rotateString(string s, string goal) {
     int n = s.size();
-    
+    if(n != goal.size()) return false;
+
     for(int i = 0; i < n; i++) {
         char temp = s[0];
         for(int j = 1; j < n; j++) {
