@@ -7,6 +7,6 @@ int main() {
   string s = "egg";
   string t = "add";
 
-  isomorphicString(s, t);
+  bool ans = isomorphicString(s, t);
   return 0;
 }
