@@ -3,14 +3,14 @@
 using namespace std;
 
 bool isomorphicString(string s, string t) {
-    unordered_map<char, char> mpp;
-    
-    mpp[s[0]] = t[0];
-    s[0] = t[0];
+    unordered_map<char, char> m1, m2;
 
-    for(int i = 1; i < s.size(); i++) {
+    for(int i = 0; i < s.size(); i++) {
+        char c1 = s[i];
+        char c2 = t[i];
+        
         if(mpp.find(s[i]) != mpp.end()) {
-
+           
         }
     }
 }
