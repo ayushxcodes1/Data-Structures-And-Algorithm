@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - TC: O(N^2), SC: O(N) - Using substr()
+//Brute 1 - TC: O(N^2), SC: O(N) - Using substr()
 bool rotateString(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
@@ -14,7 +14,7 @@ bool rotateString(string s, string goal) {
     return false;
 }
 
-//Better - TC: O(N^2), SC: O(1) - Manual
+//Brute 2 - TC: O(N^2), SC: O(1) - Manual
 bool rotateString2(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
