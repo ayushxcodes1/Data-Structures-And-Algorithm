@@ -9,7 +9,9 @@ bool isomorphicString(string s, string t) {
     s[0] = t[0];
 
     for(int i = 1; i < s.size(); i++) {
-        
+        if(mpp.find(s[i]) != mpp.end()) {
+
+        }
     }
 }
 
