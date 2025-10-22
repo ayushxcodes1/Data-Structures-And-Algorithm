@@ -24,7 +24,7 @@ bool rotateString2(string s, string goal) {
 }
 
 //Optimal 2 - TC: O(N), SC: O(N) - KMP Algorithm
-bool rotateString2(string s, string goal) {
+bool rotateString3(string s, string goal) {
     int n = s.size();
     if(n != goal.size()) return false;
 
@@ -40,7 +40,10 @@ int main() {
   cout << "Brute: " << ans << endl;
 
   bool ans2 = rotateString2(s, goal);
-  cout << "Optimal: " << ans2 << endl;
+  cout << "Optimal 1: " << ans2 << endl;
+  
+  bool ans3 = rotateString2(s, goal);
+  cout << "Optimal 2 : " << ans3 << endl;
 
   return 0;
 }
