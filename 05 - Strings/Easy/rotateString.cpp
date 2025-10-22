@@ -34,6 +34,7 @@ bool rotateString3(string s, string goal) {
     vector<int> result;
 
     //Create an LPS array
+    vector<int> LPS(m, 0);
 }
 
 int main() {
