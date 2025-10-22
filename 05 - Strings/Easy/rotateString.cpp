@@ -50,22 +50,22 @@ vector<int> computeLPS(string goal) {
 }
 
 // Step 2: KMP search function
-bool KMP(string text, string goal) {
-    int n = text.size(); 
+bool KMP(string s, string goal) {
+    int n = s.size(); 
     int m = goal.size();
     vector<int> lps = computeLPS(goal);
-    int i = 0; // index for text
+    int i = 0; // index for s
     int j = 0; // index for goaltern
 
     while (i < n) {
-        if (text[i] == goal[j]) {
+        if (s[i] == goal[j]) {
             i++;
             j++;
         }
 
         if (j == m) { // full goaltern found
             return true;
-        } else if (i < n && text[i] != goal[j]) {
+        } else if (i < n && s[i] != goal[j]) {
             if (j != 0)
                 j = lps[j - 1];
             else
