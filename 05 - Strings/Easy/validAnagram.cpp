@@ -43,7 +43,7 @@ int main() {
   string t = "nagaram";
 
   bool ans = isAnagram(s, t);
-  cout << ans;
+  cout << "Brute: " << ans;
 
   return 0;
 }
