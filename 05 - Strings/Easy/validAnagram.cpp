@@ -45,5 +45,11 @@ int main() {
   bool ans = isAnagram(s, t);
   cout << "Brute: " << ans << endl;
 
+  bool ans2 = isAnagram(s, t);
+  cout << "Better " << ans2 << endl;
+
+  bool ans3 = isAnagram(s, t);
+  cout << "Optimal: " << ans3 << endl;
+
   return 0;
 }
