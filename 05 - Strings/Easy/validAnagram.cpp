@@ -23,6 +23,8 @@ bool isAnagram(string s, string t) {
   return s == t;
 }
 
+//Optimal - TC()
+
 int main() {
   string s = "anagram";
   string t = "nagaram";
