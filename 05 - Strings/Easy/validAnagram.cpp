@@ -7,7 +7,7 @@ bool isAnagram(string s, string t) {
 }
 
 int main() {
-  string txt = "anagram";
+  string s = "anagram";
   string t = "nagaram";
 
   bool ans = isAnagram(s, t);
