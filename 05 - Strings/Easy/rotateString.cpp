@@ -17,7 +17,8 @@ bool rotateString(string s, string goal) {
 //Optimal 1 - TC: O(N), SC: O(N)
 bool rotateString2(string s, string goal) {
     int n = s.size();
-    if(n != goal.size()) return false;
+    int m = goal.size();
+    if(n != m) return false;
 
     string doubledS = s + s; //O(2N)
     return doubledS.find(goal) != string::npos;
