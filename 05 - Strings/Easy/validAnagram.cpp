@@ -16,7 +16,7 @@ bool isAnagram(string s, string t) {
 }
 
 //Better - TC: O(NlogN), SC: O(1)
-bool isAnagram(string s, string t) {
+bool isAnagram2(string s, string t) {
   if(s.size() != t.size()) return false;
   sort(s.begin(), s.end());
   sort(t.begin(), t.end());
@@ -24,7 +24,7 @@ bool isAnagram(string s, string t) {
 }
 
 //Optimal - TC: (N), SC: O(1)
-bool isAnagram(string s, string t) {
+bool isAnagram3(string s, string t) {
   if(s.size() != t.size()) return false;
   
   vector<int> count(26, 0);
