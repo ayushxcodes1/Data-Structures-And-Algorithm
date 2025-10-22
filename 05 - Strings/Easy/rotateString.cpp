@@ -30,7 +30,7 @@ bool rotateString2(string s, string goal) {
 vector<int> computeLPS(string goal) {
     int m = goal.size();
     vector<int> lps(m, 0);
-    int len = 0; // length of previous longest prefix suffix
+    int len = 0; // length of previous longest prefix suffix which were equal
     int i = 1;
 
     while (i < m) {
