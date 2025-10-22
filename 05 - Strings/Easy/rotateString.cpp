@@ -26,8 +26,19 @@ bool rotateString2(string s, string goal) {
 }
 
 //Optimal 2 - TC: O(N), SC: O(N) - KMP Algorithm
-void computeLPS(string &s, vector<int> &LPS, int M) {
+void computeLPS(string &goal, vector<int> &LPS, int M) {
     int len = 0; //Length of previous longest prefix & suffix which were equal
+
+    LPS[0] = 0;
+    
+    int i = 1;
+    while(i < M) {
+        if(goal[i] == goal[len]) {
+           len++;
+           LPS[i] = len;
+           i++;
+        }
+    }
 }
 
 bool rotateString3(string s, string goal) {
