@@ -31,7 +31,7 @@ bool rotateString3(string s, string goal) {
     int m = goal.size();
     if(n != m) return false;
 
-    
+    vector<int> result;
 }
 
 int main() {
