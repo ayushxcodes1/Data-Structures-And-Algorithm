@@ -32,6 +32,8 @@ bool rotateString3(string s, string goal) {
     if(n != m) return false;
 
     vector<int> result;
+
+    //Create an LPS array
 }
 
 int main() {
