@@ -2,6 +2,14 @@
 
 using namespace std;
 
+//Brute Force - TC: O(N * N!), SC: O(1)
+bool isAnagram(string s, string t) {
+  if(s.size() != t.size()) return false;
+  sort(s.begin(), s.end());
+  sort(t.begin(), t.end());
+  return s == t;
+}
+
 //Better - TC: O(NlogN), SC: O(1)
 bool isAnagram(string s, string t) {
   if(s.size() != t.size()) return false;
