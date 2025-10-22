@@ -28,6 +28,7 @@ bool rotateString2(string s, string goal) {
 //Optimal 2 - TC: O(N), SC: O(N) - KMP Algorithm
 // Step 1: Build the LPS (Longest Prefix Suffix) array
 vector<int> computeLPS(string goal) {
+    int m = goal.size();
     vector<int> lps(m, 0);
     int len = 0; // length of previous longest prefix suffix which were equal
     int i = 1;
@@ -51,7 +52,7 @@ vector<int> computeLPS(string goal) {
 bool KMP(string text, string goal) {
     int n = text.size(); 
     int m = goal.size();
-    vector<int> lps = computeLPS(goal, m);
+    vector<int> lps = computeLPS(goal);
     int i = 0; // index for text
     int j = 0; // index for goaltern
 
