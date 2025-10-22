@@ -5,7 +5,8 @@ using namespace std;
 //Brute - TC: O(N^2), SC: O(1)
 bool rotateString(string s, string goal) {
     int n = s.size();
-    if(n != goal.size()) return false;
+    int m = goal.size();
+    if(n != m) return false;
 
     for(int i = 0; i < n; i++) {
         if(s == goal) return true;
