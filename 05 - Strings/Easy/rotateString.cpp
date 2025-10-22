@@ -26,60 +26,58 @@ bool rotateString2(string s, string goal) {
 }
 
 //Optimal 2 - TC: O(N), SC: O(N) - KMP Algorithm
-void computeLPS(string &goal, vector<int> &LPS, int M) {
-    int len = 0; //Length of previous longest prefix & suffix which were equal
-
-    LPS[0] = 0;
-    
+// Step 1: Build the LPS (Longest Prefix Suffix) array
+vector<int> computeLPS(string goal) {
+    int m = goal.size();
+    vector<int> lps(m, 0);
+    int len = 0; // length of previous longest prefix suffix
     int i = 1;
-    while(i < M) {
-        if(goal[i] == goal[len]) {
-           len++;
-           LPS[i] = len;
-           i++;
+
+    while (i < m) {
+        if (goal[i] == goal[len]) {
+            len++;
+            lps[i] = len;
+            i++;
         } else {
-            if(len != 0) {
-               len = LPS[len - 1];
-            } else {
-               LPS[i] = 0;
-               i++;
-            }
+            if (len != 0)
+                len = lps[len - 1]; // try smaller prefix
+            else
+                lps[i++] = 0; // no prefix found
         }
     }
+    return lps;
 }
 
-bool rotateString3(string s, string goal) {
-    int N = s.size();
-    int M = goal.size();
-    if(N != M) return false;
+// Step 2: KMP search function
+bool KMP(string text, string goal) {
+    int n = text.size(), m = goal.size();
+    vector<int> lps = computeLPS(goal);
+    int i = 0; // index for text
+    int j = 0; // index for goaltern
 
-    vector<int> result;
-
-    //Create an LPS array
-    vector<int> LPS(M, 0);
-
-    computeLPS(goal, LPS, M);
-
-    //Apply KMP
-    int i = 0;
-    int j = 0;
-    while(i < M) {
-        if(s[i] == goal[i]) {
-           i++;
-           j++;
-        }
-        if(j == M) {
-           return result.push_back(i - M + 1);
-           j = LPS[j - 1];
-        } else if(s[i] != goal[j]){
-            if(j != 0) {
-               j = LPS[j - 1];
-            }
-        } else {
+    while (i < n) {
+        if (text[i] == goal[j]) {
             i++;
+            j++;
+        }
+
+        if (j == m) { // full goaltern found
+            return true;
+        } else if (i < n && text[i] != goal[j]) {
+            if (j != 0)
+                j = lps[j - 1];
+            else
+                i++;
         }
     }
-    return result;
+    return false;
+}
+
+// Step 3: Check rotation using KMP
+bool rotateString3(string s, string goal) {
+    if (s.size() != goal.size()) return false;
+    string doubled = s + s; // all possible rotations appear here
+    return KMP(doubled, goal);
 }
 
 int main() {
@@ -92,7 +90,7 @@ int main() {
   bool ans2 = rotateString2(s, goal);
   cout << "Optimal 1: " << ans2 << endl;
   
-  bool ans3 = rotateString2(s, goal);
+  bool ans3 = rotateString3(s, goal);
   cout << "Optimal 2 : " << ans3 << endl;
 
   return 0;
