@@ -24,6 +24,10 @@ bool isAnagram(string s, string t) {
 }
 
 //Optimal - TC: (N), SC: O(1)
+bool isAnagram(string s, string t) {
+  if(s.size() != t.size()) return false;
+  
+}
 
 int main() {
   string s = "anagram";
