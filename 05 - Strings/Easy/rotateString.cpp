@@ -29,7 +29,6 @@ bool rotateString2(string s, string goal) {
 bool rotateString3(string s, string goal) {
     int n = s.size();
     int m = goal.size();
-
     if(n != m) return false;
 
     string doubledS = s + s; //O(2N)
