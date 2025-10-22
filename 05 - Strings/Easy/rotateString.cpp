@@ -38,9 +38,9 @@ void computeLPS(string &goal, vector<int> &LPS, int M) {
            LPS[i] = len;
            i++;
         } else {
-           if(len != 0) {
-            len = LPS[len - 1];
-           }
+            if(len != 0) {
+               len = LPS[len - 1];
+            }
         }
     }
 }
