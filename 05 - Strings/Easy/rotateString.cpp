@@ -23,6 +23,15 @@ bool rotateString2(string s, string goal) {
     return doubledS.find(goal) != string::npos;
 }
 
+//Optimal 2 - TC: O(N), SC: O(N) - KMP Algorithm
+bool rotateString2(string s, string goal) {
+    int n = s.size();
+    if(n != goal.size()) return false;
+
+    string doubledS = s + s; //O(2N)
+    return doubledS.find(goal) != string::npos;
+}
+
 int main() {
   string s = "abcde";
   string goal = "abced";
