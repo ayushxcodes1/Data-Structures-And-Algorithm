@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute Force
+//Better - TC: O(NlogN), SC: O(1)
 bool isAnagram(string s, string t) {
   if(s.size() != t.size()) return false;
   sort(s.begin(), s.end());
