@@ -31,8 +31,7 @@ bool rotateString3(string s, string goal) {
     int m = goal.size();
     if(n != m) return false;
 
-    string doubledS = s + s; //O(2N)
-    return doubledS.find(goal) != string::npos;
+    
 }
 
 int main() {
