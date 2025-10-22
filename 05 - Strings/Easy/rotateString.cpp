@@ -27,14 +27,34 @@ bool rotateString2(string s, string goal) {
 
 //Optimal 2 - TC: O(N), SC: O(N) - KMP Algorithm
 bool rotateString3(string s, string goal) {
-    int n = s.size();
-    int m = goal.size();
-    if(n != m) return false;
+    int N = s.size();
+    int M = goal.size();
+    if(N != M) return false;
 
     vector<int> result;
 
     //Create an LPS array
-    vector<int> LPS(m, 0);
+    vector<int> LPS(M, 0);
+
+    computeLPS(goal, LPS);
+
+    //Apply KMP
+    int i = 0;
+    int j = 0;
+    while(i < M) {
+        if(s[i] == goal[i]) {
+           i++;
+           j++;
+        }
+        if(j == M) {
+           return result.push_back(i - M + 1);
+           j = LPS[j - 1];
+        } else if(s[i] != goal[j]){
+            if(j != 0) {
+               j = LPS[j - 1];
+            }
+        }
+    }
 }
 
 int main() {
