@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool isAnagram() {
+bool isAnagram(string s, string t) {
 
 }
 
