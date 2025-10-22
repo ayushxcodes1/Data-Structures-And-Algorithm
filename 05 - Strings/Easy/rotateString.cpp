@@ -55,7 +55,7 @@ bool KMP(string s, string goal) {
     int m = goal.size();
     vector<int> lps = computeLPS(goal);
     int i = 0; // index for s
-    int j = 0; // index for goaltern
+    int j = 0; // index for goal
 
     while (i < n) {
         if (s[i] == goal[j]) {
