@@ -26,8 +26,8 @@ bool rotateString2(string s, string goal) {
 }
 
 //Optimal 2 - TC: O(N), SC: O(N) - KMP Algorithm
-void computeLPS(string &s, vector<int> &LPS) {
-
+void computeLPS(string &s, vector<int> &LPS, int M) {
+    
 }
 
 bool rotateString3(string s, string goal) {
@@ -40,7 +40,7 @@ bool rotateString3(string s, string goal) {
     //Create an LPS array
     vector<int> LPS(M, 0);
 
-    computeLPS(goal, LPS);
+    computeLPS(goal, LPS, M);
 
     //Apply KMP
     int i = 0;
