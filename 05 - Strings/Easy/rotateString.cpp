@@ -50,7 +50,8 @@ vector<int> computeLPS(string goal) {
 
 // Step 2: KMP search function
 bool KMP(string text, string goal) {
-    int n = text.size(), m = goal.size();
+    int n = text.size(); 
+    int m = goal.size();
     vector<int> lps = computeLPS(goal);
     int i = 0; // index for text
     int j = 0; // index for goaltern
