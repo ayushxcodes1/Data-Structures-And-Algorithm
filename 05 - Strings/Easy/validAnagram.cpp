@@ -2,8 +2,8 @@
 
 using namespace std;
 
-bool validAnagram() {
-    
+bool isAnagram() {
+
 }
 
 int main() {
