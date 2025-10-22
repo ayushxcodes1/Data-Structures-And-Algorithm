@@ -63,7 +63,7 @@ bool KMP(string s, string goal) {
             j++;
         }
 
-        if (j == m) { // full pattern found
+        if (j == m) { // pattern found
             return true;
         } else if (i < n && s[i] != goal[j]) {
             if (j != 0)
