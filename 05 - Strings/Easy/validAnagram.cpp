@@ -2,8 +2,9 @@
 
 using namespace std;
 
+//Brute Force
 bool isAnagram(string s, string t) {
-
+    
 }
 
 int main() {
