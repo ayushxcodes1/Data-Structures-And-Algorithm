@@ -26,7 +26,11 @@ bool rotateString2(string s, string goal) {
 }
 
 //Optimal 2 - TC: O(N), SC: O(N) - KMP Algorithm
-bool rotateString3(string s, string goal) {
+void computeLPS(string &s, vector<int> &LPS) {
+    
+}
+
+vector<int> rotateString3(string s, string goal) {
     int N = s.size();
     int M = goal.size();
     if(N != M) return false;
@@ -53,8 +57,11 @@ bool rotateString3(string s, string goal) {
             if(j != 0) {
                j = LPS[j - 1];
             }
+        } else {
+            i++;
         }
     }
+    return result;
 }
 
 int main() {
