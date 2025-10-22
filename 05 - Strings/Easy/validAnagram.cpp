@@ -23,7 +23,7 @@ bool isAnagram(string s, string t) {
   return s == t;
 }
 
-//Optimal - TC()
+//Optimal - TC: (N), SC: O(1)
 
 int main() {
   string s = "anagram";
