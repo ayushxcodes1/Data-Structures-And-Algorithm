@@ -8,11 +8,11 @@ string frequencySort(string s) {
     
     unordered_map<char, int> freq;
     for(char c : s) {
-        mpp[c]++;
+        freq[c]++;
     }
 
     string ans = "";
-    for(char c : mpp) {
+    for(char c : freq) {
 
     }
 }
