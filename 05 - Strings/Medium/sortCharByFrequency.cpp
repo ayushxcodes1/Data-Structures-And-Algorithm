@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Method 1 - TC: O(NlogN), SC: O(N)
+//Brute - TC: O(NlogN), SC: O(N)
 string frequencySort(string s) { 
     vector<int> freq(128, 0);
     for(auto ch : s) freq[ch]++;
