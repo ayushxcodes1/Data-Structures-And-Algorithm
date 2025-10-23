@@ -88,12 +88,12 @@ string frequencySort(string s) {
     return ans;
 }
 
-//Optimal - TC: O(N), SC: O(1)
-// string frequencySort(string s) {
-//     int n = s.size();
-//     sort(s.begin(), s.end());
-//     return s;
-// }
+//Optimal - TC: O(N), SC: O(N) - Bucket Sort
+string frequencySort(string s) {
+    int n = s.size();
+    sort(s.begin(), s.end());
+    return s;
+}
 
 int main() {
   string s = "ccabb";
