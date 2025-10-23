@@ -2,8 +2,31 @@
 
 using namespace std;
 
-//Brute: TC: O(), SC: O() - Map + Priority Queue
+//Brute: TC: O(), SC: O() - Vector + Pair + Sort 
 string frequencySort(string s) { 
+    int n = s.size();
+    
+    unordered_map<char, int> freq;
+    for(char c : s) {
+        freq[c]++;
+    }
+
+    priority_queue<pair<int, char>> pq;
+    for(auto &[ch, count] : freq) {
+        pq.push({count, ch});
+    }
+
+    string ans = "";
+    while(!pq.empty()) {
+        auto [count, ch] = pq.top();
+        pq.pop();
+        ans.append(count, ch);
+    }
+    return ans;
+}
+
+//Brute: TC: O(), SC: O() - Map + Priority Queue
+string frequencySort2(string s) { 
     int n = s.size();
     
     unordered_map<char, int> freq;
