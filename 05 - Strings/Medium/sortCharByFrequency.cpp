@@ -37,58 +37,7 @@ string frequencySort(string s) {
     return ans;
 }
 
-//Method 3 - TC: O(N), SC: O(N) - ASCII Array
-string frequencySort(string s) { 
-    int n = s.size();
-    
-    vector<pair<char, int>> v(123);
-
-    for(char &ch : s) {
-        int freq = v[ch].second;
-        v[ch] = {ch, freq + 1};
-    }
-
-    auto cmp = [&](pair<char, int> &a, pair<char, int> &b) {
-        return a.second > b.second;
-    };
-
-    string ans = "";
-    for(int i = 0; i <= 122; i++) {
-        if(v[i].second > 0) {
-           char ch = v[i].first;
-           int freq = v[i].second;
-           string temp = string(freq, ch);
-
-           ans += temp;
-        }
-    }
-    return ans;
-}
-
-//Method 4 - TC: O(NlogK), SC: O(N) - Map + Priority Queue
-string frequencySort(string s) { 
-    int n = s.size();
-    
-    unordered_map<char, int> freq;
-    for(char c : s) {
-        freq[c]++;
-    }
-
-    priority_queue<pair<int, char>> pq;
-    for(auto &[ch, count] : freq) {
-        pq.push({count, ch});
-    }
-
-    string ans = "";
-    while(!pq.empty()) {
-        auto [count, ch] = pq.top();
-        pq.pop();
-        ans.append(count, ch);
-    }
-    return ans;
-}
-
-//Optimal 1 - TC: O(N), SC: O(N) - Bucket Sort
+//Optimal - TC: O(N), SC: O(N) - Bucket Sort
 string frequencySort(string s) {
     unordered_map<char, int> freq;
     for(char ch : s) freq[ch]++;
