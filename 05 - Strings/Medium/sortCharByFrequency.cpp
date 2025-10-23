@@ -26,7 +26,7 @@ string frequencySort(string s) {
 }
 
 //Brute: TC: O(N), SC: O(N) - ASCII Array Method
-string frequencySort2(string s) { 
+string frequencySort(string s) { 
     int n = s.size();
     
     vector<pair<char, int>> v(123);
