@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute: TC: O(), SC: O() - Vector + Pair + Sort 
+//Brute: TC: O(), SC: O() - Vector of Pair + Sort 
 string frequencySort(string s) { 
     int n = s.size();
     
