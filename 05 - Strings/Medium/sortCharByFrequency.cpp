@@ -20,9 +20,7 @@ string frequencySort(string s) {
     int n = s.size();
     
     unordered_map<char, int> freq;
-    for(char c : s) {
-        freq[c]++;
-    }
+    for(char c : s) freq[c]++;
 
     priority_queue<pair<int, char>> pq;
     for(auto &[ch, count] : freq) {
