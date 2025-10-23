@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//TC: O(N), SC: O(N) - ASCII Array Method - 1
+//Method 1 - TC: O(N), SC: O(N) - ASCII Array Method - 1
 string frequencySort(string s) { 
     int n = s.size();
     
@@ -30,7 +30,7 @@ string frequencySort(string s) {
     return ans;
 }
 
-//TC: O(NlogK), SC: O(N) - Map + Priority Queue
+//Method 2 - TC: O(NlogK), SC: O(N) - Map + Priority Queue
 string frequencySort(string s) { 
     int n = s.size();
     
