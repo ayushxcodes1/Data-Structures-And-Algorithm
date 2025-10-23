@@ -4,7 +4,7 @@ using namespace std;
 
 string frequencySort(string s) {
     int n = s.size();
-    sort(s.end(), s.begin());
+    sort(s.begin(), s.end());
     return s;
 }
 
