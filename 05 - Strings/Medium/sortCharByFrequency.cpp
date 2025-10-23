@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Method 1 - TC: O(N), SC: O(N) - ASCII Array
+//Method 1 - TC: O(NlogN), SC: O(N) - ASCII Array
 string frequencySort(string s) { 
     vector<int> freq(128, 0);
     for(auto ch : s) freq[ch]++;
@@ -19,8 +19,8 @@ string frequencySort(string s) {
 string frequencySort(string s) { 
     int n = s.size();
     
-    unordered_map<char, int> freq;
-    for(char c : s) freq[c]++;
+    unordered_map<char, int> freq; //O(N)
+    for(char c : s) freq[c]++; //O(N)
 
     vector<pair<char, int>> freqArr;
     for(auto [ch, count] : freq) {
@@ -30,14 +30,14 @@ string frequencySort(string s) {
     auto cmp = [&] (pair<char, int> &a, pair<char, int> &b) {
         return a.second > b.second;
     };
-    sort(freqArr.begin(), freqArr.end(), cmp);
+    sort(freqArr.begin(), freqArr.end(), cmp); //KlogK
 
     string ans = "";
-    for(auto [ch, fq] : freqArr) ans.append(fq, ch);
+    for(auto [ch, fq] : freqArr) ans.append(fq, ch); //O(N)
     return ans;
 }
 
-//Method 2 - TC: O(N), SC: O(N) - ASCII Array
+//Method 1 - TC: O(N), SC: O(N) - ASCII Array
 string frequencySort(string s) { 
     int n = s.size();
     
