@@ -11,10 +11,18 @@ string frequencySort(string s) {
         freq[c]++;
     }
 
-    string ans = "";
-    for(char c : freq) {
-
+    priority_queue<pair<int, char>> pq;
+    for(auto &[ch, count] : freq) {
+        pq.push({count, ch});
     }
+
+    string ans = "";
+    while(!pq.empty()) {
+        auto [count, ch] = pq.top();
+        pq.pop();
+        ans.append(count, ch);
+    }
+    return ans;
 }
 
 //Optimal - TC: O(N), SC: O(1)
