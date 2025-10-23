@@ -30,6 +30,34 @@ string frequencySort(string s) {
     return ans;
 }
 
+//Method 1 - TC: O(N), SC: O(N) - ASCII Array
+string frequencySort(string s) { 
+    int n = s.size();
+    
+    vector<pair<char, int>> v(123);
+
+    for(char &ch : s) {
+        int freq = v[ch].second;
+        v[ch] = {ch, freq + 1};
+    }
+
+    auto cmp = [&](pair<char, int> &a, pair<char, int> &b) {
+        return a.second > b.second;
+    };
+
+    string ans = "";
+    for(int i = 0; i <= 122; i++) {
+        if(v[i].second > 0) {
+           char ch = v[i].first;
+           int freq = v[i].second;
+           string temp = string(freq, ch);
+
+           ans += temp;
+        }
+    }
+    return ans;
+}
+
 //Method 2 - TC: O(NlogK), SC: O(N) - Map + Priority Queue
 string frequencySort(string s) { 
     int n = s.size();
