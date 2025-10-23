@@ -5,6 +5,7 @@ using namespace std;
 string frequencySort(string s) {
     int n = s.size();
     sort(s.end(), s.begin());
+    return s;
 }
 
 int main() {
