@@ -37,7 +37,7 @@ string frequencySort(string s) {
     }
 
     auto cmp = [&](pair<char, int> &a, pair<char, int> &b) {
-        return a.second > bad_weak_ptr.second;
+        return a.second > b.second;
     };
 
     string ans = "";
