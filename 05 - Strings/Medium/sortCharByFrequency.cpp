@@ -15,6 +15,29 @@ string frequencySort(string s) {
     return s;
 }
 
+//Method 2 - TC: O(NlogK), SC: O(N) - Map + Priority Queue
+string frequencySort(string s) { 
+    int n = s.size();
+    
+    unordered_map<char, int> freq;
+    for(char c : s) {
+        freq[c]++;
+    }
+
+    priority_queue<pair<int, char>> pq;
+    for(auto &[ch, count] : freq) {
+        pq.push({count, ch});
+    }
+
+    string ans = "";
+    while(!pq.empty()) {
+        auto [count, ch] = pq.top();
+        pq.pop();
+        ans.append(count, ch);
+    }
+    return ans;
+}
+
 //Method 2 - TC: O(N), SC: O(N) - ASCII Array
 string frequencySort(string s) { 
     int n = s.size();
