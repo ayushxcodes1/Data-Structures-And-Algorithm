@@ -25,7 +25,7 @@ string frequencySort(string s) {
     return ans;
 }
 
-//Brute: TC: O(N), SC: O(N) - ASCII Array Method
+//TC: O(N), SC: O(N) - ASCII Array Method
 string frequencySort(string s) { 
     int n = s.size();
     
