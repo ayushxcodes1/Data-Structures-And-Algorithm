@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute: TC: O(), SC: O() - Map
+//Brute: TC: O(), SC: O() - Map + Priority Queue
 string frequencySort(string s) { 
     int n = s.size();
     
@@ -33,7 +33,7 @@ string frequencySort(string s) {
 // }
 
 int main() {
-  string s = "tree";
+  string s = "ccabb";
 
   string ans = frequencySort(s);
   cout << "Brute: " << ans << endl;
