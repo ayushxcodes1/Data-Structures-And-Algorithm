@@ -6,23 +6,12 @@ using namespace std;
 string frequencySort(string s) { 
     int n = s.size();
     
-    unordered_map<char, int> freq;
-    for(char c : s) {
-        freq[c]++;
-    }
+    vector<pair<char, int>> v(123);
 
-    priority_queue<pair<int, char>> pq;
-    for(auto &[ch, count] : freq) {
-        pq.push({count, ch});
+    for(char &ch : s) {
+        int freq = v[ch].second;
+        v[ch] = {ch, freq + 1};
     }
-
-    string ans = "";
-    while(!pq.empty()) {
-        auto [count, ch] = pq.top();
-        pq.pop();
-        ans.append(count, ch);
-    }
-    return ans;
 }
 
 //Brute: TC: O(), SC: O() - Map + Priority Queue
