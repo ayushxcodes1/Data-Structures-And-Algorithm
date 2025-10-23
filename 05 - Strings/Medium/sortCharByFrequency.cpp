@@ -21,8 +21,8 @@ string frequencySort(string s) {
     for(char c : s) freq[c]++; //O(N)
 
     vector<pair<char, int>> freqArr;
-    for(auto [ch, count] : freq) {
-        freqArr.push_back({ch, count});
+    for(auto [ch, fq] : freq) {
+        freqArr.push_back({ch, fq});
     }
 
     auto cmp = [&] (pair<char, int> &a, pair<char, int> &b) {
