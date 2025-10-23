@@ -7,7 +7,9 @@ string frequencySort(string s) {
     int n = s.size();
     
     unordered_map<char, int> mpp;
-    
+    for(char c : s) {
+        mpp[c]++;
+    }
 }
 
 //Optimal - TC: O(N), SC: O(1)
