@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute: TC: O(NlogK), SC: O(N) - Map + Priority Queue
-string frequencySort2(string s) { 
+string frequencySort(string s) { 
     int n = s.size();
     
     unordered_map<char, int> freq;
@@ -26,7 +26,7 @@ string frequencySort2(string s) {
 }
 
 //Brute: TC: O(N), SC: O(N) - ASCII Array Method
-string frequencySort(string s) { 
+string frequencySort2(string s) { 
     int n = s.size();
     
     vector<pair<char, int>> v(123);
