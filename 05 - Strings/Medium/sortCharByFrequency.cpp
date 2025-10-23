@@ -30,7 +30,7 @@ string frequencySort(string s) {
     return ans;
 }
 
-//Brute: TC: O(NlogK), SC: O(N) - Map + Priority Queue
+//TC: O(NlogK), SC: O(N) - Map + Priority Queue
 string frequencySort(string s) { 
     int n = s.size();
     
