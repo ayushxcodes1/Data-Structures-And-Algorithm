@@ -53,8 +53,6 @@ string frequencySort(string s) {
     return ans;
 }
 
-
-
 //Optimal - TC: O(N), SC: O(1)
 // string frequencySort(string s) {
 //     int n = s.size();
