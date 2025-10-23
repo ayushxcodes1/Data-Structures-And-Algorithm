@@ -15,7 +15,7 @@ string frequencySort(string s) {
     return s;
 }
 
-//Method 2 - TC: O(NlogK), SC: O(N)
+//Better - TC: O(NlogK), SC: O(N)
 string frequencySort(string s) { 
     int n = s.size();
     
