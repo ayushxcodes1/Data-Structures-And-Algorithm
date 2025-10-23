@@ -15,7 +15,7 @@ string frequencySort(string s) {
 
     auto lambda = [&](pair<char, int> &p1, pair<char, int> &p2) {
         return p1.second > p2.second;
-    }
+    };
 }
 
 //Brute: TC: O(), SC: O() - Map + Priority Queue
