@@ -22,17 +22,18 @@ string frequencySort(string s) {
     unordered_map<char, int> freq;
     for(char c : s) freq[c]++;
 
-    priority_queue<pair<int, char>> pq;
-    for(auto &[ch, count] : freq) {
-        pq.push({count, ch});
+    vector<pair<char, int>> freqArr;
+    for(auto [ch, count] : freq) {
+        freqArr.push_back({ch, count});
     }
 
+    auto cmp = [&] (pair<char, int> &a, pair<char, int> &b) {
+        return a.second > b.second;
+    };
+    sort(freqArr.begin(), freqArr.end(), cmp);
+
     string ans = "";
-    while(!pq.empty()) {
-        auto [count, ch] = pq.top();
-        pq.pop();
-        ans.append(count, ch);
-    }
+    for(auto [ch, fq] : freqArr) ans.append(fq, ch);
     return ans;
 }
 
