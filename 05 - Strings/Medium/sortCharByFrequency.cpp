@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute: TC: O(), SC: O() - Vector of Pair + Sort 
+//Brute: TC: O(), SC: O() 
 string frequencySort(string s) { 
     int n = s.size();
     
@@ -30,7 +30,7 @@ string frequencySort(string s) {
     return ans;
 }
 
-//Brute: TC: O(), SC: O() - Map + Priority Queue
+//Brute: TC: O(N), SC: O(N) - Map + Priority Queue
 string frequencySort2(string s) { 
     int n = s.size();
     
