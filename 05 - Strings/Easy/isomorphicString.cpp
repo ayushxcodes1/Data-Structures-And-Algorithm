@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Optimal - TC: O(N), SC: O(1) - Map
+//Optimal - TC: O(N), SC: O(1)
 bool isomorphicString(string s, string t) {
     int m1[256] = {0};
     int m2[256] = {0};
