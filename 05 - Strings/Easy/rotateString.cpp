@@ -64,7 +64,7 @@ bool KMP(string s, string goal) {
             j++;
             if(j == m) return true;
             
-        } else if (i < n && s[i] != goal[j]) {
+        } else {
             if (j != 0) 
                 j = lps[j - 1];
             else 
