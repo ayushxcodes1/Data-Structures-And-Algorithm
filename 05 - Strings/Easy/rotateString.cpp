@@ -62,15 +62,11 @@ bool KMP(string s, string goal) {
         if (s[i] == goal[j]) {
             i++;
             j++;
-        }
-
-        if (j == m) { // goal found
-            return true;
+            if(j == m) return true;
+            
         } else if (i < n && s[i] != goal[j]) {
-            if (j != 0)
-                j = lps[j - 1];
-            else
-                i++;
+            if (j != 0) j = lps[j - 1];
+            else i++;
         }
     }
     return false;
