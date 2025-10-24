@@ -6,6 +6,8 @@ using namespace std;
 bool isomorphicString(string s, string t) {
     int m1[256] = {0};
     int m2[256] = {0};
+
+    int n = s.size();
 }
 
 int main() {
