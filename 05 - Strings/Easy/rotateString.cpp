@@ -40,10 +40,8 @@ vector<int> computeLPS(string goal) {
             lps[i] = len;
             i++;
         } else {
-            if (len != 0)
-                len = lps[len - 1]; // try smaller prefix
-            else
-                lps[i++] = 0; // no prefix found
+            if (len != 0) len = lps[len - 1]; // try smaller prefix
+            else lps[i++] = 0; // no prefix found
         }
     }
     return lps;
