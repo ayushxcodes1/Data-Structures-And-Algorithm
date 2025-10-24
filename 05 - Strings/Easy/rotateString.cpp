@@ -40,8 +40,10 @@ vector<int> computeLPS(string goal) {
             lps[i] = len;
             i++;
         } else {
-            if (len != 0) len = lps[len - 1]; // try smaller prefix
-            else lps[i++] = 0; // no prefix found
+            if (len != 0)
+                len = lps[len - 1]; // try smaller prefix
+            else
+                lps[i++] = 0; // no prefix found
         }
     }
     return lps;
@@ -63,8 +65,10 @@ bool KMP(string s, string goal) {
             if(j == m) return true;
             
         } else if (i < n && s[i] != goal[j]) {
-            if (j != 0) j = lps[j - 1];
-            else i++;
+            if (j != 0) 
+                j = lps[j - 1];
+            else 
+                i++;
         }
     }
     return false;
