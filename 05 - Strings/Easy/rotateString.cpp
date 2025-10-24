@@ -75,7 +75,7 @@ bool KMP(string s, string goal) {
 // Step 3: Check rotation using KMP
 bool rotateString3(string s, string goal) {
     if (s.size() != goal.size()) return false;
-    string doubled = s + s; // all possible rotations appear here
+    string doubled = s + s; 
     return KMP(doubled, goal);
 }
 
