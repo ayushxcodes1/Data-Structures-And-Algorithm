@@ -17,10 +17,10 @@ string frequencySort(string s) {
 
 //Better - TC: O(NlogK), SC: O(logK) - K Distinct Elements
 string frequencySort(string s) { 
-    unordered_map<char, int> freq; //O(k) 
+    unordered_map<char, int> freq; //O(k) space
     for(char ch : s) freq[ch]++; 
 
-    vector<pair<char, int>> freqArr; //O(k)
+    vector<pair<char, int>> freqArr; //O(k) space
     for(auto [ch, fq] : freq) {
         freqArr.push_back({ch, fq});
     }
@@ -28,10 +28,10 @@ string frequencySort(string s) {
     auto cmp = [&] (pair<char, int> &a, pair<char, int> &b) {
         return a.second > b.second;
     };
-    sort(freqArr.begin(), freqArr.end(), cmp); //O(klogk)
+    sort(freqArr.begin(), freqArr.end(), cmp); //O(klogk) time
 
-    string ans = ""; //O(N)
-    for(auto [ch, fq] : freqArr) ans.append(fq, ch); //O(N)
+    string ans = ""; //O(N) space
+    for(auto [ch, fq] : freqArr) ans.append(fq, ch); //O(N) time
     return ans;
 }
 
