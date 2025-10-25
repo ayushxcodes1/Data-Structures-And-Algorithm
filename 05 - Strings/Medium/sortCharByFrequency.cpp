@@ -18,7 +18,7 @@ string frequencySort(string s) {
 //Better - TC: O(NlogK), SC: O(logK) - K Distinct Elements
 string frequencySort(string s) { 
     unordered_map<char, int> freq; //O(k) space
-    for(char ch : s) freq[ch]++; 
+    for(char ch : s) freq[ch]++;  //O(N) time
 
     vector<pair<char, int>> freqArr; //O(k) space
     for(auto [ch, fq] : freq) {
