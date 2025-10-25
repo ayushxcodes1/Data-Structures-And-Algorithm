@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - TC: O(NlogN), SC: O(N)
+//Brute - TC: O(NlogN), SC: O(N) - N Distinct Elements
 string frequencySort(string s) { 
     vector<int> freq(128, 0);
     for(auto ch : s) freq[ch]++;
@@ -15,7 +15,7 @@ string frequencySort(string s) {
     return s;
 }
 
-//Better - TC: O(NlogK), SC: O(N)
+//Better - TC: O(NlogK), SC: O(N) - K Distinct Elements
 string frequencySort(string s) { 
     unordered_map<char, int> freq; //O(N)
     for(char ch : s) freq[ch]++; //O(N)
