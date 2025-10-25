@@ -15,7 +15,7 @@ string frequencySort(string s) {
     return s;
 }
 
-//Better - TC: O(NlogK), SC: O(N) - K Distinct Elements
+//Better - TC: O(NlogK), SC: O(logK) - K Distinct Elements
 string frequencySort(string s) { 
     unordered_map<char, int> freq; //O(k) 
     for(char ch : s) freq[ch]++; 
@@ -30,8 +30,8 @@ string frequencySort(string s) {
     };
     sort(freqArr.begin(), freqArr.end(), cmp); //O(klogk)
 
-    string ans = "";
-    for(auto [ch, fq] : freqArr) ans.append(fq, ch);
+    string ans = ""; //O(N)
+    for(auto [ch, fq] : freqArr) ans.append(fq, ch); //O(N)
     return ans;
 }
 
