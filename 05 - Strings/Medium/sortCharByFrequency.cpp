@@ -20,7 +20,7 @@ string frequencySort(string s) {
     unordered_map<char, int> freq; //O(k) 
     for(char ch : s) freq[ch]++; 
 
-    vector<pair<char, int>> freqArr;
+    vector<pair<char, int>> freqArr; //O(k)
     for(auto [ch, fq] : freq) {
         freqArr.push_back({ch, fq});
     }
