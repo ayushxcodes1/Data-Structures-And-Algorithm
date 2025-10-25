@@ -17,7 +17,7 @@ string frequencySort(string s) {
 
 //Better - TC: O(NlogK), SC: O(N)
 string frequencySort(string s) { 
-   unordered_map<char, int> freq; //O(N)
+    unordered_map<char, int> freq; //O(N)
     for(char ch : s) freq[ch]++; //O(N)
 
     vector<pair<char, int>> freqArr;
