@@ -27,6 +27,9 @@ string frequencySort(string s) {
     }
 
     auto cmp = [&] (pair<char, int> &a, pair<char, int> &b) {
+        if (a.second == b.second) {
+            return a.first < b.first;
+        }
         return a.second > b.second;
     };
     sort(freqArr.begin(), freqArr.end(), cmp); //O(klogk) time & O(logK) space
