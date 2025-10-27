@@ -17,7 +17,7 @@ string frequencySort(string s) {
 }
 
 //Better - TC: O(NlogK), SC: O(logK) - K Distinct Elements
-string frequencySort(string s) { 
+string frequencySort2(string s) { 
     unordered_map<char, int> freq; //O(k) space
     for(char ch : s) freq[ch]++;  //O(N) time
 
@@ -40,7 +40,7 @@ string frequencySort(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(N) - Bucket Sort
-string frequencySort(string s) {
+string frequencySort3(string s) {
     unordered_map<char, int> freq;
     for(char ch : s) freq[ch]++;
 
@@ -61,5 +61,11 @@ int main() {
 
   string ans = frequencySort(s);
   cout << "Brute: " << ans << endl;
+
+  string ans2 = frequencySort2(s);
+  cout << "Better: " << ans << endl;
+
+  string ans3 = frequencySort3(s);
+  cout << "Optimal: " << ans3 << endl;
   return 0;
 }
