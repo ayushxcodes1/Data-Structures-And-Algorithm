@@ -5,12 +5,18 @@ using namespace std;
 //Brute - TC: O(), SC: O() - Depth Counter
 string maxDepth(string s) { 
     int depth = 0;
+    int maxDepth = 0;
 
     for(int i = 0; i < s.length(); i++) {
         if(s[i] == '(' ||  s[i] == '[' || s[i] == '{') {
-           
+           depth++;
+           maxDepth = max(depth, maxDepth);
+        }
+        else if(s[i] == ')' ||  s[i] == ']' || s[i] == '{') {
+           depth--;
         }
     }
+    return maxDepth;
 }
 
 int main() {
