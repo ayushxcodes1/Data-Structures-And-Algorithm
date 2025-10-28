@@ -24,7 +24,7 @@ int maxDepth(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(1) - Depth Counter
-int maxDepth3(string s) { 
+int maxDepth2(string s) { 
     int depth = 0;
     int maxDepth = 0;
 
@@ -46,7 +46,7 @@ int main() {
   int ans = maxDepth(s);
   cout << "Brute: " << ans << endl;
 
-  int ans3 = maxDepth3(s);
-  cout << "Optimal: " << ans3 << endl;
+  int ans2 = maxDepth2(s);
+  cout << "Optimal: " << ans2 << endl;
   return 0;
 }
