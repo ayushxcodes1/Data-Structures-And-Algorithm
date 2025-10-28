@@ -3,7 +3,7 @@
 using namespace std;
 
 //Brute - TC: O(N), SC: O(1) - Depth Counter
-string maxDepth(string s) { 
+int maxDepth(string s) { 
     int depth = 0;
     int maxDepth = 0;
 
@@ -22,7 +22,7 @@ string maxDepth(string s) {
 int main() {
   string s = "(1+(2*3)+((8)/4))+1";
 
-  string ans = maxDepth(s);
+  int ans = maxDepth(s);
   cout << "Brute: " << ans << endl;
 
 //   string ans2 = frequencySort2(s);
