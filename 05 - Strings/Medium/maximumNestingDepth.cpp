@@ -13,9 +13,11 @@ int maxDepth(string s) {
         if(s[i] == '(' ||  s[i] == '[' || s[i] == '{') {
            st.push(s[i]);
            depth = st.size();
+           maxDepth = max(depth, maxDepth);
         }
         else if(s[i] == ')' ||  s[i] == ']' || s[i] == '{') {
-           depth--;
+            st.pop();
+            depth--;
         }
     }
     return maxDepth;
