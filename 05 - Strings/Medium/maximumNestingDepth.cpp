@@ -44,7 +44,7 @@ int main() {
   string s = "(1+(2*3)+((8)/4))+1";
 
   int ans = maxDepth(s);
-  cout << "Better: " << ans << endl;
+  cout << "Brute: " << ans << endl;
 
   int ans3 = maxDepth3(s);
   cout << "Optimal: " << ans3 << endl;
