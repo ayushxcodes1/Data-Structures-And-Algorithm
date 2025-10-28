@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Optimal - TC: O(N), SC: O(1) - Depth Counter
+//Optimal - TC: O(N), SC: O(N) - Stack
 int maxDepth(string s) { 
     int depth = 0;
     int maxDepth = 0;
@@ -20,7 +20,7 @@ int maxDepth(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(1) - Depth Counter
-int maxDepth(string s) { 
+int maxDepth3(string s) { 
     int depth = 0;
     int maxDepth = 0;
 
@@ -45,7 +45,7 @@ int main() {
 //   string ans2 = frequencySort2(s);
 //   cout << "Better: " << ans << endl;
 
-//   string ans3 = frequencySort3(s);
-//   cout << "Optimal: " << ans3 << endl;
+  int ans3 = maxDepth3(s);
+  cout << "Optimal: " << ans3 << endl;
   return 0;
 }
