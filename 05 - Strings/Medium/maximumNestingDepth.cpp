@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Optimal - TC: O(N), SC: O(N) - Stack
+//Better - TC: O(N), SC: O(N) - Stack
 int maxDepth(string s) { 
     int depth = 0;
     int maxDepth = 0;
