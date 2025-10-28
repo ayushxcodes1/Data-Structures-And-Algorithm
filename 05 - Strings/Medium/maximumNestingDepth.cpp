@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Better - TC: O(N), SC: O(N) - Stack
+//Brute - TC: O(N), SC: O(N) - Stack
 int maxDepth(string s) { 
     stack<char> st;
     
