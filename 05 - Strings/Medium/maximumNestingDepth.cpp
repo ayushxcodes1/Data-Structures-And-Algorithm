@@ -4,6 +4,8 @@ using namespace std;
 
 //Better - TC: O(N), SC: O(N) - Stack
 int maxDepth(string s) { 
+    stack<char> st;
+    
     int depth = 0;
     int maxDepth = 0;
 
