@@ -29,11 +29,11 @@ int maxDepth3(string s) {
     int maxDepth = 0;
 
     for(int i = 0; i < s.length(); i++) {
-        if(s[i] == '(' ||  s[i] == '[' || s[i] == '}') {
+        if(s[i] == '(' ||  s[i] == '[' || s[i] == '{') {
            depth++;
            maxDepth = max(depth, maxDepth);
         }
-        else if(s[i] == ')' ||  s[i] == ']' || s[i] == '{') {
+        else if(s[i] == ')' ||  s[i] == ']' || s[i] == '}') {
            depth--;
         }
     }
