@@ -23,7 +23,7 @@ int main() {
   string s = "(1+(2*3)+((8)/4))+1";
 
   int ans = maxDepth(s);
-  cout << "Brute: " << ans << endl;
+  cout << "Optimal: " << ans << endl;
 
 //   string ans2 = frequencySort2(s);
 //   cout << "Better: " << ans << endl;
