@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - TC: O(N), SC: O(1) - Depth Counter
+//Optimal - TC: O(N), SC: O(1) - Depth Counter
 int maxDepth(string s) { 
     int depth = 0;
     int maxDepth = 0;
