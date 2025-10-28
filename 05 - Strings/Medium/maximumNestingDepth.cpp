@@ -11,8 +11,8 @@ int maxDepth(string s) {
 
     for(int i = 0; i < s.length(); i++) {
         if(s[i] == '(' ||  s[i] == '[' || s[i] == '{') {
-           depth++;
-           maxDepth = max(depth, maxDepth);
+           st.push(s[i]);
+           depth = st.size();
         }
         else if(s[i] == ')' ||  s[i] == ']' || s[i] == '{') {
            depth--;
