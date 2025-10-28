@@ -15,7 +15,7 @@ int maxDepth(string s) {
            depth = st.size();
            maxDepth = max(depth, maxDepth);
         }
-        else if(s[i] == ')' ||  s[i] == ']' || s[i] == '{') {
+        else if(s[i] == ')' ||  s[i] == ']' || s[i] == '}') {
             st.pop();
             depth--;
         }
