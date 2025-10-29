@@ -13,8 +13,13 @@ int romanToInteger(string s) {
 
   int a = 0, b = 0;
   for(int i = 0; i < s.length(); i++) {
-    if(s[i] == 'I' && s[i + 1] == 'V' || s[i + 1] == 'X') {
-        
+    if(s[i] == 'I' && s[i + 1] == 'V') {
+      b = I;
+      a = V;
+    }
+    else {
+      b = I;
+      a = X
     }
   }
 }
