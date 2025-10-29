@@ -2,6 +2,8 @@
 
 using namespace std;
 
+
+//Better - TC: O(N), SC: O(1)
 int romanToInteger(string s) {
   unordered_map<char, int> m;
   
@@ -15,7 +17,7 @@ int romanToInteger(string s) {
 
   int ans = 0;
   for(int i = 0; i < s.length(); i++) {
-    if(m[s[i]] < m[s[i + 1]]) {
+    if(i < s.length() && m[s[i]] < m[s[i + 1]]) {
       ans -= m[s[i]];
     }
     else ans += m[s[i]];
