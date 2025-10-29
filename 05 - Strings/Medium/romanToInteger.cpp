@@ -3,7 +3,7 @@
 using namespace std;
 
 
-//Better - TC: O(N), SC: O(1)
+//Optimal - TC: O(N), SC: O(1)
 int romanToInteger(string s) {
   unordered_map<char, int> m;
   
