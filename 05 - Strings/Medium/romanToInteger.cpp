@@ -27,6 +27,7 @@ int romanToInteger(string s) {
 }
 
 int main() {
+  string s = "LXIX";
   
   return 0;
 }
