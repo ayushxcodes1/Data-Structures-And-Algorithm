@@ -3,20 +3,25 @@
 using namespace std;
 
 int romanToInteger(string s) {
-  int I = 1;
-  int V = 5;
-  int X = 10;
-  int L = 50;
-  int C = 100;
-  int D = 500;
-  int M = 1000;
+  unordered_map<char, int> m;
+  
+  m['I'] = 1;
+  m['V'] = 5;
+  m['X'] = 10;
+  m['L'] = 50;
+  m['C'] = 100;
+  m['D'] = 500;
+  m['M'] = 1000;
 
-  int a = 0, b = 0;
+  int ans = 0;
   for(int i = 0; i < s.length(); i++) {
-    if(s[i] == 'I' && s[i + 1] == 'V') {
-     
+    if(m[s[i]] < m[s[i + 1]]) {
+      ans -= m[s[i]];
     }
+    else ans += m[s[i]];
   }
+
+  return ans;
 }
 
 int main() {
