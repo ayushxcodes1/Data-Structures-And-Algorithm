@@ -17,7 +17,7 @@ int romanToInteger(string s) {
 
   int ans = 0;
   for(int i = 0; i < s.length(); i++) {
-    if(i < s.length() && m[s[i]] < m[s[i + 1]]) {
+    if(i + 1 < s.length() && m[s[i]] < m[s[i + 1]]) {
       ans -= m[s[i]];
     }
     else ans += m[s[i]];
