@@ -28,6 +28,7 @@ int romanToInteger(string s) {
 
 int main() {
   string s = "LXIX";
-  
+  int ans = romanToInteger(s);
+  cout << ans << endl;
   return 0;
 }
