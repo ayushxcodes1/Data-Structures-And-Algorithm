@@ -19,7 +19,7 @@ int romanToInteger(string s) {
     }
     else {
       b = I;
-      a = X
+      a = X;
     }
   }
 }
