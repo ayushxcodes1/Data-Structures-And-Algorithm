@@ -7,6 +7,9 @@ int stringToInteger(string s) {
 
   for(int i = 0; i < s.length(); i++) {
     if(s[i] == ' ') continue;
+    else if(isdigit(s[i])) {
+      res = res * 10 + (s[i] - '0');
+    }
  
   }
 }
