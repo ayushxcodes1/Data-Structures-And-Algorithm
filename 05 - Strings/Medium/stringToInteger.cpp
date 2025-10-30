@@ -6,16 +6,16 @@ using namespace std;
 int stringToInteger(string s) {
   int res = 0;
   int sign = 1;
-
-  for(int i = 0; i < s.length(); i++) {
+  
+  for(auto ch : s) {
     if(res < INT_MIN) res = INT_MIN;
     else if(res > INT_MAX) res = INT_MAX;
 
-    if(s[i] == ' ') continue;
-    else if(isdigit(s[i])) {
-      res = res * 10 + (s[i] - '0');
+    if(ch == ' ') continue;
+    else if(isdigit(ch)) {
+      res = res * 10 + (ch - '0');
     }
-    else if(s[i] == '-') {  
+    else if(ch == '-') {  
       sign = -1;
     }
     else {
