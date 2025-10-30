@@ -12,13 +12,13 @@ int stringToInteger(string s) {
   int res = 0;
   int sign = 1;
 
-  for(int i = 0; i < s.length(); i++) {
-    if(s[i] == ' ') continue;
-    else if(s[i] == '-') {
+  for(auto ch : s) {
+    if(ch == ' ') continue;
+    else if(ch == '-') {
       sign = -1;
     }
-    else if(isdigit(s[i])) {
-        
+    else if(isdigit(ch)) {
+      res = res * 10 + (s[i] )
     }
   }
 }
