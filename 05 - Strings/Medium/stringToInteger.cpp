@@ -24,7 +24,11 @@ int stringToInteger(string s) {
 
     if(ans * sign < INT_MIN) return INT_MIN; 
     if(ans * sign > INT_MAX) return INT_MAX; 
+
+    i++;
   }
+
+  return (int)(ans * sign);
 }
 
 int main() {
