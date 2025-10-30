@@ -16,14 +16,13 @@ int stringToInteger(string s) {
     i++;
   }
   else if(s[i] == '+') {
-    sign = 1;
     i++;
   }
 
   while(i < n &&  isdigit(s[i])) {
     ans = ans * 10 + (s[i] - '0');
 
-    
+    if(ans < INT_MIN && sign == 1) 
   }
 }
 
