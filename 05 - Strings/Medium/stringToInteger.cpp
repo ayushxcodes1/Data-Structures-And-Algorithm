@@ -6,15 +6,25 @@ using namespace std;
 int stringToInteger(string s) {
   int res = 0;
   int sign = 1;
-  int n = s.length();
-  
-  int i = 0;
-  while(i < n && s[i] == ' ') i++; //skip whitespaces
-  while(i < n && isdigit(s[i])) {
-    res = res * 10 + (s[i] - '0'); //add digit to answer
+
+  for(int i = 0; i < s.length(); i++) {
+    if(res < INT_MIN) res = INT_MIN;
+    else if(res > INT_MAX) res = INT_MAX;
+
+    if(s[i] == ' ') continue;
+    else if(isdigit(s[i])) {
+      res = res * 10 + (s[i] - '0');
+    }
+    else if(s[i] == '-') {  
+      sign = -1;
+    }
+    else {
+      res = res * sign;
+      return res;
+    }
   }
-  while(i < n && res < INT_MIN) res = INT_MIN; //case 1
-  while(i < n && res > INT_MAX) res = INT_MAX; //case 2
+  res = res * sign;
+  return res;
 }
 
 int main() {
