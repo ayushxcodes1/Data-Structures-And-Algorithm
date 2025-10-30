@@ -10,9 +10,16 @@ int stringToInteger(string s) {
   // res > 2^31 - 1 -> round(2^31 - 1)
 
   int res = 0;
-  
+  int sign = 1;
+
   for(int i = 0; i < s.length(); i++) {
-      
+    if(s[i] == ' ') continue;
+    else if(s[i] == '-') {
+      sign = -1;
+    }
+    else if(isdigit(s[i])) {
+        
+    }
   }
 }
 
