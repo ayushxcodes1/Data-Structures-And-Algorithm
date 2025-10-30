@@ -13,6 +13,8 @@ int stringToInteger(string s) {
   while(i < n && isdigit(s[i])) {
     res = res * 10 + (s[i] - '0'); //add digit to answer
   }
+  while(i < n && res < INT_MIN) res = INT_MIN;
+  while(i < n && res > INT_MAX) res = INT_MAX;
 }
 
 int main() {
