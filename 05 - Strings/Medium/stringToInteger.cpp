@@ -10,7 +10,7 @@ int stringToInteger(string s) {
     else if(isdigit(s[i])) {
       res = res * 10 + (s[i] - '0');
     }
- 
+    else return res;
   }
 }
 
