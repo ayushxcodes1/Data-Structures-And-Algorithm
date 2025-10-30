@@ -19,6 +19,7 @@ int stringToInteger(string s) {
       res = res * 10 + (ch - '0');
     }
     else {
+      res = res * sign;
       return res;
     }
   }
