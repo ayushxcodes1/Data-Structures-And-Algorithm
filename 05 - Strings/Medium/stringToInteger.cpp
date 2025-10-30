@@ -22,7 +22,8 @@ int stringToInteger(string s) {
   while(i < n &&  isdigit(s[i])) {
     ans = ans * 10 + (s[i] - '0');
 
-    if(ans < INT_MIN && sign == 1) 
+    if(ans * sign < INT_MIN) return INT_MIN; 
+    if(ans * sign > INT_MAX) return INT_MAX; 
   }
 }
 
