@@ -32,7 +32,7 @@ int stringToInteger(string s) {
 }
 
 int main() {
-  string s = "-42c";
+  string s = "0-1";
   int ans = stringToInteger(s);
   cout << ans << endl;
   return 0;
