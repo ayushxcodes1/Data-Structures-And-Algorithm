@@ -6,9 +6,7 @@ int stringToInteger(string s) {
   int res = 0;
 
   for(int i = 0; i < s.length(); i++) {
-    if(s[i] == ' ') {
-
-    }
+    if(s[i] == ' ') continue;
  
   }
 }
