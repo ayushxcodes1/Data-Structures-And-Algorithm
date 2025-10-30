@@ -19,6 +19,12 @@ int stringToInteger(string s) {
     sign = 1;
     i++;
   }
+
+  while(i < n &&  isdigit(s[i])) {
+    ans = ans * 10 + (s[i] - '0');
+
+    
+  }
 }
 
 int main() {
