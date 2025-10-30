@@ -7,7 +7,18 @@ int stringToInteger(string s) {
   int i = 0;
   int sign = 1;
   int ans = 0;
+  int n = s.length();
 
+  while(i < n && s[i] == ' ') i++;
+
+  if(s[i] == '-') {
+    sign = -1;
+    i++;
+  }
+  else if(s[i] == '+') {
+    sign = 1;
+    i++;
+  }
 }
 
 int main() {
