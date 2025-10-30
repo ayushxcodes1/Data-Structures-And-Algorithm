@@ -7,13 +7,6 @@ int stringToInteger(string s) {
   int res = 0;
   int sign = 1;
 
-  if(s[0] == '-') {
-    sign = -1;
-  }
-  else {
-    res = res * 10 + (s[0] - '0');
-  }
-
   for(int i = 1; i < s.length(); i++) {
     if(res < INT_MIN) res = INT_MIN;
     else if(res > INT_MAX) res = INT_MAX;
