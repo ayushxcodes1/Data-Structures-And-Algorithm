@@ -18,7 +18,7 @@ int stringToInteger(string s) {
       sign = -1;
     }
     else if(isdigit(ch)) {
-      res = res * 10 + (s[i] )
+      res = res * 10 + (ch - '0');
     }
   }
 }
