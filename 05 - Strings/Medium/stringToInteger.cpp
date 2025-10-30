@@ -11,7 +11,7 @@ int stringToInteger(string s) {
   int i = 0;
   while(i < n && s[i] == ' ') i++; //skip whitespaces
   while(i < n && isdigit(s[i])) {
-    res = res * 10 + (s[i] - '0');
+    res = res * 10 + (s[i] - '0'); //add digit to answer
   }
 }
 
