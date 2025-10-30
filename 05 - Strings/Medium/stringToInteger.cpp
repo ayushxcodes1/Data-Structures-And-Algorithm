@@ -18,11 +18,11 @@ int stringToInteger(string s) {
     if(res < INT_MIN) res = INT_MIN;
     else if(res > INT_MAX) res = INT_MAX;
 
-    if(ch == ' ') continue;
-    else if(isdigit(ch)) {
-      res = res * 10 + (ch - '0');
+    if(s[i] == ' ') continue;
+    else if(isdigit(s[i])) {
+      res = res * 10 + (s[i] - '0');
     }
-    else if(ch == '-') {  
+    else if(s[i] == '-') {  
       sign = -1;
     }
     else {
