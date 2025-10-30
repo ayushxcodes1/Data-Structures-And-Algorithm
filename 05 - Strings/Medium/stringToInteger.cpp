@@ -6,7 +6,7 @@ using namespace std;
 int stringToInteger(string s) {
   int i = 0;
   int sign = 1;
-  long ans = 0;
+  long res = 0;
   int n = s.length();
 
   while(i < n && s[i] == ' ') i++;
@@ -20,20 +20,20 @@ int stringToInteger(string s) {
   }
 
   while(i < n &&  isdigit(s[i])) {
-    ans = ans * 10 + (s[i] - '0');
+    res = res * 10 + (s[i] - '0');
 
-    if(ans * sign < INT_MIN) return INT_MIN; 
-    if(ans * sign > INT_MAX) return INT_MAX; 
+    if(res * sign < INT_MIN) return INT_MIN; 
+    if(res * sign > INT_MAX) return INT_MAX; 
 
     i++;
   }
 
-  return (int)(ans * sign);
+  return (int)(res * sign);
 }
 
 int main() {
   string s = "0-1";
-  int ans = stringToInteger(s);
-  cout << ans << endl;
+  int res = stringToInteger(s);
+  cout << res << endl;
   return 0;
 }
