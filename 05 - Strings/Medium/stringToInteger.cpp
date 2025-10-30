@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Optimal - TC(N), SC: O(1)
 int stringToInteger(string s) {
   int res = 0;
   int sign = 1;
@@ -27,5 +28,6 @@ int stringToInteger(string s) {
 
 int main() {
   string s = "-1337c0d3";
+  int ans
   return 0;
 }
