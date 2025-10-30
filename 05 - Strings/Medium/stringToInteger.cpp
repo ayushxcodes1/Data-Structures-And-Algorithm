@@ -14,7 +14,7 @@ int stringToInteger(string s) {
     res = res * 10 + (s[0] - '0');
   }
 
-  for(auto ch : s) {
+  for(int i = 1; i < s.length(); i++) {
     if(res < INT_MIN) res = INT_MIN;
     else if(res > INT_MAX) res = INT_MAX;
 
