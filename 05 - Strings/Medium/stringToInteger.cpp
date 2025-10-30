@@ -12,11 +12,11 @@ int stringToInteger(string s) {
     else if(res > INT_MAX) res = INT_MAX;
 
     if(ch == ' ') continue;
-    else if(ch == '-') {  
-      sign = -1;
-    }
     else if(isdigit(ch)) {
       res = res * 10 + (ch - '0');
+    }
+    else if(ch == '-') {  
+      sign = -1;
     }
     else {
       res = res * sign;
