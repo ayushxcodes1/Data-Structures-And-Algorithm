@@ -7,7 +7,7 @@ int stringToInteger(string s) {
   int res = 0;
   int sign = 1;
 
-  for(int i = 1; i < s.length(); i++) {
+  for(int i = 0; i < s.length(); i++) {
     if(res < INT_MIN) res = INT_MIN;
     else if(res > INT_MAX) res = INT_MAX;
 
