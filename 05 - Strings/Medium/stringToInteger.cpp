@@ -27,7 +27,8 @@ int stringToInteger(string s) {
 }
 
 int main() {
-  string s = "-1337c0d3";
-  int ans
+  string s = "-42c";
+  int ans = stringToInteger(s);
+  cout << ans << endl;
   return 0;
 }
