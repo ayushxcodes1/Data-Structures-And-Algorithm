@@ -17,7 +17,6 @@ int countSubstrings(string s) {
 
             if(isA == true && isB == true && isC == true) {
                cnt++;
-               cout << "count: " << cnt << endl;
             }
         }
     }
