@@ -4,8 +4,14 @@ using namespace std;
 
 int countSubstrings(string s) {
     int n = s.length();
-    
-    
+
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            bool isA = false;
+            bool isB = false;
+            bool isC = false;
+        }
+    }
 }
 
 int main() {
