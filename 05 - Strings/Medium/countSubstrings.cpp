@@ -20,6 +20,7 @@ int countSubstrings(string s) {
             }
         }
     }
+    return cnt;
 }
 
 int main() {
