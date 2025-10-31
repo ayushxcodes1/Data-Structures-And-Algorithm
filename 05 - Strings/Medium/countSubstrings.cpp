@@ -11,9 +11,9 @@ int countSubstrings(string s) {
         bool isB = false;
         bool isC = false;
         for(int j = 0; j < n; j++) {
-            if(s[j] == 'a' && !isA) isA = true;
-            else if(s[j] == 'b' && !isB) isB = true;
-            else if(s[j] == 'c' && !isC) isC = true;
+            if(s[j] == 'a') isA = true;
+            else if(s[j] == 'b') isB = true;
+            else isC = true;
 
             if(isA == true && isB == true && isC == true) {
                cnt++;
