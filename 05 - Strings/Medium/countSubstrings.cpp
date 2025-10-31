@@ -26,5 +26,6 @@ int countSubstrings(string s) {
 int main() {
   string s = "abcabc";
   int ans = countSubstrings(s);
+  cout << ans << endl;
   return 0;
 }
