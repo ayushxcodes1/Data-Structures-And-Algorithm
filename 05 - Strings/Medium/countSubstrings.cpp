@@ -27,7 +27,7 @@ int countSubstrings(string s) {
 //Optimal - TC: O(N^2), SC: O(1) - Sliding Window 
 int countSubstrings(string s) {
     int n = s.length();
-    vector<int> lastSeen(3, -1);
+    vector<int> lastSeen(3, -1);  // last positions of 'a', 'b', 'c'
     int cnt = 0;
 
     for(int i = 0; i < n; i++) {
