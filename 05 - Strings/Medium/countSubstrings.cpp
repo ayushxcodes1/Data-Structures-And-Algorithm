@@ -12,7 +12,7 @@ int countSubstrings(string s) {
         for(int j = i; j < n; j++) {
             if(s[j] == 'a') isA = true;
             else if(s[j] == 'b') isB = true;
-            else isC = true;
+            else if(s[j] == 'c') isC = true;
 
             if(isA == true && isB == true && isC == true) {
                cnt++;
