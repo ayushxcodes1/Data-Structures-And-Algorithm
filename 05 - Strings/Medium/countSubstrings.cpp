@@ -14,7 +14,7 @@ int countSubstrings(string s) {
         cout << "isA = " << isA;
         cout << "isB = " << isB;
         cout << "isC = " << isC;
-        for(int j = 0; j < n; j++) {
+        for(int j = i; j < n; j++) {
             cout << "j = " << j << endl; 
             if(s[j] == 'a') isA = true;
             else if(s[j] == 'b') isB = true;
