@@ -15,7 +15,7 @@ int countSubstrings(string s) {
             else if(s[j] == 'c') isC = true;
 
             if(isA && isB && isC) {
-               cnt++;
+               cnt += (n - j);
             }
         }
     }
