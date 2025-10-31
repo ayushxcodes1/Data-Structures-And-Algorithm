@@ -4,6 +4,7 @@ using namespace std;
 
 int countSubstrings(string s) {
     int n = s.length();
+    int cnt = 0;
 
     for(int i = 0; i < n; i++) {
         bool isA = false;
@@ -13,6 +14,9 @@ int countSubstrings(string s) {
             if(s[j] == 'a') isA = true;
             if(s[j] == 'b') isB = true;
             if(s[j] == 'c') isC = true;
+            if(isA == true && isB == true && isC == true) {
+               cnt
+            }
         }
     }
 }
