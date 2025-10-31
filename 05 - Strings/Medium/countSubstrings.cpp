@@ -4,9 +4,8 @@ using namespace std;
 
 int countSubstrings(string s) {
     int n = s.length();
-
-
-
+    
+    
 }
 
 int main() {
