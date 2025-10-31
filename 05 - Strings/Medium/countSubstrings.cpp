@@ -31,7 +31,11 @@ int countSubstrings(string s) {
     int cnt = 0;
 
     for(int i = 0; i < n; i++) {
-    
+        lastSeen[s[i] - 'a'] = i;
+        int minLast = min({lastSeen[0], lastSeen[1], lastSeen[2]});
+        if(minLast != -1) {
+           cnt += (minLast + 1);
+        } 
     }
     return cnt;
 }
