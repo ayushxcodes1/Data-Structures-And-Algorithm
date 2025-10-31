@@ -8,9 +8,7 @@ int countSubstrings(string s) {
     int cnt = 0;
 
     for(int i = 0; i < n; i++) {
-        bool isA = false;
-        bool isB = false;
-        bool isC = false;
+        bool isA = false, isB = false, isC = false;
         for(int j = i; j < n; j++) {
             if(s[j] == 'a') isA = true;
             else if(s[j] == 'b') isB = true;
