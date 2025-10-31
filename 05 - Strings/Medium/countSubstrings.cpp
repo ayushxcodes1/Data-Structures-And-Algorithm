@@ -34,7 +34,7 @@ int countSubstrings(string s) {
         lastSeen[s[i] - 'a'] = i;
         int minLast = min({lastSeen[0], lastSeen[1], lastSeen[2]});
         if(minLast != -1) {
-           cnt += (minLast + 1);
+           cnt += (minLast + 1); // all substrings ending at i that include a,b,c
         } 
     }
     return cnt;
