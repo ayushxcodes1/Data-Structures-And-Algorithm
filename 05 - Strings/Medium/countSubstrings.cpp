@@ -3,7 +3,8 @@
 using namespace std;
 
 int countSubstrings(string s) {
-    int n = string.length();
+    int n = s.length();
+
 
 
 }
