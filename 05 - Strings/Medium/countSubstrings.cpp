@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC: O(N^2), SC: O(1)
 int countSubstrings(string s) {
     int n = s.length();
     int cnt = 0;
