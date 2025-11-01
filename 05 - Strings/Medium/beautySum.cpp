@@ -12,11 +12,12 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
 
   int maxFreq = INT_MIN;
   int minFreq = INT_MAX;
+  
   for(auto &p : mpp) {
     maxFreq = max(maxFreq, p.second);
     minFreq = min(minFreq, p.second);
   }
-  
+
   return {minFreq, maxFreq};
 }
 
