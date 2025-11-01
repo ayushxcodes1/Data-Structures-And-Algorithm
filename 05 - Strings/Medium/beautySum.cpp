@@ -6,13 +6,14 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
   int n = s.length();
   unordered_map<char, int> mpp;
 
-  for(auto ch : s) {
+  for(int k = i; k <= j; k++) {
     mpp[ch]++;
   }
 
   int maxFreq = 0, minFreq = 0;
   for(auto ch : s) {
-      
+    int sec = ch.second;
+    maxFreq = max(maxFreq, sec);
   }
   
 }
