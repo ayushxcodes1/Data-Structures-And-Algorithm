@@ -2,7 +2,7 @@
 
 using namespace std;
 
-pair<int, int> getMinMaxFreqCnt(string s, int i, int j) {
+pair<int, int> getMinMaxFreq(string s, int i, int j) {
   int n = s.length();
   unordered_map<char, int> mpp;
 
