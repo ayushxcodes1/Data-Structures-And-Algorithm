@@ -50,6 +50,7 @@ int beautySum(string s) {
   int ans = 0;
   
   for(int i = 0; i < n; i++) {
+    int freq[26] = {0};
     for(int j = i; j < n; j++) {
       pair<int, int> freqPair = getMinMaxFreq(s, i, j);
       int minFreq = freqPair.first;
