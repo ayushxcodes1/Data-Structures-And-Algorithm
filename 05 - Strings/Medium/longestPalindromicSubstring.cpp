@@ -9,6 +9,8 @@ bool isPalindrome(string s) {
         if(s[i] != s[j]) {
            return false;
         }
+        i++;
+        j--;
     }
     return true;
 }
