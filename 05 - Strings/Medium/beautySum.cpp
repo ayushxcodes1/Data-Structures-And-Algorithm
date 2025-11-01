@@ -55,7 +55,7 @@ int beautySum2(string s) {
     for(int j = i; j < n; j++) {
       freq[s[j] - 'a']++;
 
-      int minFreq = 0, maxFreq = INT_MAX;
+      int minFreq = INT_MAX, maxFreq = 0;
       
       for(int k = 0; k < 26; k++) {
         if(freq[k] > 0) {
