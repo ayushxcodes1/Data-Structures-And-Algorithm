@@ -51,6 +51,7 @@ int beautySum2(string s) {
   
   for(int i = 0; i < n; i++) {
     int freq[26] = {0};
+    
     for(int j = i; j < n; j++) {
       freq[s[j] - 'a']++;
 
