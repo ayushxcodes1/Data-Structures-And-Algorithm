@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int findFreqCnt(string s, int i, int j) {
+pair<int, int> getMinMaxFreqCnt(string s, int i, int j) {
   int n = s.length();
   unordered_map<char, int> mpp;
 
@@ -22,8 +22,7 @@ int beautySum(string s) {
   
   for(int i = 0; i < n; i++) {
     for(int j = i; j < n; j++) {
-      int mostFqCnt = findMostFreqCnt(s, i, j);
-      int leastFqCnt = findLeastFreqCnt(s, i, j);
+    
       int diff = mostFqCnt - leastFqCnt;
       ans += diff;
     }
