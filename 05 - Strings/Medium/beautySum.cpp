@@ -4,11 +4,11 @@ using namespace std;
 
 int findMostFreqCnt(string s, int i, int j) {
   int n = s.length();
-  int mostFqCnt = 0, leastFqCnt = 0;
+  int cnt = 0;
   unordered_map<char, int> mpp;
 
   for(auto ch : s) {
-    mpp[ch]++;
+    mpp[ch]++; 
   }
   return cnt;
 }
