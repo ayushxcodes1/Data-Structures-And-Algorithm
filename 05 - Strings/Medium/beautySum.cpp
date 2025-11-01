@@ -44,6 +44,25 @@ int beautySum(string s) {
   return ans;
 }
 
+int beautySum(string s) {
+  int n = s.length();
+  int ans = 0;
+  
+  for(int i = 0; i < n; i++) {
+    for(int j = i; j < n; j++) {
+      pair<int, int> freqPair = getMinMaxFreq(s, i, j);
+      int minFreq = freqPair.first;
+      int maxFreq = freqPair.second;
+      int diff = maxFreq - minFreq;
+
+      if(diff > 0) {
+        ans += diff;
+      }
+    }
+  }
+  return ans;
+}
+
 int main() {
   string s = "aabcbaa";
   int ans = beautySum(s);
