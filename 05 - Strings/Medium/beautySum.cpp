@@ -3,11 +3,10 @@
 using namespace std;
 
 pair<int, int> getMinMaxFreq(string s, int i, int j) {
-  int n = s.length();
   unordered_map<char, int> mpp;
 
   for(int k = i; k <= j; k++) {
-    mpp[k]++;
+    mpp[s[k]]++;
   }
 
   int minFreq = INT_MAX;
