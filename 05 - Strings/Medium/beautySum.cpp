@@ -30,8 +30,10 @@ int beautySum(string s) {
       pair<int, int> freqPair = getMinMaxFreq(s, i, j);
       int minFreq = freqPair.first;
       int maxFreq = freqPair.second;
-      int diff = mostFqCnt - leastFqCnt;
-      ans += diff;
+      int diff = maxFreq - minFreq;
+      if(diff > 0) {
+        ans += diff;
+      }
     }
   }
   return ans;
