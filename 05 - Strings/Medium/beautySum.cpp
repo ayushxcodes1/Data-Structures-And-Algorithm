@@ -8,10 +8,10 @@ int findMostFreqCnt(string s, int i, int j) {
   unordered_map<char, int> mpp;
 
   for(auto ch : s) {
-    mpp[ch]++
+    mpp[ch]++;
   }
 
-  
+
 
   return cnt;
 }
