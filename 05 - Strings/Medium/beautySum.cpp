@@ -53,9 +53,8 @@ int beautySum(string s) {
     int freq[26] = {0};
     for(int j = i; j < n; j++) {
       freq[s[j] - 'a']++;
-      pair<int, int> freqPair = getMinMaxFreq(s, i, j);
-      int minFreq = freqPair.first;
-      int maxFreq = freqPair.second;
+
+      int minFreq = 0, maxFreq = INT_MAX;
       int diff = maxFreq - minFreq;
 
       if(diff > 0) {
