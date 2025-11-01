@@ -27,10 +27,10 @@ string longestSubstring(string s) {
             bool check = isPalindrome(curr);
             if(check) {
                 int len = curr.length();
-                maxLen = max(len, maxLen); 
                 if(len > maxLen) {
                    ans = curr;
                 }
+                maxLen = max(len, maxLen); 
             }
         }
     }
