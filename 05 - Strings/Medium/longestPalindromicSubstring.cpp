@@ -19,6 +19,7 @@ string longestSubstring(string s) {
             }
         }
     }
+    return ans;
 }
 
 int main() {
