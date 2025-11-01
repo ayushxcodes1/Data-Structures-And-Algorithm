@@ -5,6 +5,7 @@ using namespace std;
 pair<int, int> getMinMaxFreq(string s, int i, int j) {
   unordered_map<char, int> mpp;
 
+  //O(N)
   for(int k = i; k <= j; k++) {
     mpp[s[k]]++;
   }
@@ -12,6 +13,7 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
   int minFreq = INT_MAX;
   int maxFreq = INT_MIN;
   
+  //o(N)
   for(auto &p : mpp) {
     minFreq = min(minFreq, p.second);
     maxFreq = max(maxFreq, p.second);
