@@ -23,7 +23,7 @@ string longestSubstring(string s) {
 
     for(int i = 0; i < n; i++) {    
         for(int j = i; j < n; j++) {
-            curr += s[i];
+            curr += s[j];
             bool check = isPalindrome(curr);
             if(check) {
                 int len = curr.length();
