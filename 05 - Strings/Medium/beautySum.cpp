@@ -55,11 +55,14 @@ int beautySum(string s) {
       freq[s[j] - 'a']++;
 
       int minFreq = 0, maxFreq = INT_MAX;
-      int diff = maxFreq - minFreq;
-
-      if(diff > 0) {
-        ans += diff;
+      
+      for(int k = 0; k < 26; k++) {
+        if(freq[k] > 0) {
+          minFreq = min(minFreq, freq[k]);
+          maxFreq = max(maxFreq, freq[k]);
+        }
       }
+      ans += (maxFreq - minFreq);
     }
   }
   return ans;
