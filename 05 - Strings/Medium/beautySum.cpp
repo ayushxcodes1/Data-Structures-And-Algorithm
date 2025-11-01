@@ -44,7 +44,7 @@ int beautySum(string s) {
   return ans;
 }
 
-//Optimal 
+//Optimal - TC: O(N^2), SC: O(1)
 int beautySum(string s) {
   int n = s.length();
   int ans = 0;
