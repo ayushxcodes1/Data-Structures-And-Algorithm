@@ -7,7 +7,7 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
   unordered_map<char, int> mpp;
 
   for(int k = i; k <= j; k++) {
-    mpp[ch]++;
+    mpp[k]++;
   }
 
   int maxFreq = 0, minFreq = 0;
