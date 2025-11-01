@@ -15,7 +15,7 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
   
   //O(N)
     for(int k = 0; k < 26; k++) {
-      if(freq[k] > 0) { // consider only present chars
+      if(freq[k] > 0) {
         minFreq = min(minFreq, freq[k]);
         maxFreq = max(maxFreq, freq[k]);
       }
