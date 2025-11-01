@@ -27,6 +27,7 @@ string longestSubstring(string s) {
                 int len = curr.length();
                 maxLen = max(len, maxLen); 
                 if(len > maxLen) {
+                   maxLen = len;
                    ans = curr;
                 }
             }
