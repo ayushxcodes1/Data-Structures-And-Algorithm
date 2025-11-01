@@ -4,13 +4,13 @@ using namespace std;
 
 bool isPalindrome(string s) {
     int n = s.length();
-    int i = 0, j = n - 1;
-    while(i <= j) {
-        if(s[i] != s[j]) {
+    int left = 0, right = n - 1;
+    while(left <= right) {
+        if(s[left] != s[right]) {
             return false;
         }
-        i++;
-        j--;
+        left++;
+        right--;
     }
     return true;
 }
