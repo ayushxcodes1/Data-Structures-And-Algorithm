@@ -2,13 +2,15 @@
 
 using namespace std;
 
-int findMostFreqCnt(string s, int i, int j) {
+int findFreqCnt(string s, int i, int j) {
   int n = s.length();
   unordered_map<char, int> mpp;
 
   for(auto ch : s) {
     mpp[ch]++;
   }
+
+
 
 
   return cnt;
