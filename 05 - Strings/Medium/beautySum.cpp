@@ -16,7 +16,7 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
     maxFreq = max(maxFreq, p.second);
     minFreq = min(minFreq, p.second);
   }
-  
+  return {minFreq, maxFreq};
 }
 
 int beautySum(string s) {
