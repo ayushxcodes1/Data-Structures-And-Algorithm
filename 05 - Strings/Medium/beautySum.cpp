@@ -14,12 +14,12 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
   int maxFreq = INT_MIN;
   
   //O(N)
-    for(int k = 0; k < 26; k++) {
-      if(freq[k] > 0) {
-        minFreq = min(minFreq, freq[k]);
-        maxFreq = max(maxFreq, freq[k]);
-      }
+  for(int k = 0; k < 26; k++) {
+    if(freq[k] > 0) {
+      minFreq = min(minFreq, freq[k]);
+      maxFreq = max(maxFreq, freq[k]);
     }
+  }
 
   return {minFreq, maxFreq};
 }
