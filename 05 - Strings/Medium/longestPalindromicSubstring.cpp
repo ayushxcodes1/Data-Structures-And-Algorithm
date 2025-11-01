@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Brute Force - TC:O(N^3), SC: O(1)
 bool isPalindrome(string s) {
     int n = s.length();
     int i = 0, j = n - 1;
