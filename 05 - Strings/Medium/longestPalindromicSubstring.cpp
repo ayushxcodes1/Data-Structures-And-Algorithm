@@ -4,11 +4,19 @@ using namespace std;
 
 string longestSubstring(string s) {
     int n = s.length();
+    string curr = "";
     string ans = "";
+    int maxLen = 0;
 
     for(int i = 0; i < n; i++) {    
         for(int j = i; j < n; j++) {
-            ans += s[i];
+            curr += s[i];
+            bool check = isPalindrome(curr);
+            if(check) {
+                if(curr.length() > maxLen) {
+                   ans = curr;
+                }
+            }
         }
     }
 }
