@@ -17,20 +17,18 @@ bool isPalindrome(string s) {
 
 string longestSubstring(string s) {
     int n = s.length();
-    string curr = "";
     string ans = "";
     int maxLen = 0;
 
     for(int i = 0; i < n; i++) {    
         for(int j = i; j < n; j++) {
-            curr += s[j];
-            bool check = isPalindrome(curr);
-            if(check) {
+            string curr = 
+            if(isPalindrome(curr)) {
                 int len = curr.length();
+                maxLen = max(len, maxLen); 
                 if(len > maxLen) {
                    ans = curr;
                 }
-                maxLen = max(len, maxLen); 
             }
         }
     }
