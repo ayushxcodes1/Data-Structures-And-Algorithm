@@ -25,7 +25,6 @@ string longestSubstring(string s) {
             string curr = s.substr(i, j - i + 1);
             if(isPalindrome(curr)) {
                 int len = curr.length();
-                maxLen = max(len, maxLen); 
                 if(len > maxLen) {
                    maxLen = len;
                    ans = curr;
