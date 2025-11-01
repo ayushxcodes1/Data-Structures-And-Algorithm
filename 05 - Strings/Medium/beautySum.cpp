@@ -10,12 +10,12 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
     mpp[k]++;
   }
 
-  int maxFreq = INT_MIN;
   int minFreq = INT_MAX;
+  int maxFreq = INT_MIN;
   
   for(auto &p : mpp) {
-    maxFreq = max(maxFreq, p.second);
     minFreq = min(minFreq, p.second);
+    maxFreq = max(maxFreq, p.second);
   }
 
   return {minFreq, maxFreq};
@@ -27,7 +27,9 @@ int beautySum(string s) {
   
   for(int i = 0; i < n; i++) {
     for(int j = i; j < n; j++) {
-      int mostFqCnt = get
+      pair<int, int> freqPair = getMinMaxFreq(s, i, j);
+      int minFreq = freqPair.first;
+      int maxFreq = freqPair.second;
       int diff = mostFqCnt - leastFqCnt;
       ans += diff;
     }
