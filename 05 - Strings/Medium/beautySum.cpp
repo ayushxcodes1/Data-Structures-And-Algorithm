@@ -31,6 +31,7 @@ int beautySum(string s) {
       int minFreq = freqPair.first;
       int maxFreq = freqPair.second;
       int diff = maxFreq - minFreq;
+      
       if(diff > 0) {
         ans += diff;
       }
