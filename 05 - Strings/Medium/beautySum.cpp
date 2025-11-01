@@ -10,10 +10,8 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
     mpp[ch]++;
   }
 
-
-
-
-  return cnt;
+  
+  
 }
 
 int beautySum(string s) {
@@ -22,7 +20,7 @@ int beautySum(string s) {
   
   for(int i = 0; i < n; i++) {
     for(int j = i; j < n; j++) {
-    
+      int mostFqCnt = get
       int diff = mostFqCnt - leastFqCnt;
       ans += diff;
     }
