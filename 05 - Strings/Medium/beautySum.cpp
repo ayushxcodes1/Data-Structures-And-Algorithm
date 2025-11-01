@@ -3,21 +3,23 @@
 using namespace std;
 
 pair<int, int> getMinMaxFreq(string s, int i, int j) {
-  unordered_map<char, int> mpp;
+    int freq[26] = {0};
 
   //O(N)
   for(int k = i; k <= j; k++) {
-    mpp[s[k]]++;
+    freq[s[k] - 'a']++;
   }
 
   int minFreq = INT_MAX;
   int maxFreq = INT_MIN;
   
   //O(N)
-  for(auto &p : mpp) {
-    minFreq = min(minFreq, p.second);
-    maxFreq = max(maxFreq, p.second);
-  }
+    for(int k = 0; k < 26; k++) {
+      if(freq[k] > 0) { // consider only present chars
+        minFreq = min(minFreq, freq[k]);
+        maxFreq = max(maxFreq, freq[k]);
+      }
+    }
 
   return {minFreq, maxFreq};
 }
