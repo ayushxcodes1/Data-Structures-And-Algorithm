@@ -3,7 +3,7 @@
 using namespace std;
 
 pair<int, int> getMinMaxFreq(string s, int i, int j) {
-    int freq[26] = {0};
+  int freq[26] = {0};
 
   //O(N)
   for(int k = i; k <= j; k++) {
