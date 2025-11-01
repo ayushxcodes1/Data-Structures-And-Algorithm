@@ -13,7 +13,7 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
   int minFreq = INT_MAX;
   int maxFreq = INT_MIN;
   
-  //o(N)
+  //O(N)
   for(auto &p : mpp) {
     minFreq = min(minFreq, p.second);
     maxFreq = max(maxFreq, p.second);
