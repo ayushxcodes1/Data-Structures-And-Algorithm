@@ -2,6 +2,9 @@
 
 using namespace std;
 
+string longestSubstring(string s) {
+    
+}
 
 int main() {
   string s = "babad";
