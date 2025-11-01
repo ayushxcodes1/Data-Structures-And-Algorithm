@@ -44,6 +44,7 @@ int beautySum(string s) {
   return ans;
 }
 
+//Optimal 
 int beautySum(string s) {
   int n = s.length();
   int ans = 0;
