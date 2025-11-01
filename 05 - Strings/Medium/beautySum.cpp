@@ -10,7 +10,7 @@ pair<int, int> getMinMaxFreq(string s, int i, int j) {
     mpp[ch]++;
   }
 
-  int maxFreq = 0;
+  int maxFreq = 0, minFreq = 0;
   for(auto ch : s) {
       
   }
