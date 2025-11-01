@@ -40,5 +40,6 @@ string longestSubstring(string s) {
 int main() {
   string s = "babad";
   string ans = longestSubstring(s);
+  cout << ans << endl;
   return 0;
 }
