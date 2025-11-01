@@ -45,7 +45,7 @@ int beautySum(string s) {
 }
 
 //Optimal - TC: O(N^2), SC: O(1)
-int beautySum(string s) {
+int beautySum2(string s) {
   int n = s.length();
   int ans = 0;
   
@@ -72,5 +72,8 @@ int main() {
   string s = "aabcbaa";
   int ans = beautySum(s);
   cout << ans << endl;
+
+  int ans2 = beautySum2(s);
+  cout << ans2 << endl;
   return 0;
 }
