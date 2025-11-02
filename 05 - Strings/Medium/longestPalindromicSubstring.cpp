@@ -40,8 +40,7 @@ string longestSubstring(string s) {
 
     for(int i = 0; i < n; i++) {    
             
-            
-        }
+        
     }
     return ans;
 }
