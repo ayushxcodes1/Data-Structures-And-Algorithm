@@ -33,7 +33,7 @@ string longestSubstring(string s) {
     return ans;
 }
 
-//Optimal - TC:O(N^3), SC: O(1)
+//Optimal - TC:O(N^2), SC: O(1) - Expand Around Center
 string longestSubstring(string s) {
     int n = s.length();
     string ans = "";
