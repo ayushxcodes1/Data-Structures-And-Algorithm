@@ -48,7 +48,7 @@ string longestSubstring(string s) {
            end = i + maxLen / 2;
         }
     }
-    return s.substr(st, end - start + 1);
+    return s.substr(st, end - st + 1);
 }
 
 int main() {
