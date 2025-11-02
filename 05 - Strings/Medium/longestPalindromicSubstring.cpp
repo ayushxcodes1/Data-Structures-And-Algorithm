@@ -34,7 +34,7 @@ string longestSubstring(string s) {
 }
 
 int expand(string s, int left, int right) {
-    while(left >= 0 && right < n && str[left] == str[right]) {
+    while(left >= 0 && right < s.length() && s[left] == s[right]) {
         left--;
         right++;
     }
