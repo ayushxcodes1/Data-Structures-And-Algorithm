@@ -41,10 +41,14 @@ string longestSubstring(string s) {
     for(int i = 0; i < n; i++) {    
         int lenOdd = expand(s, i, i);    
         int lenEven = expand(s, i, i + 1);
+        int maxLen = max(lenOdd, lenEven);
 
-        
+        if(maxLen > end - st) {
+           st = i - (maxLen - 1) / 2;
+           end = i + maxLen / 2;
+        }
     }
-    return ans;
+    return s.substr(st, end - start + 1);
 }
 
 int main() {
