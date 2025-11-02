@@ -39,7 +39,9 @@ string longestSubstring(string s) {
     int st = 0, end = 0;
 
     for(int i = 0; i < n; i++) {    
-            
+        int lenOdd = expand(s, i, i);    
+        int lenEven = expand(s, i, i + 1);
+
         
     }
     return ans;
