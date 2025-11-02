@@ -34,7 +34,11 @@ string longestSubstring(string s) {
 }
 
 int expand(string s, int left, int right) {
-    
+    while(left >= 0 && right < n && str[left] == str[right]) {
+        left--;
+        right++;
+    }
+    return right - left - 1;
 }
 
 //Optimal - TC:O(N^2), SC: O(1) - Expand Around Center  
