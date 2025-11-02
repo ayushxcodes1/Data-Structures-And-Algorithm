@@ -36,7 +36,7 @@ string longestSubstring(string s) {
 //Optimal - TC:O(N^2), SC: O(1) - Expand Around Center  
 string longestSubstring(string s) {
     int n = s.length();
-    string ans = "";
+    int st = 0, end = 0;
 
     for(int i = 0; i < n; i++) {    
         for(int j = i; j < n; j++) {
