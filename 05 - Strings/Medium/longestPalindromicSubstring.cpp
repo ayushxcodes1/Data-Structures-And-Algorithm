@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//O(N)
 bool isPalindrome(string s, int i, int j) {
     int n = s.length();
     int left = i, right = j;
