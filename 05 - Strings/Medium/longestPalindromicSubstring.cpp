@@ -19,7 +19,6 @@ bool isPalindrome(string s) {
 string longestSubstring(string s) {
     int n = s.length();
     string ans = "";
-    int maxLen = 0;
 
     for(int i = 0; i < n; i++) {    
         for(int j = i; j < n; j++) {
