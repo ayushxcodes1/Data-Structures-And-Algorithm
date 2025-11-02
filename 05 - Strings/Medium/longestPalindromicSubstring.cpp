@@ -25,7 +25,7 @@ string longestSubstring(string s) {
         for(int j = i; j < n; j++) {
             if(isPalindrome(s, i, j)) {
                 if(j - i + 1 > ans.size()) {
-                   ans = s.substr(i, j + 1);
+                   ans = s.substr(i, j - i + 1);
                 }
             }
         }
