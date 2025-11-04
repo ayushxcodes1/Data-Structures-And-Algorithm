@@ -50,7 +50,7 @@ string longestSubstring(string s) {
         int lengthEven = expand(s, i, i + 1);
         int maxLen = max(lengthOdd, lengthEven);
         if(maxLen > end - st) {
-          
+           st = i - (maxLen - 1) / 2;
         }
     }
     return s.substr(st, end - st + 1);
