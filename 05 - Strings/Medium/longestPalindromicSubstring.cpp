@@ -53,7 +53,7 @@ string longestSubstring(string s) {
           
         }
     }
-    return s.substr(st, end);
+    return s.substr(st, end - st + 1);
 }
 
 int main() {
