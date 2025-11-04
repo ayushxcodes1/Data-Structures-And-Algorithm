@@ -57,12 +57,6 @@ string longestSubstring2(string s) {
     return s.substr(st, end - st + 1);
 }
 
-//Optimal - TC:O(N), SC: O(1) - Manacher's Algorithm
-string longestSubstring2(string s) {
-    int n = s.length();
-   
-}
-
 int main() {
   string s = "babad";
   string ans = longestSubstring(s);
