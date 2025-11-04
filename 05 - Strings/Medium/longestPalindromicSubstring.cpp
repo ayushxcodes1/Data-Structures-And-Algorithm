@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//O(N)
+//Brute Force - TC:O(N^3), SC: O(1)
 bool isPalindrome(string s, int i, int j) {
     int n = s.length();
     int left = i, right = j;
@@ -16,7 +16,6 @@ bool isPalindrome(string s, int i, int j) {
     return true;
 }
 
-//Brute Force - TC:O(N^3), SC: O(1)
 string longestSubstring(string s) {
     int n = s.length();
     string ans = "";
