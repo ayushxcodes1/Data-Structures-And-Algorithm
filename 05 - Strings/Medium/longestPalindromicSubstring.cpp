@@ -40,6 +40,7 @@ int expand(string s, int left, int right) {
     }
     return right - left - 1;
 }
+
 string longestSubstring(string s) {
     int n = s.length();
     int st = 0, end = 0;
