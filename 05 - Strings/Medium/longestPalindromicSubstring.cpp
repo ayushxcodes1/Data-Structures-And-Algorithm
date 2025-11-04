@@ -32,30 +32,27 @@ string longestSubstring(string s) {
     return ans;
 }
 
+//Optimal - TC:O(N^2), SC: O(1) - Expand Around Center
 int expand(string s, int left, int right) {
     while(left >= 0 && right < s.length() && s[left] == s[right]) {
-        left--;
-        right++;
+       left--;
+       right++;
     }
     return right - left - 1;
 }
-
-//Optimal - TC:O(N^2), SC: O(1) - Expand Around Center  
 string longestSubstring(string s) {
     int n = s.length();
     int st = 0, end = 0;
 
-    for(int i = 0; i < n; i++) {    
-        int lenOdd = expand(s, i, i);    
-        int lenEven = expand(s, i, i + 1);
-        int maxLen = max(lenOdd, lenEven);
-
+    for(int i = 0; i < n; i++) {
+        int lengthOdd = expand(s, i, i);
+        int lengthEven = expand(s, i, i + 1);
+        int maxLen = max(lengthOdd, lengthEven);
         if(maxLen > end - st) {
-           st = i - (maxLen - 1) / 2;
-           end = i + maxLen / 2;
+          
         }
     }
-    return s.substr(st, end - st + 1);
+    return s.substr(st, end)
 }
 
 int main() {
