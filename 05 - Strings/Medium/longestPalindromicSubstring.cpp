@@ -41,7 +41,7 @@ int expand(string s, int left, int right) {
     return right - left - 1;
 }
 
-string longestSubstring(string s) {
+string longestSubstring2(string s) {
     int n = s.length();
     int st = 0, end = 0;
 
@@ -60,5 +60,8 @@ int main() {
   string s = "babad";
   string ans = longestSubstring(s);
   cout << ans << endl;
+
+  string ans2 = longestSubstring2(s);
+  cout << ans2 << endl;
   return 0;
 }
