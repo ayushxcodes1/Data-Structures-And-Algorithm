@@ -58,28 +58,9 @@ string longestSubstring2(string s) {
 }
 
 //Optimal - TC:O(N), SC: O(1) - Manacher's Algorithm
-int expand(string s, int left, int right) {
-    while(left >= 0 && right < s.length() && s[left] == s[right]) {
-       left--;
-       right++;
-    }
-    return right - left - 1;
-}
-
 string longestSubstring2(string s) {
     int n = s.length();
-    int st = 0, end = 0;
-
-    for(int i = 0; i < n; i++) {
-        int lengthOdd = expand(s, i, i);
-        int lengthEven = expand(s, i, i + 1);
-        int maxLen = max(lengthOdd, lengthEven);
-        if(maxLen > end - st) {
-           st = i - (maxLen - 1) / 2;
-           end = i + maxLen / 2;
-        }
-    }
-    return s.substr(st, end - st + 1);
+   
 }
 
 int main() {
