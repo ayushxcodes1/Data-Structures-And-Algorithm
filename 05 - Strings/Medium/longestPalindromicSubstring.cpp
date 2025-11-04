@@ -51,6 +51,7 @@ string longestSubstring2(string s) {
         int maxLen = max(lengthOdd, lengthEven);
         if(maxLen > end - st) {
            st = i - (maxLen - 1) / 2;
+           end = i + maxLen / 2;
         }
     }
     return s.substr(st, end - st + 1);
