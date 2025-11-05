@@ -47,6 +47,15 @@ string longestSubstring2(string s) {
            maxLen = 2;
         }
     }
+    
+    for(int i = 0; i < n - 1; i++) {
+        if(s[i] == s[i + 1]) {
+           dp[i][i + 1] = true;
+           st = i;
+           maxLen = 2;
+        }
+    }
+    
 }
 
 //Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
