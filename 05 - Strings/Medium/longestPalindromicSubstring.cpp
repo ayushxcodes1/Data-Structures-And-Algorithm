@@ -47,8 +47,8 @@ string longestSubstring2(string s) {
            maxLen = 2;
         }
     }
-    
-    for(int i = 0; i < n - 1; i++) {
+
+    for(int i = 3; i < n; i++) {
         if(s[i] == s[i + 1]) {
            dp[i][i + 1] = true;
            st = i;
