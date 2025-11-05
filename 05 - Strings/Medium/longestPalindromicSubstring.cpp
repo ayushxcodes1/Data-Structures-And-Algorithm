@@ -33,6 +33,10 @@ string longestSubstring(string s) {
 }
 
 //Better 1 - TC: O(N^2), SC: O(N^2) - DP
+string longestSubstring2(string s) {
+    int n = s.length();
+    
+}
 
 //Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
 int expand(string s, int left, int right) {
@@ -43,7 +47,7 @@ int expand(string s, int left, int right) {
     return right - left - 1;
 }
 
-string longestSubstring2(string s) {
+string longestSubstring3(string s) {
     int n = s.length();
     int st = 0, end = 0;
 
