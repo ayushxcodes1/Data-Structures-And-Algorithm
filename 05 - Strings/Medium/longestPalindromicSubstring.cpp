@@ -60,7 +60,7 @@ string longestSubstring2(string s) {
             }
         }
     }
-    
+    return s.substr(st, maxLen);
 }
 
 //Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
@@ -95,5 +95,8 @@ int main() {
 
   string ans2 = longestSubstring2(s);
   cout << ans2 << endl;
+
+  string ans3 = longestSubstring3(s);
+  cout << ans3 << endl;
   return 0;
 }
