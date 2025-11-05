@@ -32,6 +32,8 @@ string longestSubstring(string s) {
     return ans;
 }
 
+//Better 1 - TC: O(N^2), SC: O(N^2) - DP
+
 //Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
 int expand(string s, int left, int right) {
     while(left >= 0 && right < s.length() && s[left] == s[right]) {
