@@ -32,7 +32,7 @@ string longestSubstring(string s) {
     return ans;
 }
 
-//Better - TC:O(N^2), SC: O(1) - Expand Around Center
+//Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
 int expand(string s, int left, int right) {
     while(left >= 0 && right < s.length() && s[left] == s[right]) {
        left--;
