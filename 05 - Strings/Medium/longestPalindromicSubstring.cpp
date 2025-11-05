@@ -48,7 +48,7 @@ string longestSubstring2(string s) {
         }
     }
 
-    for(int len = 3; len < n; len++) {
+    for(int len = 3; len <= n; len++) {
         for(int i = 0; i < n - len + 1; i++) {
             int j = i + len - 1;
             if(s[i] == s[j] && dp[i + 1][j]) {
