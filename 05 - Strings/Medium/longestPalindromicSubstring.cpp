@@ -35,7 +35,7 @@ string longestSubstring(string s) {
 //Better 1 - TC: O(N^2), SC: O(N^2) - DP
 string longestSubstring2(string s) {
     int n = s.length();
-    
+    vector<vector<bool>> dp(n, vector<bool>(n, false));
 }
 
 //Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
