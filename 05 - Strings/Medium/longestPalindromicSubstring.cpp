@@ -36,6 +36,7 @@ string longestSubstring(string s) {
 string longestSubstring2(string s) {
     int n = s.length();
     vector<vector<bool>> dp(n, vector<bool>(n, false));
+    int st = 0, maxLen = 1;
 }
 
 //Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
