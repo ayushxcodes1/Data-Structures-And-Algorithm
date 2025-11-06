@@ -88,16 +88,6 @@ string longestSubstring3(string s) {
     return s.substr(st, end - st + 1);
 }
 
-//Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
-int expand(string s, int left, int right) {
-    while(left >= 0 && right < s.length() && s[left] == s[right]) {
-       left--;
-       right++;
-    }
-    return right - left - 1;
-}
-
-
 //Optimal - TC: O(N), SC: O(1) - Monacher's Algorithm
 string longestSubstring4(string s) {
     int n = s.length();
