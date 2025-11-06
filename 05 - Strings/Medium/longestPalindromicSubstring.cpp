@@ -115,8 +115,6 @@ string longestSubstring4(string s) {
     return s.substr(st, end - st + 1);
 }
 
-
-
 int main() {
   string s = "babad";
   string ans = longestSubstring(s);
