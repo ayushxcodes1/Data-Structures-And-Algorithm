@@ -88,6 +88,35 @@ string longestSubstring3(string s) {
     return s.substr(st, end - st + 1);
 }
 
+//Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
+int expand(string s, int left, int right) {
+    while(left >= 0 && right < s.length() && s[left] == s[right]) {
+       left--;
+       right++;
+    }
+    return right - left - 1;
+}
+
+
+//Optimal - TC: O(N), SC: O(1) - Monacher's Algorithm
+string longestSubstring3(string s) {
+    int n = s.length();
+    int st = 0, end = 0;
+
+    for(int i = 0; i < n; i++) {
+        int lengthOdd = expand(s, i, i);
+        int lengthEven = expand(s, i, i + 1);
+        int maxLen = max(lengthOdd, lengthEven);
+        if(maxLen > end - st) {
+           st = i - (maxLen - 1) / 2;
+           end = i + maxLen / 2;
+        }
+    }
+    return s.substr(st, end - st + 1);
+}
+
+
+
 int main() {
   string s = "babad";
   string ans = longestSubstring(s);
