@@ -16,7 +16,7 @@ bool isPalindrome(string s, int i, int j) {
     return true;
 }
 
-string longestSubstring(string s) {
+string longestPalindrome(string s) {
     int n = s.length();
     string ans = "";
 
@@ -33,7 +33,7 @@ string longestSubstring(string s) {
 }
 
 //Better 1 - TC: O(N^2), SC: O(N^2) - DP
-string longestSubstring2(string s) {
+string longestPalindrome2(string s) {
     int n = s.length();
     vector<vector<bool>> dp(n, vector<bool>(n, false));
     int st = 0, maxLen = 1;
@@ -72,7 +72,7 @@ int expand(string s, int left, int right) {
     return right - left - 1;
 }
 
-string longestSubstring3(string s) {
+string longestPalindrome3(string s) {
     int n = s.length();
     int st = 0, end = 0;
 
@@ -89,31 +89,59 @@ string longestSubstring3(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(1) - Monacher's Algorithm
-string longestSubstring4(string s) {
-    int n = s.length();
-    int st = 0, end = 0;
-
-    for(int i = 0; i < n; i++) {
-        int lengthOdd = expand(s, i, i);
-        int lengthEven = expand(s, i, i + 1);
-        int maxLen = max(lengthOdd, lengthEven);
-        if(maxLen > end - st) {
-           st = i - (maxLen - 1) / 2;
-           end = i + maxLen / 2;
+string longestPalindrome4(string s) {
+        if (s.empty()) return "";
+        
+        // Preprocess: "abc" -> "^#a#b#c#$"
+        string t = "^";
+        for (char c : s) {
+            t += '#';
+            t += c;
         }
+        t += "#$";
+        
+        int n = t.size();
+        vector<int> p(n, 0);  // p[i] = radius of palindrome at i
+        int c = 0, r = 0;     // center and right boundary
+        int maxLen = 0, maxCenter = 0;
+        
+        for (int i = 1; i < n - 1; i++) {
+            // Mirror: use previously computed values
+            if (i < r) {
+                p[i] = min(r - i, p[2 * c - i]);
+            }
+            
+            // Expand around center i
+            while (t[i + p[i] + 1] == t[i - p[i] - 1]) {
+                p[i]++;
+            }
+            
+            // Update rightmost boundary
+            if (i + p[i] > r) {
+                c = i;
+                r = i + p[i];
+            }
+            
+            // Track longest palindrome
+            if (p[i] > maxLen) {
+                maxLen = p[i];
+                maxCenter = i;
+            }
+        }
+        
+        // Extract result from original string
+        return s.substr((maxCenter - maxLen) / 2, maxLen);
     }
-    return s.substr(st, end - st + 1);
-}
 
 int main() {
   string s = "babad";
-  string ans = longestSubstring(s);
+  string ans = longestPalindrome(s);
   cout << ans << endl;
 
-  string ans2 = longestSubstring2(s);
+  string ans2 = longestPalindrome2(s);
   cout << ans2 << endl;
 
-  string ans3 = longestSubstring3(s);
+  string ans3 = longestPalindrome3(s);
   cout << ans3 << endl;
   return 0;
 }
