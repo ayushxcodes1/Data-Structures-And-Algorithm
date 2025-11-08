@@ -143,5 +143,8 @@ int main() {
 
   string ans3 = longestPalindrome3(s);
   cout << ans3 << endl;
+
+  string ans4 = longestPalindrome4(s);
+  cout << ans4 << endl;
   return 0;
 }
