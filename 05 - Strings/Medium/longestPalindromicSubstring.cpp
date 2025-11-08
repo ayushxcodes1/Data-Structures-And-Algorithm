@@ -88,7 +88,7 @@ string longestPalindrome3(string s) {
     return s.substr(st, end - st + 1);
 }
 
-//Optimal - TC: O(N), SC: O(1) - Monacher's Algorithm
+//Optimal - TC: O(N), SC: O(1) - Manacher's Algorithm
 string longestPalindrome4(string s) {
         if (s.empty()) return "";
         
