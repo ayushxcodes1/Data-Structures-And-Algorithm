@@ -89,56 +89,52 @@ string longestPalindrome3(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(1) - Manacher's Algorithm
-class Solution {
-private:
-    string preprocess(const string& s) {
-        string t = "^";
-        for (char c : s) {
-            t += '#';
-            t += c;
+string preprocess(const string& s) {
+    string t = "^";
+    for (char c : s) {
+        t += '#';
+        t += c;
+    }
+    t += "#$";
+    return t;
+}
+
+string longestPalindrome4(string s) {
+    if (s.empty()) return "";
+    
+    string t = preprocess(s);
+    int n = t.size();
+    vector<int> p(n, 0);  // p[i] = radius of palindrome at i
+    int c = 0, r = 0;     // center and right boundary
+    int maxLen = 0, maxCenter = 0;
+    
+    for (int i = 1; i < n - 1; i++) {
+        // Mirror: use previously computed values
+        if (i < r) {
+            p[i] = min(r - i, p[2 * c - i]);
         }
-        t += "#$";
-        return t;
+        
+        // Expand around center i
+        while (t[i + p[i] + 1] == t[i - p[i] - 1]) {
+            p[i]++;
+        }
+        
+        // Update rightmost boundary
+        if (i + p[i] > r) {
+            c = i;
+            r = i + p[i];
+        }
+        
+        // Track longest palindrome
+        if (p[i] > maxLen) {
+            maxLen = p[i];
+            maxCenter = i;
+        }
     }
     
-public:
-    string longestPalindrome4(string s) {
-        if (s.empty()) return "";
-        
-        string t = preprocess(s);
-        int n = t.size();
-        vector<int> p(n, 0);  // p[i] = radius of palindrome at i
-        int c = 0, r = 0;     // center and right boundary
-        int maxLen = 0, maxCenter = 0;
-        
-        for (int i = 1; i < n - 1; i++) {
-            // Mirror: use previously computed values
-            if (i < r) {
-                p[i] = min(r - i, p[2 * c - i]);
-            }
-            
-            // Expand around center i
-            while (t[i + p[i] + 1] == t[i - p[i] - 1]) {
-                p[i]++;
-            }
-            
-            // Update rightmost boundary
-            if (i + p[i] > r) {
-                c = i;
-                r = i + p[i];
-            }
-            
-            // Track longest palindrome
-            if (p[i] > maxLen) {
-                maxLen = p[i];
-                maxCenter = i;
-            }
-        }
-        
-        // Extract result from original string
-        return s.substr((maxCenter - maxLen) / 2, maxLen);
-    }
-};
+    // Extract result from original string
+    return s.substr((maxCenter - maxLen) / 2, maxLen);
+}
 
 int main() {
   string s = "babad";
