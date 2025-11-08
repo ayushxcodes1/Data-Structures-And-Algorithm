@@ -89,17 +89,23 @@ string longestPalindrome3(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(1) - Manacher's Algorithm
-string longestPalindrome4(string s) {
-        if (s.empty()) return "";
-        
-        // Preprocess: "abc" -> "^#a#b#c#$"
+class Solution {
+private:
+    string preprocess(const string& s) {
         string t = "^";
         for (char c : s) {
             t += '#';
             t += c;
         }
         t += "#$";
+        return t;
+    }
+    
+public:
+    string longestPalindrome4(string s) {
+        if (s.empty()) return "";
         
+        string t = preprocess(s);
         int n = t.size();
         vector<int> p(n, 0);  // p[i] = radius of palindrome at i
         int c = 0, r = 0;     // center and right boundary
@@ -132,6 +138,7 @@ string longestPalindrome4(string s) {
         // Extract result from original string
         return s.substr((maxCenter - maxLen) / 2, maxLen);
     }
+};
 
 int main() {
   string s = "babad";
