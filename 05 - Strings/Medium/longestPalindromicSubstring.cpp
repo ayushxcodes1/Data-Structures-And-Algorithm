@@ -104,7 +104,7 @@ string longestPalindrome4(string s) {
     
     string t = preprocess(s);
     int n = t.size();
-    vector<int> p(n, 0);  // p[i] = radius of palindrome at i
+    vector<int> p(n, 0);
     int c = 0, r = 0;     // center and right boundary
     int maxLen = 0, maxCenter = 0;
     
