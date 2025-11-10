@@ -63,7 +63,7 @@ string longestPalindrome2(string s) {
     return s.substr(st, maxLen);
 }
 
-//Optimized - TC:O(N^2), SC: O(1) - Expand Around Center
+//Even Better - TC:O(N^2), SC: O(1) - Expand Around Center
 int expand(string s, int left, int right) {
     while(left >= 0 && right < s.length() && s[left] == s[right]) {
        left--;
@@ -89,7 +89,7 @@ string longestPalindrome3(string s) {
 }
 
 //Optimal - TC: O(N), SC: O(N) - Manacher's Algorithm
-string preprocess(string s) {
+string preprocess(const string& s) {
     string t = "^";
     for (char c : s) {
         t += '#';
