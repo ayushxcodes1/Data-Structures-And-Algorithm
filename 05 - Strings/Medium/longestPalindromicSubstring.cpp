@@ -32,7 +32,7 @@ string longestPalindrome(string s) {
     return ans;
 }
 
-//Better 1 - TC: O(N^2), SC: O(N^2) - DP
+//Better - TC: O(N^2), SC: O(N^2) - DP
 string longestPalindrome2(string s) {
     int n = s.length();
     vector<vector<bool>> dp(n, vector<bool>(n, false));
@@ -63,7 +63,7 @@ string longestPalindrome2(string s) {
     return s.substr(st, maxLen);
 }
 
-//Better 2 - TC:O(N^2), SC: O(1) - Expand Around Center
+//Improved Better - TC:O(N^2), SC: O(1) - Expand Around Center
 int expand(string s, int left, int right) {
     while(left >= 0 && right < s.length() && s[left] == s[right]) {
        left--;
