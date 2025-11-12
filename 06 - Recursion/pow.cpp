@@ -7,7 +7,7 @@ double myPow(double x, int n, double ans) {
 
   ans = ans * x;
 
-  myPow(x, n, ans);
+  myPow(x, n - 1, ans);
 }
 
 int main() {
