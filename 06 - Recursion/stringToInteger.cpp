@@ -6,7 +6,7 @@ int myAtoi(string s, int i = 0) {
     int n = s.size();
     
     //skip leading whitespaces
-    while(i) 
+    while(i < n && s[i] == ' ') i++; 
 }
 
 int main() {
