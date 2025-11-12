@@ -25,10 +25,10 @@ int myAtoi(string s, int i = 0) {
     
     //signedness
     int sign = 1;
-    if(s[i] == '-') {
-       sign = -1;
-    } else 
-       sign = 1;
+    if(i < n && (s[i] == '-' || s[i] == '+')) {
+       if(s[i] == '-') sign = -1;
+       i++;
+    }
 
     return helper(s, i, 0, sign);
 }
