@@ -6,6 +6,10 @@ int myAtoi(string s, int i) {
     int n = s.size();
     
     if(i == n) return;
+
+    if(s[i] == ' ') {
+       myAtoi(s, i + 1);
+    }
 }
 
 int main() {
