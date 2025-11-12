@@ -4,8 +4,7 @@ using namespace std;
 
 int myAtoi(string s) {
     int n = s.size();
-
-
+    
 }
 
 int main() {
