@@ -3,7 +3,8 @@
 using namespace std;
 
 int helper(string s, int i, long ans, int sign) {
-    
+
+    return helper(s, i + 1, ans, sign);
 }
 
 int myAtoi(string s, int i = 0) {
