@@ -9,6 +9,11 @@ int helper(string s, int i, long ans, int sign) {
        return (int)ans * sign;
     }
 
+    ans = ans * 10 + (s[i] - '0');
+    
+    if(ans * sign < INT_MIN) ans = INT_MIN;
+    if(ans * sign > INT_MAX) ans = INT_MAX;
+
     return helper(s, i + 1, ans, sign);
 }
 
