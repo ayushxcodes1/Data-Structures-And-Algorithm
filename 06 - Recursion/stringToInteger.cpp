@@ -26,7 +26,7 @@ int myAtoi(string s, int i) {
     if(ans > INT_MAX) ans = INT_MAX;
 
     myAtoi(s, i + 1);
-    return ans;
+    return (ans * sign);
 }
 
 int main() {
