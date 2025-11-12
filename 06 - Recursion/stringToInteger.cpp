@@ -3,6 +3,9 @@
 using namespace std;
 
 int helper(string s, int i, long ans, int sign) {
+    if(i == n || !isdigit(s[i])) {
+       return (int)ans * sign;
+    }
 
     return helper(s, i + 1, ans, sign);
 }
