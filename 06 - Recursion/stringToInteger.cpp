@@ -4,6 +4,7 @@ using namespace std;
 
 int helper(string s, int i, long ans, int sign) {
     int n = s.length();
+    
     if(i == n || !isdigit(s[i])) {
        return (int)ans * sign;
     }
