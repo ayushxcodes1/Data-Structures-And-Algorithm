@@ -2,6 +2,10 @@
 
 using namespace std;
 
+int helper(string s, int i, long ans, int sign) {
+    
+}
+
 int myAtoi(string s, int i = 0) {
     int n = s.size();
     
