@@ -17,6 +17,10 @@ int myAtoi(string s, int i) {
        sign = -1;
     } else 
        sign = 1;
+
+    if(isdigit(s[i])) {
+       
+    }
 }
 
 int main() {
