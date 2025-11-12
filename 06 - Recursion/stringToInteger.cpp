@@ -2,15 +2,15 @@
 
 using namespace std;
 
-int myAtoi(string s) {
+int myAtoi(string s, int i = 0) {
     int n = s.size();
     
-    while(string s, int i)
+    while(i) 
 }
 
 int main() {
   string s = "-42"; 
-  int ans = myAtoi(s, 0);
+  int ans = myAtoi(s);
   cout << ans << endl;
   return 0;
 }
