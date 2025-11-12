@@ -4,11 +4,17 @@ using namespace std;
 
 int myAtoi(string s, int i) {
     int n = s.size();
+    int ans = 0;
+    int sign = 1;
     
     if(i == n) return;
 
     if(s[i] == ' ') {
        myAtoi(s, i + 1);
+    }
+
+    if(s[i] == '-') {
+       sign = -1;
     }
 }
 
