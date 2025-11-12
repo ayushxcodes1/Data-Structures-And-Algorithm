@@ -11,8 +11,8 @@ int helper(string s, int i, long long ans, int sign) {
 
     ans = ans * 10 + (s[i] - '0');
     
-    if(ans * sign < INT_MIN) ans = INT_MIN;
-    if(ans * sign > INT_MAX) ans = INT_MAX;
+    if(ans < INT_MIN) return INT_MIN;
+    if(ans > INT_MAX) return INT_MAX;
 
     return helper(s, i + 1, ans, sign);
 }
