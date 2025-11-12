@@ -5,6 +5,7 @@ using namespace std;
 int myAtoi(string s, int i = 0) {
     int n = s.size();
     
+    //skip leading whitespaces
     while(i) 
 }
 
