@@ -3,7 +3,9 @@
 using namespace std;
 
 double myPow(double x, int n, double ans) {
+   if(n == 0) return ans;
 
+   
 }
 
 int main() {
