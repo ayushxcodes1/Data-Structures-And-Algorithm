@@ -7,7 +7,7 @@ double myPow(double x, int n, double ans) {
 }
 
 int main() {
-  double ans = myPow(2.0, 5);
+  double ans = myPow(2.0, 5, 0);
   cout << ans << endl;
   return 0;
 }
