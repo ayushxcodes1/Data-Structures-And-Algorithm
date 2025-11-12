@@ -8,6 +8,7 @@ int myAtoi(string s, int i = 0) {
     //skip leading whitespaces
     while(i < n && s[i] == ' ') i++;
     
+    //signedness
     int sign = 1;
     if(s[i] == '-') {
        sign = -1;
