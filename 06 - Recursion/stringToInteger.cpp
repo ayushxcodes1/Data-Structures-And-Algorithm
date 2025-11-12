@@ -15,7 +15,8 @@ int myAtoi(string s, int i) {
 
     if(s[i] == '-') {
        sign = -1;
-    }
+    } else 
+       sign = 1;
 }
 
 int main() {
