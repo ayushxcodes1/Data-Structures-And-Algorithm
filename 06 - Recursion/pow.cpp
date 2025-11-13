@@ -3,14 +3,17 @@
 using namespace std;
 
 //Brute - Iterative - TOO SLOW for large N
-double myPow(double x, int n, double ans) {
+double myPow(double x, int n) {
   double ans = 1.0;
   long long nn = n;
   if(nn < 0) nn = -nn;
 
-  ans = ans * x;
+  for(int i = 0; i < nn; i++) {
+    ans *= x;
+  }
 
-  return myPow(x, n - 1, ans);
+  if(n < 0) ans = 1.0 / ans;
+  return ans;
 }
 
 int main() {
