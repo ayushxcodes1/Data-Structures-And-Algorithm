@@ -20,7 +20,6 @@ double myPow4(double x, int n) {
   if(n == 0) return 1.0;
   if(n < 0) return 1.0 / myPow4(x, -n);
   return x * myPow(x, n - 1);
-  
 }
 
 //Optimal - TC: O(logN), SC: O(1) - Iterative - Exponentiation
