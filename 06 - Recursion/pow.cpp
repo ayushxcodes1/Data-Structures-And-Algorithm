@@ -55,8 +55,7 @@ double myPow4(double x, int n) {
     return half * half;
   } else {
     return x * half * half;
-  } 
-    
+  }  
 }
 
 int main() {
