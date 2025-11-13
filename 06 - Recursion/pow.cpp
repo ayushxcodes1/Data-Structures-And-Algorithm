@@ -45,21 +45,22 @@ double myPow3(double x, int n) {
 }
 
 //Optimal - TC: O(logN), SC: O(logN) - Recursive - Exponentiation
-double helper(double x, long long nn, bool isNegative) {
+double helper(double x, long long nn) {
   if(nn == 0) return 1.0; 
 
-  double half = helper(x, nn / 2, isNegative);
+  double half = helper(x, nn / 2);
 
-  double ans = (nn % 2 == 0) ? half * half : x * half * half;
-
-  return isNegative ? 1.0 / ans : ans;  
+  if(nn % 2 == 0)
+    return half * half;
+  else
+    return x * half * half;
 }
 
 double myPow4(double x, int n) {
   long long nn = n;   
   if(nn < 0) nn = -nn; 
-
-  return helper(x, nn, n < 0); 
+  double ans = helper(x, nn);
+  return n < 0 ? 1.0 / ans : ans; 
 }
 
 int main() {
