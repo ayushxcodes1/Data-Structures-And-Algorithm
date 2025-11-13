@@ -2,8 +2,9 @@
 
 using namespace std;
 
-//Brute - Too Slow for large Ng
+//Brute - Too Slow for large N
 double myPow(double x, int n, double ans) {
+  int ans = 
   if(n == 0) return ans;
 
   ans = ans * x;
