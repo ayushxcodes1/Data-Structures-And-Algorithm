@@ -62,7 +62,6 @@ double myPow4(double x, int n) {
   return helper(x, nn, n < 0); 
 }
 
-
 int main() {
   double ans = myPow(2.0, -5);
   cout << ans << endl;
