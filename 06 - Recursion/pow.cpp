@@ -53,7 +53,9 @@ double myPow4(double x, int n) {
 
   if(n % 2 == 0) {
     return half * half;
-  } else return x * half * half;
+  } else {
+    return x * half * half;
+  } 
     
 }
 
