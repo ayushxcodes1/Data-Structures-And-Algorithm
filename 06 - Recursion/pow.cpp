@@ -38,7 +38,7 @@ double myPow2(double x, int n) {
 }
 
 //Optimal - TC: O(logN), SC: O(logN) - Recursive - Exponentiation
-double myPow2(double x, int n) {
+double myPow3(double x, int n) {
   
 }
 
