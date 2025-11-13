@@ -16,6 +16,7 @@ double myPow(double x, int n) {
   return ans;
 }
 
+//Brute - TC:O(N), SC: O(N) - Recursive 
 double myPow4(double x, int n) {
   if(n == 0) return 1.0;
   if(n < 0) return 1.0 / myPow4(x, -n);
