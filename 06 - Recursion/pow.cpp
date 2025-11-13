@@ -16,7 +16,7 @@ double myPow(double x, int n) {
   return ans;
 }
 
-//Optimal - TC: O(logN), SC: O(logN) - Recursion - Exponentiation
+//Optimal - TC: O(logN), SC: O(logN) - Iterative - Exponentiation
 double myPow2(double x, int n) {
   double ans = 1.0;
   long long nn = n;
