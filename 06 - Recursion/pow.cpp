@@ -17,16 +17,10 @@ double myPow(double x, int n) {
 }
 
 double myPow4(double x, int n) {
-  double ans = 1.0;
-  long long nn = n;
-  if(nn < 0) nn = -nn;
-
-  for(int i = 0; i < nn; i++) {
-    ans *= x;
-  }
-
-  if(n < 0) ans = 1.0 / ans;
-  return ans;
+  if(n == 0) return 1.0;
+  if(n < 0) return 1.0 / myPow4(x, -n);
+  return x * myPow(x, n - 1);
+  
 }
 
 //Optimal - TC: O(logN), SC: O(1) - Iterative - Exponentiation
