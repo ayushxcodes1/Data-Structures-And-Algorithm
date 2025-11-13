@@ -45,13 +45,6 @@ double myPow3(double x, int n) {
 }
 
 //Optimal - TC: O(logN), SC: O(logN) - Recursive - Exponentiation
-double myPow4(double x, int n) {
-  long long nn = n;   
-  if(nn < 0) nn = -nn; 
-
-  return helper(x, nn, n < 0); 
-}
-
 double helper(double x, long long nn, bool isNegative) {
   if(nn == 0) return 1.0; 
 
@@ -61,6 +54,14 @@ double helper(double x, long long nn, bool isNegative) {
 
   return isNegative ? 1.0 / ans : ans;  
 }
+
+double myPow4(double x, int n) {
+  long long nn = n;   
+  if(nn < 0) nn = -nn; 
+
+  return helper(x, nn, n < 0); 
+}
+
 
 int main() {
   double ans = myPow(2.0, -5);
