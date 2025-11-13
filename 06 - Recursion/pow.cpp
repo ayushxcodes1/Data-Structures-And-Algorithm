@@ -46,16 +46,20 @@ double myPow3(double x, int n) {
 
 //Optimal - TC: O(logN), SC: O(logN) - Recursive - Exponentiation
 double myPow4(double x, int n) {
-  if(n == 0) return 1.0;
-  if(n < 0) return 1.0 / myPow4(x, -n);
-  
-  double half = myPow4(x, n / 2);
+  long long nn = n;    
+  if(nn < 0) {
+    nn = -nn;           
+    return 1.0 / myPow(x, nn);
+  }
 
-  if(n % 2 == 0) {
+  if(nn == 0) return 1.0;
+
+  double half = myPow(x, nn / 2);
+
+  if(nn % 2 == 0)
     return half * half;
-  } else {
+  else
     return x * half * half;
-  }  
 }
 
 int main() {
