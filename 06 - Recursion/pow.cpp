@@ -49,7 +49,12 @@ double myPow4(double x, int n) {
   if(n == 0) return 1.0;
   if(n < 0) return 1.0 / myPow4(x, -n);
   
-  double half = myPow4()
+  double half = myPow4(x, n / 2);
+
+  if(n % 2 == 0) {
+    return half * half;
+  } else return x * half * half;
+    
 }
 
 int main() {
