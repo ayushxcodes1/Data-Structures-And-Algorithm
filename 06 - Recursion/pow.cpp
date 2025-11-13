@@ -22,9 +22,9 @@ double myPow2(double x, int n) {
   long long nn = n;
   if(nn < 0) nn = -nn;
 
- while(nn > 0) {
+  while(nn > 0) {
 
- }
+  }
 
   if(n < 0) ans = 1.0 / ans;
   return ans;
