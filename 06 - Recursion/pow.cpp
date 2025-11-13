@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - Iterative - TOO SLOW for large N
+//Brute - TC:O(N), SC: O(1) Iterative - TOO SLOW for large N
 double myPow(double x, int n) {
   double ans = 1.0;
   long long nn = n;
