@@ -56,7 +56,7 @@ double helper(double x, long long nn) {
     return x * half * half;
 }
 
-double myPow4(double x, int n) {
+double myPow(double x, int n) {
   long long nn = n;   
   if(nn < 0) nn = -nn; 
   double ans = helper(x, nn);
