@@ -45,5 +45,8 @@ double myPow3(double x, int n) {
 int main() {
   double ans = myPow(2.0, -5);
   cout << ans << endl;
+
+  double ans = myPow2(2.0, -5);
+  cout << ans << endl;
   return 0;
 }
