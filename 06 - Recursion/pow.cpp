@@ -16,6 +16,8 @@ double myPow(double x, int n) {
   return ans;
 }
 
+//Optimal - TC: O(logN), SC: O(logN)
+
 int main() {
   double ans = myPow(2.0, 5);
   cout << ans << endl;
