@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Brute - Too Slow for large N
+//Brute - Iterative - TOO SLOW
 double myPow(double x, int n, double ans) {
   int ans = 
   if(n == 0) return ans;
