@@ -17,14 +17,14 @@ double myPow(double x, int n) {
 }
 
 //Brute - TC:O(N), SC: O(N) - Recursive 
-double myPow4(double x, int n) {
+double myPow2(double x, int n) {
   if(n == 0) return 1.0;
   if(n < 0) return 1.0 / myPow4(x, -n);
   return x * myPow(x, n - 1);
 }
 
 //Optimal - TC: O(logN), SC: O(1) - Iterative - Exponentiation
-double myPow2(double x, int n) {
+double myPow3(double x, int n) {
   double ans = 1.0;
   long long nn = n;
   if(nn < 0) nn = -nn;
@@ -45,8 +45,11 @@ double myPow2(double x, int n) {
 }
 
 //Optimal - TC: O(logN), SC: O(logN) - Recursive - Exponentiation
-double myPow3(double x, int n) {
+double myPow4(double x, int n) {
+  if(n == 0) return 1.0;
+  if(n < 0) return 1.0 / myPow4(x, -n);
   
+  double half = myPow4()
 }
 
 int main() {
